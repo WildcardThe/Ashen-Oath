@@ -1,0 +1,39 @@
+# Builds the Windows installer from this repository and publishes it as a new numbered release.
+# Runs on every push to main that touches the game, and on demand (Actions tab > Build installer > Run workflow).
+name: Build installer
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['index.html', 'src/**', 'assets/**', 'pc/**', '.github/workflows/release.yml']
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.24'
+          cache-dependency-path: pc/launcher/go.sum
+      - name: Install NSIS
+        run: sudo apt-get update -q && sudo apt-get install -y -q nsis
+      - name: Build launcher
+        working-directory: pc/launcher
+        run: GOOS=windows GOARCH=amd64 CGO_ENABLED=0 go build -trimpath -ldflags "-s -w -H windowsgui" -o ../AshenOath.exe .
+      - name: Build installer
+        run: python3 pc/build.py
+      - name: Publish release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "build-${GITHUB_RUN_NUMBER}" pc/AshenOath-Setup.exe --target "$GITHUB_SHA" --latest \
+            --title "Ashen Oath build ${GITHUB_RUN_NUMBER}" --notes "Windows installer for Windows 10 or 11.
+
+          1. Download **AshenOath-Setup.exe** below and run it.
+          2. If Windows shows \"Windows protected your PC\", click **More info**, then **Run anyway** (the installer is not code-signed).
+          3. It installs for your user only, opens in its own window (F11 for full screen) and plays offline."
