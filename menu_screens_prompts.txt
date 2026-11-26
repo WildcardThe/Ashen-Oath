@@ -1,0 +1,102 @@
+ASHEN OATH — START SCREEN, NEW MAP SCREEN, ICONS AND TRAILER PROMPTS
+====================================================================
+
+How to use: every line starting with "Prompt:" is complete. Copy the text after "Prompt:" and paste it.
+Everything else in this file is only explanation for you.
+
+
+======================================================================
+1. START SCREEN (main menu)
+======================================================================
+
+1A. Start screen — background with empty menu plates
+Prompt: Main menu screen for a grimdark gothic sci-fi strategy game, 16:9 wide painted illustration, epic and dark. On the left two thirds: a colossal scene on a ruined ash-covered battlefield under a burning red-orange sky with storm clouds and falling embers: a towering golden-armoured demigod warrior with a flaming great sword and a crimson cloak stands on a broken cathedral wall, facing a huge horned traitor warlord in black spiked armour with a glowing red claw across the ruins, a winged warrior saint with a halo flying above in pale fire, gothic hive-city spires and smoking war machines silhouetted far behind, a giant fallen statue of a knight half buried in ash in the foreground. Upper left: an empty ornate title plate of dark iron and brass with skull and eagle-wing ornaments, left blank for the game logo. On the right third: a vertical column of five empty menu buttons, each a heavy riveted plate of blackened iron with a brass frame and a small round empty emblem socket on the left side, glowing faintly at the edges, stacked with even spacing. All plates and buttons completely empty (the game adds its own text and buttons on top). Cinematic lighting, rich detail, painterly realistic, dark vignette, 16:9 aspect ratio at 1920 x 1080 pixels or larger, no text, no letters, no logos, no watermark.
+
+1B. Start screen — menu button emblems (one prompt per emblem, set inside the round sockets)
+  New Campaign emblem: Prompt: Two crossed swords, one a golden knightly power sword and one a black jagged daemon blade, over a small cracked planet, sparks where the blades cross. Square game icon, single emblem centred, painterly realistic grimdark gothic sci-fi style, polished metal and glowing details, dramatic rim light, plain flat black background, no text, no letters, no border, 1:1.
+  Load Game emblem: Prompt: A brass-bound data-slate tome lying open with a glowing green holographic star map rising from its pages. Square game icon, single emblem centred, painterly realistic grimdark gothic sci-fi style, polished metal and glowing details, dramatic rim light, plain flat black background, no text, no letters, no border, 1:1.
+  Options emblem: Prompt: A brass cogwheel with a skull at its centre and small gothic spires on its teeth, faint green glow in the eye sockets. Square game icon, single emblem centred, painterly realistic grimdark gothic sci-fi style, polished metal and glowing details, dramatic rim light, plain flat black background, no text, no letters, no border, 1:1.
+  Credits emblem: Prompt: A stack of ancient parchment scrolls sealed with red wax purity seals, a quill made from a metal feather resting across them. Square game icon, single emblem centred, painterly realistic grimdark gothic sci-fi style, polished metal and glowing details, dramatic rim light, plain flat black background, no text, no letters, no border, 1:1.
+  Quit emblem: Prompt: A cracked human skull resting on a broken helmet, a single candle burning down beside it, smoke curling. Square game icon, single emblem centred, painterly realistic grimdark gothic sci-fi style, polished metal and glowing details, dramatic rim light, plain flat black background, no text, no letters, no border, 1:1.
+
+1C. Start screen — game logo emblem (I set the name "ASHEN OATH" in our font over it)
+Prompt: A heraldic emblem for a game logo: a broken iron crown pierced by a burning sword, flanked by two spread wings of blackened brass, embers and ash drifting around it, empty banner ribbon beneath. Single emblem centred, painterly realistic grimdark gothic sci-fi style, wide 3:1 composition, plain flat black background, no text, no letters, 3:1.
+
+
+======================================================================
+2. NEW MAP SCREEN (fullscreen, map generator and player setup)
+======================================================================
+Style: the same cogitator-terminal look as the Rites window (heavy riveted gunmetal bezel, CRT screen
+with scanlines and glow), but in COLOUR: deep blue-black screen, brass and gold frame lines, each player
+row lit in its own colour, amber highlights. Like the blue setup panel of HoMM3, but ours.
+
+What the game will place on it (so the layout has room for each):
+  - Left panel "Players": up to 6 rows. Each row: player banner colour, name, Human/AI toggle, team
+    (ally/enemy), faction (Concord / Hollow / Rustbound / random), starting commander (portrait slot),
+    starting bonus (auramite / artifact / resources / random).
+  - Right top "Map": size (Small, Medium, Large, Huge), template, terrain mix, water/acid amount,
+    monster strength, treasure richness, seed (with a re-roll button).
+  - Right middle: preview of the generated map (minimap square).
+  - Right lower "Enemy AI level": five rank badges:
+      Imperial Guard (Easy), Adeptus Astartes (Medium), Primaris (Hard), Chapter Master (Expert),
+      Primarch (Impossible). (These names are shown as text only in the game, not in the art.)
+  - Bottom: Back button and a large Begin button.
+
+2A. New map screen — full background with empty panels
+Prompt: Fullscreen game setup screen for a grimdark gothic sci-fi strategy game, front view, flat orthographic, 16:9, designed as a large retro-futuristic cogitator terminal. A heavy dark gunmetal bezel with riveted corners, brass screws, small gothic skull ornaments in the four corners and a winged-skull crest at the top centre frames a big glowing screen. The screen is deep blue-black with fine horizontal scanlines, soft bloom and faint static, its interface drawn in glowing brass-gold lines with amber accents. Layout inside the screen, all as empty placeholders with NO text, NO letters, NO numbers: a long empty title plate at the top centre; on the left half a large panel with a header strip and six empty horizontal player rows, each row divided into small boxes: a narrow coloured banner box at the far left (rows coloured crimson, blue, green, amber, purple and teal), a name box, two small toggle boxes, and three square portrait slots with small left and right arrow buttons beside each; on the right half, at the top a panel with five rows of empty dropdown fields with arrow tabs on their right and one small round re-roll button, in the middle a large square empty map-preview window with a fine grid and corner brackets, below it a row of five empty square rank-badge slots with ornate frames, one of them highlighted; at the bottom right a large ornate empty button with a gold frame and a smaller empty button beside it; thin gold ruled lines, corner brackets and dotted dividers as decoration. All panels, fields and buttons completely empty (the game adds its own text and controls on top). Clean readable layout, crisp edges, high detail on the metal bezel, game interface asset, 16:9 aspect ratio at 1920 x 1080 pixels or larger, no hands, no people, no text, no logos, no watermark.
+
+2B. AI rank badges (five, shown in the rank-badge slots; same style, one prompt each)
+  Easy — Imperial-guard rank: Prompt: A simple bronze aquila-like eagle badge on a plain dark green enamel shield with one silver chevron, worn and scratched, the badge of a common foot soldier. Square game rank badge icon, single insignia centred, painterly realistic grimdark gothic sci-fi military insignia, enamel and polished metal, dramatic rim light, plain flat black background, no text, no letters, no numbers, no border, 1:1.
+  Medium — Astartes rank: Prompt: A silver winged-helmet badge of an armoured super-soldier over a deep blue enamel circle with a laurel half-wreath, two chevrons beneath. Square game rank badge icon, single insignia centred, painterly realistic grimdark gothic sci-fi military insignia, enamel and polished metal, dramatic rim light, plain flat black background, no text, no letters, no numbers, no border, 1:1.
+  Hard — Primaris rank: Prompt: A larger polished silver and gold badge of a crested armoured helmet before crossed bolt rifles, a full laurel wreath, a small red gem, three chevrons beneath. Square game rank badge icon, single insignia centred, painterly realistic grimdark gothic sci-fi military insignia, enamel and polished metal, dramatic rim light, plain flat black background, no text, no letters, no numbers, no border, 1:1.
+  Expert — Chapter Master rank: Prompt: An ornate gold badge of a skull wearing a laurel crown over spread eagle wings, a crimson enamel field, two crossed swords behind, small rubies set in the wings. Square game rank badge icon, single insignia centred, painterly realistic grimdark gothic sci-fi military insignia, enamel and polished metal, dramatic rim light, plain flat black background, no text, no letters, no numbers, no border, 1:1.
+  Impossible — Primarch rank: Prompt: A radiant golden demigod badge: a crowned armoured face with blazing eyes inside a burning sunburst halo, great eagle wings spread wide, gems and flames, overwhelming majesty. Square game rank badge icon, single insignia centred, painterly realistic grimdark gothic sci-fi military insignia, enamel and polished metal, dramatic rim light, plain flat black background, no text, no letters, no numbers, no border, 1:1.
+
+2C. Small setup icons (shared style line from 1B)
+  Human player: Prompt: A gauntleted armoured hand clenched into a fist, a faint golden glow around it. Square game icon, single emblem centred, painterly realistic grimdark gothic sci-fi style, polished metal and glowing details, dramatic rim light, plain flat black background, no text, no letters, no border, 1:1.
+  AI player: Prompt: A brass servo-skull with a single glowing red optic eye and small antennae. Square game icon, single emblem centred, painterly realistic grimdark gothic sci-fi style, polished metal and glowing details, dramatic rim light, plain flat black background, no text, no letters, no border, 1:1.
+  Ally: Prompt: Two armoured gauntlets clasped in a handshake over a laurel wreath. Square game icon, single emblem centred, painterly realistic grimdark gothic sci-fi style, polished metal and glowing details, dramatic rim light, plain flat black background, no text, no letters, no border, 1:1.
+  Enemy: Prompt: Two swords crossed blade to blade with sparks, a small skull beneath. Square game icon, single emblem centred, painterly realistic grimdark gothic sci-fi style, polished metal and glowing details, dramatic rim light, plain flat black background, no text, no letters, no border, 1:1.
+  Random choice: Prompt: Two carved bone dice with skull pips mid-tumble, a faint green glow. Square game icon, single emblem centred, painterly realistic grimdark gothic sci-fi style, polished metal and glowing details, dramatic rim light, plain flat black background, no text, no letters, no border, 1:1.
+  Starting bonus — auramite: Prompt: A heap of glowing amber auramite crystals and gold coins. Square game icon, single emblem centred, painterly realistic grimdark gothic sci-fi style, polished metal and glowing details, dramatic rim light, plain flat black background, no text, no letters, no border, 1:1.
+  Starting bonus — artifact: Prompt: A small ornate reliquary chest with its lid open and golden light pouring out. Square game icon, single emblem centred, painterly realistic grimdark gothic sci-fi style, polished metal and glowing details, dramatic rim light, plain flat black background, no text, no letters, no border, 1:1.
+  Starting bonus — resources: Prompt: A crate of mixed materials: adamantium ingots, a ceramite block, a violet psy-crystal and a wraithbone shard. Square game icon, single emblem centred, painterly realistic grimdark gothic sci-fi style, polished metal and glowing details, dramatic rim light, plain flat black background, no text, no letters, no border, 1:1.
+  Re-roll seed: Prompt: A circular brass dial with two curved arrows chasing each other around it, glowing green runes. Square game icon, single emblem centred, painterly realistic grimdark gothic sci-fi style, polished metal and glowing details, dramatic rim light, plain flat black background, no text, no letters, no border, 1:1.
+
+2D. Faction crests (for the faction choice in the player rows)
+  Concord: Prompt: A heraldic crest of a golden eagle with spread wings over a white and crimson shield with a fortress tower. Square game icon, single emblem centred, painterly realistic grimdark gothic sci-fi style, polished metal and glowing details, dramatic rim light, plain flat black background, no text, no letters, no border, 1:1.
+  Hollow: Prompt: A heraldic crest of a horned skull over a black eight-pointed star, cracked with glowing magma. Square game icon, single emblem centred, painterly realistic grimdark gothic sci-fi style, polished metal and glowing details, dramatic rim light, plain flat black background, no text, no letters, no border, 1:1.
+  Rustbound: Prompt: A heraldic crest of a rusted cog with a mechanical skull at its centre, chains and scrap plates around it, faint violet void-glow. Square game icon, single emblem centred, painterly realistic grimdark gothic sci-fi style, polished metal and glowing details, dramatic rim light, plain flat black background, no text, no letters, no border, 1:1.
+
+
+======================================================================
+3. RECRUITMENT OFFICE (tavern-style window)
+======================================================================
+I build this window from what we already have (the gunmetal frame style), so no image is needed.
+If you want a painted scene on top of it like the HoMM3 tavern picture:
+
+3A. Recruitment office scene (wide strip)
+Prompt: Wide painted interior scene, 3:1 panorama: a dim gothic military recruitment hall inside a hive fortress, rows of candles and flickering green cogitator screens, a long iron desk with a scribe-servitor writing in a ledger, banners of many regiments hanging from the vaulted ceiling, veterans and mercenaries in different armour waiting on benches, smoke and dust in shafts of pale light from tall windows, grimdark gothic sci-fi, painterly realistic, no text, no logos, 3:1.
+
+
+======================================================================
+4. TRAILER VIDEO (20 seconds)
+======================================================================
+For a text-to-video tool. One continuous prompt, plus a shot list if the tool takes several clips.
+
+4A. Single prompt (20 s)
+Prompt: A 20-second cinematic trailer for a grimdark gothic sci-fi strategy game, dark and epic, painterly realistic style. It opens on an ash-grey wasteland under a burning red sky, embers drifting, the camera gliding low over cracked ground, skulls and broken armour, toward a vast ruined gothic cathedral. A golden-armoured demigod warrior with a flaming great sword steps through the smoke, his crimson cloak whipping in the wind; behind him rows of armoured knights and riflemen march forward under tattered banners. Cut to a huge traitor warlord in black spiked armour raising a claw crackling with red lightning, a horde of horned berserkers and daemon engines pouring out of a volcanic fortress glowing with magma. A winged warrior saint streaks across the sky trailing pale fire. A sorcerer in blue and gold armour casts a spiral of warp-fire. Fast cuts of battle: a chainsword clash in slow motion with sparks, a fireball exploding among the lines, a lightning strike from the clouds, scrap-armoured mutants and a giant drake swooping over the field. The camera pulls back and up into the storm clouds, revealing a huge war-torn map of mountains, rivers of glowing acid, burning forests and three rival fortresses. Final shot: a cracked iron crown pierced by a burning sword over black ash, embers rising, fade to black. Moody orchestral and choir soundtrack with heavy drums, dramatic lighting, cinematic camera moves, 24 fps, 16:9.
+
+4B. Shot list (if your tool works in 4-5 s clips; same style words at the end of each)
+  Shot 1 (0-4 s)
+  Prompt: Low camera glide over an ash wasteland under a burning red sky toward a ruined gothic cathedral, skulls and broken armour on the ground. Grimdark gothic sci-fi, painterly realistic, cinematic lighting, embers and ash, 4 to 5 seconds, 16:9, 24 fps.
+  Shot 2 (4-8 s)
+  Prompt: A golden-armoured demigod warrior with a flaming great sword steps out of smoke, crimson cloak whipping, armoured knights marching behind him under tattered banners. Grimdark gothic sci-fi, painterly realistic, cinematic lighting, embers and ash, 4 to 5 seconds, 16:9, 24 fps.
+  Shot 3 (8-12 s)
+  Prompt: A traitor warlord in black spiked armour raises a claw crackling with red lightning; a horde of horned berserkers and daemon engines charges out of a volcanic fortress. Grimdark gothic sci-fi, painterly realistic, cinematic lighting, embers and ash, 4 to 5 seconds, 16:9, 24 fps.
+  Shot 4 (12-16 s)
+  Prompt: Rapid battle: a winged saint streaks overhead in pale fire, a sorcerer hurls warp-fire, a fireball explodes among the lines, a chainsword clash in slow motion. Grimdark gothic sci-fi, painterly realistic, cinematic lighting, embers and ash, 4 to 5 seconds, 16:9, 24 fps.
+  Shot 5 (16-20 s)
+  Prompt: Camera rises into storm clouds over a war-torn landscape of mountains, glowing acid rivers and fortresses, ending on a cracked iron crown pierced by a burning sword, fade to black. Grimdark gothic sci-fi, painterly realistic, cinematic lighting, embers and ash, 4 to 5 seconds, 16:9, 24 fps.
+
+—— end of file ——

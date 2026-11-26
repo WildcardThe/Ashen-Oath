@@ -1,0 +1,69 @@
+ASHEN OATH — SUMMONED CREATURES (picture, movement sheet, attack sheet)
+=====================================================================
+
+Four rites call a creature into battle. Right now they borrow existing units as stand-ins
+(Ash Drakes, Spore Hulks, Void Wraiths, Plague Kites). These are their own creatures.
+They exist only in battle and vanish when it ends, so they need no map picture, dwelling or upgrade.
+
+- Generate the picture first and attach it as a reference for its two sheets, as with the other creatures.
+- Same format as all our creature sheets: 5 x 5 grid, 25 frames, plain flat medium grey background,
+  three-quarter side view facing right, same size and same ground line in every cell.
+- All four are big creatures (two hexes on the battlefield), so make them look massive.
+
+
+----------------------------------------------------------------------
+PYRE DAEMON  (Summon Flame Daemon · fire · melee, walks)
+----------------------------------------------------------------------
+
+Pyre Daemon - picture
+Single creature for a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, realistic proportions. A towering daemon made of living warp-fire: a muscular humanoid body of cracked black obsidian with molten orange-red fire pouring through every crack, a horned skull-like head with blazing white eyes and a mouth full of flame, burning chains wrapped around its arms and dragging behind it, huge clawed hands, legs ending in hooves of cooling magma, a mane of fire streaming upward from its back. Full body, three-quarter side view facing right. Plain flat medium grey background, even light from the upper left, no ground, no shadow, no text.
+
+Pyre Daemon - movement sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping MOVEMENT cycle of the same creature in every frame: A towering daemon made of living warp-fire: a muscular humanoid body of cracked black obsidian with molten orange-red fire pouring through every crack, a horned skull-like head with blazing white eyes and a mouth full of flame, burning chains wrapped around its arms and dragging behind it, huge clawed hands, legs ending in hooves of cooling magma, a mane of fire streaming upward from its back. A heavy menacing stride forward, shoulders rolling, chains swinging, flames flickering and trailing backward with each step, embers dropping from its hooves. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+Pyre Daemon - attack sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous MELEE ATTACK of the same creature in every frame: A towering daemon made of living warp-fire: a muscular humanoid body of cracked black obsidian with molten orange-red fire pouring through every crack, a horned skull-like head with blazing white eyes and a mouth full of flame, burning chains wrapped around its arms and dragging behind it, huge clawed hands, legs ending in hooves of cooling magma, a mane of fire streaming upward from its back. It rears back, the fire in its cracks flaring bright, then swings a burning chain and slams both clawed fists down in front of it, a burst of fire and sparks at the impact around frame 13, then it straightens and the flames settle. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+
+----------------------------------------------------------------------
+STONE COLOSSUS  (Summon Stone Colossus · earth · melee, walks, slow)
+----------------------------------------------------------------------
+
+Stone Colossus - picture
+Single creature for a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, realistic proportions. A hulking giant made of rock and ruined gothic masonry: a body of fused grey boulders and broken cathedral stones, carved saint statues and a cracked stained-glass window embedded in its chest, a small skull-faced head sunk between massive shoulders, rusted iron rebar and chains sticking out of its joints, faint amber light glowing in the cracks between its stones, enormous fists of solid rock, moss and dust clinging to it. Full body, three-quarter side view facing right. Plain flat medium grey background, even light from the upper left, no ground, no shadow, no text.
+
+Stone Colossus - movement sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping MOVEMENT cycle of the same creature in every frame: A hulking giant made of rock and ruined gothic masonry: a body of fused grey boulders and broken cathedral stones, carved saint statues and a cracked stained-glass window embedded in its chest, a small skull-faced head sunk between massive shoulders, rusted iron rebar and chains sticking out of its joints, faint amber light glowing in the cracks between its stones, enormous fists of solid rock. A slow ponderous lumbering walk forward, heavy steps, arms swinging low, small stones and dust falling from its body with every step. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+Stone Colossus - attack sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous MELEE ATTACK of the same creature in every frame: A hulking giant made of rock and ruined gothic masonry: a body of fused grey boulders and broken cathedral stones, carved saint statues and a cracked stained-glass window embedded in its chest, a small skull-faced head sunk between massive shoulders, rusted iron rebar and chains sticking out of its joints, faint amber light glowing in the cracks between its stones, enormous fists of solid rock. It raises both fists high above its head, the amber cracks glowing brighter, then hammers them down in front of it, a burst of rock shards and dust at the impact around frame 13, then it slowly lifts its arms back up. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+
+----------------------------------------------------------------------
+DROWNED SAINT  (Summon the Drowned Saint · water · melee, floats)
+----------------------------------------------------------------------
+
+Drowned Saint - picture
+Single creature for a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, realistic proportions. A tall towering spirit of a martyred saint formed of dark flowing water: a hooded robed figure whose robes are made of churning sea-green water and foam, a pale face mask of tarnished silver with weeping eyes, a halo of floating water droplets and a broken iron halo ring behind its head, rusted chains and barnacled reliquary charms hanging from it, one hand holding a long corroded censer-staff dripping water, the lower body dissolving into a swirling wave instead of legs, faint teal glow inside the water. Full body, three-quarter side view facing right. Plain flat medium grey background, even light from the upper left, no ground, no shadow, no text.
+
+Drowned Saint - movement sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping MOVEMENT cycle of the same creature in every frame: A tall towering spirit of a martyred saint formed of dark flowing water: a hooded robed figure whose robes are made of churning sea-green water and foam, a pale face mask of tarnished silver with weeping eyes, a halo of floating water droplets and a broken iron halo ring behind its head, rusted chains and barnacled reliquary charms hanging from it, one hand holding a long corroded censer-staff dripping water, the lower body dissolving into a swirling wave instead of legs, faint teal glow inside the water. Gliding forward over the ground like a rolling wave, robes rippling and flowing backward, droplets splashing off and the chains swaying, gently bobbing. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+Drowned Saint - attack sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous MELEE ATTACK of the same creature in every frame: A tall towering spirit of a martyred saint formed of dark flowing water: a hooded robed figure whose robes are made of churning sea-green water and foam, a pale face mask of tarnished silver with weeping eyes, a halo of floating water droplets and a broken iron halo ring behind its head, rusted chains and barnacled reliquary charms hanging from it, one hand holding a long corroded censer-staff dripping water, the lower body dissolving into a swirling wave instead of legs, faint teal glow inside the water. It rises up tall as its wave body swells, then sweeps the censer-staff forward in a wide arc while a crashing wave surges out in front of it, a burst of spray and foam around frame 13, then the water draws back and it sinks to its resting height. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+
+----------------------------------------------------------------------
+STORM DAEMON  (Summon Storm Daemon · air · melee, flying)
+----------------------------------------------------------------------
+
+Storm Daemon - picture
+Single creature for a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, realistic proportions. A huge daemon of living storm hovering in the air: a horned head and broad chest of dark thundercloud with crackling blue-white lightning veins, glowing white eyes, long arms ending in claws of forked lightning, the lower body a spinning tornado funnel of grey wind and debris instead of legs, tattered banners and broken metal scraps caught swirling in its winds, small arcs of electricity jumping across its body. Full body, three-quarter side view facing right. Plain flat medium grey background, even light from the upper left, no ground, no shadow, no text.
+
+Storm Daemon - movement sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping MOVEMENT cycle of the same creature in every frame: A huge daemon of living storm hovering in the air: a horned head and broad chest of dark thundercloud with crackling blue-white lightning veins, glowing white eyes, long arms ending in claws of forked lightning, the lower body a spinning tornado funnel of grey wind and debris instead of legs, tattered banners and broken metal scraps caught swirling in its winds. Flying forward fast, the tornado funnel spinning and leaning back, cloud body billowing, lightning flickering across its chest, debris whirling around it. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+Storm Daemon - attack sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous MELEE ATTACK of the same creature in every frame: A huge daemon of living storm hovering in the air: a horned head and broad chest of dark thundercloud with crackling blue-white lightning veins, glowing white eyes, long arms ending in claws of forked lightning, the lower body a spinning tornado funnel of grey wind and debris instead of legs, tattered banners and broken metal scraps caught swirling in its winds. It draws both lightning claws back, the storm swelling and darkening, then lunges forward and rakes down with both claws as a bright bolt of lightning cracks in front of it around frame 13, then the funnel spins it back to its hovering pose. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+—— end of file ——

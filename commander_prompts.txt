@@ -1,0 +1,309 @@
+ASHEN OATH — 10 NEW COMMANDERS
+==============================
+
+For each commander you get:
+  A. Avatar            — square portrait (commander screen, side panel, recruitment office)
+  B. Map look          — the commander's mount or vehicle on the adventure map (single picture)
+  C. Map movement      — 5 x 5 sprite sheet, looping, used while the commander travels
+  D. Battlefield look  — the commander standing beside the battlefield, as heroes do in HoMM3 (single picture)
+  E. Battlefield idle  — 5 x 5 sprite sheet, looping, while the battle runs
+  F. Battlefield rite  — 5 x 5 sprite sheet, played once when the commander invokes a rite
+Plus a short bio for the commander info screen, and suggested game data (class, specialty, start).
+
+Names, factions and looks are original, inspired by grimdark 41st-millennium themes
+(demigod sons, battle saints, tech-priests, traitor lords, sorcerers, xenos dynasts, hive minds,
+brood cults, star-caste commanders). No trademarked names or emblems are used.
+
+General rules (already written into every prompt):
+- Map pictures and sheets: seen from a high three-quarter angle (about 45 degrees from above), facing
+  right, small readable silhouette, plain flat medium grey background. Every vehicle or mount carries a
+  PLAIN BLANK WHITE banner or pennant: the game paints it in the player's colour.
+- Battlefield pictures and sheets: three-quarter side view facing right, full body, plain flat medium
+  grey background, same size and same ground line in every cell.
+- Sprite sheets: 5 columns by 5 rows, 25 frames, read left to right, top to bottom, no grid lines, no text.
+- Avatars: head-and-shoulders bust, square, dark smoky background.
+- Generate the avatar or battlefield look first and attach it as a reference for that commander's
+  other pictures, so the face, armour and colours stay the same.
+
+
+======================================================================
+1. LORD-ASCENDANT VALERIAN KORD   (Concord · warlord)
+======================================================================
+Bio: The last of the gene-forged sons sent to lead the Concord's crusades, Valerian stands half again
+as tall as any warrior beside him. He has not lost a field in three hundred years, and he carries the
+scars of every one he nearly lost. Soldiers who march under his banner swear they do not feel fear,
+only the weight of his gaze.
+Suggested data: class warlord · specialty: Bulwark Knights +1 Attack, +1 Defence and +1 Speed per 4 levels ·
+start skill Leadership · start rite Battle Fury.
+
+A. Avatar
+Portrait of a towering demigod warrior commander, head and shoulders, painted grimdark digital art, realistic: a noble scarred face with pale gold eyes and close-cropped white hair, a golden laurel wreath, enormous ornate gold and ivory power armour with an eagle-winged gorget, a crimson cloak with fur trim, purity seals with parchment on the shoulder, calm overwhelming authority. Square image, dark smoky background, dramatic rim light, no text.
+
+B. Map look
+A massive gilded heavy assault tank for a grimdark sci-fi strategy game map, ivory and gold armour plates, twin battle cannons, a small cathedral-like command spire on top with a plain blank white banner on a tall pole, purity seals hanging from the hull, heavy tracks. Seen from a high three-quarter angle about 45 degrees from above, facing right, small readable silhouette, painted grimdark digital art, plain flat medium grey background, no text.
+
+C. Map movement
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping MOVEMENT cycle of the same vehicle in every frame: a massive gilded heavy assault tank, ivory and gold armour plates, twin battle cannons, a small cathedral-like command spire with a plain blank white banner on a tall pole, purity seals hanging from the hull. Tracks rolling forward, the hull rocking gently, the banner waving, small puffs of exhaust smoke from the rear. Seen from a high three-quarter angle about 45 degrees from above, facing right, same size and same position in every cell, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+D. Battlefield look
+Single figure for a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, realistic proportions: a towering demigod warrior commander in ornate gold and ivory power armour with eagle-winged pauldrons, a golden laurel wreath, a long crimson cloak, holding a huge flaming great sword point-down in front of him with both hands, purity seals on the armour. Full body, three-quarter side view facing right. Plain flat medium grey background, even light from the upper left, no ground, no shadow, no text.
+
+E. Battlefield idle
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping IDLE cycle of the same figure in every frame: a towering demigod warrior commander in ornate gold and ivory power armour with eagle-winged pauldrons, a golden laurel wreath, a long crimson cloak, holding a huge flaming great sword point-down in front of him. He stands watching the battle, breathing slowly, the cloak stirring in the wind, the sword's flames flickering, a slight turn of the head. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+F. Battlefield rite
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous CASTING animation of the same figure in every frame: a towering demigod warrior commander in ornate gold and ivory power armour with eagle-winged pauldrons, a golden laurel wreath, a long crimson cloak, a huge flaming great sword. He lifts the sword high above his head, golden light gathering along the blade, a burst of holy light from the tip around frame 13, then he lowers the sword back point-down. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+
+======================================================================
+2. CANONESS SERAPHINE VALE, THE BURNING SAINT   (Concord · battle-mystic)
+======================================================================
+Bio: Seraphine died on the walls of Fort Calder and rose again three days later, wreathed in pale
+fire. The Concord calls her a living saint; she calls herself a sword that has not yet been put away.
+Where she flies, the faithful fight on through wounds that should have killed them.
+Suggested data: class battle-mystic · specialty: Mending Litany heals more (spell specialty) ·
+start skill Water (Litany rites) · start rite Mending Litany.
+
+A. Avatar
+Portrait of a warrior saint battle-nun commander, head and shoulders, painted grimdark digital art, realistic: a fierce young woman's face with short black hair and a pale scar across one cheek, a glowing golden halo behind her head, black and silver power armour with a white fleur-like lily emblem, a red tabard, a rosary of skulls, determined burning eyes. Square image, dark smoky background, dramatic rim light, no text.
+
+B. Map look
+A winged warrior saint flying low over the ground on a jump pack of brass thrusters and mechanical white wings, black and silver armour, a glowing halo, a flaming sword held forward, a plain blank white banner streaming from a pole on her back. Seen from a high three-quarter angle about 45 degrees from above, facing right, small readable silhouette, painted grimdark digital art, plain flat medium grey background, no text.
+
+C. Map movement
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping MOVEMENT cycle of the same figure in every frame: a winged warrior saint on a jump pack of brass thrusters and mechanical white wings, black and silver armour, a glowing halo, a flaming sword held forward, a plain blank white banner streaming from a pole on her back. Gliding forward low over the ground, wings beating slowly, thruster flames pulsing, the banner rippling. Seen from a high three-quarter angle about 45 degrees from above, facing right, same size and same position in every cell, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+D. Battlefield look
+Single figure for a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, realistic proportions: a warrior saint battle-nun hovering just above the ground on mechanical white wings, black and silver power armour, a red tabard, a glowing golden halo, a flaming sword in one hand and a holy book chained to her belt. Full body, three-quarter side view facing right. Plain flat medium grey background, even light from the upper left, no ground, no shadow, no text.
+
+E. Battlefield idle
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping IDLE cycle of the same figure in every frame: a warrior saint battle-nun hovering just above the ground on mechanical white wings, black and silver power armour, a red tabard, a glowing golden halo, a flaming sword. She hovers gently up and down, wings slowly opening and closing, the halo pulsing, the sword's flame flickering. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+F. Battlefield rite
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous CASTING animation of the same figure in every frame: a warrior saint battle-nun on mechanical white wings, black and silver power armour, a red tabard, a glowing golden halo, a flaming sword. She spreads her wings wide and raises her open hand in prayer, the halo blazing brighter and golden light streaming from her palm around frame 13, then she folds her wings back. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+
+======================================================================
+3. ARCH-MAGOS TEYL ORRIN   (Concord · battle-mystic)
+======================================================================
+Bio: More machine than man for two centuries, Orrin keeps the Concord's war engines alive with prayer,
+oil and terrible secrets. He speaks in binary hymns and remembers every bolt of every walker he has
+ever rebuilt. His enemies say his walkers never fall; his engineers know he simply refuses to let them.
+Suggested data: class battle-mystic · specialty: Bastion Dreadwalkers +1 Attack, +1 Defence and +1 Speed per 4 levels ·
+start skill Armourer · start rite Stoneskin.
+
+A. Avatar
+Portrait of a cybernetic tech-priest commander, head and shoulders, painted grimdark digital art, realistic: a deep crimson hooded robe, a face mostly replaced by brass and steel with three glowing green optic lenses, a breathing grille over the mouth, cables running from the hood, a cog-shaped skull emblem on the chest, mechanical servo-arms rising behind the shoulders. Square image, dark smoky background, dramatic rim light, no text.
+
+B. Map look
+A tech-priest commander riding a walking mechanical throne on six spider-like iron legs, crimson robes, brass pipes and incense stacks venting smoke, servo-arms holding tools, a plain blank white banner hanging from a crossbar above the throne. Seen from a high three-quarter angle about 45 degrees from above, facing right, small readable silhouette, painted grimdark digital art, plain flat medium grey background, no text.
+
+C. Map movement
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping MOVEMENT cycle of the same vehicle in every frame: a tech-priest commander riding a walking mechanical throne on six spider-like iron legs, crimson robes, brass pipes and incense stacks venting smoke, servo-arms holding tools, a plain blank white banner hanging from a crossbar above the throne. The six legs stepping forward in a steady rippling gait, the throne swaying, smoke puffing, the banner swinging. Seen from a high three-quarter angle about 45 degrees from above, facing right, same size and same position in every cell, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+D. Battlefield look
+Single figure for a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, realistic proportions: a tall cybernetic tech-priest in a crimson hooded robe, a brass and steel face with three green optic lenses, four mechanical servo-arms spread behind him holding tools and a plasma cutter, leaning on a tall staff topped with a cog-and-skull emblem, cables trailing to the ground. Full body, three-quarter side view facing right. Plain flat medium grey background, even light from the upper left, no ground, no shadow, no text.
+
+E. Battlefield idle
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping IDLE cycle of the same figure in every frame: a tall cybernetic tech-priest in a crimson hooded robe, a brass and steel face with three green optic lenses, four mechanical servo-arms behind him, leaning on a cog-topped staff. The servo-arms twitch and adjust their tools, the optic lenses flicker, small sparks drop from the arms, the robe sways. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+F. Battlefield rite
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous CASTING animation of the same figure in every frame: a tall cybernetic tech-priest in a crimson hooded robe, a brass and steel face with three green optic lenses, four mechanical servo-arms, a cog-topped staff. He raises the staff and all four servo-arms, green energy arcing between them and from the staff tip around frame 13, then the arms fold back down. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+
+======================================================================
+4. ABADDOR THE NINEFOLD BETRAYER   (Hollow · warlord)
+======================================================================
+Bio: Abaddor broke nine oaths to nine masters, and each betrayal made him stronger. Now he leads the
+Hollow's hosts from the front in black armour fused to his flesh, a talon of daemon-steel on one hand.
+His warriors follow him not from loyalty, which he despises, but because no one has ever outlived his ambition.
+Suggested data: class warlord · specialty: Bloodsworn +1 Attack, +1 Defence and +1 Speed per 4 levels ·
+start skill Offense · start rite Battle Fury.
+
+A. Avatar
+Portrait of a traitor warlord, head and shoulders, painted grimdark digital art, realistic: a hard scarred face with a shaved head and a topknot of black hair, burning red eyes, black spiked power armour trimmed with tarnished gold and covered in eight-pointed star etchings, a cloak of tattered black fur, one hand raised in a huge clawed gauntlet glowing with red energy. Square image, dark smoky background, dramatic rim light, no text.
+
+B. Map look
+A spiked black armoured troop carrier for a grimdark sci-fi strategy game map, covered in jagged spikes, chains, skull trophies and eight-pointed star symbols, a dozer blade like a fanged maw at the front, red glow from the vision slits, a plain blank white banner on a spiked pole at the back. Seen from a high three-quarter angle about 45 degrees from above, facing right, small readable silhouette, painted grimdark digital art, plain flat medium grey background, no text.
+
+C. Map movement
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping MOVEMENT cycle of the same vehicle in every frame: a spiked black armoured troop carrier covered in jagged spikes, chains, skull trophies and eight-pointed star symbols, a dozer blade like a fanged maw, red glow from the vision slits, a plain blank white banner on a spiked pole. Tracks grinding forward, chains swinging, red exhaust smoke pouring from the rear stacks, the banner waving. Seen from a high three-quarter angle about 45 degrees from above, facing right, same size and same position in every cell, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+D. Battlefield look
+Single figure for a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, realistic proportions: a huge traitor warlord in black spiked power armour trimmed with tarnished gold, a cloak of black fur, a massive daemon-steel claw gauntlet on one hand crackling with red lightning, a long black sword with a living eye in the hilt in the other, trophy skulls chained to his belt. Full body, three-quarter side view facing right. Plain flat medium grey background, even light from the upper left, no ground, no shadow, no text.
+
+E. Battlefield idle
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping IDLE cycle of the same figure in every frame: a huge traitor warlord in black spiked power armour, a cloak of black fur, a daemon-steel claw gauntlet crackling with red lightning, a long black sword. He stands with menacing patience, the claw slowly flexing, red lightning crawling over it, the fur cloak stirring. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+F. Battlefield rite
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous CASTING animation of the same figure in every frame: a huge traitor warlord in black spiked power armour, a black fur cloak, a daemon-steel claw gauntlet, a long black sword. He thrusts the clawed gauntlet forward, red warp-lightning surging from the claws in a bright burst around frame 13, then he pulls the claw back into a fist. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+
+======================================================================
+5. EZRAKH THE THOUSANDFOLD   (Hollow · battle-mystic)
+======================================================================
+Bio: Ezrakh was a librarian once, guardian of forbidden books. He read every one of them. What is left
+of him now is a voice inside blue and gold armour, a mind that sees a thousand futures and chooses the
+cruellest. His rites change shape as they are cast, and so, some say, does he.
+Suggested data: class battle-mystic · specialty: Inferno-type rites stronger (spell specialty: Fireburst) ·
+start skill Wisdom · start rite Ember Bolt.
+
+A. Avatar
+Portrait of a sinister warp-sorcerer, head and shoulders, painted grimdark digital art, realistic: an ornate horned helm of sapphire blue and gold with no face visible, only swirling blue-violet light in the eye slits, a high crested collar, flowing blue and gold robes over power armour, arcane symbols glowing faintly on the armour, a feathered mantle, wisps of blue fire curling around. Square image, dark smoky background, dramatic rim light, no text.
+
+B. Map look
+A warp-sorcerer standing on a floating disc of blue and violet warp-fire that hovers above the ground, sapphire and gold horned armour, flowing robes, a tall staff topped with an eye inside a crescent, a plain blank white pennant hanging from the staff. Seen from a high three-quarter angle about 45 degrees from above, facing right, small readable silhouette, painted grimdark digital art, plain flat medium grey background, no text.
+
+C. Map movement
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping MOVEMENT cycle of the same figure in every frame: a warp-sorcerer standing on a floating disc of blue and violet warp-fire, sapphire and gold horned armour, flowing robes, a tall staff topped with an eye in a crescent, a plain blank white pennant hanging from the staff. Gliding smoothly forward, the fiery disc swirling beneath him, robes and pennant streaming back, sparks of blue fire trailing. Seen from a high three-quarter angle about 45 degrees from above, facing right, same size and same position in every cell, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+D. Battlefield look
+Single figure for a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, realistic proportions: a warp-sorcerer in ornate sapphire blue and gold horned power armour with flowing robes and a feathered mantle, no face only blue light in the helm, a tall staff topped with an eye inside a crescent, a floating open grimoire beside him with glowing pages. Full body, three-quarter side view facing right. Plain flat medium grey background, even light from the upper left, no ground, no shadow, no text.
+
+E. Battlefield idle
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping IDLE cycle of the same figure in every frame: a warp-sorcerer in sapphire blue and gold horned power armour with flowing robes, a tall eye-topped staff, a floating open grimoire beside him. The grimoire's pages turn by themselves, blue flames flicker in the helm's eye slits, the robes drift as if underwater. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+F. Battlefield rite
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous CASTING animation of the same figure in every frame: a warp-sorcerer in sapphire blue and gold horned power armour, flowing robes, a tall eye-topped staff, a floating grimoire. He sweeps the staff forward, a spiral of blue and pink warp-fire bursting from the staff's eye around frame 13, the grimoire flaring with light, then the fire fades. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+
+======================================================================
+6. KHORVAX THE RED WRATH   (Hollow · warlord)
+======================================================================
+Bio: Khorvax does not plan battles. He finds them. Mounted on a beast of brass and daemon-flesh that
+has never been tamed, he charges at the head of every assault, and his axe has taken more skulls than
+the Hollow can count. His only prayer is a roar, and his only rite is blood.
+Suggested data: class warlord · specialty: Hellfire Reavers / Reavers +1 Attack, +1 Defence and +1 Speed per 4 levels ·
+start skill Offense · start rite Frenzy of the Blood-God.
+
+A. Avatar
+Portrait of a berserker warlord, head and shoulders, painted grimdark digital art, realistic: a massive brute with a crested red and brass helmet with a grille of fangs over the face, blazing eyes visible through the grille, blood-red power armour trimmed with brass, a gorget of human skulls, steam rising from his armour, rage in every line of him. Square image, dark smoky background, dramatic rim light, no text.
+
+B. Map look
+A berserker warlord riding a huge brass-armoured daemonic beast like a bull of metal and muscle, glowing red eyes, smoke from its nostrils, blood-red armour and a great axe, a plain blank white banner on a pole fixed to the beast's saddle. Seen from a high three-quarter angle about 45 degrees from above, facing right, small readable silhouette, painted grimdark digital art, plain flat medium grey background, no text.
+
+C. Map movement
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping MOVEMENT cycle of the same rider in every frame: a berserker warlord riding a huge brass-armoured daemonic bull-beast with glowing red eyes and smoking nostrils, blood-red armour, a great axe, a plain blank white banner on a pole fixed to the saddle. The beast charging forward at a heavy gallop, hooves pounding, smoke snorting, the banner whipping. Seen from a high three-quarter angle about 45 degrees from above, facing right, same size and same position in every cell, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+D. Battlefield look
+Single figure for a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, realistic proportions: a berserker warlord mounted on a huge brass-armoured daemonic bull-beast, blood-red power armour trimmed with brass, a crested fanged helmet, a great chain-axe raised in one hand, skull trophies hanging from the saddle. Full body, three-quarter side view facing right. Plain flat medium grey background, even light from the upper left, no ground, no shadow, no text.
+
+E. Battlefield idle
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping IDLE cycle of the same rider in every frame: a berserker warlord mounted on a huge brass-armoured daemonic bull-beast, blood-red armour, a crested fanged helmet, a great chain-axe. The beast paws the ground and snorts smoke, the rider grips the axe and rolls his shoulders, impatient to charge. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+F. Battlefield rite
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous CASTING animation of the same rider in every frame: a berserker warlord mounted on a huge brass-armoured daemonic bull-beast, blood-red armour, a crested fanged helmet, a great chain-axe. The beast rears up and the rider raises the axe and roars, a burst of blood-red energy and rising embers around frame 13, then the beast lands back on its hooves. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+
+======================================================================
+7. OVERLORD SENN-KAHET, THE UNDYING   (Rustbound · battle-mystic)
+======================================================================
+Bio: Senn-Kahet ruled a dynasty of stars sixty million years ago, slept in a tomb beneath the Rust
+Wastes, and woke to find the galaxy overrun by what he calls vermin. He leads the Rustbound for now,
+because their scrap-machines amuse him and their dead do not trouble him. Nothing he commands ever stays dead for long.
+Suggested data: class battle-mystic · specialty: Void Wraiths +1 Attack, +1 Defence and +1 Speed per 4 levels ·
+start skill Intelligence · start rite Gravity Well.
+
+A. Avatar
+Portrait of an ancient undying machine-king, head and shoulders, painted grimdark digital art, realistic: a skeletal face of dark gunmetal living metal with glowing emerald eyes, a tall crescent-crested headdress with long side plates, ornate gold and green trim, a high collar, emerald energy lines glowing across the metal, a regal cold expression. Square image, dark smoky background, dramatic rim light, no text.
+
+B. Map look
+A skeletal metal machine-king standing on a floating command barge, a sleek crescent-shaped hover vessel of dark gunmetal with emerald glowing lines and a curved scythe-like prow, gliding above the ground, a plain blank white banner hanging from a tall crescent standard behind him. Seen from a high three-quarter angle about 45 degrees from above, facing right, small readable silhouette, painted grimdark digital art, plain flat medium grey background, no text.
+
+C. Map movement
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping MOVEMENT cycle of the same vessel in every frame: a skeletal metal machine-king standing on a floating command barge, a sleek crescent-shaped hover vessel of dark gunmetal with emerald glowing lines and a scythe-like prow, a plain blank white banner hanging from a tall crescent standard. The barge gliding smoothly forward, hovering and bobbing slightly, emerald light pulsing along its hull, faint green haze beneath. Seen from a high three-quarter angle about 45 degrees from above, facing right, same size and same position in every cell, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+D. Battlefield look
+Single figure for a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, realistic proportions: a tall skeletal machine-king of dark gunmetal living metal with glowing emerald eyes, a crescent-crested headdress, a flowing tattered regal cloak, ornate gold trim, holding a long war-scythe crackling with emerald energy, a glowing green orb floating above his other hand. Full body, three-quarter side view facing right. Plain flat medium grey background, even light from the upper left, no ground, no shadow, no text.
+
+E. Battlefield idle
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping IDLE cycle of the same figure in every frame: a tall skeletal machine-king of dark gunmetal with glowing emerald eyes, a crescent-crested headdress, a tattered regal cloak, a long emerald war-scythe, a glowing green orb floating above his hand. He stands perfectly still and regal, only the orb slowly turning, emerald lines pulsing along his body, the cloak stirring. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+F. Battlefield rite
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous CASTING animation of the same figure in every frame: a tall skeletal machine-king of dark gunmetal, glowing emerald eyes, a crescent-crested headdress, a tattered regal cloak, a long war-scythe, a glowing green orb. He lifts the orb high, it blazes and sends a ring of emerald energy outward around frame 13, then the orb settles back above his palm. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+
+======================================================================
+8. THE PATRIARCH BELOW   (Rustbound · battle-mystic)
+======================================================================
+Bio: In the deep mines of the Rust Wastes, the workers began to pray to something in the dark. Their
+children were born with too many arms and their grandchildren with violet skin and black eyes. The
+Patriarch is the first of them, swollen and ancient, and his brood now marches openly under his gaze.
+Suggested data: class battle-mystic · specialty: Scrap Servitors / Overseers +1 Attack, +1 Defence and +1 Speed per 4 levels ·
+start skill Leadership · start rite Rite of Withering.
+
+A. Avatar
+Portrait of an ancient alien brood-father, head and shoulders, painted grimdark digital art, realistic: a huge elongated bulbous purple-blue skull with ridged chitin plates, deep black glossy eyes without pupils, a mouth of needle teeth with a tongue-like tendril, four long clawed arms partly visible, a cult robe of rough brown cloth draped over its shoulders with a coiled-wyrm symbol, an eerie hypnotic presence. Square image, dark smoky background, dramatic rim light, no text.
+
+B. Map look
+A battered mining crawler truck of a xenos brood cult, rusted yellow and black hazard plating, a drill on the front, rock-saw and floodlights, cultists in yellow mining overalls riding on the sides, a hulking alien brood-father seated on a throne on the back, a plain blank white banner on a pole above him. Seen from a high three-quarter angle about 45 degrees from above, facing right, small readable silhouette, painted grimdark digital art, plain flat medium grey background, no text.
+
+C. Map movement
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping MOVEMENT cycle of the same vehicle in every frame: a battered mining crawler truck of a xenos brood cult, rusted yellow and black hazard plating, a front drill, floodlights, cultists in yellow mining overalls riding on the sides, an alien brood-father on a throne on the back, a plain blank white banner on a pole above him. Tracks rolling forward, the drill turning, floodlights flickering, the cultists swaying, the banner waving. Seen from a high three-quarter angle about 45 degrees from above, facing right, same size and same position in every cell, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+D. Battlefield look
+Single figure for a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, realistic proportions: a huge hunched alien brood-father with a bulbous ridged purple-blue skull, black glossy eyes, needle teeth, four long clawed arms, a ragged brown cult robe with a coiled-wyrm symbol, standing on two thick legs with a curved spine, faint violet psychic glow around its head. Full body, three-quarter side view facing right. Plain flat medium grey background, even light from the upper left, no ground, no shadow, no text.
+
+E. Battlefield idle
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping IDLE cycle of the same creature in every frame: a huge hunched alien brood-father with a bulbous ridged purple-blue skull, black glossy eyes, needle teeth, four long clawed arms, a ragged brown cult robe. It breathes slowly, claws flexing and clicking, its head tilting from side to side, a faint violet glow pulsing around its skull. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+F. Battlefield rite
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous CASTING animation of the same creature in every frame: a huge hunched alien brood-father with a bulbous ridged purple-blue skull, black glossy eyes, four long clawed arms, a ragged brown cult robe. It spreads all four arms wide and its skull glows bright violet, a pulse of psychic violet light rippling outward around frame 13, then it hunches back down. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+
+======================================================================
+9. KALGARAX, THE DEVOURING MIND   (Rustbound · warlord)
+======================================================================
+Bio: Kalgarax is not a commander so much as the hunger of a swarm given a body. It arrived with the
+spore-rains that fell on the Rust Wastes and has been feeding ever since. Every creature in its army
+moves as one; every world it leaves behind is stripped to bare rock.
+Suggested data: class warlord · specialty: Mutant Brutes +1 Attack, +1 Defence and +1 Speed per 4 levels ·
+start skill Offense · start rite Warp Haste.
+
+A. Avatar
+Portrait of a monstrous hive-mind alien tyrant, head and shoulders, painted grimdark digital art, realistic: a huge elongated head crest of bone-white chitin and deep purple carapace, small glowing yellow eyes, a jaw of long fangs dripping saliva, ridged spines along the crest, glistening organic textures, an aura of terrible cold intelligence. Square image, dark smoky background, dramatic rim light, no text.
+
+B. Map look
+A towering winged hive-mind alien tyrant walking on two powerful legs, bone-white and purple chitin, huge leathery wings folded on its back, scything talons and a living bio-cannon arm, a plain blank white banner of torn hide stretched between two bone spines on its back. Seen from a high three-quarter angle about 45 degrees from above, facing right, small readable silhouette, painted grimdark digital art, plain flat medium grey background, no text.
+
+C. Map movement
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping MOVEMENT cycle of the same creature in every frame: a towering winged hive-mind alien tyrant on two powerful legs, bone-white and purple chitin, huge leathery wings folded on its back, scything talons, a bio-cannon arm, a plain blank white banner of torn hide stretched between two bone spines on its back. A heavy predatory stride forward, the tail swaying, wings shifting, the banner flapping. Seen from a high three-quarter angle about 45 degrees from above, facing right, same size and same position in every cell, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+D. Battlefield look
+Single creature for a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, realistic proportions: a towering hive-mind alien tyrant, bone-white and deep purple chitin armour, a huge crested head with glowing yellow eyes and long fangs, leathery wings half spread, two scything talon arms and a fleshy bio-cannon arm, a long spined tail. Full body, three-quarter side view facing right. Plain flat medium grey background, even light from the upper left, no ground, no shadow, no text.
+
+E. Battlefield idle
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping IDLE cycle of the same creature in every frame: a towering hive-mind alien tyrant, bone-white and purple chitin, a crested head with glowing yellow eyes, leathery wings half spread, scything talons, a bio-cannon arm, a spined tail. It breathes heavily, the wings twitching, talons scraping, the tail slowly swishing, saliva dripping from its fangs. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+F. Battlefield rite
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous CASTING animation of the same creature in every frame: a towering hive-mind alien tyrant, bone-white and purple chitin, glowing yellow eyes, leathery wings, scything talons, a bio-cannon arm. It throws its head back and spreads its wings, its crest glowing with green-purple psychic energy, a shrieking psychic shockwave bursting from its head around frame 13, then it lowers its head. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+
+======================================================================
+10. COMMANDER VEL'AUN OF THE SEVENTH CADRE   (Rustbound · warlord)
+======================================================================
+Bio: Vel'Aun came to the Rust Wastes as an envoy from a young star-empire and stayed as a mercenary
+general. The scrap-kings pay her in salvage; she pays them back in victories won at long range, with
+precision they had never imagined. She believes every war ends in an agreement. She simply prefers to dictate it.
+Suggested data: class warlord · specialty: Rustkin Raiders +1 Attack, +1 Defence and +1 Speed per 4 levels ·
+start skill Archery · start rite Targeting Litany.
+
+A. Avatar
+Portrait of a xenos star-caste battlesuit commander, head and shoulders, painted grimdark digital art, realistic: a grey-blue skinned alien woman with a flat nose ridge, calm dark eyes and a single long white topknot, wearing the opened chest plates of a sleek ochre and white battlesuit with rounded shapes and glowing blue sensor lights, a circular caste insignia on the shoulder, a confident composed expression. Square image, dark smoky background, dramatic rim light, no text.
+
+B. Map look
+A sleek xenos grav-tank skimmer hovering above the ground, smooth rounded ochre and white armour plates with slate-blue trim, a long rail-cannon, twin small disc drones flying alongside, glowing blue engines underneath, a plain blank white pennant on a short antenna mast. Seen from a high three-quarter angle about 45 degrees from above, facing right, small readable silhouette, painted grimdark digital art, plain flat medium grey background, no text.
+
+C. Map movement
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping MOVEMENT cycle of the same vehicle in every frame: a sleek xenos grav-tank skimmer, smooth rounded ochre and white armour with slate-blue trim, a long rail-cannon, twin small disc drones flying alongside, glowing blue engines underneath, a plain blank white pennant on a short antenna mast. Gliding smoothly forward a little above the ground, engines pulsing blue, the drones bobbing beside it, the pennant fluttering. Seen from a high three-quarter angle about 45 degrees from above, facing right, same size and same position in every cell, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+D. Battlefield look
+Single figure for a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, realistic proportions: a tall sleek xenos battlesuit commander, rounded ochre and white armour plates with slate-blue trim, a smooth sensor head with glowing blue optics, a large fusion blaster on one arm and a missile pod on the shoulder, compact jet thrusters on the back, two disc drones hovering beside her. Full body, three-quarter side view facing right. Plain flat medium grey background, even light from the upper left, no ground, no shadow, no text.
+
+E. Battlefield idle
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping IDLE cycle of the same figure in every frame: a tall sleek xenos battlesuit commander, rounded ochre and white armour with slate-blue trim, a sensor head with glowing blue optics, a fusion blaster arm, a shoulder missile pod, back jet thrusters, two disc drones hovering beside her. She stands scanning the field, the sensor head turning, the drones circling slowly, faint blue glow pulsing from the thrusters. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+F. Battlefield rite
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous CASTING animation of the same figure in every frame: a tall sleek xenos battlesuit commander, rounded ochre and white armour with slate-blue trim, glowing blue optics, a fusion blaster arm, a shoulder missile pod, back thrusters, two disc drones. She raises her arm and projects a bright blue holographic targeting grid forward, the drones flaring with light and a blue energy pulse spreading around frame 13, then the hologram fades and she lowers her arm. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+—— end of file ——

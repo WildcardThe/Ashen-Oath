@@ -1,0 +1,279 @@
+ASHEN OATH — RITES (SPELLS) RE-IMAGINED FROM HOMM3 / HOTA, WITH ICON PROMPTS
+==========================================================================
+
+How to use
+----------
+- One entry per rite: our name · school · level · the HoMM3 spell it comes from · what it does in our game.
+- Copy the line after "Icon prompt:" into the image generator. Every prompt is complete on its own.
+- The icons are made for the Rites window (the green cogitator terminal), so they are monochrome
+  phosphor-green symbols on pure black. The shared style sentence is already at the end of every prompt:
+  "Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1."
+- Generate at 1:1. I will cut the black away and drop each icon into the row's icon box.
+- Rites already in the game keep their current name (marked ★). Their effect stays as it is now.
+- [MAP] marks adventure-map rites (cast from the commander's Rites window, once a day).
+- [NEW] marks rites whose effect needs a small new rule when we add them (summons, clones, map travel, etc.).
+
+Our four schools, re-themed
+---------------------------
+FIRE  — Pyre rites: warp-fire, promethium flame, burning hatred, blood and fury.
+EARTH — Bastion rites: gravity, stone, ceramite, death and the binding of the dead.
+WATER — Litany rites: cryo-tides, healing prayers, blessings, purification, the sea of souls.
+AIR   — Storm rites: lightning, warp-winds, foresight, the void between stars.
+
+
+=========================================================
+FIRE — PYRE RITES
+=========================================================
+
+F1. Ember Bolt ★ — Fire · Level 1 · [Magic Arrow] · Fire damage to one enemy stack.
+   Icon prompt: A single blazing bolt of fire shaped like a sharp arrowhead streaking diagonally upward, a short trail of embers behind it. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+F2. Battle Fury ★ — Fire · Level 2 · [Bloodlust] · +Attack to one allied stack in melee.
+   Icon prompt: A clenched armoured gauntlet gripping a chainsword hilt, droplets of blood and flame rising from the knuckles. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+F3. Hex of the Burning Eye — Fire · Level 1 · [Curse] · Enemy stack deals only its minimum damage.
+   Icon prompt: A staring eye inside a downward-pointing triangle, flames licking from the eyelid, three small cracks radiating from the pupil. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+F4. Promethium Ward — Fire · Level 1 · [Protection from Water] · Allied stack takes less Water damage.
+   Icon prompt: A heater shield with a stylised flame emblem, a falling water droplet breaking apart into steam against its face. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+F5. Searing Blindness — Fire · Level 2 · [Blind] · Enemy stack cannot act until attacked. [NEW]
+   Icon prompt: A helmet visor with both eye slits burned out by two short jets of fire, smoke curling upward. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+F6. Wall of Promethium — Fire · Level 2 · [Fire Wall] · A line of burning hexes that hurts anyone crossing. [NEW]
+   Icon prompt: A low wall of tall flames in a row of three hexagons seen from the front, heat waves rising above them. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+F7. Fireburst ★ — Fire · Level 3 · [Fireball] · Fire damage to a hex and all around it.
+   Icon prompt: A round explosion of fire bursting outward in a starburst, a small skull silhouette at its centre. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+F8. Melta-Mines — Fire · Level 3 · [Land Mine] · Hidden mines on enemy ground that explode when stepped on. [NEW]
+   Icon prompt: A round disc-shaped mine half buried in cracked ground, a small blinking light on top, a starburst of flame erupting from one side. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+F9. Curse of Ill Omen — Fire · Level 3 · [Misfortune] · Lowers enemy luck.
+   Icon prompt: A broken bone die split in two with a jagged crack, a small black flame rising from the crack, a falling star behind it. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+F10. Inferno ★ — Fire · Level 4 · [Inferno] · Huge fire blast on a wide area.
+   Icon prompt: A towering pillar of fire with a ring of flame spreading at its base, sparks spiralling up, a cathedral spire silhouette consumed inside it. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+F11. Exterminatus — Fire · Level 4 · [Armageddon] · Fire damage to every stack on the field, friend and foe.
+   Icon prompt: A planet seen from orbit cracking apart with a burning ring of fire wrapping around it, three falling streaks of flame hitting its surface. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+F12. Rite of Red Rage — Fire · Level 4 · [Berserk] · Enemy stack attacks the nearest stack, friend or foe. [NEW]
+   Icon prompt: A screaming horned skull with burning eyes and veins of fire across the cranium, jagged rage lines bursting outward. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+F13. Pyre Aegis — Fire · Level 4 · [Fire Shield] · Attackers of the allied stack are burned back. [NEW]
+   Icon prompt: A round shield wreathed in a halo of flame, three small flame tongues lashing outward from its rim like counter-strikes. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+F14. Frenzy of the Blood-God — Fire · Level 4 · [Frenzy] · Allied stack trades all its Defence for Attack.
+   Icon prompt: Two crossed axes over a dripping blood droplet, a broken shield beneath them split in half. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+F15. Mark of the Beast-Slayer — Fire · Level 4 · [Slayer] · Allied stack deals extra damage to big creatures (tier 4-5).
+   Icon prompt: A long spear driven through a monstrous horned beast skull, a targeting reticle drawn around the skull. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+F16. Cataclysm ★ — Fire · Level 5 · [Chain/mass fire] · Fire damage to every enemy stack.
+   Icon prompt: Three meteors of fire falling in parallel streaks onto a jagged horizon, each impact blooming into a small explosion. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+F17. Martyr's Pyre — Fire · Level 5 · [Sacrifice] · Burn one allied stack to bring back fallen troops in another. [NEW]
+   Icon prompt: A kneeling armoured figure silhouette engulfed in rising flames, a winged spirit rising from the fire toward a halo above. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+F18. Summon Flame Daemon — Fire · Level 5 · [Summon Fire Elemental] · Calls a burning daemon to fight for the battle. [NEW]
+   Icon prompt: A horned daemon made entirely of fire rising out of a summoning circle of runes, arms spread, flames for hair. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+
+=========================================================
+EARTH — BASTION RITES
+=========================================================
+
+E1. Stoneskin ★ — Earth · Level 1 · [Stone Skin] · +Defence to one allied stack.
+   Icon prompt: An armoured shoulder pauldron turning into cracked rough stone from one edge, small stone flakes floating around it. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+E2. Ceramite Bulwark — Earth · Level 1 · [Shield] · Allied stack takes less melee damage.
+   Icon prompt: A tall rectangular tower shield seen from the front with a fortress tower emblem, a sword blade bending and snapping against it. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+E3. Gravity Well ★ — Earth · Level 2 · [Slow] · Lowers the speed of one enemy stack.
+   Icon prompt: A small figure pressed down under concentric downward-pointing chevrons, a swirling gravity vortex beneath its feet. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+E4. Auspex of the Deep — Earth · Level 1 · [View Earth] · Reveals resources and mines across the map for a day. [MAP] [NEW]
+   Icon prompt: A round auspex scanner screen with concentric rings and a sweeping beam, three small crystal shapes glowing as blips on it. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+E5. Death Knell — Earth · Level 2 · [Death Ripple] · Damages every living stack on the field; the dead and machines are spared.
+   Icon prompt: A tolling cathedral bell with a skull engraved on it, three rippling rings of sound spreading outward from it. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+E6. Grasping Ash — Earth · Level 2 · [Quicksand] · Hidden sinking patches that stop enemies who step in. [NEW]
+   Icon prompt: A sinking spiral pit of ash and sand with a single armoured hand reaching up out of it. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+E7. Anti-Psyker Ward — Earth · Level 2 · [Protection from Air] · Allied stack takes less Air damage.
+   Icon prompt: A shield with a jagged lightning bolt symbol crossed out by a thick diagonal bar, small sparks fizzling at the rim. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+E8. Void Ward ★ — Earth · Level 3 · [Air Shield / mass defence] · +Defence to every allied stack.
+   Icon prompt: A dome-shaped force field over three small shield shapes standing in a row, the dome made of interlocking hexagons. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+E9. Raise the Fallen — Earth · Level 3 · [Animate Dead] · Brings back fallen troops of an undying or machine stack. [NEW]
+   Icon prompt: A skeletal hand bursting up from a cracked grave slab with a small skull-and-cog emblem, green energy wisps rising. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+E10. Null Field — Earth · Level 3 · [Anti-Magic] · Allied stack ignores enemy rites. [NEW]
+   Icon prompt: A hexagonal null-field emitter with a crossed-out lightning rune inside it, a clean circle of static rings around it. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+E11. Siege Tremor — Earth · Level 3 · [Earthquake] · Shakes down sections of enemy walls in a siege. [NEW]
+   Icon prompt: A fortress wall section cracking apart with a jagged fissure running up from the ground, falling blocks and dust. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+E12. Force Barricade — Earth · Level 3 · [Force Field] · Raises an impassable energy barrier on two hexes. [NEW]
+   Icon prompt: Two glowing hexagonal energy panels standing upright side by side, crackling edges, a small arrow bouncing off them. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+E13. Town Portal ★ — Earth · Level 4 · [Town Portal] · Returns the commander to the nearest held town. [MAP]
+   Icon prompt: A gothic arched gateway with a swirling vortex inside it, a small fortress silhouette visible through the vortex. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+E14. Orbital Debris Storm — Earth · Level 4 · [Meteor Shower] · Heavy damage on a hex and its neighbours.
+   Icon prompt: A cluster of jagged rocks and wreckage plunging diagonally from the sky, each trailing a short smoke streak, impacting a crater. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+E15. Litany of Despair — Earth · Level 4 · [Sorrow] · Lowers enemy morale.
+   Icon prompt: A weeping stone angel statue's face with cracks running down from the eyes, its head bowed. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+E16. Resurrection ★ — Earth · Level 5 · [Resurrection] · Heals an allied stack and brings back its fallen.
+   Icon prompt: An armoured warrior silhouette rising upright out of a tomb, a radiant halo and two spread wings of light behind it. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+E17. Graviton Collapse — Earth · Level 5 · [Implosion] · Massive damage to one enemy stack.
+   Icon prompt: A small dense sphere at the centre pulling inward lines from all directions, a fractured armour plate being sucked into it. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+E18. Summon Stone Colossus — Earth · Level 5 · [Summon Earth Elemental] · Calls a living stone giant to fight for the battle. [NEW]
+   Icon prompt: A hulking humanoid made of rock and broken masonry rising from a summoning circle, cracked glowing seams across its body. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+
+=========================================================
+WATER — LITANY RITES
+=========================================================
+
+W1. Mending Litany ★ — Water · Level 1 · [Cure] · Restores health to an allied stack.
+   Icon prompt: A small open prayer book with a glowing drop of water above it and three short healing rays falling onto its pages. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+W2. Benediction of the Saint — Water · Level 1 · [Bless] · Allied stack deals its maximum damage.
+   Icon prompt: A raised armoured hand in a gesture of blessing, a small halo above the fingers and a winged cross behind it. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+W3. Purging Water — Water · Level 1 · [Dispel] · Removes all rites from a stack. [NEW]
+   Icon prompt: A tilted censer pouring a stream of holy water over a cracked rune, the rune dissolving into fading sparks. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+W4. Coolant Ward — Water · Level 1 · [Protection from Fire] · Allied stack takes less Fire damage.
+   Icon prompt: A shield with a snowflake-like coolant emblem, a flame breaking apart into harmless sparks against its face. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+W5. Call the Lander — Water · Level 1 · [Summon Boat] · Calls a transport to the nearest shore. [MAP] [NEW]
+   Icon prompt: A small armoured landing craft descending on two thruster cones toward a shoreline wave. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+W6. Frost Lance ★ — Water · Level 2 · [Ice Bolt] · Cold damage to one enemy stack.
+   Icon prompt: A long jagged spear of ice crystal flying horizontally, small frost shards scattering from its tip. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+W7. Rite of Withering — Water · Level 2 · [Weakness] · Lowers an enemy stack's Attack.
+   Icon prompt: A sword blade drooping and rusting as it bends downward, water droplets falling from it, a downward arrow beside it. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+W8. Clear the Field — Water · Level 2 · [Remove Obstacle] · Washes away one battlefield obstacle. [NEW]
+   Icon prompt: A broken boulder being swept apart by a curling wave, pieces flying off to the side. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+W9. Scuttle the Lander — Water · Level 2 · [Scuttle Boat] · Destroys an enemy transport on the shore. [MAP] [NEW]
+   Icon prompt: A small landing craft breaking in half and sinking beneath a wave, bubbles rising from the wreck. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+W10. Cleansing Tide ★ — Water · Level 3 · [Mass Cure] · Restores health to every allied stack.
+   Icon prompt: A broad wave rolling from left to right with three small shields riding on its crest, glowing droplets above. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+W11. Mind-Wipe — Water · Level 3 · [Forgetfulness] · Enemy ranged stack forgets how to shoot well (half ranged damage).
+   Icon prompt: A human head in profile with a circuit pattern inside, a wave washing through it erasing half the circuit lines. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+W12. Ring of Hoarfrost — Water · Level 3 · [Frost Ring] · Cold damage to every stack around a hex.
+   Icon prompt: A ring of sharp ice spikes bursting up in a circle around an empty centre hexagon, frost mist drifting outward. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+W13. Hymn of Zeal — Water · Level 3 · [Mirth] · Raises allied morale.
+   Icon prompt: A tall organ pipe cluster with musical sound waves rising from the tops into a small radiant sunburst. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+W14. Short Warp-Jump — Water · Level 3 · [Teleport] · Moves an allied stack to any free hex. [NEW]
+   Icon prompt: Two small hexagons with a curved dashed arc between them, a figure dissolving into particles at one end and reforming at the other. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+W15. Mirror of the Sea of Souls — Water · Level 4 · [Clone] · Creates a fleeting copy of an allied stack for the battle. [NEW]
+   Icon prompt: An armoured warrior silhouette standing beside its own translucent mirror image, a rippling water surface line between them. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+W16. Great Prayer of the Throne — Water · Level 4 · [Prayer] · +Attack, +Defence and +speed to every allied stack.
+   Icon prompt: A grand golden throne silhouette with rays of light radiating behind it and three small kneeling figures before it. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+W17. Walk the Toxic Shallows — Water · Level 4 · [Water Walk] · The commander's army crosses acid pools and rivers. [MAP] [NEW]
+   Icon prompt: An armoured boot print standing on the surface of rippling liquid without sinking, small bubbles around it. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+W18. Summon the Drowned Saint — Water · Level 5 · [Summon Water Elemental] · Calls a living tide-spirit to fight for the battle. [NEW]
+   Icon prompt: A tall robed figure formed of flowing water rising from a summoning circle, a halo of droplets around its hooded head. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+
+=========================================================
+AIR — STORM RITES
+=========================================================
+
+A1. Warp Haste ★ — Air · Level 1 · [Haste] · +Speed to one allied stack.
+   Icon prompt: A running armoured boot with three speed lines streaming behind it and a small lightning spark at the heel. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+A2. Vox-Intercept — Air · Level 1 · [View Air] · Reveals commanders, towns and artifacts across the map for a day. [MAP] [NEW]
+   Icon prompt: A vox antenna mast with radiating signal arcs, a small skull-shaped receiver at its base. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+A3. Lightning Arc ★ — Air · Level 2 · [Lightning Bolt] · Lightning damage to one enemy stack.
+   Icon prompt: A single jagged lightning bolt striking down from a small storm cloud onto a pointed helmet. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+A4. Far Sight ★ — Air · Level 2 · [Visions] · Reveals the land far around the commander. [MAP]
+   Icon prompt: A large open eye with a telescope lens for a pupil, concentric rings radiating outward from it. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+A5. Psychic Veil — Air · Level 2 · [Disguise] · Hides the army's true size from enemy eyes. [MAP] [NEW]
+   Icon prompt: A hooded cloak hanging empty with no face inside, a faint shimmer of distortion around its edges. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+A6. Fate-Reading — Air · Level 2 · [Fortune] · Raises allied luck.
+   Icon prompt: Three tarot-like cards fanned out, the middle card showing a star, small sparkles above them. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+A7. Targeting Litany — Air · Level 2 · [Precision] · +Ranged damage to an allied shooting stack.
+   Icon prompt: A rifle scope reticle with a crosshair and a small skull at its centre, a bullet trail passing straight through it. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+A8. Tailwind ★ — Air · Level 3 · [Mass Haste] · +Speed to every allied stack.
+   Icon prompt: Three swirling wind streams sweeping from left to right carrying small banner flags along with them. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+A9. Refractor Field — Air · Level 3 · [Air Shield] · Allied stack takes less ranged damage.
+   Icon prompt: A bullet deflected sideways off a curved shimmering energy bubble around a small shield. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+A10. Banishment — Air · Level 3 · [Destroy Undead] · Damages every undying and daemonic stack on the field.
+   Icon prompt: A winged skull being split apart by a downward beam of holy light, wisps of shadow fleeing outward. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+A11. Domination — Air · Level 3 · [Hypnotize] · Takes control of a weakened enemy stack for a few rounds. [NEW]
+   Icon prompt: A hand with puppet strings hanging from its fingers controlling a small marching soldier figure below. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+A12. Orbital Lance ★ — Air · Level 4 · [Chain Lightning, single strike] · Heavy damage to one enemy stack from orbit.
+   Icon prompt: A thin vertical beam of energy shooting down from a small orbiting satellite silhouette into the ground, a shockwave ring at the impact. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+A13. Chain of the Storm — Air · Level 4 · [Chain Lightning] · Lightning that jumps between several enemy stacks. [NEW]
+   Icon prompt: A lightning bolt branching into a chain that zigzags between four small dots in a row, each dot sparking. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+A14. Vengeful Reflex — Air · Level 4 · [Counterstrike] · Allied stacks retaliate one extra time each round. [NEW]
+   Icon prompt: Two crossed blades with curved return arrows looping around them, a small spark where the blades meet. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+A15. Webway Step — Air · Level 5 · [Dimension Door] · The commander jumps a short distance across the map. [MAP] [NEW]
+   Icon prompt: A tall arched doorway of light standing open in empty space, a dotted path leaping through it into the distance. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+A16. Jump-Pack Ascension — Air · Level 5 · [Fly] · The commander's army flies over obstacles on the map for a day. [MAP] [NEW]
+   Icon prompt: A pair of mechanical jump-pack wings with thruster flames beneath them, rising above a jagged mountain peak. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+A17. Warp Mirror — Air · Level 5 · [Magic Mirror] · Chance to bounce enemy rites back at their caster. [NEW]
+   Icon prompt: An ornate gothic hand mirror with a lightning bolt hitting its surface and reflecting back in the opposite direction. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+A18. Summon Storm Daemon — Air · Level 5 · [Summon Air Elemental] · Calls a whirling storm spirit to fight for the battle. [NEW]
+   Icon prompt: A swirling tornado with a horned face formed in its upper cloud and lightning arms, rising from a summoning circle. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+
+=========================================================
+SCHOOL TAB ICONS (for the five tabs on the left of the Rites window)
+=========================================================
+
+T1. All rites
+   Icon prompt: A winged skull above an open book with four small symbols (flame, mountain, droplet, lightning) arranged around it. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+T2. Fire — Pyre rites
+   Icon prompt: A single stylised flame rising from a small brazier bowl, simple and bold. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+T3. Earth — Bastion rites
+   Icon prompt: A fortress tower standing on a jagged mountain, simple and bold. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+T4. Water — Litany rites
+   Icon prompt: A single water droplet with a small winged cross inside it, simple and bold. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+T5. Air — Storm rites
+   Icon prompt: A lightning bolt crossing a swirl of wind, simple and bold. Square game spell icon for a gothic sci-fi cogitator terminal: monochrome phosphor-green glowing holographic line art on pure black background, bright thin outlines with soft green bloom, faint horizontal scanlines, simple bold symbol centred and filling about 80% of the frame, high contrast, readable at small size, no text, no letters, no numbers, no border, 1:1.
+
+—— end of file ——

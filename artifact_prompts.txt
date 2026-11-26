@@ -1,0 +1,386 @@
+ASHEN OATH — ARTIFACT IMAGE PROMPTS
+====================================
+
+How to use
+----------
+- Every prompt below is complete: copy one line after "Prompt:" and paste it into the image generator.
+- All prompts share the same render style (the last sentence of each prompt), so the set looks
+  consistent in the game's artifact slots, inventory and map markers.
+- Generate each at 1:1 (square). A plain mid-grey background is requested so I can cut the item out
+  cleanly, the same way as the structures.
+- "Slot" is where it is worn in our game: Head, Neck, Armour, Cloak, Weapon, Shield, Boots, Ring, Trinket.
+- "Rarity" follows our tiers: Treasure (common), Minor, Major, Relic (unique, very rare).
+- "Effect" uses the stats the game already has (Attack, Defence, Power, Knowledge, morale, luck,
+  movement, sight, mana, spell damage, ranged damage, daily income). Effects marked [NEW] need a
+  small new rule; I can add those when we put the artifacts in.
+- HoMM3 inspiration is noted in brackets so the role of each item is clear.
+- Names avoid trademarked terms; the look is grimdark gothic sci-fi in the spirit of the factions asked for.
+
+Shared style sentence (already included at the end of every prompt):
+"Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1."
+
+
+PART 1 — ARTIFACTS ALREADY IN THE GAME (new art for them)
+=========================================================
+
+1. Blade of the First Oath — Weapon · Treasure · +2 Attack  [Centaur's Axe]
+   Prompt: A knightly power sword with a straight, slightly notched steel blade, a gilded cross-guard shaped like spread eagle wings, red leather grip wrapped in wire, wax purity seal with parchment strips hanging from the guard, faint blue energy along the edge. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+2. Ripper Chainblade — Weapon · Minor · +4 Attack  [Blackshard of the Dead Knight]
+   Prompt: A heavy chainsword with a blackened steel casing, rows of jagged chain teeth caked with dried blood, exposed motor housing with exhaust vents and a small smoke wisp, brass trigger guard, chipped yellow-and-black hazard stripes. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+3. Thunder Maul of Hesk — Weapon · Major · +6 Attack, +1 morale  [Sword of Hellfire]
+   Prompt: A massive two-handed thunder hammer with a block-shaped head of dark iron, engraved runes glowing pale blue, crackling arcs of lightning between the faces, gilded skull on the side, long haft bound in leather and chain. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+4. Ceramite Aegis — Shield · Treasure · +2 Defence  [Shield of the Dwarven Lords]
+   Prompt: A heater-shaped shield of off-white ceramite plating, scorched and pitted by gunfire, a bronze rim, a stencilled red cross emblem half worn away, two rivet-studded straps visible at the edge. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+5. Storm Shield — Shield · Minor · +4 Defence  [Shield of the Yawning Dead]
+   Prompt: A tall rectangular energy-field shield of dark steel with a glowing blue generator gem at its centre, a shimmering translucent force field rippling across its face, gold filigree border, battle honours engraved along the rim. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+6. Bastion Wall — Shield · Major · +6 Defence, +1 morale  [Lion's Shield of Courage]
+   Prompt: A huge boarding shield like a slab of fortress wall, carved with a gothic cathedral window and two stone saints, a vision slit near the top, a flickering candle shrine bolted to the face, layered purity seals and chains. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+7. Psy-Crown of Veyl — Head · Treasure · +2 Power  [Crown of the Supreme Magi]
+   Prompt: A thin circlet of tarnished silver set with small violet psy-crystals, fine cables running from the crystals into the band, a faint violet glow and tiny lightning sparks between the gems. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+8. Helm of Command — Head · Minor · +1 Defence, +1 morale  [Helm of the Alabaster Unicorn]
+   Prompt: A closed officer's helm of dark blue armour with a gold laurel crest, a skull-faced faceplate with glowing red eye lenses, a vox-grille mouth, a short white plume and a rank stripe down the centre. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+9. Diadem of the Seer — Head · Major · +3 Power, +2 Knowledge  [Thunder Helmet]
+   Prompt: An ornate psychic hood of bronze and crystal rising behind the head in a fan of thin conduits, a central third-eye gem blazing white-violet, tiny runes etched along every conduit, faint smoke of psychic energy. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+10. Seal of Unbroken Faith — Neck · Treasure · +1 Power, +1 Knowledge  [Necklace of Dragonteeth]
+    Prompt: A heavy red wax purity seal pressed with a skull-and-wings emblem, long cream parchment strips covered in tiny handwritten prayers, hung on a short iron chain. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+11. Amulet of the Void — Neck · Minor · +3 Knowledge  [Celestial Necklace of Bliss]
+    Prompt: A black obsidian pendant in a cage of thin silver, inside it a slowly swirling miniature starless void with a faint purple rim, hanging from a chain of tiny linked vertebrae. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+12. Talisman of Courage — Neck · Minor · +1 morale, +1 luck  [Pendant of Courage]
+    Prompt: A round bronze medallion embossed with a roaring lion's head, a small red gem in its mouth, a laurel border, a torn red ribbon tied to the loop. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+13. Plate of the Martyr — Armour · Treasure · +3 Defence  [Breastplate of Petrified Wood]
+    Prompt: A battered breastplate of dull steel with a carved praying saint in relief, a deep gouge across the chest patched with welded scrap, a halo of small candles melted onto the shoulder. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+14. Carapace of the Maw — Armour · Minor · +3 Defence, +2 Attack  [Rib Cage]
+    Prompt: A cuirass grown from dark red chitin and fused bone plates, ribbed like a giant insect, small mouths with needle teeth along the collar, oozing a little dark ichor, faint ember-orange glow in the seams. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+15. Armour of the First Warden — Armour · Relic · +3 to all stats  [Armour of Wonder]
+    Prompt: A legendary suit of ancient power armour displayed as a breastplate with pauldrons, ivory and gold plating, a sunburst on the chest, a mantle of red cloth, purity seals, a cracked halo frame behind the shoulders glowing soft gold, every inch engraved with tiny battle scenes. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+16. Banner of the Last Stand — Cloak · Treasure · +1 Attack, +1 Defence  [Cape of Conjuring]
+    Prompt: A tattered regimental banner on a short pole with a skull finial, faded crimson cloth with a stitched golden tower, burned holes and bullet tears, a list of fallen names embroidered along the bottom. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+17. Shroud of Shadows — Cloak · Minor · +1 luck, +1 Defence  [Cloak of the Undead King]
+    Prompt: A hooded cloak of charcoal camouflage cloth that seems to fade into shadow at its edges, light-bending shimmer patches sewn in, a tarnished silver clasp shaped like a closed eye. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+18. Mantle of Dead Stars — Cloak · Major · +2 Power, +20% spell damage  [Everflowing Crystal Cloak]
+    Prompt: A long midnight-blue mantle whose inner lining shows a dying starfield with slowly drifting embers, a high collar of black iron spikes, a clasp holding a pale dead star gem. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+19. Grav-Treads — Boots · Treasure · +3 movement  [Boots of Speed (lesser)]
+    Prompt: A pair of heavy armoured boots with small humming anti-gravity plates under the soles, faint blue haze beneath them, scuffed ceramite shins with yellow chevrons. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+20. Pathfinder's Boots — Boots · Minor · +2 movement, halves rough-terrain cost  [Boots of Levitation]
+    Prompt: Rugged scout boots of cracked leather and plasteel shin guards, spiked crampons, a coil of rope and a small compass auspex strapped to the side, caked with ash and mud. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+21. Jump-Thruster Boots — Boots · Major · +6 movement  [Boots of Speed]
+    Prompt: Armoured boots with twin jump-thruster nozzles at the heels glowing orange, heat-scorched plating, small fuel canisters on the calves, short flames licking from the nozzles. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+22. Ring of Fortune — Ring · Treasure · +1 luck  [Clover of Fortune]
+    Prompt: A gold signet ring set with a carved die-shaped emerald, tiny skull pips on its faces, scratches and wear along the band. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+23. Ring of the Magus — Ring · Minor · +1 Knowledge, +2 mana per day  [Mystic Orb of Mana]
+    Prompt: A silver ring with a small rotating violet crystal held by three claws, faint runes circling the band and a soft violet glow. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+24. Signet of Command — Ring · Minor · +1 morale, +1 Attack  [Ring of the Wayfarer]
+    Prompt: A heavy bronze command signet with an engraved crossed-swords crest, an inset red ruby, and a tiny data-chip slot in the side. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+25. Codex of Lost Ages — Trinket · Treasure · +2 Knowledge  [Tome of the ... (lesser)]
+    Prompt: A thick leather-bound tome with brass corners and a chained lock, a skull on the cover, loose parchment pages, a small glowing data-slate wedged inside as a bookmark. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+26. Lucky Bone Die — Trinket · Treasure · +1 luck  [Ladybird of Luck]
+    Prompt: A single six-sided die carved from yellowed bone with tiny skulls for pips, a hole bored through it and strung on a frayed red cord. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+27. Medal of Valour — Trinket · Minor · +1 morale  [Badge of Courage]
+    Prompt: A cross-shaped military medal of dark iron with a gold laurel and skull in the centre, hanging from a striped red-and-black ribbon, slightly bent from a bullet impact. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+28. Golden Reliquary — Trinket · Major · +500 auramite per day  [Endless Sack of Gold]
+    Prompt: A small ornate golden reliquary box shaped like a cathedral, glass windows showing a mummified finger bone on red velvet, coins spilling from a drawer at its base, candles at the corners. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+29. Servo-Skull Scope — Trinket · Minor · +2 sight, +10% ranged damage  [Bow of Elven Cherrywood]
+    Prompt: A floating human skull fitted with brass anti-grav plates, a long telescopic lens in one eye socket glowing red, small antennae, dangling cables and a parchment tag. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+30. Spellbinder Orb — Trinket · Major · +25% spell damage, +20 mana  [Orb of the Firmament]
+    Prompt: A glass sphere held in a twisted bronze claw stand, inside it a captive storm of violet and white lightning, tiny runes floating around the glass, a faint psychic glow. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+
+PART 2 — LOYALIST CRUSADE RELICS
+================================
+Look: gothic cathedral-tech, gold and bronze on dark steel or ivory, double-headed eagles, skulls,
+purity seals with parchment, candles, laurels, crimson cloth. Holy, ancient, oppressive.
+
+31. Sword of the Sainted Primarch — Weapon · Relic · +8 Attack, +2 morale  [Sword of Judgement]
+    Prompt: A legendary golden-hilted great sword with a blade of pale white steel glowing faintly gold, a double-headed eagle cross-guard, a reliquary capsule in the pommel holding a bone fragment, parchment oaths fluttering from the hilt. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+32. Bolt Pistol of the Inquisition — Weapon · Major · +4 Attack, +20% ranged damage  [Bow of the Sharpshooter]
+    Prompt: An ornate heavy bolt pistol with a black and silver frame, a stylised letter-I seal on the grip, filigree skulls along the barrel, a short chain to a purity seal, one oversized shell casing beside it. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+33. Iron Halo — Head · Major · +4 Defence, +1 morale  [Helm of Heavenly Enlightenment]
+    Prompt: A circular halo device of black iron and gold rising from a gorget mount, a ring of small skulls and laurels, a shimmering faint force field disc inside the ring. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+34. Rosary of the Martyred Saint — Neck · Minor · +2 Power, +1 morale  [Necklace of Swiftness]
+    Prompt: A long rosary of carved bone beads and tiny brass skulls, ending in a winged cross pendant with a ruby heart, beads worn smooth by endless prayer. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+35. Terminator Pauldron of Honour — Armour · Major · +6 Defence  [Titan's Cuirass]
+    Prompt: A massive single shoulder plate from heavy assault armour, white with a red cross of honour, a laurel wreath carved in gold, battle damage and a long list of campaign honours engraved around the rim. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+36. Standard of the Unbowed Legion — Cloak · Major · +2 Attack, +2 Defence, +1 morale  [Banner of ... (army bonus)]
+    Prompt: A grand battle standard on a gilded pole topped by a double-headed eagle, heavy crimson banner with a gold stitched fortress and laurel, dozens of purity seals and small skulls hanging from the crossbar. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+37. Sabatons of the Long March — Boots · Minor · +3 movement, +1 Defence  [Boots of Polarity]
+    Prompt: Heavy armoured sabatons of dark steel with brass toe caps, worn treads, small parchment prayer strips tied around the ankles, mud of a hundred worlds caked on. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+38. Signet of the High Lords — Ring · Major · +1 to all stats  [Ring of Infinite Gems (role)]
+    Prompt: A massive gold signet ring with a double-headed eagle carved into a black onyx face, tiny rubies for eyes, a hidden data-needle at the side. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+39. Tithe Ledger — Trinket · Minor · +250 auramite per day  [Endless Purse of Gold]
+    Prompt: A huge chained tax ledger with an iron cover and a skull clasp, pages full of tiny columns of numbers, a servo-quill arm still writing on the open page, a red wax seal. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+40. Censer of Purifying Flame — Trinket · Minor · +1 morale; enemy morale -1 [NEW]  [Spirit of Oppression]
+    Prompt: A swinging brass censer shaped like a skull with a cathedral spire on top, blue-white holy flame and incense smoke pouring from the eye sockets, hanging from a short chain. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+41. Vial of the Primarch's Blood — Trinket · Relic · troops heal fully after each battle [NEW]  [Elixir of Life]
+    Prompt: A small crystal vial with a gold eagle stopper holding glowing ruby blood, set in a tiny reliquary stand of gold and ivory with candles, faint golden light radiating from the liquid. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+
+PART 3 — TRAITOR RELICS OF THE RUINOUS POWERS
+=============================================
+Look: blackened brass and bronze, spikes and hooks, eight-pointed stars, daemonic eyes and maws
+fused into metal, warp-fire (sickly purple, green and red), chains, flayed leather, bone.
+
+42. Daemon-Bound Axe — Weapon · Major · +7 Attack, -1 morale  [Sword of Hellfire (cursed)]
+    Prompt: A huge double-bladed axe of black bronze with a daemonic face fused into the blade, living red eyes and a fanged mouth, the haft wrapped in chains, purple warp-fire leaking from the cracks. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+43. Blade of the Eightfold Star — Weapon · Relic · +6 Attack, +3 Power, enemy luck -1 [NEW]  [Armageddon's Blade]
+    Prompt: A long curved daemon sword whose blade shifts between purple, green and red flame, an eight-pointed star cross-guard with eight tiny eyes, a pommel of a screaming skull. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+44. Helm of the Many-Horned — Head · Minor · +3 Attack  [Helm of Chaos]
+    Prompt: A closed helm of dark red armour with a ring of curling ram and goat horns, an eight-pointed star on the brow, a grille of brass teeth over the mouth, a faint red glow in the eye slits. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+45. Collar of Brass and Fury — Neck · Major · immune to enemy spells' mind effects; +2 Defence [NEW]  [Collar of Conjuring / Pendant of Negativity]
+    Prompt: A thick spiked collar of beaten brass with a skull-rune emblem, chains hanging from it, its inner surface engraved with angry runes glowing ember red. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+46. Plague-Rotted Carapace — Armour · Major · +5 Defence; enemies in melee lose health each round [NEW]  [Armour of the Damned piece]
+    Prompt: A bloated green-grey armour breastplate rusted through with weeping sores, three flies circling, a three-circle plague emblem, bone growths pushing through the plates, dripping green slime. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+47. Cloak of Flayed Skins — Cloak · Minor · +2 Attack, -1 enemy morale [NEW]  [Dead Man's Boots role]
+    Prompt: A grisly cloak stitched from pale tanned skins with crude tattoos of eight-pointed stars, hooks and chains along the hem, a skull clasp at the neck. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+48. Greaves of the Warp-Stride — Boots · Major · +4 movement; can cross one obstacle tile per day [NEW]  [Angel Wings role]
+    Prompt: Spiked dark bronze greaves with clawed metal feet, swirling purple warp-mist around the soles, eyes opening in the knee plates. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+49. Ring of the Eyeless Seer — Ring · Minor · +2 Power, -1 luck  [cursed variant]
+    Prompt: A ring of blackened silver with an embedded living eye that blinks, a circle of eight tiny spikes around it, faint pink-purple smoke rising. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+50. Skull Throne Shard — Trinket · Major · +1 Attack per battle won this week [NEW]  [Vampire's Cowl role]
+    Prompt: A jagged chunk of a throne made of fused brass skulls, still dripping fresh blood, a small eight-pointed star branded into it, ember sparks. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+51. Tome of Forbidden Names — Trinket · Major · +4 Knowledge, learn a random level 4 spell [NEW]  [Tome of Fire/Air Magic]
+    Prompt: A grimoire bound in pale leather with a living mouth on the cover sewn shut with brass wire, pages edged in purple flame, eight-pointed star clasp, tendrils of shadow curling from the binding. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+52. Heart of the Fallen Champion — Trinket · Relic · +4 Attack, +4 Power; undead units +20% health [NEW]  [Cloak of the Undead King / Necromancy relic]
+    Prompt: A still-beating dark crimson heart encased in a cage of black brass spikes, glowing veins of red warp-light, a chain of eight links holding it, drops of ichor falling below. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+
+PART 4 — STAR-CASTE XENOS RELICS (Tau-like)
+===========================================
+Look: smooth composite plates in ochre, sand, white and slate blue, rounded aerodynamic shapes,
+clean panel lines, glowing blue optics and pulse emitters, small hovering drones, circle-and-arc
+caste glyphs. Precise, technological, no gothic decoration.
+
+53. Pulse Carbine of the Fire Caste — Weapon · Minor · +3 Attack, +15% ranged damage  [Bow of Elven Cherrywood]
+    Prompt: A sleek pulse carbine with smooth sand-coloured composite casing, a slate-blue barrel shroud, glowing blue energy cells along the side, a small under-slung grenade module and clean panel lines. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+54. Fusion Blaster of the Hunter — Weapon · Major · +6 Attack; shots ignore 30% of defence [NEW]  [Bow of the Sharpshooter]
+    Prompt: A compact heavy fusion blaster with a dish-shaped emitter glowing white-hot blue, ochre armoured casing with vented cooling fins, heat shimmer around the muzzle, a small hunter glyph. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+55. Shield Drone — Shield · Major · +5 Defence; blocks the first hit each battle [NEW]  [Sentinel's Shield]
+    Prompt: A disc-shaped hovering drone of white and ochre composite, a central blue sensor eye, twin side antennae, a projected translucent blue hexagonal energy shield in front of it. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+56. Ethereal Headband of Unity — Head · Major · +2 morale, +2 Knowledge  [Crown of Dragontooth role]
+    Prompt: An elegant ceremonial headdress of white cloth and pale gold bands with a tall crest, a single blue gemstone set in the forehead, a circle-and-arc caste glyph, calm and regal. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+57. Markerlight Monocle — Head · Minor · +2 sight, +10% ranged damage  [Eagle Eye]
+    Prompt: A sleek ochre and slate targeting monocle with a red laser emitter, a small antenna and a clip mount, a faint red beam projecting forward. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+58. Stealth-Field Generator — Cloak · Major · +2 luck; hero invisible to enemies on the map [NEW]  [Cape of Velocity / Cover of Darkness]
+    Prompt: A compact backpack generator of dark slate composite with smooth curves, emitting a rippling cloak of transparent distortion, small blue status lights, a stealth caste glyph. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+59. Battlesuit Jet Boosters — Boots · Major · +5 movement  [Boots of Speed]
+    Prompt: A pair of armoured battlesuit legs ending in thick feet, with compact jet thrusters on the calves glowing pale blue, sand-coloured plating with clean panel lines and caste markings. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+60. Commander's Data-Ring — Ring · Minor · +1 Attack, +1 Defence  [Ring of Vitality role]
+    Prompt: A smooth white ceramic ring with a thin blue light line circling it and a tiny holographic projection of a battle map hovering above. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+61. Gun Drone Pair — Trinket · Major · +1 extra ranged attack of 20 damage at battle start [NEW]  [War machine role]
+    Prompt: Two small disc gun drones hovering side by side, each with twin pulse barrels underneath, ochre and white plating, glowing blue sensor eyes, faint thruster glow beneath. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+62. Greater Good Hologram — Trinket · Relic · +2 morale for all your commanders' armies [NEW]  [Banner of the ... (kingdom)]
+    Prompt: A small round holo-projector of white composite showing a glowing blue hologram of a stylised planet circled by caste glyphs, the light rays spreading upward. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+
+PART 5 — DEATHLESS DYNASTY RELICS (Necron-like)
+===============================================
+Look: dark gunmetal "living" metal, angular and skeletal, glowing emerald green energy lines and
+crystals, crescent and ankh-like glyphs, scarab beetles, tomb hieroglyph panels. Cold, ancient, inhuman.
+
+63. Warscythe of the Overlord — Weapon · Relic · +9 Attack; strikes ignore shields [NEW]  [Titan's Gladius]
+    Prompt: A tall war scythe of dark gunmetal with an angular blade crackling with emerald energy, a long staff ribbed like a spine, glowing green crystal at the head, small hieroglyph panels along the shaft. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+64. Gauss Flayer — Weapon · Minor · +3 Attack, +10% ranged damage  [Bow role]
+    Prompt: A skeletal energy rifle of dark metal with an open frame, a glowing emerald energy rod running along the barrel, small green crystals, angular bayonet blade. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+65. Phylactery of Reanimation — Neck · Major · 20% of fallen troops return after battle [NEW]  [Necklace of ... (necromancy)]
+    Prompt: A pendant of dark living metal shaped like an angular ankh, a pulsing emerald crystal in its core, fine green circuitry lines crawling across its surface, hung on a chain of tiny metal segments. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+66. Crown of the Silent King — Head · Relic · +4 Power, +4 Knowledge, +1 morale  [Crown of the Supreme Magi]
+    Prompt: A tall angular crown of dark gunmetal with a crescent crest and long side plates, glowing emerald eye-gems, hieroglyphs carved in thin glowing green lines, ancient and imposing. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+67. Living-Metal Cuirass — Armour · Major · +5 Defence; regenerates 10% of troops' health each round [NEW]  [Breastplate of Brimstone role]
+    Prompt: A skeletal ribbed breastplate of dark metal that seems to knit its own scratches closed, thin emerald light flowing in the seams, a glowing green crystal at the sternum. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+68. Dispersion Shield — Shield · Major · +5 Defence; 25% chance to reflect a spell [NEW]  [Shield of ... / Recanter's Cloak role]
+    Prompt: A tall angular shield of dark metal shaped like an elongated crescent, a translucent emerald energy field across it with tiny hieroglyphs flowing inside, small scarab ornaments at the corners. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+69. Tesseract Labyrinth — Trinket · Relic · capture: removes one enemy stack before battle (once per week) [NEW]  [Orb of Inhibition / role]
+    Prompt: A small floating cube of dark metal made of shifting nested layers, emerald light pouring from the seams, tiny glyphs rotating around it, the space around it slightly warped. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+70. Canoptek Scarab Swarm — Trinket · Minor · +1 Defence, +1 sight  [Ladybird role]
+    Prompt: A small cluster of three metallic scarab beetles of dark gunmetal with glowing emerald eyes and backs, crawling over each other, fine green energy lines on their wing cases. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+71. Ring of the Eternal Dynasty — Ring · Major · +2 Knowledge, mana refills each week [NEW]  [Charm of Mana role]
+    Prompt: A ring of dark living metal with a crescent setting holding a glowing emerald, hieroglyphs etched around the band in thin green light. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+72. Treads of the Tomb-Stalker — Boots · Minor · +3 movement; no penalty on ash and bone ground [NEW]  [Boots of Levitation role]
+    Prompt: Skeletal armoured feet of dark metal with long clawed toes, emerald light glowing in the ankle joints, faint green mist trailing from the heels. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+
+PART 6 — SEER-KIN RELICS (Eldar-like)
+=====================================
+Look: ivory-white wraithbone grown in smooth flowing curves, inset spirit stones (glowing teardrop
+gems), elegant elongated shapes, deep blues, greens and bone white, rune sigils, grace over brute force.
+
+73. Spirit-Stone of the Fallen Seer — Neck · Major · +3 Power, +2 Knowledge  [Celestial Necklace of Bliss]
+    Prompt: A teardrop-shaped glowing spirit stone of pale blue-white light set in a curved wraithbone frame, a faint ghostly face visible inside the gem, hanging from a fine silver chain. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+74. Witchblade — Weapon · Major · +5 Attack, +2 Power  [Sword of Hellfire role]
+    Prompt: A long elegant curved blade of wraithbone and pale steel with flowing rune engravings glowing soft blue, a hilt grown like an ivory branch with a spirit stone in the pommel. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+75. Rune Armour of the Farseer — Armour · Major · +4 Defence, +2 luck  [Armour of the Damned role]
+    Prompt: A flowing breastplate of ivory wraithbone and deep blue plates with tiny glowing rune stones orbiting in front of it, elegant curved lines and a spirit stone at the heart. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+76. Ghosthelm — Head · Minor · +2 Knowledge; spells cost 1 less mana [NEW]  [Helm of ... / Wizard's Well role]
+    Prompt: A tall elongated helm of white wraithbone with a sweeping crest, dark faceted eye lenses, a spirit stone on the brow, smooth seamless surfaces. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+77. Webway Key — Trinket · Relic · once a day, teleport to any explored Teleportarium Gate [NEW]  [Dimension Door role]
+    Prompt: A slender wraithbone key shaped like a curved rune, a glowing doorway of rainbow light opening inside its bow, tiny runes spiralling around it. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+78. Wings of the Swooping Hawk — Cloak · Major · +4 movement; army counts as flyers on the map [NEW]  [Angel Wings]
+    Prompt: A pair of folded mechanical wings of layered blue and white feather-like plates on a wraithbone harness, small grav-jets at the base, a spirit stone clasp. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+
+PART 7 — GREENSKIN WARBAND LOOT (Ork-like)
+==========================================
+Look: crude bolted scrap metal, red and yellow paint, teeth used as coins, glyph scrawls, huge
+rivets, oversized and over-gunned, crude but powerful.
+
+79. Big Choppa — Weapon · Minor · +4 Attack  [Ogre's Club of Havoc]
+    Prompt: A huge crude cleaver of riveted scrap steel with a jagged edge, painted red flame stripes, a handle wrapped in rags, a few teeth hammered into the blade as trophies. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+80. Kustom Shoota — Weapon · Major · +3 Attack, +30% ranged damage, -10% accuracy [NEW]  [Bow of the Sharpshooter (crude)]
+    Prompt: A ridiculously oversized machine gun made of welded scrap with three different barrels, a drum magazine, red paint and crude glyphs, smoke puffing from the vents, ammo belt dangling. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+81. Sack of Teef — Trinket · Treasure · +150 auramite per day  [Endless Bag of Gold]
+    Prompt: A lumpy leather sack tied with rope, overflowing with big yellowed tusks and teeth used as currency, a crude painted glyph on the side. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+82. Warboss Iron Gob — Head · Major · +3 Attack, +2 morale  [Helm of the ... role]
+    Prompt: A massive iron jaw-plate and helmet of riveted scrap, huge metal teeth, a red glowing bionic eye, horns of bent rebar, checkered yellow-and-black paint. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+83. Mega-Armour Plate — Armour · Major · +7 Defence, -2 movement  [Titan's Cuirass (heavy)]
+    Prompt: A huge slab of scrap mega-armour plates bolted together with giant rivets, exhaust pipes on the shoulders, red paint, crude glyphs, a big skull glyph welded on the chest. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+84. Red Wunz Paint Pot — Trinket · Minor · +1 movement, +1 morale (red goes faster)  [Necklace of Swiftness role]
+    Prompt: A battered tin can of bright red paint with a crude brush stuck in it, drips running down the side, a glyph scrawled on the label, a few spanners nearby on the same base. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+
+PART 8 — HIVE-SWARM TROPHIES (Tyranid-like)
+===========================================
+Look: organic weapons and armour grown rather than made, purple and bone chitin plates, wet
+sinew, fangs, symbiotic creatures, bio-acid green and pink glows.
+
+85. Bonesword Pair — Weapon · Major · +6 Attack; heals 10% of damage dealt [NEW]  [Vampire's ... role]
+    Prompt: Two curved living blades grown from bone and purple chitin, faint green psychic glow along the edges, sinew-wrapped grips with small pulsing veins. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+86. Synapse Node — Head · Major · +3 Power; your troops never panic (no bad morale) [NEW]  [Spirit of Oppression / Badge role]
+    Prompt: A grotesque living crest of purple chitin with a bulging exposed brain-like organ, small glowing pink nodes, fine tendrils hanging down. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+87. Chitin Shell of the Brood-Mother — Armour · Minor · +4 Defence  [Breastplate role]
+    Prompt: A heavy segmented shell of glossy purple and bone-white chitin plates, ridged and spiked, wet membranes between the segments. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+88. Spore Sac Bandolier — Trinket · Minor · enemy ranged units -10% damage [NEW]  [role]
+    Prompt: A belt of living translucent spore sacs strung on sinew, each glowing faint green and releasing a wisp of toxic mist, purple chitin buckle. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+89. Devourer Symbiote — Weapon · Minor · +2 Attack, +15% ranged damage  [Bow role]
+    Prompt: A living arm-cannon of fleshy purple chitin with a tube full of writhing worm-like ammunition, small eyes on the side, a dripping maw-shaped muzzle. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+
+PART 9 — ARTIFACTS FOR OUR OWN WORLD
+====================================
+Items that fit our three factions (Concord, Hollow, Rustbound) and our resources.
+
+90. Auramite Censer of the Concord — Trinket · Minor · +1 morale, +100 auramite per day
+    Prompt: A small golden censer filled with glowing amber auramite crystals, soft golden smoke, a winged cog emblem on the lid, delicate chains. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+91. Hollow Crown of Embers — Head · Major · +3 Attack, +2 Power  [Hollow-flavoured]
+    Prompt: A crown of blackened iron horns and bone with magma-orange cracks glowing through it, small flames rising from the spikes, ash drifting off. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+92. Rustbound Gear-Heart — Trinket · Major · +3 Defence; mechanical units +1 speed [NEW]
+    Prompt: A rusty mechanical heart of interlocking gears and pistons, steam hissing from tiny vents, a red warning lamp blinking, wires and rivets everywhere. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+93. Wraithbone Lantern — Trinket · Minor · +2 sight, +1 luck
+    Prompt: A small lantern carved from pale wraithbone with a ghostly blue-white flame inside, tiny skulls on the corners, a hook and short chain. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+94. Psy-Crystal Focus — Trinket · Major · +3 Power, +15% spell damage
+    Prompt: A cluster of violet psy-crystals growing from a brass base, crackling with psychic lightning, faint runes floating in the air around it. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+95. Blackstone Bastion Ring — Ring · Minor · +2 Defence
+    Prompt: A heavy ring cut from a single piece of polished blackstone, faint grey veins, a tiny tower engraved on the face. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+96. Plasteel Cartographer's Engine — Trinket · Major · reveals the whole map once per week [NEW]  [Sphere of Permanence / Cartographer role]
+    Prompt: A small brass and plasteel orrery engine with spinning rings, a glowing holographic map hovering above it, tiny lenses and dials, clockwork gears visible. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+
+PART 10 — COMBINATION SETS [NEW feature: wear all pieces for a set bonus, like HoMM3 combination artifacts]
+=========================================================================================================
+
+Set A — Panoply of the First Warden (Loyalist): Armour of the First Warden (15) + Iron Halo (33) +
+        Sword of the Sainted Primarch (31) + Standard of the Unbowed Legion (36)
+        Set bonus: +5 to all stats, troops +2 morale, immune to bad luck.  [Angelic Alliance]
+    Prompt (set emblem icon): A heraldic arrangement of a golden great sword crossed with a crimson battle standard behind an ivory and gold breastplate under a glowing iron halo, purity seals and laurels framing it. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+Set B — Regalia of the Eightfold Ruin (Traitor): Blade of the Eightfold Star (43) + Helm of the Many-Horned (44) +
+        Cloak of Flayed Skins (47) + Heart of the Fallen Champion (52)
+        Set bonus: +6 Attack, +4 Power, enemies -2 morale and -1 luck.  [Armour of the Damned]
+    Prompt (set emblem icon): A horned daemonic helm resting above a flaming eight-pointed star sword and a caged beating heart, a cloak of flayed skin draped behind, purple and red warp-fire rising. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+Set C — Dynasty of the Silent King (Necron-like): Crown of the Silent King (66) + Warscythe of the Overlord (63) +
+        Living-Metal Cuirass (67) + Phylactery of Reanimation (65)
+        Set bonus: half of fallen troops return after each battle.  [Cloak of the Undead King + Necromancy]
+    Prompt (set emblem icon): An angular dark metal crown above a crossed emerald-glowing war scythe and a skeletal cuirass, a glowing ankh-like phylactery at the centre, green energy lines connecting them. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+Set D — Hunter Cadre (Tau-like): Fusion Blaster of the Hunter (54) + Shield Drone (55) +
+        Markerlight Monocle (57) + Battlesuit Jet Boosters (59)
+        Set bonus: ranged troops +30% damage and shoot first in every battle.  [Bow of the Sharpshooter]
+    Prompt (set emblem icon): A sleek fusion blaster crossed with a pair of jet-booster legs behind a hovering shield drone, a red markerlight beam across them, ochre and white composite with blue glows. Single isolated object centred, three-quarter view, painterly realistic grimdark gothic sci-fi game artifact icon, dramatic rim light, worn and battle-scarred materials, plain flat mid-grey background, no text, no frame, no hands, no people, square 1:1.
+
+—— end of file ——

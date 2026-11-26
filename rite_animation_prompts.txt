@@ -1,0 +1,191 @@
+ASHEN OATH — RITE ANIMATION PROMPTS (battle effects)
+====================================================
+
+Which rites need animation
+--------------------------
+Map rites (Far Sight, Town Portal, Auspex, Vox-Intercept, Walk the Toxic Shallows, Jump-Pack Ascension)
+need no animation. Every battle rite does: right now they only show their name and a small ring.
+Many rites look alike in motion, so one sheet serves several rites. The list below has 30 sheets
+covering all 55 battle rites; the "Used by" line says which rites share each sheet.
+
+How to make them (important, so I can cut and play them cleanly)
+--------------------------------------------------------------
+- Each prompt asks for ONE sprite sheet: a 5 x 5 grid of 25 frames, read left to right, top to bottom.
+- Pure black background. The effects are light (fire, energy, glow), so I draw them with additive
+  blending and the black disappears on the battlefield. No ground, no characters, no frame borders.
+- Every frame the same size, the effect centred in its cell, nothing crossing into the next cell.
+- Square image (1:1). Same camera in all frames: battlefield view, slightly from above (about 30 degrees).
+- Kinds of sheet:
+  PROJECTILE  — the object in flight, looping (frames 1-25 loop smoothly). I move it from caster to target.
+  IMPACT      — plays once: starts small, peaks around frames 6-10, fades out to nothing by frame 25.
+  AURA        — loops smoothly around or over a unit (frame 25 flows into frame 1).
+  ONE-SHOT    — plays once from start to finish (summon circles, barricades, cleansing).
+- If a sheet comes out with fewer or more rows, just tell me the grid; I can cut any layout.
+- Colours are given per effect. Keep the style painterly-realistic grimdark like the units.
+
+Shared ending (already included in every prompt below):
+"Sprite sheet, 5 columns by 5 rows, 25 equal square frames of one animation in order left to right top to bottom, each frame centred in its cell with empty space around it, pure black background, no ground, no characters, no text, no borders between cells, consistent camera slightly from above, painterly realistic grimdark sci-fi magic effect, 1:1 image."
+
+
+=========================================================
+FIRE — PYRE RITES
+=========================================================
+
+1. Fire bolt — PROJECTILE
+   Used by: Ember Bolt
+   Prompt: Animation of a flying bolt of warp-fire travelling to the right, a sharp arrowhead core of white-yellow flame wrapped in orange and red fire, a flickering tail of embers and smoke behind it, the flames licking and changing shape every frame, seamless loop. Sprite sheet, 5 columns by 5 rows, 25 equal square frames of one animation in order left to right top to bottom, each frame centred in its cell with empty space around it, pure black background, no ground, no characters, no text, no borders between cells, consistent camera slightly from above, painterly realistic grimdark sci-fi magic effect, 1:1 image.
+
+2. Fire hit — IMPACT
+   Used by: Ember Bolt, Pyre Aegis (burn back), Summon Flame Daemon (arrival burst)
+   Prompt: Animation of a fire bolt striking a target: a bright white-orange flash, a burst of flame and sparks spreading outward, a small ring of embers, then flames shrinking into smoke and fading to nothing. Sprite sheet, 5 columns by 5 rows, 25 equal square frames of one animation in order left to right top to bottom, each frame centred in its cell with empty space around it, pure black background, no ground, no characters, no text, no borders between cells, consistent camera slightly from above, painterly realistic grimdark sci-fi magic effect, 1:1 image.
+
+3. Fire explosion — IMPACT
+   Used by: Fireburst, Inferno, Cataclysm (each meteor)
+   Prompt: Animation of a large fiery explosion seen slightly from above: a bright core flash, a rolling ball of orange and red fire expanding outward in a ring, flying burning debris and sparks, a mushroom of black smoke rising, then the fire collapsing into glowing embers and fading out completely. Sprite sheet, 5 columns by 5 rows, 25 equal square frames of one animation in order left to right top to bottom, each frame centred in its cell with empty space around it, pure black background, no ground, no characters, no text, no borders between cells, consistent camera slightly from above, painterly realistic grimdark sci-fi magic effect, 1:1 image.
+
+4. Pillar of fire — IMPACT
+   Used by: Inferno (centre), Exterminatus (on every stack)
+   Prompt: Animation of a tall roaring pillar of fire erupting from the ground: a small glowing crack first, then a column of orange flame shooting upward with swirling fire around it, sparks spiralling up, the column peaking tall and then sinking back into embers and smoke that fade away. Sprite sheet, 5 columns by 5 rows, 25 equal square frames of one animation in order left to right top to bottom, each frame centred in its cell with empty space around it, pure black background, no ground, no characters, no text, no borders between cells, consistent camera slightly from above, painterly realistic grimdark sci-fi magic effect, 1:1 image.
+
+5. Falling meteor — PROJECTILE
+   Used by: Cataclysm, Orbital Debris Storm (rock version, see 15), Exterminatus
+   Prompt: Animation of a burning meteor falling diagonally downward from the top left, a glowing molten rock wrapped in orange fire with a long trail of flame and smoke, tumbling as it falls, seamless loop of the falling motion. Sprite sheet, 5 columns by 5 rows, 25 equal square frames of one animation in order left to right top to bottom, each frame centred in its cell with empty space around it, pure black background, no ground, no characters, no text, no borders between cells, consistent camera slightly from above, painterly realistic grimdark sci-fi magic effect, 1:1 image.
+
+6. Blood-red rage aura — AURA
+   Used by: Battle Fury, Frenzy of the Blood-God, Mark of the Beast-Slayer
+   Prompt: Animation of a pulsing aura of blood-red energy rising around an invisible figure's outline: red flame-like wisps flowing upward from the ground, small drops of glowing blood floating up, a faint red glow ring on the ground that pulses, seamless loop. Sprite sheet, 5 columns by 5 rows, 25 equal square frames of one animation in order left to right top to bottom, each frame centred in its cell with empty space around it, pure black background, no ground, no characters, no text, no borders between cells, consistent camera slightly from above, painterly realistic grimdark sci-fi magic effect, 1:1 image.
+
+7. Fire shield aura — AURA
+   Used by: Pyre Aegis, Promethium Ward
+   Prompt: Animation of a translucent dome-shaped shield of swirling flame around an invisible figure, thin rivers of fire flowing over the surface of the dome, small flame tongues flaring outward and pulling back, seamless loop. Sprite sheet, 5 columns by 5 rows, 25 equal square frames of one animation in order left to right top to bottom, each frame centred in its cell with empty space around it, pure black background, no ground, no characters, no text, no borders between cells, consistent camera slightly from above, painterly realistic grimdark sci-fi magic effect, 1:1 image.
+
+8. Curse eye — ONE-SHOT
+   Used by: Hex of the Burning Eye, Curse of Ill Omen, Searing Blindness
+   Prompt: Animation of a sinister glowing eye of purple-red fire opening in the air above a target, staring, then burning runes swirling around it and drifting down like ash onto the target before the eye closes and fades away. Sprite sheet, 5 columns by 5 rows, 25 equal square frames of one animation in order left to right top to bottom, each frame centred in its cell with empty space around it, pure black background, no ground, no characters, no text, no borders between cells, consistent camera slightly from above, painterly realistic grimdark sci-fi magic effect, 1:1 image.
+
+9. Flame daemon summoning — ONE-SHOT
+   Used by: Summon Flame Daemon
+   Prompt: Animation of a fiery summoning circle appearing on the ground: glowing orange runes drawing themselves in a ring, the circle igniting, a column of fire bursting up from it and a horned silhouette of flame rising inside the column, then the fire collapsing away and the circle fading out. Sprite sheet, 5 columns by 5 rows, 25 equal square frames of one animation in order left to right top to bottom, each frame centred in its cell with empty space around it, pure black background, no ground, no characters, no text, no borders between cells, consistent camera slightly from above, painterly realistic grimdark sci-fi magic effect, 1:1 image.
+
+
+=========================================================
+EARTH — BASTION RITES
+=========================================================
+
+10. Stone armour — ONE-SHOT
+    Used by: Stoneskin, Ceramite Bulwark, Void Ward (on every ally)
+    Prompt: Animation of grey stone plates and fragments rising from the ground and spiralling upward around an invisible figure, locking together into a rough shell, a pale gold glow passing over the shell, then the fragments fading into a faint lingering shimmer. Sprite sheet, 5 columns by 5 rows, 25 equal square frames of one animation in order left to right top to bottom, each frame centred in its cell with empty space around it, pure black background, no ground, no characters, no text, no borders between cells, consistent camera slightly from above, painterly realistic grimdark sci-fi magic effect, 1:1 image.
+
+11. Gravity well — AURA
+    Used by: Gravity Well, Grasping-style slows
+    Prompt: Animation of a dark purple gravity vortex spinning on the ground under an invisible figure, swirling rings of violet light and dust pulled inward and downward, small pebbles sinking toward the centre, a heavy distortion pressing down, seamless loop. Sprite sheet, 5 columns by 5 rows, 25 equal square frames of one animation in order left to right top to bottom, each frame centred in its cell with empty space around it, pure black background, no ground, no characters, no text, no borders between cells, consistent camera slightly from above, painterly realistic grimdark sci-fi magic effect, 1:1 image.
+
+12. Death knell wave — IMPACT
+    Used by: Death Knell, Litany of Despair (on every enemy)
+    Prompt: Animation of a ghostly shock-ring of sickly green-grey light spreading outward over the ground from a centre point, faint screaming skull shapes in the ring, dust kicked up behind it, the ring growing wide and thinning until it vanishes. Sprite sheet, 5 columns by 5 rows, 25 equal square frames of one animation in order left to right top to bottom, each frame centred in its cell with empty space around it, pure black background, no ground, no characters, no text, no borders between cells, consistent camera slightly from above, painterly realistic grimdark sci-fi magic effect, 1:1 image.
+
+13. Raising the dead — ONE-SHOT
+    Used by: Raise the Fallen, Resurrection (darker version optional, see 21)
+    Prompt: Animation of pale green necrotic energy seeping up from cracks in the ground, ghostly skeletal hands of green light reaching upward and dissolving into rising sparks, a soft green glow swelling and then fading out. Sprite sheet, 5 columns by 5 rows, 25 equal square frames of one animation in order left to right top to bottom, each frame centred in its cell with empty space around it, pure black background, no ground, no characters, no text, no borders between cells, consistent camera slightly from above, painterly realistic grimdark sci-fi magic effect, 1:1 image.
+
+14. Null field — AURA
+    Used by: Null Field, Anti-Psyker Ward
+    Prompt: Animation of a calm hexagonal force field of cold white-grey light around an invisible figure, honeycomb panels faintly visible, small static sparks crawling across it and being absorbed, slow rotating runes of negation at the base, seamless loop. Sprite sheet, 5 columns by 5 rows, 25 equal square frames of one animation in order left to right top to bottom, each frame centred in its cell with empty space around it, pure black background, no ground, no characters, no text, no borders between cells, consistent camera slightly from above, painterly realistic grimdark sci-fi magic effect, 1:1 image.
+
+15. Falling debris — IMPACT
+    Used by: Orbital Debris Storm, Siege Tremor (on the walls)
+    Prompt: Animation of a hail of rocks and burning starship wreckage crashing down from above onto a spot: chunks plunging in, impacts throwing up dust and sparks, a crater cloud of brown dust billowing out, then the dust settling and fading away. Sprite sheet, 5 columns by 5 rows, 25 equal square frames of one animation in order left to right top to bottom, each frame centred in its cell with empty space around it, pure black background, no ground, no characters, no text, no borders between cells, consistent camera slightly from above, painterly realistic grimdark sci-fi magic effect, 1:1 image.
+
+16. Graviton collapse — IMPACT
+    Used by: Graviton Collapse
+    Prompt: Animation of a tiny black sphere appearing in the air, light and dust bending and being pulled inward into it in spiral streaks, the sphere crushing smaller and smaller with a violet rim, then a sudden violent outward shock-ring flash and the effect vanishing. Sprite sheet, 5 columns by 5 rows, 25 equal square frames of one animation in order left to right top to bottom, each frame centred in its cell with empty space around it, pure black background, no ground, no characters, no text, no borders between cells, consistent camera slightly from above, painterly realistic grimdark sci-fi magic effect, 1:1 image.
+
+17. Force barricade — ONE-SHOT (ends on the last frame, which I hold)
+    Used by: Force Barricade
+    Prompt: Animation of a glowing green energy barrier rising out of the ground: a line of light appears, hexagonal energy panels build upward panel by panel, crackling edges, finishing as a solid shimmering wall of hexagons that holds steady in the final frames. Sprite sheet, 5 columns by 5 rows, 25 equal square frames of one animation in order left to right top to bottom, each frame centred in its cell with empty space around it, pure black background, no ground, no characters, no text, no borders between cells, consistent camera slightly from above, painterly realistic grimdark sci-fi magic effect, 1:1 image.
+
+18. Stone colossus summoning — ONE-SHOT
+    Used by: Summon Stone Colossus
+    Prompt: Animation of the ground cracking open in a ring of glowing amber runes, rocks and masonry chunks rising and swirling upward, assembling into the rough silhouette of a hulking stone giant, then the rune glow fading and the dust settling. Sprite sheet, 5 columns by 5 rows, 25 equal square frames of one animation in order left to right top to bottom, each frame centred in its cell with empty space around it, pure black background, no ground, no characters, no text, no borders between cells, consistent camera slightly from above, painterly realistic grimdark sci-fi magic effect, 1:1 image.
+
+
+=========================================================
+WATER — LITANY RITES
+=========================================================
+
+19. Healing light — ONE-SHOT
+    Used by: Mending Litany, Cleansing Tide (on every ally)
+    Prompt: Animation of soft golden-white healing light falling from above onto an invisible figure, gentle glowing droplets and motes swirling down and around, a warm halo of light pulsing on the ground, then softly fading away. Sprite sheet, 5 columns by 5 rows, 25 equal square frames of one animation in order left to right top to bottom, each frame centred in its cell with empty space around it, pure black background, no ground, no characters, no text, no borders between cells, consistent camera slightly from above, painterly realistic grimdark sci-fi magic effect, 1:1 image.
+
+20. Ice lance — PROJECTILE
+    Used by: Frost Lance
+    Prompt: Animation of a long jagged spear of blue-white ice flying to the right, frost mist trailing behind it, small ice shards spinning off the sides, a cold glow at the tip, seamless loop. Sprite sheet, 5 columns by 5 rows, 25 equal square frames of one animation in order left to right top to bottom, each frame centred in its cell with empty space around it, pure black background, no ground, no characters, no text, no borders between cells, consistent camera slightly from above, painterly realistic grimdark sci-fi magic effect, 1:1 image.
+
+21. Ice shatter — IMPACT
+    Used by: Frost Lance (hit), Ring of Hoarfrost (on each struck stack)
+    Prompt: Animation of an ice impact: a burst of sharp blue-white ice crystals erupting outward, frost mist spreading in a ring, shards tumbling and shattering, then melting into mist and fading away. Sprite sheet, 5 columns by 5 rows, 25 equal square frames of one animation in order left to right top to bottom, each frame centred in its cell with empty space around it, pure black background, no ground, no characters, no text, no borders between cells, consistent camera slightly from above, painterly realistic grimdark sci-fi magic effect, 1:1 image.
+
+22. Ring of ice spikes — IMPACT
+    Used by: Ring of Hoarfrost
+    Prompt: Animation seen slightly from above of a ring of sharp ice spikes bursting up out of the ground in a circle around an empty centre, frost mist rolling outward, the spikes cracking and crumbling into snow and fading away. Sprite sheet, 5 columns by 5 rows, 25 equal square frames of one animation in order left to right top to bottom, each frame centred in its cell with empty space around it, pure black background, no ground, no characters, no text, no borders between cells, consistent camera slightly from above, painterly realistic grimdark sci-fi magic effect, 1:1 image.
+
+23. Holy blessing — ONE-SHOT
+    Used by: Benediction of the Saint, Hymn of Zeal, Great Prayer of the Throne (on every ally), Fate-Reading
+    Prompt: Animation of a radiant golden halo forming above an invisible figure, rays of holy light shining down, small winged crosses and sparkles drifting around, a soft golden aura swelling and then settling into a gentle fading glow. Sprite sheet, 5 columns by 5 rows, 25 equal square frames of one animation in order left to right top to bottom, each frame centred in its cell with empty space around it, pure black background, no ground, no characters, no text, no borders between cells, consistent camera slightly from above, painterly realistic grimdark sci-fi magic effect, 1:1 image.
+
+24. Purging water — ONE-SHOT
+    Used by: Purging Water, Coolant Ward, Rite of Withering, Mind-Wipe, Clear the Field
+    Prompt: Animation of a swirling spiral of clear blue water and light rising around an invisible figure, washing upward, dark wisps being stripped away and dissolving into the spray, then the water bursting into fine mist and fading. Sprite sheet, 5 columns by 5 rows, 25 equal square frames of one animation in order left to right top to bottom, each frame centred in its cell with empty space around it, pure black background, no ground, no characters, no text, no borders between cells, consistent camera slightly from above, painterly realistic grimdark sci-fi magic effect, 1:1 image.
+
+25. Mirror clone — ONE-SHOT
+    Used by: Mirror of the Sea of Souls, Summon the Drowned Saint
+    Prompt: Animation of a rippling vertical surface of silvery water appearing in the air like a mirror, glowing blue-white light pouring through it, a shimmer of reflected light stepping out of the surface, then the mirror collapsing into a splash of droplets that fade away. Sprite sheet, 5 columns by 5 rows, 25 equal square frames of one animation in order left to right top to bottom, each frame centred in its cell with empty space around it, pure black background, no ground, no characters, no text, no borders between cells, consistent camera slightly from above, painterly realistic grimdark sci-fi magic effect, 1:1 image.
+
+
+=========================================================
+AIR — STORM RITES
+=========================================================
+
+26. Lightning strike — IMPACT
+    Used by: Lightning Arc, Chain of the Storm (each jump), Banishment (white-gold, see note)
+    Prompt: Animation of a bolt of blue-white lightning striking down from the top of the frame onto a point, a blinding flash at the impact, branching side forks, electric sparks crawling outward on the ground, then the bolt flickering out and the sparks fading. Sprite sheet, 5 columns by 5 rows, 25 equal square frames of one animation in order left to right top to bottom, each frame centred in its cell with empty space around it, pure black background, no ground, no characters, no text, no borders between cells, consistent camera slightly from above, painterly realistic grimdark sci-fi magic effect, 1:1 image.
+    Note: for Banishment you may also generate a copy with "pure white and gold holy lightning" instead of blue-white.
+
+27. Orbital beam — IMPACT
+    Used by: Orbital Lance
+    Prompt: Animation of a thin piercing beam of white-blue energy firing straight down from the top of the frame onto a point, the beam widening into a blazing column, a shockwave ring and dust blast at the base, then the beam cutting off and the glow fading to nothing. Sprite sheet, 5 columns by 5 rows, 25 equal square frames of one animation in order left to right top to bottom, each frame centred in its cell with empty space around it, pure black background, no ground, no characters, no text, no borders between cells, consistent camera slightly from above, painterly realistic grimdark sci-fi magic effect, 1:1 image.
+
+28. Wind and speed — AURA
+    Used by: Warp Haste, Tailwind (on every ally), Targeting Litany
+    Prompt: Animation of fast swirling streaks of pale blue wind spiralling around an invisible figure, thin speed lines whipping past, small sparks of warp energy riding the wind, seamless loop. Sprite sheet, 5 columns by 5 rows, 25 equal square frames of one animation in order left to right top to bottom, each frame centred in its cell with empty space around it, pure black background, no ground, no characters, no text, no borders between cells, consistent camera slightly from above, painterly realistic grimdark sci-fi magic effect, 1:1 image.
+
+29. Energy shield bubble — AURA
+    Used by: Refractor Field, Warp Mirror, Vengeful Reflex
+    Prompt: Animation of a shimmering translucent bubble of pale blue energy around an invisible figure, light ripples running over its surface, small sparks deflecting off it, a faint mirror-like sheen sliding across, seamless loop. Sprite sheet, 5 columns by 5 rows, 25 equal square frames of one animation in order left to right top to bottom, each frame centred in its cell with empty space around it, pure black background, no ground, no characters, no text, no borders between cells, consistent camera slightly from above, painterly realistic grimdark sci-fi magic effect, 1:1 image.
+
+30. Storm daemon summoning — ONE-SHOT
+    Used by: Summon Storm Daemon
+    Prompt: Animation of a small whirlwind forming on a glowing circle of blue runes, growing into a roaring tornado crackling with lightning, a horned face briefly visible in the storm cloud at the top, then the tornado unwinding and dissipating into fading sparks. Sprite sheet, 5 columns by 5 rows, 25 equal square frames of one animation in order left to right top to bottom, each frame centred in its cell with empty space around it, pure black background, no ground, no characters, no text, no borders between cells, consistent camera slightly from above, painterly realistic grimdark sci-fi magic effect, 1:1 image.
+
+
+=========================================================
+QUICK CHECKLIST — every battle rite and its sheets
+=========================================================
+Fire:  Ember Bolt 1+2 · Battle Fury 6 · Hex of the Burning Eye 8 · Promethium Ward 7 · Searing Blindness 8 ·
+       Fireburst 3 · Curse of Ill Omen 8 · Inferno 4+3 · Exterminatus 5+4 · Frenzy 6 · Beast-Slayer 6 ·
+       Pyre Aegis 7 (+2 when it burns back) · Cataclysm 5+3 · Summon Flame Daemon 9
+Earth: Stoneskin 10 · Ceramite Bulwark 10 · Gravity Well 11 · Death Knell 12 · Anti-Psyker Ward 14 ·
+       Void Ward 10 · Raise the Fallen 13 · Null Field 14 · Siege Tremor 15 · Force Barricade 17 ·
+       Orbital Debris Storm 15 · Litany of Despair 12 · Resurrection 13 or 19 · Graviton Collapse 16 ·
+       Summon Stone Colossus 18
+Water: Mending Litany 19 · Benediction 23 · Purging Water 24 · Coolant Ward 24 · Frost Lance 20+21 ·
+       Rite of Withering 24 · Clear the Field 24 · Cleansing Tide 19 · Mind-Wipe 24 · Ring of Hoarfrost 22+21 ·
+       Hymn of Zeal 23 · Mirror of the Sea of Souls 25 · Great Prayer 23 · Summon the Drowned Saint 25
+Air:   Warp Haste 28 · Lightning Arc 26 · Fate-Reading 23 · Targeting Litany 28 · Tailwind 28 ·
+       Refractor Field 29 · Banishment 26 · Chain of the Storm 26 · Orbital Lance 27 ·
+       Vengeful Reflex 29 · Warp Mirror 29 · Summon Storm Daemon 30
+
+Priority if you want to start small: 3 (explosion), 26 (lightning), 19 (healing), 23 (blessing),
+1+2 (fire bolt), 20+21 (ice) and 6 (rage aura) cover the rites cast most often.
+
+—— end of file ——

@@ -1,0 +1,8 @@
+node_modules/
+.preview.html
+__pycache__/
+pc/dist/
+pc/AshenOath-Setup.exe
+pc/AshenOath.exe
+pc/download/
+pc/fix/
