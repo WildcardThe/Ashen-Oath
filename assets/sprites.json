@@ -7783,5 +7783,4694 @@
   "aext": "webp",
   "x": 332,
   "y": 1382
+ },
+ "mine_auramite_ash": {
+  "kind": "site",
+  "w": 300,
+  "h": 279,
+  "atlas": "atlas_mines",
+  "aext": "webp",
+  "x": 0,
+  "y": 0
+ },
+ "mine_auramite_ash_glow": {
+  "kind": "glow",
+  "w": 300,
+  "h": 279,
+  "atlas": "atlas_mines_glow",
+  "aext": "webp",
+  "x": 0,
+  "y": 0
+ },
+ "mine_adamantium_shale": {
+  "kind": "site",
+  "w": 300,
+  "h": 278,
+  "atlas": "atlas_mines",
+  "aext": "webp",
+  "x": 302,
+  "y": 0
+ },
+ "mine_adamantium_shale_glow": {
+  "kind": "glow",
+  "w": 300,
+  "h": 278,
+  "atlas": "atlas_mines_glow",
+  "aext": "webp",
+  "x": 302,
+  "y": 0
+ },
+ "mine_blackstone_glass": {
+  "kind": "site",
+  "w": 300,
+  "h": 278,
+  "atlas": "atlas_mines",
+  "aext": "webp",
+  "x": 604,
+  "y": 0
+ },
+ "mine_blackstone_glass_glow": {
+  "kind": "glow",
+  "w": 300,
+  "h": 278,
+  "atlas": "atlas_mines_glow",
+  "aext": "webp",
+  "x": 604,
+  "y": 0
+ },
+ "mine_auramite_rust": {
+  "kind": "site",
+  "w": 300,
+  "h": 275,
+  "atlas": "atlas_mines",
+  "aext": "webp",
+  "x": 906,
+  "y": 0
+ },
+ "mine_auramite_rust_glow": {
+  "kind": "glow",
+  "w": 300,
+  "h": 275,
+  "atlas": "atlas_mines_glow",
+  "aext": "webp",
+  "x": 906,
+  "y": 0
+ },
+ "mine_auramite_shale": {
+  "kind": "site",
+  "w": 300,
+  "h": 275,
+  "atlas": "atlas_mines",
+  "aext": "webp",
+  "x": 1208,
+  "y": 0
+ },
+ "mine_auramite_shale_glow": {
+  "kind": "glow",
+  "w": 300,
+  "h": 275,
+  "atlas": "atlas_mines_glow",
+  "aext": "webp",
+  "x": 1208,
+  "y": 0
+ },
+ "mine_ceramite_snow": {
+  "kind": "site",
+  "w": 300,
+  "h": 275,
+  "atlas": "atlas_mines",
+  "aext": "webp",
+  "x": 1510,
+  "y": 0
+ },
+ "mine_blackstone_scrap": {
+  "kind": "site",
+  "w": 300,
+  "h": 271,
+  "atlas": "atlas_mines",
+  "aext": "webp",
+  "x": 0,
+  "y": 281
+ },
+ "mine_wraithbone_snow": {
+  "kind": "site",
+  "w": 300,
+  "h": 268,
+  "atlas": "atlas_mines",
+  "aext": "webp",
+  "x": 302,
+  "y": 281
+ },
+ "mine_wraithbone_snow_glow": {
+  "kind": "glow",
+  "w": 300,
+  "h": 268,
+  "atlas": "atlas_mines_glow",
+  "aext": "webp",
+  "x": 302,
+  "y": 281
+ },
+ "mine_auramite_snow": {
+  "kind": "site",
+  "w": 300,
+  "h": 266,
+  "atlas": "atlas_mines",
+  "aext": "webp",
+  "x": 604,
+  "y": 281
+ },
+ "mine_auramite_snow_glow": {
+  "kind": "glow",
+  "w": 300,
+  "h": 266,
+  "atlas": "atlas_mines_glow",
+  "aext": "webp",
+  "x": 604,
+  "y": 281
+ },
+ "mine_wraithbone_scrap": {
+  "kind": "site",
+  "w": 300,
+  "h": 266,
+  "atlas": "atlas_mines",
+  "aext": "webp",
+  "x": 906,
+  "y": 281
+ },
+ "mine_wraithbone_scrap_glow": {
+  "kind": "glow",
+  "w": 300,
+  "h": 266,
+  "atlas": "atlas_mines_glow",
+  "aext": "webp",
+  "x": 906,
+  "y": 281
+ },
+ "mine_ceramite_rust": {
+  "kind": "site",
+  "w": 300,
+  "h": 265,
+  "atlas": "atlas_mines",
+  "aext": "webp",
+  "x": 1208,
+  "y": 281
+ },
+ "mine_psycrystal_glass": {
+  "kind": "site",
+  "w": 300,
+  "h": 265,
+  "atlas": "atlas_mines",
+  "aext": "webp",
+  "x": 1510,
+  "y": 281
+ },
+ "mine_psycrystal_glass_glow": {
+  "kind": "glow",
+  "w": 300,
+  "h": 265,
+  "atlas": "atlas_mines_glow",
+  "aext": "webp",
+  "x": 1510,
+  "y": 281
+ },
+ "mine_adamantium_snow": {
+  "kind": "site",
+  "w": 300,
+  "h": 263,
+  "atlas": "atlas_mines",
+  "aext": "webp",
+  "x": 0,
+  "y": 554
+ },
+ "mine_adamantium_glass": {
+  "kind": "site",
+  "w": 300,
+  "h": 262,
+  "atlas": "atlas_mines",
+  "aext": "webp",
+  "x": 302,
+  "y": 554
+ },
+ "mine_plasteel_shale": {
+  "kind": "site",
+  "w": 300,
+  "h": 261,
+  "atlas": "atlas_mines",
+  "aext": "webp",
+  "x": 604,
+  "y": 554
+ },
+ "mine_plasteel_shale_glow": {
+  "kind": "glow",
+  "w": 300,
+  "h": 261,
+  "atlas": "atlas_mines_glow",
+  "aext": "webp",
+  "x": 604,
+  "y": 554
+ },
+ "mine_auramite_scrap": {
+  "kind": "site",
+  "w": 300,
+  "h": 258,
+  "atlas": "atlas_mines",
+  "aext": "webp",
+  "x": 906,
+  "y": 554
+ },
+ "mine_auramite_scrap_glow": {
+  "kind": "glow",
+  "w": 300,
+  "h": 258,
+  "atlas": "atlas_mines_glow",
+  "aext": "webp",
+  "x": 906,
+  "y": 554
+ },
+ "mine_ceramite_ash": {
+  "kind": "site",
+  "w": 300,
+  "h": 258,
+  "atlas": "atlas_mines",
+  "aext": "webp",
+  "x": 1208,
+  "y": 554
+ },
+ "mine_ceramite_ash_glow": {
+  "kind": "glow",
+  "w": 300,
+  "h": 258,
+  "atlas": "atlas_mines_glow",
+  "aext": "webp",
+  "x": 1208,
+  "y": 554
+ },
+ "mine_blackstone_shale": {
+  "kind": "site",
+  "w": 300,
+  "h": 258,
+  "atlas": "atlas_mines",
+  "aext": "webp",
+  "x": 1510,
+  "y": 554
+ },
+ "mine_wraithbone_glass": {
+  "kind": "site",
+  "w": 300,
+  "h": 256,
+  "atlas": "atlas_mines",
+  "aext": "webp",
+  "x": 0,
+  "y": 819
+ },
+ "mine_wraithbone_glass_glow": {
+  "kind": "glow",
+  "w": 300,
+  "h": 256,
+  "atlas": "atlas_mines_glow",
+  "aext": "webp",
+  "x": 0,
+  "y": 819
+ },
+ "mine_adamantium_ash": {
+  "kind": "site",
+  "w": 300,
+  "h": 255,
+  "atlas": "atlas_mines",
+  "aext": "webp",
+  "x": 302,
+  "y": 819
+ },
+ "mine_blackstone_snow": {
+  "kind": "site",
+  "w": 300,
+  "h": 253,
+  "atlas": "atlas_mines",
+  "aext": "webp",
+  "x": 604,
+  "y": 819
+ },
+ "mine_adamantium_scrap": {
+  "kind": "site",
+  "w": 300,
+  "h": 251,
+  "atlas": "atlas_mines",
+  "aext": "webp",
+  "x": 906,
+  "y": 819
+ },
+ "mine_wraithbone_rust": {
+  "kind": "site",
+  "w": 300,
+  "h": 251,
+  "atlas": "atlas_mines",
+  "aext": "webp",
+  "x": 1208,
+  "y": 819
+ },
+ "mine_wraithbone_rust_glow": {
+  "kind": "glow",
+  "w": 300,
+  "h": 251,
+  "atlas": "atlas_mines_glow",
+  "aext": "webp",
+  "x": 1208,
+  "y": 819
+ },
+ "mine_ceramite_scrap": {
+  "kind": "site",
+  "w": 300,
+  "h": 249,
+  "atlas": "atlas_mines",
+  "aext": "webp",
+  "x": 1510,
+  "y": 819
+ },
+ "mine_ceramite_scrap_glow": {
+  "kind": "glow",
+  "w": 300,
+  "h": 249,
+  "atlas": "atlas_mines_glow",
+  "aext": "webp",
+  "x": 1510,
+  "y": 819
+ },
+ "mine_psycrystal_snow": {
+  "kind": "site",
+  "w": 300,
+  "h": 249,
+  "atlas": "atlas_mines",
+  "aext": "webp",
+  "x": 0,
+  "y": 1077
+ },
+ "mine_psycrystal_snow_glow": {
+  "kind": "glow",
+  "w": 300,
+  "h": 249,
+  "atlas": "atlas_mines_glow",
+  "aext": "webp",
+  "x": 0,
+  "y": 1077
+ },
+ "mine_auramite_glass": {
+  "kind": "site",
+  "w": 300,
+  "h": 248,
+  "atlas": "atlas_mines",
+  "aext": "webp",
+  "x": 302,
+  "y": 1077
+ },
+ "mine_auramite_glass_glow": {
+  "kind": "glow",
+  "w": 300,
+  "h": 248,
+  "atlas": "atlas_mines_glow",
+  "aext": "webp",
+  "x": 302,
+  "y": 1077
+ },
+ "mine_wraithbone_shale": {
+  "kind": "site",
+  "w": 300,
+  "h": 247,
+  "atlas": "atlas_mines",
+  "aext": "webp",
+  "x": 604,
+  "y": 1077
+ },
+ "mine_wraithbone_shale_glow": {
+  "kind": "glow",
+  "w": 300,
+  "h": 247,
+  "atlas": "atlas_mines_glow",
+  "aext": "webp",
+  "x": 604,
+  "y": 1077
+ },
+ "mine_adamantium_rust": {
+  "kind": "site",
+  "w": 300,
+  "h": 245,
+  "atlas": "atlas_mines",
+  "aext": "webp",
+  "x": 906,
+  "y": 1077
+ },
+ "mine_plasteel_snow": {
+  "kind": "site",
+  "w": 300,
+  "h": 243,
+  "atlas": "atlas_mines",
+  "aext": "webp",
+  "x": 1208,
+  "y": 1077
+ },
+ "mine_plasteel_snow_glow": {
+  "kind": "glow",
+  "w": 300,
+  "h": 243,
+  "atlas": "atlas_mines_glow",
+  "aext": "webp",
+  "x": 1208,
+  "y": 1077
+ },
+ "mine_ceramite_shale": {
+  "kind": "site",
+  "w": 300,
+  "h": 240,
+  "atlas": "atlas_mines",
+  "aext": "webp",
+  "x": 1510,
+  "y": 1077
+ },
+ "mine_ceramite_shale_glow": {
+  "kind": "glow",
+  "w": 300,
+  "h": 240,
+  "atlas": "atlas_mines_glow",
+  "aext": "webp",
+  "x": 1510,
+  "y": 1077
+ },
+ "mine_plasteel_rust": {
+  "kind": "site",
+  "w": 300,
+  "h": 240,
+  "atlas": "atlas_mines",
+  "aext": "webp",
+  "x": 0,
+  "y": 1328
+ },
+ "mine_wraithbone_ash": {
+  "kind": "site",
+  "w": 300,
+  "h": 240,
+  "atlas": "atlas_mines",
+  "aext": "webp",
+  "x": 302,
+  "y": 1328
+ },
+ "mine_psycrystal_shale": {
+  "kind": "site",
+  "w": 300,
+  "h": 239,
+  "atlas": "atlas_mines",
+  "aext": "webp",
+  "x": 604,
+  "y": 1328
+ },
+ "mine_psycrystal_shale_glow": {
+  "kind": "glow",
+  "w": 300,
+  "h": 239,
+  "atlas": "atlas_mines_glow",
+  "aext": "webp",
+  "x": 604,
+  "y": 1328
+ },
+ "mine_plasteel_scrap": {
+  "kind": "site",
+  "w": 300,
+  "h": 237,
+  "atlas": "atlas_mines",
+  "aext": "webp",
+  "x": 906,
+  "y": 1328
+ },
+ "mine_psycrystal_rust": {
+  "kind": "site",
+  "w": 300,
+  "h": 237,
+  "atlas": "atlas_mines",
+  "aext": "webp",
+  "x": 1208,
+  "y": 1328
+ },
+ "mine_psycrystal_rust_glow": {
+  "kind": "glow",
+  "w": 300,
+  "h": 237,
+  "atlas": "atlas_mines_glow",
+  "aext": "webp",
+  "x": 1208,
+  "y": 1328
+ },
+ "mine_psycrystal_scrap": {
+  "kind": "site",
+  "w": 300,
+  "h": 236,
+  "atlas": "atlas_mines",
+  "aext": "webp",
+  "x": 1510,
+  "y": 1328
+ },
+ "mine_psycrystal_scrap_glow": {
+  "kind": "glow",
+  "w": 300,
+  "h": 236,
+  "atlas": "atlas_mines_glow",
+  "aext": "webp",
+  "x": 1510,
+  "y": 1328
+ },
+ "mine_blackstone_ash": {
+  "kind": "site",
+  "w": 300,
+  "h": 234,
+  "atlas": "atlas_mines",
+  "aext": "webp",
+  "x": 0,
+  "y": 1570
+ },
+ "mine_psycrystal_ash": {
+  "kind": "site",
+  "w": 300,
+  "h": 230,
+  "atlas": "atlas_mines",
+  "aext": "webp",
+  "x": 302,
+  "y": 1570
+ },
+ "mine_psycrystal_ash_glow": {
+  "kind": "glow",
+  "w": 300,
+  "h": 230,
+  "atlas": "atlas_mines_glow",
+  "aext": "webp",
+  "x": 302,
+  "y": 1570
+ },
+ "mine_blackstone_rust": {
+  "kind": "site",
+  "w": 300,
+  "h": 229,
+  "atlas": "atlas_mines",
+  "aext": "webp",
+  "x": 604,
+  "y": 1570
+ },
+ "mine_plasteel_ash": {
+  "kind": "site",
+  "w": 300,
+  "h": 228,
+  "atlas": "atlas_mines",
+  "aext": "webp",
+  "x": 906,
+  "y": 1570
+ },
+ "mine_ceramite_glass": {
+  "kind": "site",
+  "w": 300,
+  "h": 225,
+  "atlas": "atlas_mines",
+  "aext": "webp",
+  "x": 1208,
+  "y": 1570
+ },
+ "mine_plasteel_glass": {
+  "kind": "site",
+  "w": 300,
+  "h": 204,
+  "atlas": "atlas_mines",
+  "aext": "webp",
+  "x": 1510,
+  "y": 1570
+ },
+ "mine_plasteel_glass_glow": {
+  "kind": "glow",
+  "w": 300,
+  "h": 204,
+  "atlas": "atlas_mines_glow",
+  "aext": "webp",
+  "x": 1510,
+  "y": 1570
+ },
+ "st_choir_snow": {
+  "kind": "site",
+  "w": 280,
+  "h": 441,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 0,
+  "y": 0
+ },
+ "st_choir_snow_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 441,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 282,
+  "y": 0
+ },
+ "st_rally_snow": {
+  "kind": "site",
+  "w": 280,
+  "h": 421,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 564,
+  "y": 0
+ },
+ "st_obelisk_snow": {
+  "kind": "site",
+  "w": 280,
+  "h": 380,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 846,
+  "y": 0
+ },
+ "st_watchtower_snow": {
+  "kind": "site",
+  "w": 280,
+  "h": 376,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 1128,
+  "y": 0
+ },
+ "st_turbine_ash": {
+  "kind": "site",
+  "w": 280,
+  "h": 374,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 1410,
+  "y": 0
+ },
+ "st_choir_rust": {
+  "kind": "site",
+  "w": 280,
+  "h": 371,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 1692,
+  "y": 0
+ },
+ "st_choir_rust_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 371,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 1974,
+  "y": 0
+ },
+ "st_watcheye_glass": {
+  "kind": "site",
+  "w": 280,
+  "h": 366,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 2256,
+  "y": 0
+ },
+ "st_watcheye_glass_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 366,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 2538,
+  "y": 0
+ },
+ "st_turbine_snow": {
+  "kind": "site",
+  "w": 280,
+  "h": 365,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 2820,
+  "y": 0
+ },
+ "st_turbine_snow_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 365,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 3102,
+  "y": 0
+ },
+ "st_obelisk_glass": {
+  "kind": "site",
+  "w": 280,
+  "h": 360,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 3384,
+  "y": 0
+ },
+ "st_rally_ash": {
+  "kind": "site",
+  "w": 280,
+  "h": 360,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 3666,
+  "y": 0
+ },
+ "st_obelisk_glass_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 360,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 0,
+  "y": 443
+ },
+ "st_watchtower_shale": {
+  "kind": "site",
+  "w": 280,
+  "h": 359,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 282,
+  "y": 443
+ },
+ "st_watchtower_shale_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 359,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 564,
+  "y": 443
+ },
+ "st_rally_shale": {
+  "kind": "site",
+  "w": 280,
+  "h": 354,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 846,
+  "y": 443
+ },
+ "st_rally_shale_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 354,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 1128,
+  "y": 443
+ },
+ "st_watcheye_snow": {
+  "kind": "site",
+  "w": 280,
+  "h": 349,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 1410,
+  "y": 443
+ },
+ "st_watcheye_snow_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 349,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 1692,
+  "y": 443
+ },
+ "st_choir_shale": {
+  "kind": "site",
+  "w": 280,
+  "h": 347,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 1974,
+  "y": 443
+ },
+ "st_choir_shale_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 347,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 2256,
+  "y": 443
+ },
+ "st_choir_glass": {
+  "kind": "site",
+  "w": 280,
+  "h": 344,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 2538,
+  "y": 443
+ },
+ "st_choir_glass_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 344,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 2820,
+  "y": 443
+ },
+ "st_obelisk_shale": {
+  "kind": "site",
+  "w": 280,
+  "h": 343,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 3102,
+  "y": 443
+ },
+ "st_obelisk_shale_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 343,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 3384,
+  "y": 443
+ },
+ "st_watchtower_ash": {
+  "kind": "site",
+  "w": 280,
+  "h": 334,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 3666,
+  "y": 443
+ },
+ "st_watchtower_ash_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 334,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 0,
+  "y": 805
+ },
+ "st_shrine_snow": {
+  "kind": "site",
+  "w": 280,
+  "h": 333,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 282,
+  "y": 805
+ },
+ "st_shrine_snow_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 333,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 564,
+  "y": 805
+ },
+ "st_watcheye_shale": {
+  "kind": "site",
+  "w": 280,
+  "h": 331,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 846,
+  "y": 805
+ },
+ "st_watcheye_shale_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 331,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 1128,
+  "y": 805
+ },
+ "st_choir_ash": {
+  "kind": "site",
+  "w": 280,
+  "h": 329,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 1410,
+  "y": 805
+ },
+ "st_choir_ash_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 329,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 1692,
+  "y": 805
+ },
+ "st_watchtower_glass": {
+  "kind": "site",
+  "w": 280,
+  "h": 328,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 1974,
+  "y": 805
+ },
+ "st_rookery_shale": {
+  "kind": "site",
+  "w": 280,
+  "h": 322,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 2256,
+  "y": 805
+ },
+ "st_rookery_shale_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 322,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 2538,
+  "y": 805
+ },
+ "st_monolith_shale": {
+  "kind": "site",
+  "w": 280,
+  "h": 321,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 2820,
+  "y": 805
+ },
+ "st_monolith_shale_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 321,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 3102,
+  "y": 805
+ },
+ "st_obelisk_ash": {
+  "kind": "site",
+  "w": 280,
+  "h": 318,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 3384,
+  "y": 805
+ },
+ "st_obelisk_ash_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 318,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 3666,
+  "y": 805
+ },
+ "st_turbine_shale": {
+  "kind": "site",
+  "w": 280,
+  "h": 317,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 0,
+  "y": 1141
+ },
+ "st_turbine_shale_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 317,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 282,
+  "y": 1141
+ },
+ "st_rookery_glass": {
+  "kind": "site",
+  "w": 280,
+  "h": 316,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 564,
+  "y": 1141
+ },
+ "st_auspex_glass": {
+  "kind": "site",
+  "w": 280,
+  "h": 315,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 846,
+  "y": 1141
+ },
+ "st_rookery_ash": {
+  "kind": "site",
+  "w": 280,
+  "h": 314,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 1128,
+  "y": 1141
+ },
+ "st_turbine_glass": {
+  "kind": "site",
+  "w": 280,
+  "h": 314,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 1410,
+  "y": 1141
+ },
+ "st_turbine_glass_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 314,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 1692,
+  "y": 1141
+ },
+ "st_auspex_rust": {
+  "kind": "site",
+  "w": 280,
+  "h": 313,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 1974,
+  "y": 1141
+ },
+ "st_monolith_ash": {
+  "kind": "site",
+  "w": 280,
+  "h": 309,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 2256,
+  "y": 1141
+ },
+ "st_shrine_ash": {
+  "kind": "site",
+  "w": 280,
+  "h": 309,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 2538,
+  "y": 1141
+ },
+ "st_monolith_ash_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 309,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 2820,
+  "y": 1141
+ },
+ "st_shrine_ash_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 309,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 3102,
+  "y": 1141
+ },
+ "st_monolith_snow": {
+  "kind": "site",
+  "w": 280,
+  "h": 307,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 3384,
+  "y": 1141
+ },
+ "st_monolith_snow_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 307,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 3666,
+  "y": 1141
+ },
+ "st_litany_ash": {
+  "kind": "site",
+  "w": 280,
+  "h": 304,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 0,
+  "y": 1460
+ },
+ "st_revelation_snow": {
+  "kind": "site",
+  "w": 280,
+  "h": 304,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 282,
+  "y": 1460
+ },
+ "st_litany_ash_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 304,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 564,
+  "y": 1460
+ },
+ "st_revelation_snow_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 304,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 846,
+  "y": 1460
+ },
+ "st_geotap_snow": {
+  "kind": "site",
+  "w": 280,
+  "h": 301,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 1128,
+  "y": 1460
+ },
+ "st_watcheye_ash": {
+  "kind": "site",
+  "w": 280,
+  "h": 301,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 1410,
+  "y": 1460
+ },
+ "st_geotap_snow_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 301,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 1692,
+  "y": 1460
+ },
+ "st_watcheye_ash_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 301,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 1974,
+  "y": 1460
+ },
+ "st_confessor_snow": {
+  "kind": "site",
+  "w": 280,
+  "h": 300,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 2256,
+  "y": 1460
+ },
+ "st_rally_glass": {
+  "kind": "site",
+  "w": 280,
+  "h": 300,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 2538,
+  "y": 1460
+ },
+ "st_revelation_shale": {
+  "kind": "site",
+  "w": 280,
+  "h": 299,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 2820,
+  "y": 1460
+ },
+ "st_revelation_shale_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 299,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 3102,
+  "y": 1460
+ },
+ "st_shrine_shale": {
+  "kind": "site",
+  "w": 280,
+  "h": 298,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 3384,
+  "y": 1460
+ },
+ "st_shrine_shale_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 298,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 3666,
+  "y": 1460
+ },
+ "st_archive_snow": {
+  "kind": "site",
+  "w": 280,
+  "h": 296,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 0,
+  "y": 1766
+ },
+ "st_revelation_glass": {
+  "kind": "site",
+  "w": 280,
+  "h": 296,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 282,
+  "y": 1766
+ },
+ "st_archive_snow_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 296,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 564,
+  "y": 1766
+ },
+ "st_reliquary_glass": {
+  "kind": "site",
+  "w": 280,
+  "h": 294,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 846,
+  "y": 1766
+ },
+ "st_cathedral_snow": {
+  "kind": "site",
+  "w": 280,
+  "h": 293,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 1128,
+  "y": 1766
+ },
+ "st_shrine_glass": {
+  "kind": "site",
+  "w": 280,
+  "h": 291,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 1410,
+  "y": 1766
+ },
+ "st_shrine_glass_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 291,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 1692,
+  "y": 1766
+ },
+ "st_rookery_snow": {
+  "kind": "site",
+  "w": 280,
+  "h": 290,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 1974,
+  "y": 1766
+ },
+ "st_canticle_snow": {
+  "kind": "site",
+  "w": 280,
+  "h": 287,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 2256,
+  "y": 1766
+ },
+ "st_canticle_snow_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 287,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 2538,
+  "y": 1766
+ },
+ "st_engine_rust": {
+  "kind": "site",
+  "w": 280,
+  "h": 286,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 2820,
+  "y": 1766
+ },
+ "st_shroud_snow": {
+  "kind": "site",
+  "w": 280,
+  "h": 286,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 3102,
+  "y": 1766
+ },
+ "st_engine_rust_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 286,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 3384,
+  "y": 1766
+ },
+ "st_shroud_snow_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 286,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 3666,
+  "y": 1766
+ },
+ "st_auspex_shale": {
+  "kind": "site",
+  "w": 280,
+  "h": 285,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 0,
+  "y": 2064
+ },
+ "st_auspex_shale_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 285,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 282,
+  "y": 2064
+ },
+ "st_auspex_snow": {
+  "kind": "site",
+  "w": 280,
+  "h": 284,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 564,
+  "y": 2064
+ },
+ "st_canticle_shale": {
+  "kind": "site",
+  "w": 280,
+  "h": 284,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 846,
+  "y": 2064
+ },
+ "st_librarium_shale": {
+  "kind": "site",
+  "w": 280,
+  "h": 284,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 1128,
+  "y": 2064
+ },
+ "st_canticle_shale_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 284,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 1410,
+  "y": 2064
+ },
+ "st_librarium_shale_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 284,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 1692,
+  "y": 2064
+ },
+ "st_shroud_shale": {
+  "kind": "site",
+  "w": 280,
+  "h": 283,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 1974,
+  "y": 2064
+ },
+ "st_shroud_shale_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 283,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 2256,
+  "y": 2064
+ },
+ "st_geotap_shale": {
+  "kind": "site",
+  "w": 280,
+  "h": 282,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 2538,
+  "y": 2064
+ },
+ "st_sanctuary_snow": {
+  "kind": "site",
+  "w": 280,
+  "h": 282,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 2820,
+  "y": 2064
+ },
+ "st_shroud_glass": {
+  "kind": "site",
+  "w": 280,
+  "h": 282,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 3102,
+  "y": 2064
+ },
+ "st_geotap_shale_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 282,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 3384,
+  "y": 2064
+ },
+ "st_sanctuary_snow_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 282,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 3666,
+  "y": 2064
+ },
+ "st_shroud_glass_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 282,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 0,
+  "y": 2351
+ },
+ "st_auspex_ash": {
+  "kind": "site",
+  "w": 280,
+  "h": 279,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 282,
+  "y": 2351
+ },
+ "st_foundry_rust": {
+  "kind": "site",
+  "w": 280,
+  "h": 279,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 564,
+  "y": 2351
+ },
+ "st_auspex_ash_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 279,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 846,
+  "y": 2351
+ },
+ "st_foundry_rust_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 279,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 1128,
+  "y": 2351
+ },
+ "st_revelation_ash": {
+  "kind": "site",
+  "w": 280,
+  "h": 278,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 1410,
+  "y": 2351
+ },
+ "st_chapel_shale": {
+  "kind": "site",
+  "w": 280,
+  "h": 277,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 1692,
+  "y": 2351
+ },
+ "st_chapel_shale_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 277,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 1974,
+  "y": 2351
+ },
+ "st_academy_snow": {
+  "kind": "site",
+  "w": 280,
+  "h": 276,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 2256,
+  "y": 2351
+ },
+ "st_scribe_snow": {
+  "kind": "site",
+  "w": 280,
+  "h": 274,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 2538,
+  "y": 2351
+ },
+ "st_warcollege_ash": {
+  "kind": "site",
+  "w": 280,
+  "h": 274,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 2820,
+  "y": 2351
+ },
+ "st_scribe_snow_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 274,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 3102,
+  "y": 2351
+ },
+ "st_foundry_ash": {
+  "kind": "site",
+  "w": 280,
+  "h": 273,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 3384,
+  "y": 2351
+ },
+ "st_votive_snow": {
+  "kind": "site",
+  "w": 280,
+  "h": 273,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 3666,
+  "y": 2351
+ },
+ "st_foundry_ash_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 273,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 0,
+  "y": 2635
+ },
+ "st_votive_snow_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 273,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 282,
+  "y": 2635
+ },
+ "st_cathedral_shale": {
+  "kind": "site",
+  "w": 280,
+  "h": 272,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 564,
+  "y": 2635
+ },
+ "st_geotap_ash": {
+  "kind": "site",
+  "w": 280,
+  "h": 272,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 846,
+  "y": 2635
+ },
+ "st_shroud_ash": {
+  "kind": "site",
+  "w": 280,
+  "h": 272,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 1128,
+  "y": 2635
+ },
+ "st_cathedral_shale_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 272,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 1410,
+  "y": 2635
+ },
+ "st_geotap_ash_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 272,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 1692,
+  "y": 2635
+ },
+ "st_confessor_glass": {
+  "kind": "site",
+  "w": 280,
+  "h": 271,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 1974,
+  "y": 2635
+ },
+ "st_engine_scrap": {
+  "kind": "site",
+  "w": 280,
+  "h": 271,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 2256,
+  "y": 2635
+ },
+ "st_forgevault_shale": {
+  "kind": "site",
+  "w": 280,
+  "h": 271,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 2538,
+  "y": 2635
+ },
+ "st_keystation_snow": {
+  "kind": "site",
+  "w": 280,
+  "h": 271,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 2820,
+  "y": 2635
+ },
+ "st_riftgate_glass": {
+  "kind": "site",
+  "w": 280,
+  "h": 271,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 3102,
+  "y": 2635
+ },
+ "st_confessor_glass_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 271,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 3384,
+  "y": 2635
+ },
+ "st_engine_scrap_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 271,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 3666,
+  "y": 2635
+ },
+ "st_forgevault_shale_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 271,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 0,
+  "y": 2910
+ },
+ "st_keystation_snow_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 271,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 282,
+  "y": 2910
+ },
+ "st_riftgate_glass_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 271,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 564,
+  "y": 2910
+ },
+ "st_chapel_ash": {
+  "kind": "site",
+  "w": 280,
+  "h": 270,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 846,
+  "y": 2910
+ },
+ "st_litany_glass": {
+  "kind": "site",
+  "w": 280,
+  "h": 270,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 1128,
+  "y": 2910
+ },
+ "st_litany_snow": {
+  "kind": "site",
+  "w": 280,
+  "h": 270,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 1410,
+  "y": 2910
+ },
+ "st_chapel_ash_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 270,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 1692,
+  "y": 2910
+ },
+ "st_litany_glass_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 270,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 1974,
+  "y": 2910
+ },
+ "st_litany_snow_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 270,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 2256,
+  "y": 2910
+ },
+ "st_canticle_ash": {
+  "kind": "site",
+  "w": 280,
+  "h": 269,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 2538,
+  "y": 2910
+ },
+ "st_chapel_glass": {
+  "kind": "site",
+  "w": 280,
+  "h": 269,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 2820,
+  "y": 2910
+ },
+ "st_forgevault_glass": {
+  "kind": "site",
+  "w": 280,
+  "h": 269,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 3102,
+  "y": 2910
+ },
+ "st_litany_shale": {
+  "kind": "site",
+  "w": 280,
+  "h": 269,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 3384,
+  "y": 2910
+ },
+ "st_monolith_glass": {
+  "kind": "site",
+  "w": 280,
+  "h": 269,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 3666,
+  "y": 2910
+ },
+ "st_reliquary_shale": {
+  "kind": "site",
+  "w": 280,
+  "h": 269,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 0,
+  "y": 3183
+ },
+ "st_scribe_glass": {
+  "kind": "site",
+  "w": 280,
+  "h": 269,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 282,
+  "y": 3183
+ },
+ "st_wyrm_snow": {
+  "kind": "site",
+  "w": 280,
+  "h": 269,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 564,
+  "y": 3183
+ },
+ "st_canticle_ash_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 269,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 846,
+  "y": 3183
+ },
+ "st_chapel_glass_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 269,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 1128,
+  "y": 3183
+ },
+ "st_forgevault_glass_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 269,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 1410,
+  "y": 3183
+ },
+ "st_litany_shale_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 269,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 1692,
+  "y": 3183
+ },
+ "st_reliquary_shale_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 269,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 1974,
+  "y": 3183
+ },
+ "st_wyrm_snow_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 269,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 2256,
+  "y": 3183
+ },
+ "st_engine_snow": {
+  "kind": "site",
+  "w": 280,
+  "h": 268,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 2538,
+  "y": 3183
+ },
+ "st_observatory_shale": {
+  "kind": "site",
+  "w": 280,
+  "h": 268,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 2820,
+  "y": 3183
+ },
+ "st_reactor_snow": {
+  "kind": "site",
+  "w": 280,
+  "h": 268,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 3102,
+  "y": 3183
+ },
+ "st_engine_snow_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 268,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 3384,
+  "y": 3183
+ },
+ "st_observatory_shale_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 268,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 3666,
+  "y": 3183
+ },
+ "st_reactor_snow_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 268,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 0,
+  "y": 3454
+ },
+ "st_confessor_shale": {
+  "kind": "site",
+  "w": 280,
+  "h": 267,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 282,
+  "y": 3454
+ },
+ "st_engineforge_snow": {
+  "kind": "site",
+  "w": 280,
+  "h": 267,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 564,
+  "y": 3454
+ },
+ "st_forgevault_snow": {
+  "kind": "site",
+  "w": 280,
+  "h": 267,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 846,
+  "y": 3454
+ },
+ "st_foundry_snow": {
+  "kind": "site",
+  "w": 280,
+  "h": 267,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 1128,
+  "y": 3454
+ },
+ "st_confessor_shale_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 267,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 1410,
+  "y": 3454
+ },
+ "st_engineforge_snow_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 267,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 1692,
+  "y": 3454
+ },
+ "st_forgevault_snow_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 267,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 1974,
+  "y": 3454
+ },
+ "st_foundry_snow_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 267,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 2256,
+  "y": 3454
+ },
+ "st_blastdoor_glass": {
+  "kind": "site",
+  "w": 280,
+  "h": 266,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 2538,
+  "y": 3454
+ },
+ "st_votive_ash": {
+  "kind": "site",
+  "w": 280,
+  "h": 266,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 2820,
+  "y": 3454
+ },
+ "st_votive_shale": {
+  "kind": "site",
+  "w": 280,
+  "h": 266,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 3102,
+  "y": 3454
+ },
+ "st_blastdoor_glass_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 266,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 3384,
+  "y": 3454
+ },
+ "st_votive_ash_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 266,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 3666,
+  "y": 3454
+ },
+ "st_votive_shale_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 266,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 0,
+  "y": 3724
+ },
+ "st_foundry_glass": {
+  "kind": "site",
+  "w": 280,
+  "h": 265,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 282,
+  "y": 3724
+ },
+ "st_foundry_glass_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 265,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 564,
+  "y": 3724
+ },
+ "st_confessor_ash": {
+  "kind": "site",
+  "w": 280,
+  "h": 264,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 846,
+  "y": 3724
+ },
+ "st_librarium_snow": {
+  "kind": "site",
+  "w": 280,
+  "h": 264,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 1128,
+  "y": 3724
+ },
+ "st_penal_shale": {
+  "kind": "site",
+  "w": 280,
+  "h": 264,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 1410,
+  "y": 3724
+ },
+ "st_scribe_shale": {
+  "kind": "site",
+  "w": 280,
+  "h": 264,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 1692,
+  "y": 3724
+ },
+ "st_confessor_ash_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 264,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 1974,
+  "y": 3724
+ },
+ "st_penal_shale_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 264,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 2256,
+  "y": 3724
+ },
+ "st_scribe_shale_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 264,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 2538,
+  "y": 3724
+ },
+ "st_librarium_glass": {
+  "kind": "site",
+  "w": 280,
+  "h": 263,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 2820,
+  "y": 3724
+ },
+ "st_trader_shale": {
+  "kind": "site",
+  "w": 280,
+  "h": 263,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 3102,
+  "y": 3724
+ },
+ "st_librarium_glass_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 263,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 3384,
+  "y": 3724
+ },
+ "st_trader_shale_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 263,
+  "atlas": "atlas_st_0",
+  "aext": "webp",
+  "x": 3666,
+  "y": 3724
+ },
+ "st_crypt_snow": {
+  "kind": "site",
+  "w": 280,
+  "h": 262,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 0,
+  "y": 0
+ },
+ "st_reliquary_snow": {
+  "kind": "site",
+  "w": 280,
+  "h": 262,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 282,
+  "y": 0
+ },
+ "st_riftgate_shale": {
+  "kind": "site",
+  "w": 280,
+  "h": 262,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 564,
+  "y": 0
+ },
+ "st_sanctuary_shale": {
+  "kind": "site",
+  "w": 280,
+  "h": 262,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 846,
+  "y": 0
+ },
+ "st_crypt_snow_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 262,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 1128,
+  "y": 0
+ },
+ "st_riftgate_shale_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 262,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 1410,
+  "y": 0
+ },
+ "st_sanctuary_shale_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 262,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 1692,
+  "y": 0
+ },
+ "st_chapel_snow": {
+  "kind": "site",
+  "w": 280,
+  "h": 261,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 1974,
+  "y": 0
+ },
+ "st_foundry_shale": {
+  "kind": "site",
+  "w": 280,
+  "h": 261,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 2256,
+  "y": 0
+ },
+ "st_pyramid_snow": {
+  "kind": "site",
+  "w": 280,
+  "h": 261,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 2538,
+  "y": 0
+ },
+ "st_reclamator_ash": {
+  "kind": "site",
+  "w": 280,
+  "h": 261,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 2820,
+  "y": 0
+ },
+ "st_chapel_snow_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 261,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 3102,
+  "y": 0
+ },
+ "st_foundry_shale_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 261,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 3384,
+  "y": 0
+ },
+ "st_pyramid_snow_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 261,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 3666,
+  "y": 0
+ },
+ "st_reclamator_ash_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 261,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 0,
+  "y": 264
+ },
+ "st_academy_glass": {
+  "kind": "site",
+  "w": 280,
+  "h": 260,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 282,
+  "y": 264
+ },
+ "st_engine_glass": {
+  "kind": "site",
+  "w": 280,
+  "h": 260,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 564,
+  "y": 264
+ },
+ "st_motorpool_rust": {
+  "kind": "site",
+  "w": 280,
+  "h": 260,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 846,
+  "y": 264
+ },
+ "st_observatory_snow": {
+  "kind": "site",
+  "w": 280,
+  "h": 260,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 1128,
+  "y": 264
+ },
+ "st_engine_glass_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 260,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 1410,
+  "y": 264
+ },
+ "st_motorpool_rust_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 260,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 1692,
+  "y": 264
+ },
+ "st_observatory_snow_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 260,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 1974,
+  "y": 264
+ },
+ "st_engineforge_shale": {
+  "kind": "site",
+  "w": 280,
+  "h": 259,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 2256,
+  "y": 264
+ },
+ "st_votive_glass": {
+  "kind": "site",
+  "w": 280,
+  "h": 259,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 2538,
+  "y": 264
+ },
+ "st_engineforge_shale_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 259,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 2820,
+  "y": 264
+ },
+ "st_votive_glass_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 259,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 3102,
+  "y": 264
+ },
+ "st_forgevault_ash": {
+  "kind": "site",
+  "w": 280,
+  "h": 258,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 3384,
+  "y": 264
+ },
+ "st_geotap_glass": {
+  "kind": "site",
+  "w": 280,
+  "h": 258,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 3666,
+  "y": 264
+ },
+ "st_sanctuary_glass": {
+  "kind": "site",
+  "w": 280,
+  "h": 258,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 0,
+  "y": 527
+ },
+ "st_forgevault_ash_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 258,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 282,
+  "y": 527
+ },
+ "st_geotap_glass_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 258,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 564,
+  "y": 527
+ },
+ "st_sanctuary_glass_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 258,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 846,
+  "y": 527
+ },
+ "st_cathedral_ash": {
+  "kind": "site",
+  "w": 280,
+  "h": 257,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 1128,
+  "y": 527
+ },
+ "st_citadel_snow": {
+  "kind": "site",
+  "w": 280,
+  "h": 257,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 1410,
+  "y": 527
+ },
+ "st_librarium_ash": {
+  "kind": "site",
+  "w": 280,
+  "h": 257,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 1692,
+  "y": 527
+ },
+ "st_sanctum_shale": {
+  "kind": "site",
+  "w": 280,
+  "h": 257,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 1974,
+  "y": 527
+ },
+ "st_citadel_snow_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 257,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 2256,
+  "y": 527
+ },
+ "st_sanctum_shale_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 257,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 2538,
+  "y": 527
+ },
+ "st_sanctum_snow": {
+  "kind": "site",
+  "w": 280,
+  "h": 256,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 2820,
+  "y": 527
+ },
+ "st_trader_snow": {
+  "kind": "site",
+  "w": 280,
+  "h": 256,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 3102,
+  "y": 527
+ },
+ "st_sanctum_snow_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 256,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 3384,
+  "y": 527
+ },
+ "st_trader_snow_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 256,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 3666,
+  "y": 527
+ },
+ "st_penal_ash": {
+  "kind": "site",
+  "w": 280,
+  "h": 253,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 0,
+  "y": 787
+ },
+ "st_serpent_snow": {
+  "kind": "site",
+  "w": 280,
+  "h": 253,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 282,
+  "y": 787
+ },
+ "st_wyrm_shale": {
+  "kind": "site",
+  "w": 280,
+  "h": 253,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 564,
+  "y": 787
+ },
+ "st_wyrm_shale_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 253,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 846,
+  "y": 787
+ },
+ "st_derelict_glass": {
+  "kind": "site",
+  "w": 280,
+  "h": 252,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 1128,
+  "y": 787
+ },
+ "st_smuggler_scrap": {
+  "kind": "site",
+  "w": 280,
+  "h": 252,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 1410,
+  "y": 787
+ },
+ "st_smuggler_scrap_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 252,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 1692,
+  "y": 787
+ },
+ "st_penal_glass": {
+  "kind": "site",
+  "w": 280,
+  "h": 251,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 1974,
+  "y": 787
+ },
+ "st_academy_ash": {
+  "kind": "site",
+  "w": 280,
+  "h": 250,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 2256,
+  "y": 787
+ },
+ "st_basilisks_shale": {
+  "kind": "site",
+  "w": 280,
+  "h": 249,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 2538,
+  "y": 787
+ },
+ "st_riftspring_snow": {
+  "kind": "site",
+  "w": 280,
+  "h": 249,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 2820,
+  "y": 787
+ },
+ "st_sanctuary_ash": {
+  "kind": "site",
+  "w": 280,
+  "h": 249,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 3102,
+  "y": 787
+ },
+ "st_voidfont_snow": {
+  "kind": "site",
+  "w": 280,
+  "h": 249,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 3384,
+  "y": 787
+ },
+ "st_basilisks_shale_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 249,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 3666,
+  "y": 787
+ },
+ "st_riftspring_snow_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 249,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 0,
+  "y": 1042
+ },
+ "st_sanctuary_ash_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 249,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 282,
+  "y": 1042
+ },
+ "st_voidfont_snow_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 249,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 564,
+  "y": 1042
+ },
+ "st_foundry_scrap": {
+  "kind": "site",
+  "w": 280,
+  "h": 248,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 846,
+  "y": 1042
+ },
+ "st_glasshouse_shale": {
+  "kind": "site",
+  "w": 280,
+  "h": 248,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 1128,
+  "y": 1042
+ },
+ "st_hermit_snow": {
+  "kind": "site",
+  "w": 280,
+  "h": 248,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 1410,
+  "y": 1042
+ },
+ "st_reactor_ash": {
+  "kind": "site",
+  "w": 280,
+  "h": 248,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 1692,
+  "y": 1042
+ },
+ "st_foundry_scrap_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 248,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 1974,
+  "y": 1042
+ },
+ "st_glasshouse_shale_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 248,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 2256,
+  "y": 1042
+ },
+ "st_reactor_ash_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 248,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 2538,
+  "y": 1042
+ },
+ "st_academy_shale": {
+  "kind": "site",
+  "w": 280,
+  "h": 247,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 2820,
+  "y": 1042
+ },
+ "st_archive_glass": {
+  "kind": "site",
+  "w": 280,
+  "h": 247,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 3102,
+  "y": 1042
+ },
+ "st_broker_snow": {
+  "kind": "site",
+  "w": 280,
+  "h": 247,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 3384,
+  "y": 1042
+ },
+ "st_canticle_glass": {
+  "kind": "site",
+  "w": 280,
+  "h": 247,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 3666,
+  "y": 1042
+ },
+ "st_derelict_rust": {
+  "kind": "site",
+  "w": 280,
+  "h": 247,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 0,
+  "y": 1293
+ },
+ "st_warcollege_rust": {
+  "kind": "site",
+  "w": 280,
+  "h": 247,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 282,
+  "y": 1293
+ },
+ "st_academy_shale_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 247,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 564,
+  "y": 1293
+ },
+ "st_archive_glass_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 247,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 846,
+  "y": 1293
+ },
+ "st_broker_snow_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 247,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 1128,
+  "y": 1293
+ },
+ "st_canticle_glass_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 247,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 1410,
+  "y": 1293
+ },
+ "st_derelict_rust_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 247,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 1692,
+  "y": 1293
+ },
+ "st_riftgate_ash": {
+  "kind": "site",
+  "w": 280,
+  "h": 246,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 1974,
+  "y": 1293
+ },
+ "st_riftgate_ash_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 246,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 2256,
+  "y": 1293
+ },
+ "st_armoury_ash": {
+  "kind": "site",
+  "w": 280,
+  "h": 245,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 2538,
+  "y": 1293
+ },
+ "st_hermit_ash": {
+  "kind": "site",
+  "w": 280,
+  "h": 245,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 2820,
+  "y": 1293
+ },
+ "st_reclamator_snow": {
+  "kind": "site",
+  "w": 280,
+  "h": 245,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 3102,
+  "y": 1293
+ },
+ "st_riftgate_snow": {
+  "kind": "site",
+  "w": 280,
+  "h": 245,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 3384,
+  "y": 1293
+ },
+ "st_hermit_ash_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 245,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 3666,
+  "y": 1293
+ },
+ "st_riftgate_snow_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 245,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 0,
+  "y": 1542
+ },
+ "st_frigate_shale": {
+  "kind": "site",
+  "w": 280,
+  "h": 244,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 282,
+  "y": 1542
+ },
+ "st_frigate_shale_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 244,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 564,
+  "y": 1542
+ },
+ "st_blastdoor_snow": {
+  "kind": "site",
+  "w": 280,
+  "h": 243,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 846,
+  "y": 1542
+ },
+ "st_broker_glass": {
+  "kind": "site",
+  "w": 280,
+  "h": 243,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 1128,
+  "y": 1542
+ },
+ "st_broker_shale": {
+  "kind": "site",
+  "w": 280,
+  "h": 243,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 1410,
+  "y": 1542
+ },
+ "st_crypt_ash": {
+  "kind": "site",
+  "w": 280,
+  "h": 243,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 1692,
+  "y": 1542
+ },
+ "st_crypt_shale": {
+  "kind": "site",
+  "w": 280,
+  "h": 243,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 1974,
+  "y": 1542
+ },
+ "st_blastdoor_snow_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 243,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 2256,
+  "y": 1542
+ },
+ "st_broker_shale_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 243,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 2538,
+  "y": 1542
+ },
+ "st_crypt_ash_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 243,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 2820,
+  "y": 1542
+ },
+ "st_crypt_shale_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 243,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 3102,
+  "y": 1542
+ },
+ "st_archive_ash": {
+  "kind": "site",
+  "w": 280,
+  "h": 242,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 3384,
+  "y": 1542
+ },
+ "st_engine_shale": {
+  "kind": "site",
+  "w": 280,
+  "h": 242,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 3666,
+  "y": 1542
+ },
+ "st_engine_shale_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 242,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 0,
+  "y": 1789
+ },
+ "st_cathedral_glass": {
+  "kind": "site",
+  "w": 280,
+  "h": 241,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 282,
+  "y": 1789
+ },
+ "st_crypt_glass": {
+  "kind": "site",
+  "w": 280,
+  "h": 241,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 564,
+  "y": 1789
+ },
+ "st_engineforge_ash": {
+  "kind": "site",
+  "w": 280,
+  "h": 241,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 846,
+  "y": 1789
+ },
+ "st_cathedral_glass_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 241,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 1128,
+  "y": 1789
+ },
+ "st_crypt_glass_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 241,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 1410,
+  "y": 1789
+ },
+ "st_engineforge_ash_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 241,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 1692,
+  "y": 1789
+ },
+ "st_derelict_snow": {
+  "kind": "site",
+  "w": 280,
+  "h": 240,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 1974,
+  "y": 1789
+ },
+ "st_reactor_shale": {
+  "kind": "site",
+  "w": 280,
+  "h": 240,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 2256,
+  "y": 1789
+ },
+ "st_sanctum_ash": {
+  "kind": "site",
+  "w": 280,
+  "h": 240,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 2538,
+  "y": 1789
+ },
+ "st_reactor_shale_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 240,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 2820,
+  "y": 1789
+ },
+ "st_sanctum_ash_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 240,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 3102,
+  "y": 1789
+ },
+ "st_derelict_shale": {
+  "kind": "site",
+  "w": 280,
+  "h": 239,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 3384,
+  "y": 1789
+ },
+ "st_keystation_shale": {
+  "kind": "site",
+  "w": 280,
+  "h": 239,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 3666,
+  "y": 1789
+ },
+ "st_reliquary_ash": {
+  "kind": "site",
+  "w": 280,
+  "h": 239,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 0,
+  "y": 2033
+ },
+ "st_warcollege_glass": {
+  "kind": "site",
+  "w": 280,
+  "h": 239,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 282,
+  "y": 2033
+ },
+ "st_derelict_shale_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 239,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 564,
+  "y": 2033
+ },
+ "st_keystation_shale_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 239,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 846,
+  "y": 2033
+ },
+ "st_glasshouse_snow": {
+  "kind": "site",
+  "w": 280,
+  "h": 238,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 1128,
+  "y": 2033
+ },
+ "st_mawpit_snow": {
+  "kind": "site",
+  "w": 280,
+  "h": 238,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 1410,
+  "y": 2033
+ },
+ "st_glasshouse_snow_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 238,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 1692,
+  "y": 2033
+ },
+ "st_mawpit_snow_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 238,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 1974,
+  "y": 2033
+ },
+ "st_blastdoor_shale": {
+  "kind": "site",
+  "w": 280,
+  "h": 237,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 2256,
+  "y": 2033
+ },
+ "st_scribe_ash": {
+  "kind": "site",
+  "w": 280,
+  "h": 237,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 2538,
+  "y": 2033
+ },
+ "st_blastdoor_shale_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 237,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 2820,
+  "y": 2033
+ },
+ "st_scribe_ash_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 237,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 3102,
+  "y": 2033
+ },
+ "st_droppod_ash": {
+  "kind": "site",
+  "w": 280,
+  "h": 236,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 3384,
+  "y": 2033
+ },
+ "st_droppod_snow": {
+  "kind": "site",
+  "w": 280,
+  "h": 236,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 3666,
+  "y": 2033
+ },
+ "st_medicae_glass": {
+  "kind": "site",
+  "w": 280,
+  "h": 236,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 0,
+  "y": 2274
+ },
+ "st_voidfont_shale": {
+  "kind": "site",
+  "w": 280,
+  "h": 236,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 282,
+  "y": 2274
+ },
+ "st_warcollege_snow": {
+  "kind": "site",
+  "w": 280,
+  "h": 236,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 564,
+  "y": 2274
+ },
+ "st_voidfont_shale_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 236,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 846,
+  "y": 2274
+ },
+ "st_archive_shale": {
+  "kind": "site",
+  "w": 280,
+  "h": 235,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 1128,
+  "y": 2274
+ },
+ "st_engineforge_glass": {
+  "kind": "site",
+  "w": 280,
+  "h": 235,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 1410,
+  "y": 2274
+ },
+ "st_observatory_glass": {
+  "kind": "site",
+  "w": 280,
+  "h": 235,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 1692,
+  "y": 2274
+ },
+ "st_archive_shale_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 235,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 1974,
+  "y": 2274
+ },
+ "st_engineforge_glass_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 235,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 2256,
+  "y": 2274
+ },
+ "st_observatory_glass_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 235,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 2538,
+  "y": 2274
+ },
+ "st_hive_shale": {
+  "kind": "site",
+  "w": 280,
+  "h": 234,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 2820,
+  "y": 2274
+ },
+ "st_pyramid_ash": {
+  "kind": "site",
+  "w": 280,
+  "h": 234,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 3102,
+  "y": 2274
+ },
+ "st_trader_glass": {
+  "kind": "site",
+  "w": 280,
+  "h": 234,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 3384,
+  "y": 2274
+ },
+ "st_wyrm_ash": {
+  "kind": "site",
+  "w": 280,
+  "h": 234,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 3666,
+  "y": 2274
+ },
+ "st_hive_shale_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 234,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 0,
+  "y": 2512
+ },
+ "st_pyramid_ash_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 234,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 282,
+  "y": 2512
+ },
+ "st_wyrm_ash_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 234,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 564,
+  "y": 2512
+ },
+ "st_geotap_rust": {
+  "kind": "site",
+  "w": 280,
+  "h": 233,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 846,
+  "y": 2512
+ },
+ "st_geotap_rust_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 233,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 1128,
+  "y": 2512
+ },
+ "st_frigate_snow": {
+  "kind": "site",
+  "w": 280,
+  "h": 232,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 1410,
+  "y": 2512
+ },
+ "st_hive_glass": {
+  "kind": "site",
+  "w": 280,
+  "h": 232,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 1692,
+  "y": 2512
+ },
+ "st_medicae_shale": {
+  "kind": "site",
+  "w": 280,
+  "h": 232,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 1974,
+  "y": 2512
+ },
+ "st_hive_glass_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 232,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 2256,
+  "y": 2512
+ },
+ "st_medicae_shale_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 232,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 2538,
+  "y": 2512
+ },
+ "st_armoury_snow": {
+  "kind": "site",
+  "w": 280,
+  "h": 231,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 2820,
+  "y": 2512
+ },
+ "st_citadel_glass": {
+  "kind": "site",
+  "w": 280,
+  "h": 231,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 3102,
+  "y": 2512
+ },
+ "st_penal_snow": {
+  "kind": "site",
+  "w": 280,
+  "h": 231,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 3384,
+  "y": 2512
+ },
+ "st_pyramid_shale": {
+  "kind": "site",
+  "w": 280,
+  "h": 231,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 3666,
+  "y": 2512
+ },
+ "st_reclamator_glass": {
+  "kind": "site",
+  "w": 280,
+  "h": 231,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 0,
+  "y": 2748
+ },
+ "st_pyramid_shale_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 231,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 282,
+  "y": 2748
+ },
+ "st_reclamator_glass_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 231,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 564,
+  "y": 2748
+ },
+ "st_glasshouse_glass": {
+  "kind": "site",
+  "w": 280,
+  "h": 230,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 846,
+  "y": 2748
+ },
+ "st_hermit_shale": {
+  "kind": "site",
+  "w": 280,
+  "h": 230,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 1128,
+  "y": 2748
+ },
+ "st_riftspring_ash": {
+  "kind": "site",
+  "w": 280,
+  "h": 230,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 1410,
+  "y": 2748
+ },
+ "st_glasshouse_glass_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 230,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 1692,
+  "y": 2748
+ },
+ "st_hermit_shale_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 230,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 1974,
+  "y": 2748
+ },
+ "st_riftspring_ash_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 230,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 2256,
+  "y": 2748
+ },
+ "st_droppod_glass": {
+  "kind": "site",
+  "w": 280,
+  "h": 229,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 2538,
+  "y": 2748
+ },
+ "st_sanctum_glass": {
+  "kind": "site",
+  "w": 280,
+  "h": 229,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 2820,
+  "y": 2748
+ },
+ "st_warcollege_shale": {
+  "kind": "site",
+  "w": 280,
+  "h": 229,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 3102,
+  "y": 2748
+ },
+ "st_droppod_glass_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 229,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 3384,
+  "y": 2748
+ },
+ "st_sanctum_glass_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 229,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 3666,
+  "y": 2748
+ },
+ "st_warcollege_shale_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 229,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 0,
+  "y": 2981
+ },
+ "st_broker_ash": {
+  "kind": "site",
+  "w": 280,
+  "h": 228,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 282,
+  "y": 2981
+ },
+ "st_observatory_ash": {
+  "kind": "site",
+  "w": 280,
+  "h": 228,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 564,
+  "y": 2981
+ },
+ "st_wyrm_glass": {
+  "kind": "site",
+  "w": 280,
+  "h": 228,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 846,
+  "y": 2981
+ },
+ "st_observatory_ash_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 228,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 1128,
+  "y": 2981
+ },
+ "st_wyrm_glass_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 228,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 1410,
+  "y": 2981
+ },
+ "st_bivouac_shale": {
+  "kind": "site",
+  "w": 280,
+  "h": 227,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 1692,
+  "y": 2981
+ },
+ "st_blastdoor_ash": {
+  "kind": "site",
+  "w": 280,
+  "h": 227,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 1974,
+  "y": 2981
+ },
+ "st_engine_ash": {
+  "kind": "site",
+  "w": 280,
+  "h": 227,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 2256,
+  "y": 2981
+ },
+ "st_hive_snow": {
+  "kind": "site",
+  "w": 280,
+  "h": 227,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 2538,
+  "y": 2981
+ },
+ "st_reclamator_shale": {
+  "kind": "site",
+  "w": 280,
+  "h": 227,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 2820,
+  "y": 2981
+ },
+ "st_bivouac_shale_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 227,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 3102,
+  "y": 2981
+ },
+ "st_engine_ash_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 227,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 3384,
+  "y": 2981
+ },
+ "st_reclamator_shale_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 227,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 3666,
+  "y": 2981
+ },
+ "st_pool_snow": {
+  "kind": "site",
+  "w": 280,
+  "h": 226,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 0,
+  "y": 3212
+ },
+ "st_riftspring_shale": {
+  "kind": "site",
+  "w": 280,
+  "h": 226,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 282,
+  "y": 3212
+ },
+ "st_trader_ash": {
+  "kind": "site",
+  "w": 280,
+  "h": 226,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 564,
+  "y": 3212
+ },
+ "st_voidfont_glass": {
+  "kind": "site",
+  "w": 280,
+  "h": 226,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 846,
+  "y": 3212
+ },
+ "st_riftspring_shale_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 226,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 1128,
+  "y": 3212
+ },
+ "st_voidfont_glass_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 226,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 1410,
+  "y": 3212
+ },
+ "st_arena_shale": {
+  "kind": "site",
+  "w": 280,
+  "h": 225,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 1692,
+  "y": 3212
+ },
+ "st_hermit_glass": {
+  "kind": "site",
+  "w": 280,
+  "h": 225,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 1974,
+  "y": 3212
+ },
+ "st_riftspring_glass": {
+  "kind": "site",
+  "w": 280,
+  "h": 225,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 2256,
+  "y": 3212
+ },
+ "st_arena_shale_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 225,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 2538,
+  "y": 3212
+ },
+ "st_hermit_glass_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 225,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 2820,
+  "y": 3212
+ },
+ "st_riftspring_glass_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 225,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 3102,
+  "y": 3212
+ },
+ "st_citadel_shale": {
+  "kind": "site",
+  "w": 280,
+  "h": 224,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 3384,
+  "y": 3212
+ },
+ "st_motorpool_shale": {
+  "kind": "site",
+  "w": 280,
+  "h": 224,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 3666,
+  "y": 3212
+ },
+ "st_citadel_shale_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 224,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 0,
+  "y": 3440
+ },
+ "st_motorpool_shale_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 224,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 282,
+  "y": 3440
+ },
+ "st_voidfont_ash": {
+  "kind": "site",
+  "w": 280,
+  "h": 223,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 564,
+  "y": 3440
+ },
+ "st_voidfont_ash_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 223,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 846,
+  "y": 3440
+ },
+ "st_droppod_shale": {
+  "kind": "site",
+  "w": 280,
+  "h": 221,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 1128,
+  "y": 3440
+ },
+ "st_forgevault_rust": {
+  "kind": "site",
+  "w": 280,
+  "h": 220,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 1410,
+  "y": 3440
+ },
+ "st_hive_ash": {
+  "kind": "site",
+  "w": 280,
+  "h": 220,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 1692,
+  "y": 3440
+ },
+ "st_serpent_shale": {
+  "kind": "site",
+  "w": 280,
+  "h": 220,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 1974,
+  "y": 3440
+ },
+ "st_serpent_shale_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 220,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 2256,
+  "y": 3440
+ },
+ "st_arena_ash": {
+  "kind": "site",
+  "w": 280,
+  "h": 219,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 2538,
+  "y": 3440
+ },
+ "st_arena_snow": {
+  "kind": "site",
+  "w": 280,
+  "h": 218,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 2820,
+  "y": 3440
+ },
+ "st_brutes_shale": {
+  "kind": "site",
+  "w": 280,
+  "h": 218,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 3102,
+  "y": 3440
+ },
+ "st_mawpit_shale": {
+  "kind": "site",
+  "w": 280,
+  "h": 218,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 3384,
+  "y": 3440
+ },
+ "st_brutes_shale_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 218,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 3666,
+  "y": 3440
+ },
+ "st_mawpit_shale_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 218,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 0,
+  "y": 3666
+ },
+ "st_pool_shale": {
+  "kind": "site",
+  "w": 280,
+  "h": 217,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 282,
+  "y": 3666
+ },
+ "st_pool_shale_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 217,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 564,
+  "y": 3666
+ },
+ "st_derelict_ash": {
+  "kind": "site",
+  "w": 280,
+  "h": 216,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 846,
+  "y": 3666
+ },
+ "st_bivouac_snow": {
+  "kind": "site",
+  "w": 280,
+  "h": 215,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 1128,
+  "y": 3666
+ },
+ "st_serpent_glass": {
+  "kind": "site",
+  "w": 280,
+  "h": 215,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 1410,
+  "y": 3666
+ },
+ "st_basilisks_ash": {
+  "kind": "site",
+  "w": 280,
+  "h": 214,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 1692,
+  "y": 3666
+ },
+ "st_motorpool_snow": {
+  "kind": "site",
+  "w": 280,
+  "h": 213,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 1974,
+  "y": 3666
+ },
+ "st_pyramid_glass": {
+  "kind": "site",
+  "w": 280,
+  "h": 213,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 2256,
+  "y": 3666
+ },
+ "st_pyramid_glass_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 213,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 2538,
+  "y": 3666
+ },
+ "st_armoury_shale": {
+  "kind": "site",
+  "w": 280,
+  "h": 212,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 2820,
+  "y": 3666
+ },
+ "st_armoury_shale_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 212,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 3102,
+  "y": 3666
+ },
+ "st_basilisks_snow": {
+  "kind": "site",
+  "w": 280,
+  "h": 211,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 3384,
+  "y": 3666
+ },
+ "st_glasshouse_ash": {
+  "kind": "site",
+  "w": 280,
+  "h": 211,
+  "atlas": "atlas_st_1",
+  "aext": "webp",
+  "x": 3666,
+  "y": 3666
+ },
+ "st_glasshouse_ash_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 211,
+  "atlas": "atlas_st_2",
+  "aext": "webp",
+  "x": 0,
+  "y": 0
+ },
+ "st_brutes_ash": {
+  "kind": "site",
+  "w": 280,
+  "h": 210,
+  "atlas": "atlas_st_2",
+  "aext": "webp",
+  "x": 282,
+  "y": 0
+ },
+ "st_bivouac_ash": {
+  "kind": "site",
+  "w": 280,
+  "h": 209,
+  "atlas": "atlas_st_2",
+  "aext": "webp",
+  "x": 564,
+  "y": 0
+ },
+ "st_medicae_snow": {
+  "kind": "site",
+  "w": 280,
+  "h": 209,
+  "atlas": "atlas_st_2",
+  "aext": "webp",
+  "x": 846,
+  "y": 0
+ },
+ "st_provinggrounds_glass": {
+  "kind": "site",
+  "w": 280,
+  "h": 209,
+  "atlas": "atlas_st_2",
+  "aext": "webp",
+  "x": 1128,
+  "y": 0
+ },
+ "st_armoury_rust": {
+  "kind": "site",
+  "w": 280,
+  "h": 208,
+  "atlas": "atlas_st_2",
+  "aext": "webp",
+  "x": 1410,
+  "y": 0
+ },
+ "st_provinggrounds_shale": {
+  "kind": "site",
+  "w": 280,
+  "h": 208,
+  "atlas": "atlas_st_2",
+  "aext": "webp",
+  "x": 1692,
+  "y": 0
+ },
+ "st_reactor_glass": {
+  "kind": "site",
+  "w": 280,
+  "h": 208,
+  "atlas": "atlas_st_2",
+  "aext": "webp",
+  "x": 1974,
+  "y": 0
+ },
+ "st_provinggrounds_shale_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 208,
+  "atlas": "atlas_st_2",
+  "aext": "webp",
+  "x": 2256,
+  "y": 0
+ },
+ "st_reactor_glass_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 208,
+  "atlas": "atlas_st_2",
+  "aext": "webp",
+  "x": 2538,
+  "y": 0
+ },
+ "st_serpent_ash": {
+  "kind": "site",
+  "w": 280,
+  "h": 207,
+  "atlas": "atlas_st_2",
+  "aext": "webp",
+  "x": 2820,
+  "y": 0
+ },
+ "st_medicae_ash": {
+  "kind": "site",
+  "w": 280,
+  "h": 206,
+  "atlas": "atlas_st_2",
+  "aext": "webp",
+  "x": 3102,
+  "y": 0
+ },
+ "st_provinggrounds_snow": {
+  "kind": "site",
+  "w": 280,
+  "h": 204,
+  "atlas": "atlas_st_2",
+  "aext": "webp",
+  "x": 3384,
+  "y": 0
+ },
+ "st_smuggler_snow": {
+  "kind": "site",
+  "w": 280,
+  "h": 203,
+  "atlas": "atlas_st_2",
+  "aext": "webp",
+  "x": 3666,
+  "y": 0
+ },
+ "st_smuggler_snow_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 203,
+  "atlas": "atlas_st_2",
+  "aext": "webp",
+  "x": 0,
+  "y": 213
+ },
+ "st_arena_glass": {
+  "kind": "site",
+  "w": 280,
+  "h": 202,
+  "atlas": "atlas_st_2",
+  "aext": "webp",
+  "x": 282,
+  "y": 213
+ },
+ "st_mawpit_ash": {
+  "kind": "site",
+  "w": 280,
+  "h": 202,
+  "atlas": "atlas_st_2",
+  "aext": "webp",
+  "x": 564,
+  "y": 213
+ },
+ "st_arena_glass_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 202,
+  "atlas": "atlas_st_2",
+  "aext": "webp",
+  "x": 846,
+  "y": 213
+ },
+ "st_mawpit_ash_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 202,
+  "atlas": "atlas_st_2",
+  "aext": "webp",
+  "x": 1128,
+  "y": 213
+ },
+ "st_brutes_glass": {
+  "kind": "site",
+  "w": 280,
+  "h": 201,
+  "atlas": "atlas_st_2",
+  "aext": "webp",
+  "x": 1410,
+  "y": 213
+ },
+ "st_keystation_ash": {
+  "kind": "site",
+  "w": 280,
+  "h": 201,
+  "atlas": "atlas_st_2",
+  "aext": "webp",
+  "x": 1692,
+  "y": 213
+ },
+ "st_motorpool_ash": {
+  "kind": "site",
+  "w": 280,
+  "h": 201,
+  "atlas": "atlas_st_2",
+  "aext": "webp",
+  "x": 1974,
+  "y": 213
+ },
+ "st_smuggler_shale": {
+  "kind": "site",
+  "w": 280,
+  "h": 201,
+  "atlas": "atlas_st_2",
+  "aext": "webp",
+  "x": 2256,
+  "y": 213
+ },
+ "st_brutes_glass_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 201,
+  "atlas": "atlas_st_2",
+  "aext": "webp",
+  "x": 2538,
+  "y": 213
+ },
+ "st_keystation_ash_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 201,
+  "atlas": "atlas_st_2",
+  "aext": "webp",
+  "x": 2820,
+  "y": 213
+ },
+ "st_smuggler_shale_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 201,
+  "atlas": "atlas_st_2",
+  "aext": "webp",
+  "x": 3102,
+  "y": 213
+ },
+ "st_basilisks_glass": {
+  "kind": "site",
+  "w": 280,
+  "h": 200,
+  "atlas": "atlas_st_2",
+  "aext": "webp",
+  "x": 3384,
+  "y": 213
+ },
+ "st_blastdoor_rust": {
+  "kind": "site",
+  "w": 280,
+  "h": 200,
+  "atlas": "atlas_st_2",
+  "aext": "webp",
+  "x": 3666,
+  "y": 213
+ },
+ "st_motorpool_glass": {
+  "kind": "site",
+  "w": 280,
+  "h": 200,
+  "atlas": "atlas_st_2",
+  "aext": "webp",
+  "x": 0,
+  "y": 418
+ },
+ "st_blastdoor_rust_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 200,
+  "atlas": "atlas_st_2",
+  "aext": "webp",
+  "x": 282,
+  "y": 418
+ },
+ "st_keystation_glass": {
+  "kind": "site",
+  "w": 280,
+  "h": 199,
+  "atlas": "atlas_st_2",
+  "aext": "webp",
+  "x": 564,
+  "y": 418
+ },
+ "st_keystation_glass_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 199,
+  "atlas": "atlas_st_2",
+  "aext": "webp",
+  "x": 846,
+  "y": 418
+ },
+ "st_brutes_snow": {
+  "kind": "site",
+  "w": 280,
+  "h": 197,
+  "atlas": "atlas_st_2",
+  "aext": "webp",
+  "x": 1128,
+  "y": 418
+ },
+ "st_mawpit_glass": {
+  "kind": "site",
+  "w": 280,
+  "h": 197,
+  "atlas": "atlas_st_2",
+  "aext": "webp",
+  "x": 1410,
+  "y": 418
+ },
+ "st_mawpit_glass_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 197,
+  "atlas": "atlas_st_2",
+  "aext": "webp",
+  "x": 1692,
+  "y": 418
+ },
+ "st_frigate_ash": {
+  "kind": "site",
+  "w": 280,
+  "h": 196,
+  "atlas": "atlas_st_2",
+  "aext": "webp",
+  "x": 1974,
+  "y": 418
+ },
+ "st_citadel_ash": {
+  "kind": "site",
+  "w": 280,
+  "h": 194,
+  "atlas": "atlas_st_2",
+  "aext": "webp",
+  "x": 2256,
+  "y": 418
+ },
+ "st_citadel_ash_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 194,
+  "atlas": "atlas_st_2",
+  "aext": "webp",
+  "x": 2538,
+  "y": 418
+ },
+ "st_bivouac_glass": {
+  "kind": "site",
+  "w": 280,
+  "h": 193,
+  "atlas": "atlas_st_2",
+  "aext": "webp",
+  "x": 2820,
+  "y": 418
+ },
+ "st_armoury_glass": {
+  "kind": "site",
+  "w": 280,
+  "h": 190,
+  "atlas": "atlas_st_2",
+  "aext": "webp",
+  "x": 3102,
+  "y": 418
+ },
+ "st_smuggler_glass": {
+  "kind": "site",
+  "w": 280,
+  "h": 186,
+  "atlas": "atlas_st_2",
+  "aext": "webp",
+  "x": 3384,
+  "y": 418
+ },
+ "st_smuggler_glass_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 186,
+  "atlas": "atlas_st_2",
+  "aext": "webp",
+  "x": 3666,
+  "y": 418
+ },
+ "st_frigate_glass": {
+  "kind": "site",
+  "w": 280,
+  "h": 182,
+  "atlas": "atlas_st_2",
+  "aext": "webp",
+  "x": 0,
+  "y": 620
+ },
+ "st_smuggler_ash": {
+  "kind": "site",
+  "w": 280,
+  "h": 181,
+  "atlas": "atlas_st_2",
+  "aext": "webp",
+  "x": 282,
+  "y": 620
+ },
+ "st_smuggler_ash_glow": {
+  "kind": "glow",
+  "w": 280,
+  "h": 181,
+  "atlas": "atlas_st_2",
+  "aext": "webp",
+  "x": 564,
+  "y": 620
+ },
+ "st_pool_ash": {
+  "kind": "site",
+  "w": 280,
+  "h": 168,
+  "atlas": "atlas_st_2",
+  "aext": "webp",
+  "x": 846,
+  "y": 620
+ },
+ "st_pool_glass": {
+  "kind": "site",
+  "w": 280,
+  "h": 165,
+  "atlas": "atlas_st_2",
+  "aext": "webp",
+  "x": 1128,
+  "y": 620
+ },
+ "st_provinggrounds_ash": {
+  "kind": "site",
+  "w": 280,
+  "h": 165,
+  "atlas": "atlas_st_2",
+  "aext": "webp",
+  "x": 1410,
+  "y": 620
  }
 }

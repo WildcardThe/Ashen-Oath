@@ -929,8 +929,10 @@ function drawStructure(g, name, cx, cy, ts, wTiles, flip, time, spent, seed = 0)
   g.restore();
   return { w, h, mirror };
 }
-export function drawMine(g, cx, cy, ts, res, color, time, flip = false, art = null) {
-  const r = drawStructure(g, art ? 'site_' + art : 'mine_' + res, cx, cy, ts, 2.55, flip, time, false, cx + cy);
+export function drawMine(g, cx, cy, ts, res, color, time, flip = false, art = null, tile = null) {
+  // each mine has a picture per homeland ground; the older single picture stands in where none exists
+  const own = !art && tile && 'mine_' + res + '_' + biomeOf(tile);
+  const r = drawStructure(g, art ? 'site_' + art : own && sprite(own) ? own : 'mine_' + res, cx, cy, ts, 2.55, flip, time, false, cx + cy);
   if (!r || color == null) return;
   const k = ts / 48;
   g.save(); g.translate(cx + (r.mirror ? 1 : -1) * r.w * 0.36, cy + ts * 0.62 - r.h * 0.72); g.scale(k, k);
@@ -938,8 +940,11 @@ export function drawMine(g, cx, cy, ts, res, color, time, flip = false, art = nu
   flag(g, 0, -10, color, time);
   g.restore();
 }
-export function drawSite(g, cx, cy, ts, kind, spent, flip = false, time = 0) {
+export function drawSite(g, cx, cy, ts, kind, spent, flip = false, time = 0, tile = null) {
   const art = (SITES[kind] && SITES[kind].art) || kind;
+  // a picture per homeland ground where one exists (st_<kind>_<biome>), else the original picture
+  const own = tile && `st_${kind}_${biomeOf(tile)}`;
+  if (own && sprite(own)) { drawStructure(g, own, cx, cy, ts, SITE_W[art] || 2.55, flip, time, spent, cx * 0.7 + cy); return; }
   drawStructure(g, 'site_' + art, cx, cy, ts, SITE_W[art] || 2.55, flip, time, spent, cx * 0.7 + cy);
 }
 
@@ -1418,7 +1423,7 @@ export function paintTerrain(s, TS, occupied) {
   }
   const path = () => { g.beginPath(); for (const [a, b, c2, d] of segs) { g.moveTo(a * TS + TS / 2, b * TS + TS / 2); g.lineTo(c2 * TS + TS / 2, d * TS + TS / 2); } };
   const stroke = (color, w) => { path(); g.strokeStyle = color; g.lineWidth = w; g.lineCap = 'round'; g.lineJoin = 'round'; g.stroke(); };
-  const roadTex = AS && AS.tex && AS.tex.road;
+  const roadTex = AS && AS.tex && (AS.tex.road || AS.tex.road_rust);
   if (roadTex && segs.length) {
     // paved road: dark curb and soft shadow, then grey flagstones clipped to the road's shape
     stroke('rgba(10,8,8,0.35)', TS * 0.62); stroke('#1e1814', TS * 0.5);

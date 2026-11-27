@@ -75,7 +75,7 @@ async function loadAssets() {
     c.getContext('2d').drawImage(atl[m.atlas], m.x, m.y, m.w, m.h, 0, 0, m.w, m.h); spr[n] = c;
   }
   const ground = await loadImage('assets/ground.png');
-  const texNames = [...new Set([...D.TERRAIN_TEX, 'road', ...['snow', 'scrap', 'shale', 'glass', 'ash', 'rust'].map(b => 'road_' + b)])];
+  const texNames = [...new Set([...D.TERRAIN_TEX, ...['snow', 'scrap', 'shale', 'glass', 'ash', 'rust'].map(b => 'road_' + b)])];
   const tex = {};
   await Promise.all(texNames.map(async n => { tex[n] = await loadImage(`assets/terrain/${n}.webp`); }));
   let riverStrip = null;
@@ -108,7 +108,7 @@ function modal({ title, html = '', buttons = [{ label: 'Close', value: null, pri
       const rest = buttons.map((b, i) => [b, i]).filter(([, i]) => i !== plate);
       wrap.innerHTML = `<div class="panel modal choicebox painted" role="dialog" aria-modal="true"><div class="cb-frame plain">
         <h3 class="cb-t">${title}</h3><div class="cb-txt">${html}</div>
-        <div class="cb-btns">${rest.map(([b, i]) => `<button class="cb-b ${b.primary ? 'primary' : ''}" data-i="${i}">${b.label}</button>`).join('')}</div>
+        <div class="cbp-btns">${rest.map(([b, i]) => `<button class="cb-b ${b.primary ? 'primary' : ''}" data-i="${i}">${b.label}</button>`).join('')}</div>
         ${plate >= 0 ? `<button class="cb-ok ${buttons.length === 1 ? 'primary' : ''}" data-i="${plate}">${buttons.length === 1 && /^(ok|close)$/i.test(buttons[0].label) ? '✔' : buttons[plate].label}</button>` : ''}</div>
         <div class="modal-btns" hidden></div></div>`;
     } else
@@ -491,13 +491,13 @@ function drawItem(g, it, t) {
     case 'town': A.drawTown(g, cx, cy, TS, it.faction, ownerColor(it), t); break;
     case 'obst': A.drawObstacleTile(g, it.T, it.x, it.y, TS, t, it.near); break;
     case 'scenery': A.drawScenery(g, it.sc, TS); break;
-    case 'mine': A.drawMine(g, cx, cy, TS, it.res, ownerColor(it), t, faceRoad(it)); break;
+    case 'mine': A.drawMine(g, cx, cy, TS, it.res, ownerColor(it), t, faceRoad(it), null, G.s.tiles[it.y * G.s.W + it.x]); break;
     case 'pile': A.drawPile(g, cx, cy, TS, it.res); break;
     case 'site': {
       const S = D.SITES[it.kind], h = selHero();
       const spent = D.siteSpent(it, h, s.day);
       if (it.kind === 'derelict' && it.cleared && it.owner != null) A.drawMine(g, cx, cy, TS, it.res, ownerColor(it), t, faceRoad(it), 'derelict_mining_complex');
-      else A.drawSite(g, cx, cy, TS, it.kind, spent, faceRoad(it), t);
+      else A.drawSite(g, cx, cy, TS, it.kind, spent, faceRoad(it), t, G.s.tiles[it.y * G.s.W + it.x]);
       if ((it.kind === 'keystation' || it.kind === 'blastdoor') && it.color) I.drawKeyMarker?.(g, D.KEY_COLORS[it.color], cx - TS * 0.9, cy + TS * 0.2, TS * 0.5, t);
       if (S.guarded && !it.cleared) {
         const threat = opt('threat') && h ? I.threatLevel(it.guard.count * D.unitValue(it.guard.unit) / Math.max(1, Gm.armyStrength(h.army, h))) : null;
