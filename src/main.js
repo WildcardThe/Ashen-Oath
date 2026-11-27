@@ -75,7 +75,7 @@ async function loadAssets() {
     c.getContext('2d').drawImage(atl[m.atlas], m.x, m.y, m.w, m.h, 0, 0, m.w, m.h); spr[n] = c;
   }
   const ground = await loadImage('assets/ground.png');
-  const texNames = [...new Set([...D.TERRAIN_TEX, 'road'])];
+  const texNames = [...new Set([...D.TERRAIN_TEX, 'road', ...['snow', 'scrap', 'shale', 'glass', 'ash', 'rust'].map(b => 'road_' + b)])];
   const tex = {};
   await Promise.all(texNames.map(async n => { tex[n] = await loadImage(`assets/terrain/${n}.webp`); }));
   let riverStrip = null;
@@ -129,7 +129,7 @@ function setupTitle(mode = 'sp') {
   if (!SETUP) SETUP = buildSetup($('#setup-stage'), {
     heroAvatar, toast,
     onBack: () => showScreen('menu'),
-    onBegin: cfg => { Gm.newGame(cfg); enterGame(); writeSlot('auto', true); },
+    onBegin: cfg => { Gm.newGame(cfg); enterGame(); writeSlot(autoSlot(), true); },
     mode,
   });
   SETUP.render();
@@ -180,7 +180,10 @@ function showOptions() {
 
 // ---------------- save slots ----------------
 const SLOT_INDEX = 'ashen-oath-slots-v1';
-const SLOT_IDS = ['auto', '1', '2', '3', '4', '5', '6'];
+const SLOT_IDS = ['auto', 'automp', '1', '2', '3', '4', '5', '6'];
+// a multiplayer (hot-seat) game: more than one human player; it autosaves to its own slot
+const isMpGame = s => !!(s && s.players.filter(q => q.human).length > 1);
+const autoSlot = () => (isMpGame(G.s) ? 'automp' : 'auto');
 const slotKey = id => 'ashen-oath-slot:' + id;
 function slotIndex() { try { return JSON.parse(localStorage.getItem(SLOT_INDEX) || '{}') || {}; } catch { return {}; } }
 function writeSlot(id, quiet = false) {
@@ -188,7 +191,8 @@ function writeSlot(id, quiet = false) {
     const s = G.s, idx = slotIndex();
     localStorage.setItem(slotKey(id), JSON.stringify(s));
     const hs = Gm.heroesOf(VP());
-    idx[id] = { ts: Date.now(), day: s.day, faction: s.players[VP()].faction, template: s.template || 'duel', size: s.W,
+    idx[id] = { ts: Date.now(), day: s.day, faction: s.players[VP()].faction, template: s.template || 'duel', size: s.W, mp: isMpGame(s),
+      players: s.players.filter(q => q.human).map(q => q.name),
       hero: hs[0] ? hs[0].name : null, towns: Gm.townsOf(VP()).length, heroes: hs.length };
     localStorage.setItem(SLOT_INDEX, JSON.stringify(idx));
     if (!quiet) toast(id === 'auto' ? 'Autosaved.' : `Saved to slot ${id}.`);
@@ -212,24 +216,32 @@ function migrateOldSave() {
 }
 const DATE_FMT = ts => new Date(ts).toLocaleString(undefined, { dateStyle: 'medium', timeStyle: 'short' });
 function slotRowHtml(id, m, mode) {
-  const label = id === 'auto' ? 'Autosave' : `Slot ${id}`;
-  if (!m) return `<div class="slot-row empty"><div></div><div><b>${label}</b><small>Empty</small></div><div class="slot-btns">${mode === 'save' && id !== 'auto' ? `<button class="btn sm primary" data-save="${id}">Save here</button>` : ''}</div></div>`;
+  const label = id === 'auto' || id === 'automp' ? 'Autosave' : `Slot ${id}`;
+  if (id === 'automp' && !m) return '';
+  if (!m) return `<div class="slot-row empty"><div></div><div><b>${label}</b><small>Empty</small></div><div class="slot-btns">${mode === 'save' && !/^auto/.test(id) ? `<button class="btn sm primary" data-save="${id}">Save here</button>` : ''}</div></div>`;
   const d = m.day - 1;
   const when = `Month ${Math.floor(d / 28) + 1}, week ${Math.floor(d % 28 / 7) + 1}, day ${d % 7 + 1}`;
   return `<div class="slot-row"><img class="avatar" src="assets/sprites/commander_${{ concord: 1, hollow: 2, rustbound: 3 }[m.faction] || 1}.png" alt="">
-    <div><b>${label} · ${esc(D.FACTIONS[m.faction]?.name || m.faction)}</b><small>${when} · ${esc(TEMPLATES[m.template]?.name || '')} ${m.size}×${m.size} · ${m.towns} town${m.towns === 1 ? '' : 's'}, ${m.heroes} commander${m.heroes === 1 ? '' : 's'} · saved ${DATE_FMT(m.ts)}</small></div>
-    <div class="slot-btns">${mode === 'save' ? (id !== 'auto' ? `<button class="btn sm primary" data-save="${id}">Overwrite</button>` : '') : `<button class="btn sm primary" data-load="${id}">Load</button>`}
-    ${id !== 'auto' || mode === 'load' ? `<button class="btn sm" data-del="${id}" title="Delete this save">Delete</button>` : ''}</div></div>`;
+    <div><b>${label} · ${m.mp ? esc((m.players || []).join(', ')) : esc(D.FACTIONS[m.faction]?.name || m.faction)}</b><small>${when} · ${esc(TEMPLATES[m.template]?.name || '')} ${m.size}×${m.size} · ${m.towns} town${m.towns === 1 ? '' : 's'}, ${m.heroes} commander${m.heroes === 1 ? '' : 's'} · saved ${DATE_FMT(m.ts)}</small></div>
+    <div class="slot-btns">${mode === 'save' ? (!/^auto/.test(id) ? `<button class="btn sm primary" data-save="${id}">Overwrite</button>` : '') : `<button class="btn sm primary" data-load="${id}">Load</button>`}
+    ${!/^auto/.test(id) || mode === 'load' ? `<button class="btn sm" data-del="${id}" title="Delete this save">Delete</button>` : ''}</div></div>`;
 }
-function showSlots(mode) {
+async function showSlots(mode) {
+  // loading first asks which kind of game; each list shows only saves of that kind
+  let kind = null;
+  if (mode === 'load') {
+    kind = await modal({ title: 'Load game', html: '<p class="muted">Which kind of game do you want to load?</p>',
+      buttons: [{ label: 'Single Player', value: 'sp', primary: true }, { label: 'Multiplayer', value: 'mp' }, { label: 'Back', value: null, cancel: true }] });
+    if (!kind) return null;
+  }
   return modal({
-    title: mode === 'save' ? 'Save game' : 'Load game', cls: 'wide-ish', html: '<div class="slots-list" id="slots"></div><p class="hint">Saves are kept in this browser. The game autosaves at the start of each of your turns.</p>',
+    title: mode === 'save' ? 'Save game' : kind === 'mp' ? 'Load multiplayer game' : 'Load single player game', cls: 'wide-ish', html: '<div class="slots-list" id="slots"></div><p class="hint">Saves are kept in this browser. The game autosaves at the start of each of your turns.</p>',
     buttons: [{ label: 'Close', value: null, cancel: true }],
     onMount: (wrap, close) => {
       const box = wrap.querySelector('#slots'); let armed = null;
       const render = () => {
         const idx = slotIndex();
-        const ids = mode === 'load' ? SLOT_IDS.filter(id => idx[id]) : SLOT_IDS;
+        const ids = mode === 'load' ? SLOT_IDS.filter(id => idx[id] && !!idx[id].mp === (kind === 'mp')) : SLOT_IDS;
         box.innerHTML = ids.map(id => slotRowHtml(id, idx[id], mode)).join('') || '<p class="muted">No saved games yet.</p>';
         if (armed) { const b = box.querySelector(`[data-del="${armed}"]`); if (b) b.textContent = 'Confirm delete'; }
       };
@@ -262,7 +274,7 @@ function showScreen(name) {
 function refreshMenu() {
   const id = latestSlot(), m = id && slotIndex()[id];
   $('#mm-continue').hidden = !m;
-  if (m) $('#mm-continue-sub').textContent = `${id === 'auto' ? 'Autosave' : 'Slot ' + id} · ${D.FACTIONS[m.faction]?.name || ''} · day ${m.day}`;
+  if (m) $('#mm-continue-sub').textContent = `${/^auto/.test(id) ? 'Autosave' : 'Slot ' + id} · ${D.FACTIONS[m.faction]?.name || ''} · day ${m.day}`;
 }
 // main menu: live buttons on the painted plates of assets/ui/menu_bg.webp
 const MENU_PLATES = [['mm-new', 'New Game', 'm_new', 75], ['mm-load', 'Load Game', 'm_load', 205], ['mm-options', 'Options', 'm_options', 335], ['mm-credits', 'Credits', 'm_credits', 467], ['mm-quit', 'Quit', 'm_quit', 597]];
@@ -1505,7 +1517,7 @@ io.aiStart = p => { ui.aiActive = true; const el = $('#ai-banner'); el.textConte
 io.aiEnd = () => { ui.aiActive = false; $('#ai-banner').hidden = true; };
 io.turnStart = async () => {
   const s = G.s;
-  writeSlot('auto', true);
+  writeSlot(autoSlot(), true);
   if (hotSeat() && ui.lastViewer !== VP()) {
     // hand the computer over: the map stays hidden until the next player is ready
     const p = s.players[VP()];
@@ -1600,7 +1612,7 @@ async function showMenu() {
   if (v === 'options') showOptions();
   if (v === 'display') showDisplay();
   if (v === 'help') showHelp();
-  if (v === 'menu') { writeSlot('auto', true); showScreen('menu'); }
+  if (v === 'menu') { writeSlot(autoSlot(), true); showScreen('menu'); }
 }
 
 // ---------------- boot ----------------

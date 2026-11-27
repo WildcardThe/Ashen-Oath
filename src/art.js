@@ -1428,8 +1428,20 @@ export function paintTerrain(s, TS, occupied) {
     rg.strokeStyle = '#fff'; rg.lineWidth = TS * 0.42; rg.lineCap = 'round'; rg.lineJoin = 'round'; rg.stroke();
     rg.globalCompositeOperation = 'source-in';
     rg.fillStyle = texPattern(rg, roadTex, TS / 48 * 0.2); rg.fillRect(0, 0, rc.width, rc.height);
-    // worn centre and darker edges so the paving reads as a surface, not a sticker
+    // each homeland paves its roads its own way: its road texture where the road crosses its ground, blended at borders
     rg.globalCompositeOperation = 'source-atop';
+    const byBio = {};
+    for (const [a, b] of segs) { const B = biomeOf(s.tiles[b * s.W + a]); (byBio[B] = byBio[B] || []).push([a, b]); }
+    for (const [bio, cells] of Object.entries(byBio)) {
+      const tex = AS.tex['road_' + bio]; if (!tex) continue;
+      const lc = document.createElement('canvas'); lc.width = rc.width; lc.height = rc.height; const lg = lc.getContext('2d');
+      lg.fillStyle = '#fff'; lg.filter = `blur(${Math.round(TS * 0.3)}px)`;
+      for (const [a, b] of cells) lg.fillRect(a * TS - TS * 0.1, b * TS - TS * 0.1, TS * 1.2, TS * 1.2);
+      lg.filter = 'none'; lg.globalCompositeOperation = 'source-in';
+      lg.fillStyle = texPattern(lg, tex, TS / 48 * 0.22); lg.fillRect(0, 0, lc.width, lc.height);
+      rg.drawImage(lc, 0, 0);
+    }
+    // worn centre and darker edges so the paving reads as a surface, not a sticker
     rg.beginPath(); for (const [a, b, c2, d] of segs) { rg.moveTo(a * TS + TS / 2, b * TS + TS / 2); rg.lineTo(c2 * TS + TS / 2, d * TS + TS / 2); }
     rg.strokeStyle = 'rgba(255,240,220,0.08)'; rg.lineWidth = TS * 0.16; rg.stroke();
     g.drawImage(rc, 0, 0);

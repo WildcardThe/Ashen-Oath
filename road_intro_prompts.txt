@@ -1,0 +1,107 @@
+ASHEN OATH — PROMPTS: ROADS AND THE NEW INTRO VIDEO
+=====================================================
+
+
+PART 1 — ROADS (one per homeland)
+==================================
+
+HOW THE GAME USES IT
+The road on the adventure map is a seamless texture that the game paints inside the road's shape and fades at its
+edges. Today one pale paving stone texture is used everywhere, which is why it glows against the dark ground.
+With one road per homeland the road takes the colours of the land it crosses.
+
+RULES FOR EVERY ROAD PICTURE
+ - Seen STRAIGHT FROM ABOVE (top-down, flat, no perspective, no horizon, no vanishing point).
+ - Fills the whole square edge to edge: no road edges, no grass border, no frame. Only the road surface.
+ - Seamless: the pattern repeats on all four edges.
+ - Even, soft lighting, no strong shadows, no objects bigger than a small stone. 1024 x 1024. No text.
+ - DARK and MUTED: about as dark as the ground around it, only a little lighter, never bright white or pale grey.
+
+Shared beginning (put it before each line below):
+Seamless tileable road surface texture for the adventure map of a grimdark sci-fi fantasy strategy game, seen straight
+from above, flat, no perspective, filling the whole square with no edges or border, 1024 x 1024, even soft lighting,
+muted dark colours only slightly lighter than the surrounding ground, worn and old, painted digital art, no text.
+
+Frozen Wastes (Iron Concord)
+...worn dark grey flagstones and gunmetal plates half covered by trampled dirty snow and slush, frozen ruts, blue-grey tones.
+
+Ash Plains (Hollow Host)
+...a packed black-ash road of cracked dark basalt slabs with cinders in the cracks and faint dull-orange embers, charcoal and rust-brown tones.
+
+Rust Flats (Rustbound)
+...a broken old industrial road: cracked dark concrete slabs and rusted steel grating, rust-red dust in the cracks, brown and grey tones.
+
+Scrap Wastes (Scrapjaw)
+...a dirt track of packed red-brown earth with tyre ruts, oil stains, flattened scrap and rusty bolts pressed into it.
+
+Black Glass Desert (Deathless)
+...an ancient causeway of worn black stone tiles with thin dull-gold inlaid lines, black sand drifted over the joints, a few faint green glints.
+
+Shale Coast (Pale Fang)
+...wet dark slate slabs and gunmetal hull plates laid as a path, puddles, salt crust and weed in the joints, cold grey-blue tones.
+
+
+PART 2 — NEW INTRO VIDEO (about 50 seconds)
+=============================================
+
+HOW TO MAKE IT
+Video generators make short clips, so the intro is seven shots of about 7 seconds each. Make each shot from its own prompt,
+send them all (and the music), and I will cut them together with fades, the music and the title at the end.
+Every shot: cinematic, 16:9, 1920 x 1080 if possible, 24 fps, grimdark sci-fi fantasy, dark and epic, painted
+concept-art look like a high-end game trailer, no text, no logos, no subtitles. Keep the camera moving slowly and smoothly.
+
+Style line to start every shot with:
+Cinematic grimdark sci-fi fantasy game trailer shot, epic scale, dark atmospheric lighting with strong rim light,
+volumetric smoke and dust, painted concept-art realism, slow smooth camera movement, 16:9, no text, no logos.
+
+SHOT 1 (0–7 s) — The void
+...deep space: a dying red star behind a vast nebula of ash and embers, debris of shattered ships drifting toward the camera,
+the camera slowly pushes forward through the wreckage; silence before the storm.
+
+SHOT 2 (7–14 s) — The fleets
+...two colossal fleets in space facing each other: on the left gothic gunmetal-and-frost-white battle cathedrals with eagle
+prows and blue-white engine glow (Iron Concord), black-iron hellforge ships with red-hot glowing seams (Hollow Host) and
+angular black-and-gold ships glowing emerald green (Deathless); on the right crude rusted ships welded from scrap with red
+skull paint (Scrapjaw), riveted rust-brown industrial ships venting steam (Rustbound) and long gunmetal raider ships with
+giant shark-jaw prows and cold blue lanterns (Pale Fang). The camera glides slowly between them as their guns turn.
+
+SHOT 3 (14–21 s) — The first broadside
+...the fleets open fire: lances of light, tracer streams and torpedo trails cross the void, a huge battleship splits apart in
+a silent fireball, smaller ships burst like sparks; the camera rolls slowly through the crossfire.
+
+SHOT 4 (21–28 s) — Planetfall
+...burning drop pods and landing ships fall through the clouds of a scorched planet, trailing fire, toward a dark wasteland of
+ash plains, frozen ridges and ruined cities; the camera follows one pod down.
+
+SHOT 5 (28–35 s) — The charge
+...ground level on a ruined battlefield at dusk: armoured super-soldiers in gunmetal-and-white plate with wolf pelts charge
+through smoke on the left, a horde of green-skinned brutes with crude axes and scrap armour rushes in from the right; slow
+motion as the two lines are about to meet, debris and sparks in the air.
+
+SHOT 6 (35–42 s) — War machines
+...the battle widens: a towering walking war machine fires a cannon, black-and-gold skeletal machine warriors march out of
+green light, a black-iron daemon engine breathes fire, siege cannons fire at a burning city wall in the distance; the camera
+rises above the battlefield to show the scale of the war.
+
+SHOT 7 (42–50 s) — The oath
+...the smoke clears around a lone armoured commander standing on a hill of wreckage, a tattered banner behind him,
+facing a burning sky full of falling ships; he raises his sword in a silent oath; the camera slowly pulls back and the
+image darkens toward black (room for the title "Ashen Oath" to appear).
+
+MUSIC FOR THE INTRO (50 seconds)
+Epic dark orchestral trailer music, 50 seconds: begins with a low ominous drone and a distant choir (0–10 s), builds with deep
+war drums and low brass (10–28 s), full orchestra and choir with heavy percussion at the battle climax (28–42 s), then a
+single final drum hit and a fading low choir note into silence for the title (42–50 s). No vocals with words.
+
+
+ALL SEVEN SHOTS AS ONE PROMPT (for tools that can make a long video in one go)
+-------------------------------------------------------------------------------
+A 50-second cinematic intro for a grimdark sci-fi fantasy strategy game called Ashen Oath, in the style of a high-end game trailer: epic scale, dark atmospheric lighting with strong rim light, volumetric smoke and dust, painted concept-art realism, slow smooth camera movement throughout, 16:9, 1920 x 1080, 24 fps, no text, no logos, no subtitles. It plays as one continuous sequence of seven shots joined by smooth cuts and dissolves.
+0–7 seconds: deep space; a dying red star glows behind a vast nebula of ash and embers while debris of shattered ships drifts toward the camera, which pushes slowly forward through the wreckage in an ominous silence.
+7–14 seconds: two colossal fleets face each other across the void. On the left: gothic gunmetal-and-frost-white battle cathedrals with eagle prows and blue-white engine glow, black-iron hellforge warships with red-hot glowing seams, and angular black-and-gold ships glowing emerald green. On the right: crude rusted ships welded from scrap and painted with red skulls, riveted rust-brown industrial ships venting steam, and long gunmetal raider ships with giant shark-jaw prows and cold blue lanterns. The camera glides slowly between the fleets as their great guns turn toward each other.
+14–21 seconds: the fleets open fire; lances of light, tracer streams and torpedo trails cross the void, a huge battleship splits apart in a silent fireball and smaller ships burst like sparks, while the camera rolls slowly through the crossfire.
+21–28 seconds: burning drop pods and landing ships fall through the clouds of a scorched planet, trailing fire, toward a dark wasteland of ash plains, frozen ridges and ruined cities; the camera follows one pod down toward the ground.
+28–35 seconds: at ground level on a ruined battlefield at dusk, armoured super-soldiers in gunmetal-and-white plate with wolf pelts charge through smoke from the left, while a horde of green-skinned brutes with crude axes and scrap armour rushes in from the right; slow motion as the two battle lines are about to meet, with debris and sparks hanging in the air.
+35–42 seconds: the battle widens; a towering walking war machine fires its cannon, black-and-gold skeletal machine warriors march out of green light, a black-iron daemon engine breathes fire, and siege cannons pound a burning city wall in the distance, as the camera rises above the battlefield to reveal the vast scale of the war.
+42–50 seconds: the smoke clears around a lone armoured commander standing on a hill of wreckage with a tattered banner behind him, facing a burning sky full of falling ships; he raises his sword in a silent oath, and the camera slowly pulls back as the image darkens to black, leaving empty space for the title.
+Soundtrack: epic dark orchestral trailer music with no sung words, starting with a low ominous drone and distant choir, building with deep war drums and low brass, reaching a full orchestral and choir climax during the battle, and ending on a single final drum hit and a fading low choir note into silence.
