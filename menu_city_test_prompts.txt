@@ -1,0 +1,83 @@
+ASHEN OATH — PROMPTS: MAIN MENU WALLPAPER AND A TEST TOWN FOR THE IRON CONCORD
+=================================================================================
+
+
+PART 1 — MAIN MENU WALLPAPER
+=============================
+
+The game puts its title and five buttons on painted plates in the picture, so the layout must stay exactly like this:
+ - 16:9, 1376 x 768 (or 2752 x 1536).
+ - TOP LEFT: one wide empty ornate title plaque (about 31% of the width, 12% of the height, starting 2% from the left and
+   9% from the top), iron and brass with skulls at the ends and a winged emblem under it, its middle plain dark metal with NO text.
+ - RIGHT EDGE: five identical empty button plates stacked one above another (each about 22% of the width and 9% of the
+   height, right edge about 4% from the picture's right side, evenly spaced from 10% to 88% of the height), plain dark metal
+   with brass frames and a round empty medallion on the left end of each, NO text on any of them.
+ - Everything else is the scene. Keep the area under the plates dark and calm so the buttons stay readable.
+
+Prompt
+Main menu background for a grimdark sci-fi fantasy strategy game, painted digital art, cinematic and epic, 16:9,
+1376 x 768, no text, no letters, no logos. LAYOUT: in the top left corner one wide empty ornate title plaque of black iron
+and brass with skulls at both ends and a winged emblem below it, its centre plain dark metal and completely empty; along
+the right edge five identical empty rectangular button plates of dark metal with brass frames, stacked evenly from near
+the top to near the bottom, each with an empty round medallion at its left end, no writing on any plate. THE SCENE
+between and behind them: a burning world under a dark red sky full of falling warships and smoke; in the centre a
+lone commander in battered steel-blue power armour with a wolf-pelt cloak stands on a ridge of wreckage holding a
+tattered banner, seen from behind and slightly to the side, looking toward a vast ruined city with towering gothic spires
+on the horizon; on the plain below, the lights of six armies clash in the distance (frost-blue, molten orange, rust
+brown, scrap red, emerald green, cold sea-blue); embers and ash drifting in the air; strong rim light from the burning
+horizon, dark foreground. The area behind the right-hand plates is darker smoke so the plates stand out.
+
+
+PART 2 — TEST TOWN FOR THE IRON CONCORD (two pictures)
+=======================================================
+
+WHAT THIS TESTS
+One picture with all eleven buildings standing on the landscape in the right perspective, and a second picture of the
+SAME landscape with the buildings gone. If they line up, I can cut each building out of the first picture exactly where
+it belongs, so the town would look painted as one picture instead of buildings placed on top.
+
+HOW TO MAKE THEM
+0. Attach the eleven building pictures named below as references (they are the pictures you made for the
+   Iron Concord earlier, with their original file names), and if your tool allows it the snowy landscape
+   Snowbound_fjord_landscape_strate#U2026_fa6d7879.jpg as the reference for the land. Tell the generator to copy each building's look from its picture.
+1. Make PICTURE 1 from the prompt below.
+2. Make PICTURE 2 by EDITING picture 1 (image-to-image, "edit image", "erase", "remove objects") with the second prompt,
+   so the camera, light and landscape stay identical. Do not make it as a new picture.
+3. Same size for both: 16:9, 1376 x 768 (or larger, same shape).
+
+THE SCENE (shared)
+Town screen panorama of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, in the
+style of a classic fantasy strategy town screen, 16:9, no text, no characters, no creatures. CAMERA: a fixed high
+three-quarter view looking slightly down onto a snowy mountain plateau, about 30 degrees above the ground, centred,
+horizon at about 22% from the top; every building faces the camera, nearer buildings lower and larger, farther buildings
+higher and smaller, all on the same ground with correct perspective and matching shadows from soft light at the upper
+left. THE LAND: frozen terraced plateau ringed by jagged snow-capped mountains and dark pines, a grey overcast sky with
+light snowfall, packed snow paths connecting eleven flat building plots arranged in three rows.
+
+PICTURE 1 — the town with its eleven buildings
+[shared scene] + The eleven buildings of the Iron Concord, a northern army of steel-blue armoured warriors with wolf pelts:
+everything weathered, proud and northern, steel-blue stone and dark timber, gold trim, wolf heads, frost and icicles,
+banners with a wolf skull and eagle wings. Their places on the plots:
+BACK ROW (farthest, highest in the picture, the ground line at about 38% of the height):
+ 1. Back left (about 15% across): MAGE GUILD [reference picture: Spire_of_ice_and_stone_211955e8.jpg] — a towering spire of ice and stone, its top split open around a floating rune-stone in a column of blue-white lightning, a ring of glowing rune-stones at its base.
+ 2. Back centre (about 48% across, the biggest building): CASTLE [reference picture: Fortress_wall_with_cannons_2b16bc57.jpg] — a massive fortress wall of steel-blue stone with three towers carrying heavy cannons and a giant gate shaped like a snarling wolf's head.
+ 3. Back right (about 82% across): TIER 5 DWELLING, Hall of Jarls [reference picture: Upgraded_building_for_strategy_game_890285cf.jpg] — a towering hall of honour with gilded doors, a giant carved wolf on its roof and rune-stones carved with sagas.
+MIDDLE ROW (ground line at about 60% of the height):
+ 4. Middle far left (about 13% across): TOWN HALL, Jarl's Throne Hall [reference picture: Fortress_hall_building_design_74f9ee3e.jpg] — a towering fortress-hall of steel-blue stone and gold-trimmed armour plates with three steep roofs crowned by carved wolves.
+ 5. Middle centre left (about 37% across): RECRUITMENT OFFICE, Mead Hall [reference picture: Timber_mead_hall_in_snow_422912ba.jpg] — a rowdy timber mead hall with a snow-covered roof, shields along its walls, a carved drinking-horn sign and warm firelight from the doorway.
+ 6. Middle centre right (about 59% across): TIER 3 DWELLING, Rimehowl Lodge [reference picture: Upgraded_stone_lodge_building_de#U2026_defebcff.jpg] — a great stone wolf lodge with armoured doors, a saddle forge and glowing blue runes over the gate.
+ 7. Middle far right (about 84% across): TIER 4 DWELLING, Walker Bay [reference picture: Stone_hangar_building_digital_art_13856db3.jpg] — a heavy stone and steel hangar with huge sliding doors, a crane holding a walker leg, cables and fuel lines, sparks from a welder and frost on the roof.
+FRONT ROW (nearest, lowest in the picture, ground line at about 88% of the height):
+ 8. Front far left (about 12% across): TIER 2 DWELLING, Hunters' Bladehall [reference picture: Upgraded_building_digital_art_2e50f4df.jpg] — a big stone training hall with a forge glowing at one side, racks of chain-blades and armour plates on its walls.
+ 9. Front centre left (about 35% across): TRADE EXCHANGE, Frost Market [reference picture: Market_building_with_snow_and_0fd4fb5f.jpg] — an open market under timber shelters with snow on their roofs, stalls of furs and ammunition crates, hanging brass scales and a crane unloading a cargo pod.
+10. Front centre right (about 62% across): SUPPLY DEPOT [reference picture: Sci-fi_fantasy_supply_compound_1bc37332.jpg] — a fenced compound of snow-dusted storehouses, stacked armoured supply crates, fuel barrels and a tracked supply crawler.
+11. Front far right (about 86% across): TIER 1 DWELLING, Veterans' Lodge [reference picture: Upgraded_stone_and_timber_lodge_949d6532.jpg] — a sturdy stone and timber lodge with a lookout tower and shooting targets in the snow.
+Copy each building's design, shape and colours from its reference picture, turned to fit this camera and perspective.
+Each building stands fully on its own plot, none overlapping another; there is a little snowy ground visible between
+neighbours so the town looks well filled but not crowded.
+
+PICTURE 2 — the same landscape, empty (edit picture 1)
+Remove all eleven buildings and everything that belongs to them (banners, crates, vehicles, fences, smoke and light from
+them). In their place leave eleven empty, flat, snow-covered building plots of levelled stone exactly where the buildings
+stood, each the size of its building's footprint. Keep EVERYTHING else exactly the same: the camera, the mountains, the
+sky, the snow paths, the light and the colours. Nothing moves; nothing new is added.

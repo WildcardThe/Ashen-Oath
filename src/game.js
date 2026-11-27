@@ -826,8 +826,15 @@ async function visitSite0(h, o) {
       if (!o.spell || !SPELLS[o.spell]) { const pool = Object.keys(SPELLS).filter(k => SPELLS[k].level === lvl); o.spell = pick(pool); }
       const sp = SPELLS[o.spell];
       if (h.spells.includes(o.spell)) { say(`${h.name} already knows ${sp.name}.`); return; }
-      if (maxSpellLevel(h) < lvl) { await notice(S.name, `The shrine holds ${sp.name}, but ${h.name} needs greater Wisdom to learn it.`); return; }
-      h.spells.push(o.spell); await notice(S.name, `${h.name} learns ${sp.name} (level ${lvl}).`);
+      const lore = { litany: 'Tech-adepts chanting over a cracked data-altar', canticle: 'Hooded scribes guarding a choir of humming servo-skulls', revelation: 'A blind oracle bound in cables to a whispering monolith' }[o.kind];
+      if (maxSpellLevel(h) < lvl) {
+        if (human && io.riteShrine) await io.riteShrine(h, o.spell, S.name, `${lore} offer${o.kind === 'revelation' ? 's' : ''} to teach the rite of ${sp.name}, but ${h.name} needs greater Wisdom to grasp it.`, false);
+        else await notice(S.name, `The shrine holds ${sp.name}, but ${h.name} needs greater Wisdom to learn it.`);
+        return;
+      }
+      h.spells.push(o.spell);
+      if (human && io.riteShrine) await io.riteShrine(h, o.spell, S.name, `${lore} welcome${o.kind === 'revelation' ? 's' : ''} ${h.name}. In exchange for a vow of protection, ${h.name} is taught the rite of ${sp.name}.`, true);
+      else await notice(S.name, `${h.name} learns ${sp.name} (level ${lvl}).`);
       return;
     }
     case 'voidfont': {

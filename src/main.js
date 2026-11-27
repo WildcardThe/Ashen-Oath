@@ -98,6 +98,20 @@ async function loadAssets() {
 function modal({ title, html = '', buttons = [{ label: 'Close', value: null, primary: true }], cls = '', onMount }) {
   return new Promise(resolve => {
     const wrap = document.createElement('div'); wrap.className = 'overlay';
+    // short popups without a design of their own use the painted window: title plaque, text panel, buttons below;
+    // the cancel (or only) button sits on the painted plate at the bottom
+    const plainText = html.replace(/<[^>]+>/g, '');
+    const painted = !cls && title && plainText.length < 700 && buttons.length <= 6 && !/<(table|input|select|textarea|canvas|ul|ol|img|div)\b/i.test(html);
+    if (painted) {
+      const plateI = buttons.length === 1 ? 0 : Math.max(0, buttons.findIndex(b => b.cancel));
+      const plate = buttons.length && (buttons.length === 1 || buttons[plateI]?.cancel) ? plateI : -1;
+      const rest = buttons.map((b, i) => [b, i]).filter(([, i]) => i !== plate);
+      wrap.innerHTML = `<div class="panel modal choicebox painted" role="dialog" aria-modal="true"><div class="cb-frame plain">
+        <h3 class="cb-t">${title}</h3><div class="cb-txt">${html}</div>
+        <div class="cb-btns">${rest.map(([b, i]) => `<button class="cb-b ${b.primary ? 'primary' : ''}" data-i="${i}">${b.label}</button>`).join('')}</div>
+        ${plate >= 0 ? `<button class="cb-ok ${buttons.length === 1 ? 'primary' : ''}" data-i="${plate}">${buttons.length === 1 && /^(ok|close)$/i.test(buttons[0].label) ? '✔' : buttons[plate].label}</button>` : ''}</div>
+        <div class="modal-btns" hidden></div></div>`;
+    } else
     wrap.innerHTML = `<div class="panel modal ${cls}" role="dialog" aria-modal="true">
       ${title ? `<h2>${title}</h2>` : ''}<div class="modal-body">${html}</div>
       <div class="modal-btns">${buttons.map((b, i) => `<button class="btn ${b.primary ? 'primary' : ''}" data-i="${i}">${b.label}</button>`).join('')}</div></div>`;
@@ -105,9 +119,9 @@ function modal({ title, html = '', buttons = [{ label: 'Close', value: null, pri
     const close = v => { wrap.remove(); document.removeEventListener('keydown', onKey); resolve(v); };
     const onKey = e => { if (e.key === 'Escape' && buttons.some(b => b.esc !== false)) { e.stopPropagation(); close(buttons.find(b => b.cancel)?.value ?? null); } };
     document.addEventListener('keydown', onKey);
-    wrap.querySelectorAll('.modal-btns [data-i]').forEach(el => el.onclick = () => close(buttons[+el.dataset.i].value));
+    wrap.querySelectorAll('.modal-btns [data-i], .cb-frame [data-i]').forEach(el => el.onclick = () => close(buttons[+el.dataset.i].value));
     onMount?.(wrap, close);
-    wrap.querySelector('.btn.primary')?.focus();
+    wrap.querySelector('.btn.primary, .cb-b.primary, .cb-ok.primary')?.focus();
   });
 }
 const modalOpen = () => $('#modal-root').children.length > 0 || !$('#combat').hidden;
@@ -277,15 +291,15 @@ function refreshMenu() {
   if (m) $('#mm-continue-sub').textContent = `${/^auto/.test(id) ? 'Autosave' : 'Slot ' + id} · ${D.FACTIONS[m.faction]?.name || ''} · day ${m.day}`;
 }
 // main menu: live buttons on the painted plates of assets/ui/menu_bg.webp
-const MENU_PLATES = [['mm-new', 'New Game', 'm_new', 75], ['mm-load', 'Load Game', 'm_load', 205], ['mm-options', 'Options', 'm_options', 335], ['mm-credits', 'Credits', 'm_credits', 467], ['mm-quit', 'Quit', 'm_quit', 597]];
+const MENU_PLATES = [['mm-new', 'New Game', 'm_new', 95], ['mm-load', 'Load Game', 'm_load', 217], ['mm-options', 'Options', 'm_options', 340], ['mm-credits', 'Credits', 'm_credits', 462], ['mm-quit', 'Quit', 'm_quit', 584]];
 function buildMenu() {
   const st = $('#menu-stage');
   st.querySelectorAll('.mm-el').forEach(e => e.remove());
-  const h = [`<div class="mm-el mm-title" style="${T.at(125, 80, 425, 88)}">ASHEN OATH</div>`,
+  const h = [`<div class="mm-el mm-title" style="${T.at(105, 52, 400, 80)}">ASHEN OATH</div>`,
     `<button class="mm-el mm-cont" id="mm-continue" hidden style="${T.at(190, 222, 300, 46)}">Continue<small id="mm-continue-sub"></small></button>`];
   for (const [id, label, icon, y] of MENU_PLATES) {
-    h.push(`<button class="mm-el mm-plate" id="${id}" style="${T.at(1060, y + 12, 255, 72)}">${label}</button>`);
-    h.push(`<span class="mm-el mm-emb" style="${T.at(1016, y + 21, 54, 54)}">${menuIcon(icon)}</span>`);
+    h.push(`<button class="mm-el mm-plate" id="${id}" style="${T.at(1135, y + 18, 195, 50)}">${label}</button>`);
+    h.push(`<span class="mm-el mm-emb" style="${T.at(1064, y + 14, 54, 54)}">${menuIcon(icon)}</span>`);
   }
   st.insertAdjacentHTML('beforeend', h.join(''));
 }
@@ -406,9 +420,11 @@ function frame(t) {
   const items = [];
   for (const o of Object.values(s.objects)) if (o.x >= x0 && o.x <= x1 && o.y >= y0 && o.y <= y1 && explored(o.x, o.y)) items.push(o);
   for (const hh of Object.values(s.heroes)) if (hh.x >= x0 && hh.x <= x1 && hh.y >= y0 && hh.y <= y1 && explored(hh.x, hh.y)) items.push({ type: 'hero', h: hh, x: hh.x, y: hh.y });
-  // pickups, guards and commanders: obstacle pieces around them are fitted so they never hide them
+  // pickups and guards: obstacle pieces around them are fitted so they never hide them. Not commanders: they move,
+  // and refitting the pieces around them every step made forests and peaks change shape as they walked past
+  // (commanders show through anything covering them as a faint ghost instead)
   const small = new Set();
-  for (const it of items) if (it.type === 'hero' || /^(pile|chest|relic|monster)$/.test(it.type)) small.add(it.y * s.W + it.x);
+  for (const it of items) if (/^(pile|chest|relic|monster)$/.test(it.type)) small.add(it.y * s.W + it.x);
   for (let y = y0; y <= y1; y++) for (let x = x0; x <= x1; x++) {
     const T = s.tiles[y * s.W + x];
     if (T.t === 4 && explored(x, y)) items.push({ type: 'obst', T, x, y, near: laneNear(x, y, small) });
@@ -1010,7 +1026,7 @@ function openTown(t) {
       else label.hidden = true;
     });
     cv.addEventListener('pointerleave', () => { hover = null; label.hidden = true; });
-    cv.addEventListener('click', e => { const r = regionAt(e); if (!r) return; if (r.key === 'tavern') { openRecruitment(t).then(render); return; } if (r.key === 'guild') { openGuildRoom(t).then(render); return; } if (/^dw\d$/.test(r.key) && t.built[r.key]) { openDwelling(t, D.FACTIONS[t.faction].units[+r.key[2] - 1]).then(() => { render(); updateTop(); }); return; } if (r.key === 'hall' || r.key === 'fort') { popup = r.key; fortPick = null; hallPick = null; } else current = r.key; render(); });
+    cv.addEventListener('click', e => { const r = regionAt(e); if (!r) return; if (r.key === 'tavern') { openRecruitment(t).then(render); return; } if (r.key === 'guild') { openGuildRoom(t).then(render); return; } if (r.key === 'market' && t.built.market) { openMarket().then(() => { render(); updateTop(); }); return; } if (/^dw\d$/.test(r.key) && t.built[r.key]) { openDwelling(t, D.FACTIONS[t.faction].units[+r.key[2] - 1]).then(() => { render(); updateTop(); }); return; } if (r.key === 'hall' || r.key === 'fort') { popup = r.key; fortPick = null; hallPick = null; } else current = r.key; render(); });
 
     // ---- panels ----
     function hallPanel(p) {
@@ -1171,6 +1187,7 @@ function openTown(t) {
       if (act === 'close') return close();
       if (act === 'nav' && b.dataset.k === 'tavern') { openRecruitment(t).then(render); return; }
       if (act === 'nav' && b.dataset.k === 'guild') { openGuildRoom(t).then(render); return; }
+      if (act === 'nav' && b.dataset.k === 'market') { openMarket().then(() => { render(); updateTop(); }); return; }
       if (act === 'recruit-open') { openRecruitment(t).then(render); return; }
       if (act === 'nav') { current = b.dataset.k; popup = null; return render(); }
       if (act === 'pop') { popup = b.dataset.k; fortPick = null; hallPick = null; return render(); }
@@ -1349,6 +1366,25 @@ function openRecruitment(t) {
 
 // ---------------- commander screen (cogitator terminal) ----------------
 // slot positions on the painted frame (assets/ui/commander.webp, 1376x768)
+// The hologram figure lights up part by part in the rarity colour of the artifact worn there (assets/ui/holo_parts.*:
+// one mask per body part, frame lines cut out so they stay green on top). Rings tint the sword hand, trinkets the belt.
+const HOLO = { img: null, meta: null };
+const holoReady = Promise.all([fetch('assets/ui/holo_parts.json').then(r => r.json()), loadImage('assets/ui/holo_parts.webp')])
+  .then(([m, im]) => { HOLO.meta = m; HOLO.img = im; }).catch(() => {});
+const HOLO_PART = { head: 'head', neck: 'neck', armor: 'armor', cloak: 'cloak', weapon: 'weapon', shield: 'shield', boots: 'boots', ring1: 'ring1', ring2: 'ring1', misc1: 'misc1', misc2: 'misc1', misc3: 'misc1' };
+async function paintHoloParts(cv, h) {
+  if (!cv) return; await holoReady; if (!HOLO.img || !cv.isConnected) return;
+  const { w, h: hh, order } = HOLO.meta, g = cv.getContext('2d'); g.clearRect(0, 0, w, hh);
+  const best = {}, rank = { T: 0, m: 1, M: 2, R: 3 };
+  for (const [sl, id] of Object.entries(h.equip || {})) { if (!id) continue; const part = HOLO_PART[sl], r = D.ARTIFACTS[id].r; if (part && (best[part] == null || rank[r] > rank[best[part]])) best[part] = r; }
+  const tmp = document.createElement('canvas'); tmp.width = w; tmp.height = hh; const tg = tmp.getContext('2d');
+  for (const [part, r] of Object.entries(best)) {
+    const k = order.indexOf(part); if (k < 0) continue;
+    tg.globalCompositeOperation = 'source-over'; tg.clearRect(0, 0, w, hh); tg.drawImage(HOLO.img, 0, k * hh, w, hh, 0, 0, w, hh);
+    tg.globalCompositeOperation = 'source-in'; tg.fillStyle = D.RARITY[r].color; tg.fillRect(0, 0, w, hh);
+    g.globalAlpha = 0.6; g.drawImage(tmp, 0, 0);
+  }
+}
 const CMD_SLOTS = {
   ring1: [131, 268], ring2: [205, 268], weapon: [131, 355], cloak: [131, 443],
   head: [692, 268], neck: [779, 268], shield: [692, 355], armor: [779, 355],
@@ -1373,6 +1409,7 @@ function openHero(h) {
         html.push(`<div class="t-el t-stat-v" style="${T.at(x, 213, 86, 28)}">${v}</div>`);
       });
       html.push(`<div class="t-el t-holo" style="${T.at(244, 278, 270, 392)}"></div>`);
+      html.push(`<canvas class="t-el t-parts" width="360" height="450" style="${T.at(200, 250, 360, 450)}"></canvas>`);
       for (const [sl, [x, y]] of Object.entries(CMD_SLOTS)) {
         const id = h.equip[sl], fits = pick != null && D.slotsFor(D.ARTIFACTS[h.backpack[pick]].slot).includes(sl);
         html.push(`<button class="t-el t-slot ${id ? 'full' : ''} ${fits ? 'fits' : ''}" data-slot="${sl}" title="${id ? esc(artTip(id)) : D.SLOT_NAMES[sl] + ' (empty)'}" style="${T.at(x, y, 66, 66)}">${id ? `<img src="${artIcon(id)}" alt="">` : ''}</button>`);
@@ -1411,6 +1448,7 @@ function openHero(h) {
       html.push(`<button class="t-el t-btn t-cmd" data-cmd="book" style="${T.at(1033, 650, 109, 34)}">RITES</button>`);
       html.push(`<button class="t-el t-btn t-cmd" data-cmd="close" style="${T.at(1161, 650, 110, 34)}">CLOSE</button>`);
       root.insertAdjacentHTML('beforeend', html.join(''));
+      paintHoloParts(root.querySelector('.t-parts'), h);
     };
     root.addEventListener('click', e => {
       const t = e.target.closest('button'); if (!t || t.disabled) return;
@@ -1499,6 +1537,78 @@ io.chest = h => modal({
     wrap.querySelector('.cb-ok').onclick = () => close(pick);
   },
 }).then(v => v || 'auramite');
+// ---------------- Trade Exchange (HoMM-style marketplace) ----------------
+// Left: your materials; right: what each would fetch for the one picked on the left. Below: the trade, a quantity
+// slider, Max and Trade. Rates: materials sell for and are bought with auramite at the market price; material for
+// material is bartered at a rate that improves with every Trade Exchange you own.
+function marketOffer(give, get) {
+  if (give === get) return null;
+  if (get === 'auramite') return { g: 1, r: D.MARKET.sell(give) };            // 1 material -> n auramite
+  if (give === 'auramite') return { g: D.MARKET.buy(get), r: 1 };              // n auramite -> 1 material
+  const rate = Gm.barterRate(VP(), give, get); return rate ? { g: rate, r: 1 } : null;
+}
+function openMarket() {
+  let give = null, get = null, qty = 0;
+  return modal({ title: '', cls: 'market-win', buttons: [{ label: 'Close', value: null, cancel: true }],
+    html: '<div class="mk" id="mk"></div>',
+    onMount: (wrap, close) => {
+      const box = wrap.querySelector('#mk'); wrap.querySelector('.modal-btns').hidden = true;
+      const p = () => G.s.players[VP()];
+      const max = () => { const o = give && get && marketOffer(give, get); return o ? Math.floor(p().res[give] / o.g) : 0; };
+      const tile = (r, sub, attr, on) => `<button class="mk-t ${on ? 'on' : ''}" ${attr} title="${D.RES_INFO[r].name}"><img src="${resIcon(r)}" alt=""><span>${sub}</span></button>`;
+      const markets = Gm.townsOf(VP()).filter(x => x.built.market).length;
+      const render = () => {
+        const o = give && get ? marketOffer(give, get) : null, mx = max(); qty = Math.min(qty, mx);
+        const msg = !give ? 'Pick a material of yours on the left to sell.' : !get ? `What would you like for your ${D.RES_INFO[give].name}?`
+          : o ? (o.g === 1 ? `I can offer you ${o.r.toLocaleString()} ${D.RES_INFO[get].name} for 1 ${D.RES_INFO[give].name}.` : `I can offer you 1 ${D.RES_INFO[get].name} for ${o.g.toLocaleString()} ${D.RES_INFO[give].name}.`) : 'That trade is not possible.';
+        box.innerHTML = `<h3 class="mk-title">Trade Exchange <small>${markets} exchange${markets > 1 ? 's' : ''} owned</small></h3>
+          <div class="mk-cols">
+            <div class="mk-col"><div class="mk-msg dim">More exchanges in your realm give better barter rates.</div><h4>Your materials</h4>
+              <div class="mk-grid">${D.RES.map(r => tile(r, p().res[r].toLocaleString(), `data-give="${r}"`, give === r)).join('')}</div></div>
+            <div class="mk-col"><div class="mk-msg">${esc(msg)}</div><h4>Available for trade</h4>
+              <div class="mk-grid">${D.RES.map(r => { const of = give ? marketOffer(give, r) : null; return tile(r, !give ? '' : of ? (of.g === 1 ? of.r.toLocaleString() : `1/${of.g.toLocaleString()}`) : 'n/a', `data-get="${r}"`, get === r); }).join('')}</div></div>
+          </div>
+          <div class="mk-deal">
+            <div class="mk-side">${give ? `<img src="${resIcon(give)}" alt=""><b>${o ? (qty * o.g).toLocaleString() : 0}</b>` : ''}</div>
+            <div class="mk-mid"><div class="mk-arrow">Quantity to trade</div>
+              <input type="range" id="mk-q" min="0" max="${mx}" value="${qty}" ${o && mx ? '' : 'disabled'} aria-label="Quantity">
+              <div class="mk-btns"><button class="btn sm" data-mk="max" ${o && mx ? '' : 'disabled'}>Max</button><button class="btn sm primary" data-mk="deal" ${o && qty ? '' : 'disabled'}>Trade</button></div></div>
+            <div class="mk-side">${get ? `<img src="${resIcon(get)}" alt=""><b>${o ? (qty * o.r).toLocaleString() : 0}</b>` : ''}</div>
+          </div>
+          <button class="mk-ok" data-mk="close" title="Close (Esc)">✔</button>`;
+      };
+      box.addEventListener('click', e => {
+        const b = e.target.closest('button'); if (!b || b.disabled) return;
+        if (b.dataset.give) { give = b.dataset.give; if (get === give) get = null; qty = 0; }
+        else if (b.dataset.get) { if (b.dataset.get !== give) { get = b.dataset.get; qty = Math.min(1, max()); } }
+        else if (b.dataset.mk === 'max') qty = max();
+        else if (b.dataset.mk === 'close') return close(null);
+        else if (b.dataset.mk === 'deal') {
+          const o = marketOffer(give, get); if (!o || !qty) return;
+          const ok = get === 'auramite' ? Gm.trade(VP(), give, -qty) : give === 'auramite' ? Gm.trade(VP(), get, qty) : Gm.barter(VP(), give, get, qty);
+          if (ok) { Audio.sfx('build'); toast(`Traded ${(qty * o.g).toLocaleString()} ${D.RES_INFO[give].name} for ${(qty * o.r).toLocaleString()} ${D.RES_INFO[get].name}.`); updateTop(); }
+          qty = 0;
+        }
+        render();
+      });
+      box.addEventListener('input', e => { if (e.target.id === 'mk-q') { qty = +e.target.value; const o = marketOffer(give, get);
+        const sides = box.querySelectorAll('.mk-side b'); if (o && sides.length === 2) { sides[0].textContent = (qty * o.g).toLocaleString(); sides[1].textContent = (qty * o.r).toLocaleString(); }
+        box.querySelector('[data-mk="deal"]').disabled = !qty; } });
+      render();
+    } });
+}
+// shrine teaching a rite: the painted window with one frame, the rite's icon in the middle
+io.riteShrine = async (h, sp, title, text, learned) => {
+  await T.riteIconsReady;
+  const S = D.SPELLS[sp];
+  return modal({ title: '', cls: 'choicebox', buttons: [{ label: 'OK', value: true, primary: true, cancel: true }],
+    html: `<div class="cb-frame single"><h3 class="cb-t">${esc(title)}</h3>
+      <p class="cb-txt">${esc(text)} <span class="muted">(${D.SCHOOLS[S.school]} rite, level ${S.level})</span></p>
+      <div class="cb-pic c ${learned ? '' : 'locked'}" title="${esc(D.spellDesc(h, sp))}">${T.riteIcon(sp, S.school)}</div>
+      <span class="cb-val c">${esc(S.name)}</span>
+      <button class="cb-ok" data-v="ok">✔</button></div>`,
+    onMount: (wrap, close) => { wrap.querySelector('.cb-ok').onclick = () => close(true); wrap.querySelector('.modal-btns').hidden = true; } });
+};
 io.choose = (title, text, buttons) => modal({ title: esc(title), html: `<p>${esc(text)}</p>`, buttons: buttons.map((b, i) => ({ ...b, cancel: i === 0 })) });
 io.notice = (title, text) => modal({ title: esc(title), html: `<p>${esc(text)}</p>` });
 io.levelUp = (h, stat, opts) => (Audio.sfx('levelup'), modal({

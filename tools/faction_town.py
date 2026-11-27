@@ -18,9 +18,10 @@ SRC_W = 1376
 # second landscapes: 11 plots in three rows made for our buildings (town_landscape_prompts.txt)
 PLOTS2 = {
     # user's corrections: everything except the trade exchange 12.5% bigger, the fort also moved right
-    'concord': {'guild': (215, 292, 197, 1.0), 'fort': (672, 292, 450, 1.0), 'dw5': (1120, 300, 236, 1.0),
-                'hall': (178, 462, 315, 0.6), 'tavern': (505, 440, 248, 0.6), 'dw3': (815, 450, 276, 0.6), 'dw4': (1158, 478, 338, 0.6),
-                'dw2': (167, 668, 315, 0.1), 'market': (478, 690, 255, 0.1), 'depot': (848, 670, 315, 0.1), 'dw1': (1188, 678, 338, 0.1)},
+    # new painted landscape (assets/source/concord_test/empty.jpg): plots read off it, buildings raised to cover the plateaus
+    'concord': {'guild': (345, 268, 215, 1.0), 'fort': (712, 278, 440, 1.0), 'dw5': (1110, 276, 255, 1.0),
+                'hall': (225, 478, 240, 0.6), 'tavern': (540, 472, 250, 0.6), 'dw3': (885, 462, 235, 0.6), 'dw4': (1195, 488, 270, 0.6),
+                'dw2': (162, 648, 225, 0.1), 'market': (520, 676, 275, 0.1), 'depot': (880, 688, 285, 0.1), 'dw1': (1220, 655, 225, 0.1)},
     # user's corrections: everything 12.5% bigger, the fort also moved up
     'hollow': {'guild': (212, 288, 208, 1.0), 'fort': (650, 270, 472, 1.0), 'dw5': (1125, 292, 242, 1.0),
                'hall': (180, 450, 332, 0.6), 'tavern': (507, 432, 253, 0.6), 'dw3': (815, 438, 276, 0.6), 'dw4': (1160, 465, 338, 0.6),
@@ -34,7 +35,9 @@ PLOTS2['rustbound']['fort'] = (660, 262, 455, 1.0)          # fort further up
 PLOTS2['deathless']['dw2'] = (150, 651, 325, 0.1)           # tier 2 slightly left
 PLOTS2['palefang'] = {**PLOTS2['deathless'], 'dw2': (168, 651, 325, 0.1), 'fort': (668, 222, 420, 1.0), 'dw5': (1122, 276, 240, 1.0),
                       'hall': (185, 438, 325, 0.6), 'market': (497, 664, 300, 0.1), 'dw3': (805, 470, 250, 0.55)}   # no dw3 plot: the battery stands in the surf
-PLOTS2_SCALE = {'hollow': {'hall3': 0.8, 'hall2': 0.9, 'dw3u': 0.85},
+PLOTS2_SCALE = {'concord': {'mg1': 1.2, 'mg2': 1.2, 'mg3': 1.2, 'mg4': 1.2, 'mg5': 1.2,
+                            'dw2': 1.18, 'dw2u': 1.18, 'market': 1.18, 'depot': 1.18, 'dw1': 1.28, 'dw1u': 1.28, 'hall1': 1.2},
+                'hollow': {'hall3': 0.8, 'hall2': 0.9, 'dw3u': 0.85},
                 'rustbound': {'all': 0.85 * 1.175, 'hall3': 0.8, 'hall2': 0.9, 'dw4u': 0.85, 'dw4': 0.9, 'fort': 1.05, 'citadel': 1.05, 'castle': 1.05, 'dw5': 1.15, 'dw5u': 1.15},
                 'scrapjaw': {'all': 0.88 * 1.175, 'mg1': 1.1, 'mg2': 1.1, 'mg3': 1.1, 'mg4': 0.99, 'mg5': 0.99, 'tavern': 1.1},
                 'palefang': {'all': 0.85 * 1.175},

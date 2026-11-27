@@ -1,0 +1,19 @@
+ASHEN OATH — PROMPT: TREASURE CHEST ON THE ADVENTURE MAP
+==========================================================
+
+HOW IT IS USED
+A small pickup on the adventure map, drawn about one map tile wide (roughly the size of a commander's feet), standing on
+any of the six terrains. It must read clearly at that tiny size, so: one bold silhouette, strong contrast, a little glow.
+
+Prompt
+Single object for the adventure map of a grimdark sci-fi fantasy strategy game, painted digital art in the same style as
+the map's buildings and trees, 1024 x 1024, isolated on a plain flat medium grey background (#808080), no text, no frame,
+no other objects. CAMERA: a high three-quarter view from the front-left, about 45 degrees above the ground, exactly like
+the other map objects; the chest sits squarely facing the camera, slightly turned so the front and the left side are
+visible, centred, filling about 60 percent of the picture width, with a small soft contact shadow under it and soft light
+from the upper left. THE OBJECT: a sturdy armoured war-chest of dark gunmetal plates with heavy brass corner caps and
+rivets, a winged skull emblem on the front, a thick brass lock, the lid lifted open just a crack with warm golden light
+and the glint of gold bars and coins spilling from the gap; a couple of gold coins lying in front of it. Bold, simple
+shape that stays readable when shown very small; no tiny fussy detail.
+
+Optional second picture (same chest, same camera, same size, made by editing the first): the lid closed, no light.
