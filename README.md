@@ -6,6 +6,12 @@ tactical battles on a hex grid.
 
 Six factions: the Iron Concord, the Hollow Host, the Rustbound, the Scrapjaw Horde, the Deathless Dynasty and the Pale Fang Exiles.
 
+## Multiplayer
+
+New Game > Multiplayer sets up a hot-seat game at one computer: tick **Human** on any player's flag. Players take
+their turns one after another on the same day, each behind a handover screen and seeing only what their own side has
+discovered (allies share their vision); computer players move after all the humans, then the next day begins.
+
 ## Play on Windows
 
 Download **AshenOath-Setup.exe** from the [Releases](../../releases) page and run it.

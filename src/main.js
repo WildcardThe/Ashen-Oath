@@ -124,11 +124,13 @@ function toast(text, kind = '') {
 // Preview of the map the generator will build: terrain, obstacles, roads, rivers, towns, mines and structures.
 // ---------------- new campaign setup ----------------
 let SETUP = null;
-function setupTitle() {
+function setupTitle(mode = 'sp') {
+  if (SETUP) SETUP.setMode(mode);
   if (!SETUP) SETUP = buildSetup($('#setup-stage'), {
     heroAvatar, toast,
     onBack: () => showScreen('menu'),
     onBegin: cfg => { Gm.newGame(cfg); enterGame(); writeSlot('auto', true); },
+    mode,
   });
   SETUP.render();
 }
@@ -185,9 +187,9 @@ function writeSlot(id, quiet = false) {
   try {
     const s = G.s, idx = slotIndex();
     localStorage.setItem(slotKey(id), JSON.stringify(s));
-    const hs = Gm.heroesOf(0);
-    idx[id] = { ts: Date.now(), day: s.day, faction: s.players[0].faction, template: s.template || 'duel', size: s.W,
-      hero: hs[0] ? hs[0].name : null, towns: Gm.townsOf(0).length, heroes: hs.length };
+    const hs = Gm.heroesOf(VP());
+    idx[id] = { ts: Date.now(), day: s.day, faction: s.players[VP()].faction, template: s.template || 'duel', size: s.W,
+      hero: hs[0] ? hs[0].name : null, towns: Gm.townsOf(VP()).length, heroes: hs.length };
     localStorage.setItem(SLOT_INDEX, JSON.stringify(idx));
     if (!quiet) toast(id === 'auto' ? 'Autosaved.' : `Saved to slot ${id}.`);
     return true;
@@ -247,7 +249,9 @@ function showSlots(mode) {
 // the adventure map plays a calm ambient loop (assets/audio/adventure.mp3) once it exists; until then the faction theme
 let adventureTrack = false;
 fetch('assets/audio/adventure.mp3', { method: 'HEAD' }).then(r => { adventureTrack = r.ok; }).catch(() => {});
-const mapMusic = () => (G.s ? (adventureTrack ? 'adventure' : G.s.players[0].faction || 'concord') : 'menu');
+// the human whose turn it is (hot-seat multiplayer): the map, fog, panels and town screens show this player's side
+const VP = () => (G.s && G.s.viewer != null ? G.s.viewer : 0);
+const mapMusic = () => (G.s ? (adventureTrack ? 'adventure' : G.s.players[VP()].faction || 'concord') : 'menu');
 const townMusic = t => t.faction;
 function applyVolumes() { const v = k => ({ off: 0, low: 0.3, mid: 0.6, high: 1 })[opt(k)]; Audio.setVolumes(v('music') * 0.8, v('sfx')); }
 function showScreen(name) {
@@ -261,7 +265,7 @@ function refreshMenu() {
   if (m) $('#mm-continue-sub').textContent = `${id === 'auto' ? 'Autosave' : 'Slot ' + id} · ${D.FACTIONS[m.faction]?.name || ''} · day ${m.day}`;
 }
 // main menu: live buttons on the painted plates of assets/ui/menu_bg.webp
-const MENU_PLATES = [['mm-new', 'New Campaign', 'm_new', 75], ['mm-load', 'Load Game', 'm_load', 205], ['mm-options', 'Options', 'm_options', 335], ['mm-credits', 'Credits', 'm_credits', 467], ['mm-quit', 'Quit', 'm_quit', 597]];
+const MENU_PLATES = [['mm-new', 'New Game', 'm_new', 75], ['mm-load', 'Load Game', 'm_load', 205], ['mm-options', 'Options', 'm_options', 335], ['mm-credits', 'Credits', 'm_credits', 467], ['mm-quit', 'Quit', 'm_quit', 597]];
 function buildMenu() {
   const st = $('#menu-stage');
   st.querySelectorAll('.mm-el').forEach(e => e.remove());
@@ -285,7 +289,12 @@ function showCredits() {
 function setupMenu() {
   buildMenu(); refreshMenu();
   $('#mm-continue').onclick = () => { const id = latestSlot(); if (id && readSlot(id)) enterGame(); };
-  $('#mm-new').onclick = () => { setupTitle(); showScreen('title'); };
+  $('#mm-new').onclick = async () => {
+    const mode = await modal({ title: 'New Game', html: '<p class="muted">Multiplayer is played at this computer: players take their turns one after another, each seeing only what their own commanders have discovered.</p>',
+      buttons: [{ label: 'Single Player', value: 'sp', primary: true }, { label: 'Multiplayer', value: 'mp' }, { label: 'Back', value: null, cancel: true }] });
+    if (!mode) return;
+    setupTitle(mode); showScreen('title');
+  };
   $('#mm-load').onclick = () => showSlots('load');
   $('#mm-options').onclick = () => showOptions();
   $('#mm-credits').onclick = () => showCredits();
@@ -323,12 +332,13 @@ function setupMenu() {
 // ---------------- entering the game ----------------
 function enterGame() {
   showScreen('game');
+  ui.lastViewer = VP();
   ui.terrain = A.paintTerrain(G.s, TS, new Set(Object.values(G.s.objects).map(o => o.y * G.s.W + o.x)));
   ui.fog = document.createElement('canvas'); ui.fog.width = G.s.W; ui.fog.height = G.s.H; ui.fogDirty = true;
   ui.path = null; ui.target = null; ui.busy = false;
-  const h = Gm.heroesOf(0)[0];
-  ui.selId = h ? h.id : null; ui.focus = 'hero'; ui.selTownId = Gm.townsOf(0)[0]?.id ?? null;
-  requestAnimationFrame(() => { centerOn(h || Gm.townsOf(0)[0]); });
+  const h = Gm.heroesOf(VP())[0];
+  ui.selId = h ? h.id : null; ui.focus = 'hero'; ui.selTownId = Gm.townsOf(VP())[0]?.id ?? null;
+  requestAnimationFrame(() => { centerOn(h || Gm.townsOf(VP())[0]); });
   updateUI();
   toast(`Day ${G.s.day}. Your commanders await orders.`);
 }
@@ -349,10 +359,10 @@ function follow(h) {
   if (x < m || y < m || x > cv.clientWidth - m || y > cv.clientHeight - m) centerOn(h);
 }
 const selHero = () => (G.s && ui.selId != null && ui.focus !== 'town' ? G.s.heroes[ui.selId] : null);
-const explored = (x, y) => G.s.players[0].explored[y * G.s.W + x] === 1;
+const explored = (x, y) => G.s.players[VP()].explored[y * G.s.W + x] === 1;
 
 function updateFog() {
-  const s = G.s, g = ui.fog.getContext('2d'), img = g.createImageData(s.W, s.H), ex = s.players[0].explored;
+  const s = G.s, g = ui.fog.getContext('2d'), img = g.createImageData(s.W, s.H), ex = s.players[VP()].explored;
   for (let i = 0; i < s.W * s.H; i++) { img.data[i * 4 + 0] = 8; img.data[i * 4 + 1] = 7; img.data[i * 4 + 2] = 6; img.data[i * 4 + 3] = ex[i] ? 0 : 255; }
   g.putImageData(img, 0, 0); ui.fogDirty = false;
 }
@@ -480,7 +490,7 @@ function drawItem(g, it, t) {
       const h = it.h; const p = s.players[h.owner];
       const town = Gm.objAt(h.x, h.y);
       if (town && town.type === 'town') { A.drawHero(g, cx + TS * 0.2, cy + TS * 0.2, TS * 0.8, h.faction, p.color, t, 1, lookOf(h.name)); }
-      else A.drawHero(g, cx, cy, TS, h.faction, p.color, t, h.facing || (h.owner === 0 ? 1 : -1), lookOf(h.name), t - (h._mt || 0) < 450);
+      else A.drawHero(g, cx, cy, TS, h.faction, p.color, t, h.facing || (h.owner === VP() ? 1 : -1), lookOf(h.name), t - (h._mt || 0) < 450);
       break;
     }
   }
@@ -496,7 +506,7 @@ function drawPath(g) {
     g.fillStyle = ok ? '#8fd16a' : '#d8574a'; g.strokeStyle = 'rgba(0,0,0,0.7)'; g.lineWidth = 1.5;
     if (last) {
       const o = Gm.objAt(st.x, st.y), other = Gm.heroAt(st.x, st.y);
-      const hostile = (o && (o.type === 'monster' || (o.type === 'town' && Gm.isEnemy(o.owner, 0)))) || (other && Gm.isEnemy(other.owner, 0));
+      const hostile = (o && (o.type === 'monster' || (o.type === 'town' && Gm.isEnemy(o.owner, VP())))) || (other && Gm.isEnemy(other.owner, VP()));
       if (hostile) {
         g.strokeStyle = ok ? '#8fd16a' : '#d8574a'; g.lineWidth = 3;
         g.beginPath(); g.moveTo(cx - 8, cy - 8); g.lineTo(cx + 8, cy + 8); g.moveTo(cx + 8, cy - 8); g.lineTo(cx - 8, cy + 8); g.stroke();
@@ -562,11 +572,11 @@ function describeTile(x, y) {
   if (!explored(x, y)) return 'Unexplored';
   const T = s.tiles[y * s.W + x], o = Gm.objAt(x, y) || Gm.footAt(x, y), h = Gm.heroAt(x, y);
   const lines = [];
-  if (h) lines.push(`<b>${esc(h.name)}</b> · ${h.owner === 0 ? 'your commander' : 'enemy commander'} · level ${h.level}`);
+  if (h) lines.push(`<b>${esc(h.name)}</b> · ${h.owner === VP() ? 'your commander' : 'enemy commander'} · level ${h.level}`);
   if (o) {
     switch (o.type) {
-      case 'town': lines.push(`<b>${esc(o.name)}</b> · ${o.owner == null ? 'unclaimed' : o.owner === 0 ? 'your town' : 'enemy town'}`); break;
-      case 'mine': lines.push(`<b>${D.MINES[o.res].name}</b> · +${D.MINES[o.res].yield} ${D.RES_INFO[o.res].name}/day · ${o.owner == null ? 'unclaimed' : o.owner === 0 ? 'yours' : 'enemy'}`); break;
+      case 'town': lines.push(`<b>${esc(o.name)}</b> · ${o.owner == null ? 'unclaimed' : o.owner === VP() ? 'your town' : 'enemy town'}`); break;
+      case 'mine': lines.push(`<b>${D.MINES[o.res].name}</b> · +${D.MINES[o.res].yield} ${D.RES_INFO[o.res].name}/day · ${o.owner == null ? 'unclaimed' : o.owner === VP() ? 'yours' : 'enemy'}`); break;
       case 'pile': lines.push(`<b>${D.RES_INFO[o.res].name}</b> · ${o.amount}`); break;
       case 'chest': lines.push('<b>Supply cache</b>'); break;
       case 'relic': { const a = D.ARTIFACTS[o.relic]; lines.push(`<b style="color:${D.RARITY[a.r].color}">${a.name}</b> · ${D.RARITY[a.r].name} artifact<br>${D.artifactDesc(o.relic)}`); break; }
@@ -577,10 +587,10 @@ function describeTile(x, y) {
         if (S.guarded) lines.push(o.cleared ? 'Plundered' : `Guarded by ${D.qtyWord(o.guard.count).toLowerCase()} ${D.UNITS[o.guard.unit].name}${sel ? ` · ${threat(sel, { unit: o.guard.unit, count: o.guard.count })}` : ''}`);
         if (S.perHero && sel) lines.push(o.visited.includes(sel.id) ? `${esc(sel.name)} has visited` : `Not yet visited by ${esc(sel.name)}`);
         else if (D.siteSpent(o, sel, s.day)) lines.push(S.weekly || S.heroWeekly ? 'Used this week' : 'Empty');
-        if (o.color) lines.push(`<span style="color:${D.KEY_COLORS[o.color]}">${o.color[0].toUpperCase() + o.color.slice(1)} key-codex</span>${o.kind === 'blastdoor' && !(s.players[0].keys || []).includes(o.color) ? ' · you lack this key' : ''}`);
+        if (o.color) lines.push(`<span style="color:${D.KEY_COLORS[o.color]}">${o.color[0].toUpperCase() + o.color.slice(1)} key-codex</span>${o.kind === 'blastdoor' && !(s.players[VP()].keys || []).includes(o.color) ? ' · you lack this key' : ''}`);
         if (o.spell && D.SPELLS[o.spell]) lines.push(`Teaches ${D.SPELLS[o.spell].name}`);
         if (o.skill && D.SKILLS[o.skill]) lines.push(`Teaches ${D.SKILLS[o.skill].name}`);
-        if (o.kind === 'derelict' && o.cleared) lines.push(`+${D.MINES[o.res].yield} ${D.RES_INFO[o.res].name}/day · ${o.owner == null ? 'unclaimed' : o.owner === 0 ? 'yours' : 'enemy'}`);
+        if (o.kind === 'derelict' && o.cleared) lines.push(`+${D.MINES[o.res].yield} ${D.RES_INFO[o.res].name}/day · ${o.owner == null ? 'unclaimed' : o.owner === VP() ? 'yours' : 'enemy'}`);
         if (o.kind === 'penal') lines.push(o.freed ? 'Empty' : 'A prisoner waits inside');
         break;
       }
@@ -629,7 +639,7 @@ function setupMapInput() {
   cv.addEventListener('dblclick', e => {
     const t = tileFromEvent(e); if (!t || ui.busy || !explored(t.x, t.y)) return;
     const o = Gm.objAt(t.x, t.y) || Gm.footAt(t.x, t.y);
-    if (o && o.type === 'town' && o.owner === 0) { clearTimeout(ui.pendingMove); ui.pendingMove = null; ui.path = null; ui.target = null; openTown(o); }
+    if (o && o.type === 'town' && o.owner === VP()) { clearTimeout(ui.pendingMove); ui.pendingMove = null; ui.path = null; ui.target = null; openTown(o); }
   });
   $('#minimap').addEventListener('pointerdown', e => {
     const r = e.currentTarget.getBoundingClientRect(); const k = r.width / G.s.W;
@@ -643,7 +653,7 @@ function setupMapInput() {
     if (k === ' ' || k === 'enter') { e.preventDefault(); doMove(); }
     if (k === 'e') endTurn();
     if (k === 'h') nextHero();
-    if (k === 't') { const h = selHero(); const t = h && Gm.objAt(h.x, h.y); openTown(ui.focus === 'town' && selTown() ? selTown() : t && t.type === 'town' ? t : Gm.townsOf(0)[0]); }
+    if (k === 't') { const h = selHero(); const t = h && Gm.objAt(h.x, h.y); openTown(ui.focus === 'town' && selTown() ? selTown() : t && t.type === 'town' ? t : Gm.townsOf(VP())[0]); }
     if (k === 'i' && selHero()) openHero(selHero());
     if (k === 'k') showKingdom();
     if (k === 'z' && selHero()) { const h = selHero(); h.sleep = !h.sleep; toast(`${h.name} ${h.sleep ? 'rests until woken (Z)' : 'is ready for orders'}.`); updateSide(); }
@@ -659,11 +669,11 @@ async function onMapClick(x, y) {
   const foot = Gm.footAt(x, y);
   if (foot && !Gm.objAt(x, y)) { x = foot.x; y = foot.y; }   // clicked the building picture: go to its entrance
   const h = selHero(), o = Gm.objAt(x, y), other = Gm.heroAt(x, y);
-  if (other && other.owner === 0 && other !== h) {
+  if (other && other.owner === VP() && other !== h) {
     if (h && Math.max(Math.abs(h.x - x), Math.abs(h.y - y)) === 1 && !(o && o.type === 'town')) { await openExchange(h, other); return; }
     selectHero(other); return;
   }
-  const ownTown = o && o.type === 'town' && o.owner === 0;
+  const ownTown = o && o.type === 'town' && o.owner === VP();
   if (ownTown && (!h || (h.x === x && h.y === y))) { await openTown(o); return; }
   if (!h) return;
   if (h.x === x && h.y === y) return;
@@ -676,7 +686,7 @@ async function onMapClick(x, y) {
 }
 
 function planPath(h, x, y, notify) {
-  const paths = Gm.computePaths(h, G.s.players[0].explored);
+  const paths = Gm.computePaths(h, G.s.players[VP()].explored);
   const path = Gm.pathTo(paths, x, y);
   ui.path = path; ui.target = path ? { x, y } : null;
   h.dest = path ? { x, y } : null;
@@ -695,7 +705,7 @@ async function doMove() {
   if (G.s.heroes[h.id]) {
     if (res === 'nomp' && tgt) planPath(h, tgt.x, tgt.y, false);
     else h.dest = null;
-  } else { ui.selId = Gm.heroesOf(0)[0]?.id ?? null; }
+  } else { ui.selId = Gm.heroesOf(VP())[0]?.id ?? null; }
   updateUI();
 }
 
@@ -705,7 +715,7 @@ function selectHero(h) {
   centerOn(h); updateUI();
 }
 function nextHero() {
-  const hs = Gm.heroesOf(0); if (!hs.length) return;
+  const hs = Gm.heroesOf(VP()); if (!hs.length) return;
   const i = hs.findIndex(h => h.id === ui.selId);
   const order = [...hs.slice(i + 1), ...hs.slice(0, i + 1)];
   selectHero(order.find(h => h.mp >= 100 && !h.sleep) || order.find(h => !h.sleep) || order[0]);
@@ -713,7 +723,7 @@ function nextHero() {
 
 async function endTurn() {
   if (ui.busy || G.s.over) return;
-  if (opt('confirmEnd') && Gm.heroesOf(0).some(h => h.mp >= 300 && !h.sleep)) {
+  if (opt('confirmEnd') && Gm.heroesOf(VP()).some(h => h.mp >= 300 && !h.sleep)) {
     const ok = await modal({ title: 'End turn?', html: '<p>Some of your commanders can still move.</p>', buttons: [{ label: 'Keep playing', value: false, cancel: true }, { label: 'End turn', value: true, primary: true }] });
     if (!ok) return;
   }
@@ -728,7 +738,7 @@ function setBusy(b) { $('#btn-end').disabled = b; $('#btn-next').disabled = b; }
 function updateUI() { if (!G.s) return; updateTop(); updateSide(); drawMinimap(); }
 
 function updateTop() {
-  const s = G.s, p = s.players[0], inc = Gm.dailyIncome(0);
+  const s = G.s, p = s.players[VP()], inc = Gm.dailyIncome(VP());
   $('#res').innerHTML = D.RES.map(r => `<div class="res" title="${D.RES_INFO[r].name}: ${p.res[r].toLocaleString()} (+${inc[r]} per day)">${resImg(r)}<b>${p.res[r].toLocaleString()}</b>${inc[r] ? `<small>+${inc[r].toLocaleString()}</small>` : ''}</div>`).join('');
   const d = s.day - 1;
   $('#date').innerHTML = `<span>Month ${Math.floor(d / 28) + 1}</span><span>Week ${Math.floor(d % 28 / 7) + 1}</span><span>Day ${d % 7 + 1}</span>`;
@@ -768,7 +778,7 @@ function heroInfoHtml(h) {
     <div class="ib-line"><span title="Morale: extra turns when high, lost turns when low">Morale <b>${fmtSign(D.heroMorale(h))}</b></span><span title="Luck: chance of double damage">Luck <b>${fmtSign(D.heroLuck(h))}</b></span><span>Mana <b>${h.mana}/${D.maxMana(h)}</b></span><span>Move <b>${h.mp}</b></span></div>
     <div class="ib-army">${armySlots(h.army, 'data-act="unit"')}</div>
     <div class="hc-btns"><button class="btn sm" data-act="hero" title="Commander screen (I)">Commander</button><button class="btn sm" data-act="book" title="Rites (B)">Rites</button></div>
-    <div class="hc-btns">${(() => { const tt = Gm.objAt(h.x, h.y); return tt && tt.type === 'town' && tt.owner === 0 ? `<button class="btn sm primary" data-act="enter" data-id="${tt.id}">Enter ${esc(tt.name)}</button>` : ''; })()}<button class="btn sm" data-act="sleep" title="Rest: skipped by Next (Z)">${h.sleep ? 'Wake' : 'Rest'}</button></div>
+    <div class="hc-btns">${(() => { const tt = Gm.objAt(h.x, h.y); return tt && tt.type === 'town' && tt.owner === VP() ? `<button class="btn sm primary" data-act="enter" data-id="${tt.id}">Enter ${esc(tt.name)}</button>` : ''; })()}<button class="btn sm" data-act="sleep" title="Rest: skipped by Next (Z)">${h.sleep ? 'Wake' : 'Rest'}</button></div>
     ${ui.path ? `<p class="route">Route: ${Math.ceil(ui.path[ui.path.length - 1].total / D.DAY_MP * 10) / 10} days of travel. Click the target again or press Space to march.</p>` : ''}`;
 }
 function townInfoHtml(t) {
@@ -796,20 +806,20 @@ function updateSide() {
   card.querySelectorAll('[data-act="town"]').forEach(el => el.onclick = () => t && openTown(t));
   card.querySelectorAll('[data-act="selvh"]').forEach(el => el.onclick = () => { const vh = t && Gm.heroAt(t.x, t.y); if (vh) selectHero(vh); });
 
-  const heroes = Gm.heroesOf(0);
+  const heroes = Gm.heroesOf(VP());
   const hs = heroes.map(x => {
     const mp = Math.round(100 * x.mp / D.maxMp(x)), mn = D.maxMana(x) ? Math.round(100 * x.mana / D.maxMana(x)) : 0;
     return `<button class="pf ${x.id === ui.selId && ui.focus !== 'town' ? 'sel' : ''}" data-id="${x.id}" title="${esc(x.name)} · click to select, double-click for details">
       <img src="${heroStrip(x.name)}" alt="${esc(x.name)}" style="${x.sleep ? 'filter:grayscale(.8) brightness(.6)' : ''}">${x.sleep ? '<span class="zz">Zz</span>' : ''}<span class="vb mp"><i style="height:${mp}%"></i></span><span class="vb mana"><i style="height:${mn}%"></i></span><span class="lbl">${esc(x.name.split(' ').slice(-1)[0])}</span></button>`;
   });
-  const rows = Math.max(2, Gm.heroesOf(0).length, Gm.townsOf(0).length);
+  const rows = Math.max(2, Gm.heroesOf(VP()).length, Gm.townsOf(VP()).length);
   while (hs.length < rows) hs.push('<div class="pf empty" aria-hidden="true"></div>');
   $('#hero-list').innerHTML = hs.join('');
   $('#hero-list').querySelectorAll('.pf[data-id]').forEach(el => {
     el.onclick = () => selectHero(s.heroes[+el.dataset.id]);
     el.ondblclick = () => openHero(s.heroes[+el.dataset.id]);
   });
-  const towns = Gm.townsOf(0);
+  const towns = Gm.townsOf(VP());
   const ts = towns.map(x => `<button class="pf town ${x.id === ui.selTownId && ui.focus === 'town' ? 'sel' : ''}" data-id="${x.id}" title="${esc(x.name)} · click to select, double-click to open">
       <img src="${townThumb(x)}" alt="${esc(x.name)}">${x.builtToday ? '' : '<span class="dot" title="Can build today"></span>'}<span class="lbl">${esc(x.name)}</span></button>`);
   while (ts.length < rows) ts.push('<div class="pf empty" aria-hidden="true"></div>');
@@ -926,7 +936,7 @@ function loadTownArt(faction) {
   return townArt[faction];
 }
 function openTown(t) {
-  if (!t || t.type !== 'town' || t.owner !== 0) return Promise.resolve();
+  if (!t || t.type !== 'town' || t.owner !== VP()) return Promise.resolve();
   return new Promise(resolve => {
     const wrap = document.createElement('div'); wrap.className = 'overlay';
     wrap.innerHTML = `<div class="panel townv" role="dialog" aria-modal="true">
@@ -1091,7 +1101,7 @@ function openTown(t) {
     }
     function marketPanel(p) {
       const opts = D.RES.map(r => `<option value="${r}">${D.RES_INFO[r].name}</option>`).join('');
-      const markets = Gm.townsOf(0).filter(x => x.built.market).length;
+      const markets = Gm.townsOf(VP()).filter(x => x.built.market).length;
       return `<h3>Trade Exchange <small class="muted">${markets} exchange${markets > 1 ? 's' : ''} owned · more exchanges give better barter rates</small></h3>
         <div class="barter"><label>Give <select id="bt-give">${opts}</select></label><label>for <select id="bt-get">${opts.replace('value="adamantium"', 'value="adamantium" selected')}</select></label>
           <span id="bt-rate" class="muted"></span><button class="btn sm" data-act="barter" data-q="1">Trade 1</button><button class="btn sm" data-act="barter" data-q="5">Trade 5</button></div>
@@ -1104,7 +1114,7 @@ function openTown(t) {
       return `<h3>Recruitment Office</h3><p class="muted">Commanders wait here for a lord who can pay.</p><button class="btn primary" data-act="recruit-open">Open the Recruitment Office</button>`;
     }
     function render() {
-      const s = G.s, p = s.players[0], h = Gm.heroAt(t.x, t.y), us = D.FACTIONS[t.faction].units;
+      const s = G.s, p = s.players[VP()], h = Gm.heroAt(t.x, t.y), us = D.FACTIONS[t.faction].units;
       armies = { gar: { arr: t.garrison, hero: false } };
       if (h) armies.hero = { arr: h.army, hero: true };
       let html = '';
@@ -1145,7 +1155,7 @@ function openTown(t) {
     }
     root.addEventListener('click', e => {
       const b = e.target.closest('[data-act]'); if (!b) return;
-      const act = b.dataset.act, p = G.s.players[0];
+      const act = b.dataset.act, p = G.s.players[VP()];
       if (act === 'close') return close();
       if (act === 'nav' && b.dataset.k === 'tavern') { openRecruitment(t).then(render); return; }
       if (act === 'nav' && b.dataset.k === 'guild') { openGuildRoom(t).then(render); return; }
@@ -1170,18 +1180,18 @@ function openTown(t) {
       if (act === 'hire') { const h = Gm.hireHero(t); if (h) { toast(`${h.name} joins your cause.`); ui.selId = h.id; ui.focus = 'hero'; } }
       if (act === 'barter') {
         const give = root.querySelector('#bt-give').value, get = root.querySelector('#bt-get').value, q = +b.dataset.q;
-        const cost = Gm.barter(0, give, get, q);
+        const cost = Gm.barter(VP(), give, get, q);
         toast(cost ? `Traded ${cost} ${D.RES_INFO[give].name} for ${q} ${D.RES_INFO[get].name}.` : 'That trade is not possible.', cost ? '' : 'bad');
         render(); updateTop();
         const g2 = root.querySelector('#bt-give'), t2 = root.querySelector('#bt-get'); if (g2) { g2.value = give; t2.value = get; showRate(); }
         return;
       }
       if (act === 'recruitall') { const h = Gm.heroAt(t.x, t.y); const n = Gm.recruitAll(t, h ? h.army : t.garrison); if (n) Audio.sfx('recruit'); toast(n ? `${n} troops recruited.` : 'Nothing could be recruited.', n ? '' : 'bad'); }
-      if (act === 'sell') Gm.trade(0, b.dataset.r, -1);
-      if (act === 'buy') Gm.trade(0, b.dataset.r, 1);
+      if (act === 'sell') Gm.trade(VP(), b.dataset.r, -1);
+      if (act === 'buy') Gm.trade(VP(), b.dataset.r, 1);
       render(); updateTop();
     });
-    const showRate = () => { const g2 = root.querySelector('#bt-give'), t2 = root.querySelector('#bt-get'), el = root.querySelector('#bt-rate'); if (!g2) return; const r = Gm.barterRate(0, g2.value, t2.value); el.textContent = r ? `${r} ${D.RES_INFO[g2.value].name} for 1 ${D.RES_INFO[t2.value].name}` : 'Pick two different materials'; };
+    const showRate = () => { const g2 = root.querySelector('#bt-give'), t2 = root.querySelector('#bt-get'), el = root.querySelector('#bt-rate'); if (!g2) return; const r = Gm.barterRate(VP(), g2.value, t2.value); el.textContent = r ? `${r} ${D.RES_INFO[g2.value].name} for 1 ${D.RES_INFO[t2.value].name}` : 'Pick two different materials'; };
     root.addEventListener('change', e => { if (e.target.matches('#bt-give, #bt-get')) showRate(); });
     armyEditor(bottom, new Proxy({}, { get: (_, k) => armies[k] }), () => render());
     render();
@@ -1202,7 +1212,7 @@ function openDwelling(t, u) {
       const stat = (k, label, v) => `<div class="fs"><img src="${statIcon(k)}" alt=""><span>${label}</span><b>${v}</b></div>`;
       const costs = (mult) => Object.entries(U.cost).filter(([, v]) => v > 0).map(([r, v]) => `<span class="cost" title="${D.RES_INFO[r].name}">${resImg(r)}${(v * mult).toLocaleString()}</span>`).join('');
       const render = () => {
-        const p = G.s.players[0], max = Gm.maxRecruit(t, u, p.res), avail = t.avail[u] || 0, h = Gm.heroAt(t.x, t.y);
+        const p = G.s.players[VP()], max = Gm.maxRecruit(t, u, p.res), avail = t.avail[u] || 0, h = Gm.heroAt(t.x, t.y);
         if (n == null || n > max) n = max;
         el.innerHTML = `
           <div class="dw-top">
@@ -1230,7 +1240,7 @@ function openDwelling(t, u) {
       });
       el.addEventListener('click', e => {
         const b = e.target.closest('[data-dw]'); if (!b) return;
-        const k = b.dataset.dw, p = G.s.players[0], max = Gm.maxRecruit(t, u, p.res);
+        const k = b.dataset.dw, p = G.s.players[VP()], max = Gm.maxRecruit(t, u, p.res);
         if (k === 'close') return close(null);
         if (k === 'info') return unitInfo(ty);
         if (k === 'minus') n = Math.max(0, n - 1);
@@ -1285,7 +1295,7 @@ const RUMOURS = [
   'Someone has scratched into the bench: "Acid pools burn boots. Fly over them or walk around."',
 ];
 function openRecruitment(t) {
-  const offers = Gm.hireOffers(0);
+  const offers = Gm.hireOffers(VP());
   let pick = offers[0] || null;
   const rumour = RUMOURS[Math.floor(Math.random() * RUMOURS.length)];
   return modal({
@@ -1294,7 +1304,7 @@ function openRecruitment(t) {
     onMount: (wrap, close) => {
       const el = wrap.querySelector('#rc');
       const render = () => {
-        const here = Gm.heroAt(t.x, t.y), full = Gm.heroesOf(0).length >= D.MAX_HEROES, p = G.s.players[0];
+        const here = Gm.heroAt(t.x, t.y), full = Gm.heroesOf(VP()).length >= D.MAX_HEROES, p = G.s.players[VP()];
         const block = here ? `${esc(here.name)} is stationed in the town. Move them out to hire another commander.` : full ? 'You already command the maximum of four commanders.' : !offers.length ? 'No commanders are waiting for hire.' : '';
         const def = pick && D.HERO_DEFS[pick], ret = pick && p.retreated.find(x => x.name === pick);
         const lvl = ret ? ret.level : 1, arts = ret ? D.equipped(ret).length + ret.backpack.length : 0;
@@ -1408,9 +1418,9 @@ function openHero(h) {
   }).then(async v => {
     if (v === 'book') openSpellbook(h);
     if (v === 'dismiss') {
-      if (Gm.heroesOf(0).length <= 1) { toast('You cannot dismiss your last commander.', 'bad'); return; }
+      if (Gm.heroesOf(VP()).length <= 1) { toast('You cannot dismiss your last commander.', 'bad'); return; }
       const ok = await modal({ title: `Dismiss ${esc(h.name)}?`, html: '<p>The commander leaves your service with their army and artifacts. This cannot be undone.</p>', buttons: [{ label: 'Keep', value: false, cancel: true }, { label: 'Dismiss', value: true, primary: true }] });
-      if (ok && Gm.dismissHero(h)) { ui.selId = Gm.heroesOf(0)[0]?.id ?? null; toast(`${h.name} leaves your service.`); }
+      if (ok && Gm.dismissHero(h)) { ui.selId = Gm.heroesOf(VP())[0]?.id ?? null; toast(`${h.name} leaves your service.`); }
     }
     updateUI();
   });
@@ -1431,12 +1441,17 @@ function openSpellbook(h) {
 }
 
 // ---------------- io hooks ----------------
-io.message = text => toast(text);
+// hot-seat: news for a human who is not at the keyboard waits for their turn
+const hotSeat = () => G.s && G.s.players.filter(q => q.human && q.alive).length > 1;
+io.message = (text, pid) => {
+  if (pid != null && hotSeat() && pid !== VP()) { (G.s.players[pid].inbox = G.s.players[pid].inbox || []).push(text); return; }
+  toast(text);
+};
 io.fogChanged = () => { ui.fogDirty = true; };
 io.step = async h => {
   Object.defineProperty(h, '_mt', { value: performance.now(), writable: true, configurable: true, enumerable: false });
   const ms = WALK_MS[opt('walkSpeed')];
-  if (h.owner === 0) { follow(h); Audio.sfx('move'); if (ms) await sleep(ms); }
+  if (h.owner === VP()) { follow(h); Audio.sfx('move'); if (ms) await sleep(ms); }
   else if (explored(h.x, h.y)) { follow(h); if (ms) await sleep(ms * 1.5); }
 };
 io.battle = (b, side) => { Audio.music(b.siege ? 'siege' : 'battle'); return runCombatView(b, side, {
@@ -1488,21 +1503,29 @@ io.exchange = (a, b) => openExchange(a, b);
 io.openTown = t => openTown(t);
 io.aiStart = p => { ui.aiActive = true; const el = $('#ai-banner'); el.textContent = `${p.name} is on the move…`; el.hidden = false; };
 io.aiEnd = () => { ui.aiActive = false; $('#ai-banner').hidden = true; };
-io.turnStart = () => {
+io.turnStart = async () => {
   const s = G.s;
   writeSlot('auto', true);
+  if (hotSeat() && ui.lastViewer !== VP()) {
+    // hand the computer over: the map stays hidden until the next player is ready
+    const p = s.players[VP()];
+    ui.lastViewer = VP(); ui.selId = null; ui.selTownId = Gm.townsOf(VP())[0]?.id ?? null; ui.path = null; ui.target = null; ui.fogDirty = true;
+    await modal({ cls: 'handover', title: '', html: `<div class="ho"><i style="background:${p.color}"></i><h2>${esc(p.name)}</h2><p>Day ${s.day} · your turn</p><p class="muted">The other players should look away.</p></div>`,
+      buttons: [{ label: 'Begin turn', value: true, primary: true, esc: false }] });
+    for (const m of (p.inbox || []).splice(0)) toast(m);
+  }
   if (s.weekEvent && !s.weekEvent.seen) { s.weekEvent.seen = true; setTimeout(() => showWeek(), 50); }
-  const h = selHero() || Gm.heroesOf(0)[0];
+  const h = (selHero() && selHero().owner === VP() ? selHero() : null) || Gm.heroesOf(VP())[0];
   ui.selId = h ? h.id : null; if (h) ui.focus = 'hero';
   if (h && h.dest) planPath(h, h.dest.x, h.dest.y, false);
   if (h) centerOn(h);
-  toast(`Day ${s.day}. ${(s.day - 1) % 7 === 0 ? 'A new week: troops have mustered in your towns.' : 'Your turn.'}`);
+  toast(`Day ${s.day}. ${(s.day - 1) % 7 === 0 ? 'A new week: troops have mustered in your towns.' : hotSeat() ? `${esc(s.players[VP()].name)}'s turn.` : 'Your turn.'}`);
   updateUI();
 };
 io.gameOver = kind => {
   setTimeout(() => modal({
     title: kind === 'victory' ? 'Victory' : 'Defeat',
-    html: kind === 'victory' ? '<p>The enemy is broken. The sector is yours.</p>' : '<p>Your last stronghold has fallen and your commanders are dead.</p>',
+    html: kind === 'victory' ? (hotSeat() || (G.s.winners || []).length > 1 ? `<p>The war is over. Victory to ${esc((G.s.winners || []).join(' and '))}.</p>` : '<p>The enemy is broken. The sector is yours.</p>') : '<p>Your last stronghold has fallen and your commanders are dead.</p>',
     buttons: [{ label: 'Main menu', value: 'new', primary: true }],
   }).then(() => showScreen('menu')), 300);
 };
@@ -1514,14 +1537,14 @@ function showWeek() {
   return modal({ title: `Week ${e.week}`, cls: 'weekev', html: `<div class="uinfo">${pic}<div><h3 class="wk">${esc(e.title)}</h3><p>${esc(e.desc)}</p></div></div>` });
 }
 function showKingdom() {
-  const s = G.s, p = s.players[0], inc = Gm.dailyIncome(0);
-  const mines = {}; for (const o of Object.values(s.objects)) if (o.type === 'mine' && o.owner === 0) mines[o.res] = (mines[o.res] || 0) + 1;
-  const towns = Gm.townsOf(0).map(t => {
+  const s = G.s, p = s.players[VP()], inc = Gm.dailyIncome(VP());
+  const mines = {}; for (const o of Object.values(s.objects)) if (o.type === 'mine' && o.owner === VP()) mines[o.res] = (mines[o.res] || 0) + 1;
+  const towns = Gm.townsOf(VP()).map(t => {
     const vh = Gm.heroAt(t.x, t.y), us = D.FACTIONS[t.faction].units;
     return `<tr><td><button class="link" data-town="${t.id}">${esc(t.name)}</button></td><td>${Gm.townIncome(t).toLocaleString()}</td><td>${Object.keys(t.built).length} / ${D.BUILD_ORDER.length}</td>
       <td>${us.map(u => t.avail[u] ? `<span title="${esc(D.UNITS[Gm.recruitType(t, u)].name)}"><img class="mini" src="${portrait(Gm.recruitType(t, u))}" alt="">${t.avail[u]}</span>` : '').join('') || '<span class="muted">none</span>'}</td><td>${vh ? esc(vh.name) : '<span class="muted">—</span>'}</td></tr>`;
   }).join('');
-  const heroes = Gm.heroesOf(0).map(h => `<tr><td><button class="link" data-hero="${h.id}">${esc(h.name)}</button>${h.sleep ? ' <small class="muted">(resting)</small>' : ''}</td><td>${h.level}</td><td>${Math.round(Gm.armyStrength(h.army, h)).toLocaleString()}</td><td>${h.mp} / ${D.maxMp(h)}</td><td>${h.mana} / ${D.maxMana(h)}</td></tr>`).join('');
+  const heroes = Gm.heroesOf(VP()).map(h => `<tr><td><button class="link" data-hero="${h.id}">${esc(h.name)}</button>${h.sleep ? ' <small class="muted">(resting)</small>' : ''}</td><td>${h.level}</td><td>${Math.round(Gm.armyStrength(h.army, h)).toLocaleString()}</td><td>${h.mp} / ${D.maxMp(h)}</td><td>${h.mana} / ${D.maxMana(h)}</td></tr>`).join('');
   return modal({
     title: 'Kingdom overview', cls: 'wide-ish kingdom',
     html: `<h4>Daily income</h4><div class="costs">${D.RES.map(r => `<span class="cost">${resImg(r)}+${inc[r].toLocaleString()}</span>`).join('')}</div>

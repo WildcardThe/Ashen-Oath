@@ -68,7 +68,7 @@ export const townsOf = pid => Object.values(G.s.objects).filter(o => o.type === 
 export const isHuman = pid => pid != null && G.s.players[pid] && G.s.players[pid].human;
 
 function message(text, pid) {
-  if (pid == null || isHuman(pid)) io.message?.(text);
+  if (pid == null || isHuman(pid)) io.message?.(text, pid);
 }
 
 // ---------- new game ----------
@@ -195,11 +195,13 @@ export function createHero(pid, x, y, opts = {}) {
 }
 
 export function reveal(pid, x, y, r) {
-  const s = G.s, ex = s.players[pid].explored;
+  const s = G.s, team = s.players[pid].team;
+  // allies share what they uncover; players on other sides must discover each other themselves
+  const maps = s.players.filter(q => q.id === pid || (team != null && q.team === team)).map(q => q.explored);
   for (let dy = -r; dy <= r; dy++) for (let dx = -r; dx <= r; dx++) {
     const nx = x + dx, ny = y + dy;
     if (nx < 0 || ny < 0 || nx >= s.W || ny >= s.H) continue;
-    if (dx * dx + dy * dy <= r * r + r) ex[ny * s.W + nx] = 1;
+    if (dx * dx + dy * dy <= r * r + r) for (const ex of maps) ex[ny * s.W + nx] = 1;
   }
   io.fogChanged?.();
 }
@@ -988,12 +990,13 @@ function armyUnits(army) {
 
 async function runBattle(att, def, opts = {}) {
   const hs = isHuman(att.owner) ? 0 : isHuman(def.owner) ? 1 : -1;
+  const hsAll = [att.owner, def.owner].map((o, i) => (isHuman(o) ? i : -1)).filter(i => i >= 0);   // hot-seat: both sides human
   const b = createBattle(att, def, opts);
   // the ground of the battlefield: the defender's tile (town or monster), else where the attacker stands
   const at = opts.at || att.hero; if (at) { const T = G.s.tiles[at.y * G.s.W + at.x]; b.terrain = T ? T.t : 0; }
   const before = [att, def].map(sd => sd.hero ? sd.hero.army.map(st => st && { ...st }) : null);
   if (hs >= 0 && G.quickNext) { G.quickNext = false; autoBattle(b); await io.quickResult?.(b, hs); }
-  else if (hs >= 0) await io.battle(b, hs); else autoBattle(b);
+  else if (hs >= 0) await io.battle(b, hsAll.length > 1 ? hsAll : hs); else autoBattle(b);
   const r = finishBattle(b);
   // artifacts that bring back part of the fallen troops of the winning commander
   const ws = r.winner, wh = ws != null && [att, def][ws] && [att, def][ws].hero;
@@ -1107,14 +1110,14 @@ export function checkElimination() {
   const s = G.s;
   for (const p of s.players) {
     const alive = townsOf(p.id).length > 0 || heroesOf(p.id).length > 0;
-    if (!alive && p.alive) { p.alive = false; if (!p.human) io.message?.(`${p.name} has been destroyed.`); }
+    if (!alive && p.alive) { p.alive = false; io.message?.(p.human ? `${p.name} has been defeated.` : `${p.name} has been destroyed.`); }
   }
   if (s.over) return;
-  const human = s.players.find(p => p.human);
+  // the game ends when one side is left; with several humans (hot-seat) a defeated player simply drops out
+  const humans = s.players.filter(p => p.human), livingHumans = humans.filter(p => p.alive);
   const living = s.players.filter(p => p.alive), teams = new Set(living.map(p => teamOf(p.id)));
-  if (human && !human.alive) s.over = 'defeat';
-  else if (human && teams.size === 1) s.over = 'victory';   // only the human's team still stands
-  else if (!human && teams.size <= 1) s.over = 'ended';
+  if (humans.length && !livingHumans.length) s.over = 'defeat';
+  else if (teams.size <= 1) { s.over = livingHumans.length ? 'victory' : 'ended'; s.winners = living.map(p => p.name); }
   if (s.over) io.gameOver?.(s.over);
 }
 
@@ -1199,7 +1202,7 @@ export async function endTurn() {
     if (s.current === 0) newDay();
     const p = s.players[s.current];
     if (!p.alive) continue;
-    if (p.human) break;
+    if (p.human) { s.viewer = p.id; break; }
     io.aiStart?.(p);
     await aiTurn(p.id);
     io.aiEnd?.(p);

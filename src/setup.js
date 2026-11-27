@@ -44,9 +44,13 @@ function defaults() {
   };
 }
 
-export function buildSetup(root, { heroAvatar, onBegin, onBack, toast }) {
+export function buildSetup(root, { heroAvatar, onBegin, onBack, toast, mode = 'sp' }) {
   let st = defaults();
   try { const saved = JSON.parse(localStorage.getItem(SAVE_KEY) || 'null'); if (saved && saved.rows) st = { ...st, ...saved, seed: (Math.random() * 1e9) | 0 }; } catch { /* storage unavailable */ }
+  // multiplayer (hot-seat): any open row past the first can be ticked as a human player; single player keeps one human
+  let mp = mode === 'mp';
+  const setMode = m => { mp = m === 'mp'; st.rows.forEach((r, i) => { if (i > 0 && !mp) r.human = false; }); };
+  setMode(mode);
   const save = () => { try { localStorage.setItem(SAVE_KEY, JSON.stringify(st)); } catch { /* ignore */ } };
   const open = () => st.rows.filter(r => r.open);
   const nPlayers = () => open().length;
@@ -73,7 +77,7 @@ export function buildSetup(root, { heroAvatar, onBegin, onBack, toast }) {
     if (what === 'commander') { const list = commanders(r); let c = r.commander; for (let k = 0; k < list.length; k++) { c = cycle(list, c, dir); if (!takenBy(c, r)) break; } r.commander = c; }
     if (what === 'bonus') r.bonus = cycle(BONUS.map(b => b[0]), r.bonus, dir);
   };
-  const enemies = () => open().filter(r => !r.human && !r.ally).length;
+  const enemies = () => open().filter((r, i) => r !== st.rows[0] && !r.ally).length;
 
   // ---- map preview (regenerated a moment after the options change) ----
   let pvTimer = 0;
@@ -104,17 +108,18 @@ export function buildSetup(root, { heroAvatar, onBegin, onBack, toast }) {
   function render() {
     fit();
     const h = [];
-    h.push(`<div class="su-el su-title" style="${at(490, 103, 390, 40)}">NEW CAMPAIGN</div>`);
+    h.push(`<div class="su-el su-title" style="${at(490, 103, 390, 40)}">${mp ? 'MULTIPLAYER' : 'NEW GAME'}</div>`);
     [['PLAYER', 180, 290], ['LORD', 486, 34], ['SIDE', 521, 36], ['FACTION', 596, 63], ['LEADER', 667, 63], ['BONUS', 746, 63]].forEach(([t, x, w]) => h.push(`<div class="su-el su-head" style="${at(x, 168, w, 24)}">${t}</div>`));
     st.rows.forEach((r, i) => {
       const y = ROW_Y[i], dim = r.open ? '' : 'closed';
       const fname = r.faction === 'random' ? 'Random faction' : D.FACTIONS[r.faction].name;
-      const team = r.human ? 'Your forces' : r.ally ? 'Ally' : 'Enemy';
+      const team = i === 0 ? 'Your forces' : r.ally ? 'Ally' : 'Enemy';
+      if (mp && i > 0 && r.open) h.push(`<button class="su-el su-human ${r.human ? 'on' : ''}" data-row="${i}" data-act="human" title="${r.human ? 'Human player · click to make it a computer player' : 'Tick to make this a second human player'}" style="${at(130, y + 16, 50, 30)}">${r.human ? '✔' : ''}<small>HUMAN</small></button>`);
       h.push(r.human
-        ? `<input class="su-el su-name" data-name="1" maxlength="18" value="${esc(r.name || 'You')}" style="${at(186, y + 10, 278, 40)}" aria-label="Your name">`
+        ? `<input class="su-el su-name" data-name="${i}" maxlength="18" value="${esc(r.name || (i ? 'Player ' + (i + 1) : 'You'))}" style="${at(186, y + 10, 278, 40)}" aria-label="Player name">`
         : `<div class="su-el su-name ${dim}" style="${at(186, y + 10, 278, 40)}">${r.open ? `${esc(fname)} <small>${team}</small>` : '<small>Closed slot</small>'}</div>`);
-      h.push(`<button class="su-el su-tog ${dim}" data-row="${i}" data-act="ctrl" title="${r.human ? 'You' : r.open ? 'Computer player · click to close this slot' : 'Click to add a computer player'}" style="${at(491, y + 18, 26, 26)}">${menuIcon(r.human ? 'human' : 'ai')}</button>`);
-      if (!r.human) h.push(`<button class="su-el su-tog ${dim}" data-row="${i}" data-act="team" title="${r.ally ? 'Ally: fights on your side' : 'Enemy: fights against everyone not on its side'} · click to switch" style="${at(526, y + 18, 26, 26)}">${menuIcon(r.ally ? 'ally' : 'enemy')}</button>`);
+      h.push(`<button class="su-el su-tog ${dim}" data-row="${i}" data-act="ctrl" title="${i === 0 ? 'You' : r.human ? 'Human player · click to close this slot' : r.open ? 'Computer player · click to close this slot' : 'Click to add a computer player'}" style="${at(491, y + 18, 26, 26)}">${menuIcon(r.human ? 'human' : 'ai')}</button>`);
+      if (i > 0) h.push(`<button class="su-el su-tog ${dim}" data-row="${i}" data-act="team" title="${r.ally ? 'Ally: fights on your side' : 'Enemy: fights against everyone not on its side'} · click to switch" style="${at(526, y + 18, 26, 26)}">${menuIcon(r.ally ? 'ally' : 'enemy')}</button>`);
       if (r.open) {
         const cmd = r.commander;
         const slot = (x, what, inner, tip) => `<button class="su-el su-sq" data-row="${i}" data-sq="${what}" title="${esc(tip)} · click for next, right-click for previous" style="${at(x, y, 59, 59)}">${inner}</button>`;
@@ -145,14 +150,15 @@ export function buildSetup(root, { heroAvatar, onBegin, onBack, toast }) {
     if (t.id === 'btn-begin') {
       save();
       const players = [];
-      st.rows.forEach((q, i) => { if (q.open) players.push({ faction: q.faction, human: q.human, team: q.human || q.ally ? 0 : i + 1, commander: q.commander, bonus: q.bonus, color: D.PLAYER_COLORS[i], name: q.human ? q.name || 'You' : null }); });
+      st.rows.forEach((q, i) => { if (q.open) players.push({ faction: q.faction, human: q.human, team: i === 0 || q.ally ? 0 : i + 1, commander: q.commander, bonus: q.bonus, color: D.PLAYER_COLORS[i], name: q.human ? q.name || (i ? 'Player ' + (i + 1) : 'You') : null }); });
       onBegin({ players, template: st.template, size: st.size, seed: st.seed, aiLevel: st.aiLevel, monsters: st.monsters, treasure: st.treasure, startRes: st.startRes, terrain: st.terrain, weekEvents: st.weekEvents });
       st.seed = (Math.random() * 1e9) | 0;
       return;
     }
-    if (t.dataset.act === 'ctrl' && r && !r.human) {
+    if (t.dataset.act === 'human' && r) { r.human = !r.human; if (r.human && !r.name) r.name = 'Player ' + (+t.dataset.row + 1); }
+    else if (t.dataset.act === 'ctrl' && r && r !== st.rows[0]) {
       if (r.open && nPlayers() <= 2) { toast?.('A campaign needs at least two lords.', 'bad'); return; }
-      r.open = !r.open; if (r.open) r.ally = false;
+      r.open = !r.open; if (r.open) r.ally = false; else r.human = false;
     } else if (t.dataset.act === 'team' && r) { if (r.open) r.ally = !r.ally; }
     else if (t.dataset.sq && r) step(r, t.dataset.sq, dir);
     else if (t.dataset.arr && r) step(r, 'commander', +t.dataset.arr);
@@ -163,6 +169,6 @@ export function buildSetup(root, { heroAvatar, onBegin, onBack, toast }) {
   }
   root.addEventListener('click', e => act(e, 1));
   root.addEventListener('contextmenu', e => { if (e.target.closest('[data-sq],[data-opt]')) { e.preventDefault(); act(e, -1); } });
-  root.addEventListener('input', e => { if (e.target.dataset.name) { st.rows[0].name = e.target.value; save(); } });
-  return { render };
+  root.addEventListener('input', e => { if (e.target.dataset.name != null) { st.rows[+e.target.dataset.name].name = e.target.value; save(); } });
+  return { render, setMode };
 }

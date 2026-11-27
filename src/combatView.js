@@ -46,7 +46,10 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
 const S3 = Math.sqrt(3);
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 
-export function runCombatView(b, humanSide, opts) {
+export function runCombatView(b, humanSideArg, opts) {
+  // hot-seat: both sides can be human; control follows the side whose stack is acting (results shown for the first)
+  const humanSides = Array.isArray(humanSideArg) ? humanSideArg : [humanSideArg];
+  let humanSide = humanSides[0];
   return new Promise(resolve => {
     const root = $('#combat'); root.hidden = false;
     const cv = $('#cb-canvas'); const g = cv.getContext('2d');
@@ -847,6 +850,7 @@ export function runCombatView(b, humanSide, opts) {
       if (b.q.length) await play(b.q.splice(0));
       while (!b.over) {
         const s = b.stacks[b.active]; if (!s) break;
+        if (humanSides.includes(s.side)) humanSide = s.side;
         hud();
         if (s.side !== humanSide || V.auto) {
           await sleep((V.auto ? 120 : 340) * (opts.speed || 1));
@@ -864,6 +868,7 @@ export function runCombatView(b, humanSide, opts) {
       }
       hud();
       await sleep(400);
+      if (humanSides.length > 1) humanSide = humanSides.includes(b.winner) ? b.winner : humanSides[0];
       await showResult();
       V.done = true;
       document.removeEventListener('keydown', onKey);
