@@ -2,10 +2,44 @@
 import { UNITS, SPELLS, SCHOOLS, ABILITIES, HERO_DEFS, hstat, maxMana, spellDesc } from './data.js';
 import { openRites, riteCost } from './terminal.js';
 import * as C from './combat.js';
-import { spriteImage, spriteMeta, drawUnit, drawObstacle, fillGround, drawBattleBackdrop, animDuration, animFireTime, animMuzzle, animHitTime, animFps } from './art.js';
+import { spriteImage, spriteMeta, drawUnit, drawObstacle, fillGround, drawBattleBackdrop, loadHorizon, horizonName, drawHorizonFull, animDuration, animFireTime, animMuzzle, animHitTime, animFps } from './art.js';
 import { BattleFx, styleOf } from './battleFx.js';
 import Audio from './audio.js';
 import { RITE_FX, FX_LOOK, drawFx } from './riteFx.js';
+
+// Stack-count badge colours: violet-blue by default, emerald with only good effects, crimson with only bad ones;
+// with both, an amber that leans toward gold-green or toward red-orange by which kind outnumbers the other.
+function badgeColors(s) {
+  const eff = new Map();   // one vote per effect (a rite adding several stat changes counts once)
+  for (const x of s.buffs) { const k = x.sp || x.src || x.stat; eff.set(k, (eff.get(k) || 0) + (x.stat === 'blind' ? -1 : Math.sign(x.amount))); }
+  let good = 0, bad = 0; for (const v of eff.values()) { if (v > 0) good++; else if (v < 0) bad++; }
+  if (s.frozen) bad++;
+  if (!good && !bad) return ['#6c63e8', '#3b2f9e', ''];
+  if (!bad) return ['#2fd48a', '#0b7a4c', 'rgba(60,230,150,0.55)'];
+  if (!good) return ['#ff4d6a', '#9a1230', 'rgba(255,70,100,0.55)'];
+  const t = (good - bad) / (good + bad);          // -1 mostly bad .. +1 mostly good
+  const hue = 32 + t * 26;                          // 6 red-orange .. 58 gold
+  return [`hsl(${hue},95%,58%)`, `hsl(${hue - 6},90%,34%)`, `hsla(${hue},100%,60%,0.5)`];
+}
+
+// Painted siege art per faction (tools/siege_art.py): wall, gate, tower, keep and moat pieces cut from rectified ground
+// blocks, the courtyard paving and the siege gun's firing frames, in one atlas each plus assets/siege/meta.json.
+const SIEGE_ART = { meta: null, img: {} };
+const STRIP = { meta: null, img: {} };
+function stripArt(fac) {
+  if (!STRIP.meta) STRIP.meta = fetch('assets/siege/strip.json').then(r => r.json()).catch(() => ({}));
+  if (!STRIP.img[fac]) STRIP.img[fac] = STRIP.meta.then(m => (m[fac] ? new Promise(res => {
+    const im = new Image(); im.onload = () => res({ im, m: m[fac] }); im.onerror = () => res(null); im.src = `assets/siege/strip_${fac}.webp`;
+  }) : null));
+  return STRIP.img[fac];
+}
+function siegeArt(fac) {
+  if (!SIEGE_ART.meta) SIEGE_ART.meta = fetch('assets/siege/meta.json').then(r => r.json()).catch(() => ({}));
+  if (!SIEGE_ART.img[fac]) SIEGE_ART.img[fac] = SIEGE_ART.meta.then(m => (m[fac] ? new Promise(res => {
+    const im = new Image(); im.onload = () => res({ im, m: m[fac], g: m._ }); im.onerror = () => res(null); im.src = `assets/siege/${fac}.webp`;
+  }) : null));
+  return SIEGE_ART.img[fac];
+}
 
 const $ = s => document.querySelector(s);
 const sleep = ms => new Promise(r => setTimeout(r, ms));
@@ -59,16 +93,25 @@ export function runCombatView(b, humanSide, opts) {
       const gr = x.createLinearGradient(0, 0, 0, V.h);
       gr.addColorStop(0, '#2a2420'); gr.addColorStop(0.5, '#3a322b'); gr.addColorStop(1, '#2a231e');
       x.fillStyle = gr; x.fillRect(0, 0, V.w, V.h);
-      if (fillGround(x, V.w, V.h, Math.max(0.8, V.r / 30), b.terrain)) { x.fillStyle = 'rgba(10,8,6,0.18)'; x.fillRect(0, 0, V.w, V.h); }
+      const hzTop = Math.max(V.band, V.oy + V.r * 0.1);
+      const fullHz = drawHorizonFull(x, V.w, V.h, hzTop, horizonName(b.terrain, b.siege && b.siege.faction));
+      if (fullHz) {
+        // the field: a soft darkening below the horizon so hexes and units read clearly on the painted ground
+        const dk = x.createLinearGradient(0, hzTop - V.r * 0.3, 0, V.h);
+        dk.addColorStop(0, 'rgba(10,8,6,0)'); dk.addColorStop(0.08, 'rgba(10,8,6,0.22)'); dk.addColorStop(1, 'rgba(10,8,6,0.38)');
+        x.fillStyle = dk; x.fillRect(0, hzTop - V.r * 0.3, V.w, V.h);
+      } else if (fillGround(x, V.w, V.h, Math.max(0.8, V.r / 30), b.terrain)) { x.fillStyle = 'rgba(10,8,6,0.18)'; x.fillRect(0, 0, V.w, V.h); }
       // backcloth: horizon painting for the terrain, fading into the ground below
       const top = Math.max(V.band, V.oy + V.r * 0.1);
+      if (!fullHz) {
       x.save(); x.beginPath(); x.rect(0, 0, V.w, top + V.r * 0.6); x.clip();
       if (b.bgSeed == null) b.bgSeed = (Math.random() * 1e6) | 0;
-      drawBattleBackdrop(x, V.w, top, b.terrain, b.bgSeed, !!b.siege);
+      drawBattleBackdrop(x, V.w, top, b.terrain, b.bgSeed, b.siege ? (b.siege.faction || true) : false);
       x.restore();
+      }
       const fade = x.createLinearGradient(0, top - V.r * 0.5, 0, top + V.r * 0.7);
       fade.addColorStop(0, 'rgba(20,16,12,0)'); fade.addColorStop(0.5, 'rgba(20,16,12,0.55)'); fade.addColorStop(1, 'rgba(20,16,12,0)');
-      x.fillStyle = fade; x.fillRect(0, top - V.r * 0.5, V.w, V.r * 1.2);
+      if (!fullHz) { x.fillStyle = fade; x.fillRect(0, top - V.r * 0.5, V.w, V.r * 1.2); }
       const rg = x.createRadialGradient(V.w / 2, V.h * 0.1, 0, V.w / 2, V.h * 0.1, V.w * 0.6);
       rg.addColorStop(0, 'rgba(200,80,40,0.18)'); rg.addColorStop(1, 'rgba(0,0,0,0)');
       x.fillStyle = rg; x.fillRect(0, 0, V.w, V.h);
@@ -77,7 +120,21 @@ export function runCombatView(b, humanSide, opts) {
         x.fillStyle = d.k < 0.5 ? 'rgba(0,0,0,0.14)' : 'rgba(255,230,200,0.03)';
         x.beginPath(); x.ellipse(cx, cy, rr * 1.6, rr * 0.6, 0, 0, Math.PI * 2); x.fill();
       }
-      if (b.siege) {
+      if (b.siege && wallArt) {
+        const A = wallArt, k = artK(A), [yx, yy, yw, yh] = A.m.yard;
+        // courtyard: the faction's paving inside the walls
+        const yc = document.createElement('canvas'); yc.width = yw; yc.height = yh; yc.getContext('2d').drawImage(A.im, yx, yy, yw, yh, 0, 0, yw, yh);
+        const pat = x.createPattern(yc, 'repeat'); if (pat.setTransform) pat.setTransform(new DOMMatrix().scale(V.r * 3.2 / yw));
+        x.save(); x.fillStyle = pat; x.globalAlpha = 0.55;
+        for (let r = 0; r < C.ROWS; r++) for (let c2 = C.WALL_COL + 1; c2 < C.COLS; c2++) { hexPath(x, c2, r, -0.5); x.fill(); }
+        x.restore();
+        // moat: the channel piece repeated down the moat column
+        if (b.siege.moat && !strip) {
+          // the channel window repeated end to end (same depth window every time, so the banks line up at each joint)
+          const xm = (center(C.MOAT_COL, 0).x + center(C.MOAT_COL, 1).x) / 2, win = [150, 850], len = (win[1] - win[0]) * artKv(A);
+          for (let y = rowTop(0) - V.r * 0.4; y < rowBot(C.ROWS - 1); y += len - 1) drawPart(x, A, 'moat', win[0], win[1], xm, y, 0.41);
+        }
+      } else if (b.siege) {
         // courtyard paving behind the walls
         x.fillStyle = 'rgba(70,64,58,0.55)';
         for (let r = 0; r < C.ROWS; r++) for (let c2 = C.WALL_COL + 1; c2 < C.COLS; c2++) { hexPath(x, c2, r, 0); x.fill(); }
@@ -96,9 +153,113 @@ export function runCombatView(b, humanSide, opts) {
       return c;
     }
 
+    loadHorizon(horizonName(b.terrain, b.siege && b.siege.faction)).then(im => { if (im) b.bgDirty = true; });
+    // ---------- painted siege art ----------
+    let wallArt = null, gunArt = null, gunFireAt = -1e9, strip = null;
+    if (b.siege) {
+      stripArt(b.siege.faction || 'concord').then(a => { if (a) { strip = a; b.bgDirty = true; } });
+      siegeArt(b.siege.faction || 'concord').then(a => { if (a) { wallArt = a; b.bgDirty = true; } });
+      siegeArt(b.siege.cannon || 'concord').then(a => { if (a) gunArt = a; });
+    }
+    const WALL_U = 0.73, WALL_W = 2.3;   // wall centre across a rectified tile; drawn wall band width in hex radii
+    const artK = A => WALL_W * V.r / ((A.m.pieces.wall.u1 - A.m.pieces.wall.u0) * A.g.RW);   // screen px per tile unit
+    const rowTop = r => center(C.WALL_COL, r).y - V.r * 0.75, rowBot = r => center(C.WALL_COL, r).y + V.r * 0.75;
+    const wallX = () => (center(C.WALL_COL, 0).x + center(C.WALL_COL, 1).x) / 2 + V.r * 0.25;   // nudged inward: the moat column stays clear
+    // Pieces are drawn at one scale and joined end to end down the wall column, the way the blocks fit together on a
+    // table: every wall section shows the same depth window of its tile, so the wall line and the moat banks meet
+    // straight across each joint. Tiles are foreshortened along the wall (SQUASH) to fit the eleven rows.
+    const SQUASH = 1.5;
+    const artKv = A => artK(A) / SQUASH;
+    // draw tile rows va..vb of a piece with tile row va at screen y and the tile's wall centre at screen x xc
+    function drawPart(ctx, A, name, va, vb, xc, y, uc = WALL_U) {
+      const P = A.m.pieces[name]; if (!P) return;
+      const k = artK(A), kv = artKv(A), sc = A.m.scale, [ax, ay, aw, ah] = P.r;
+      const lo = Math.max(va, P.v0), hi = Math.min(vb, P.v0 + ah / sc); if (hi <= lo) return;
+      ctx.drawImage(A.im, ax, ay + (lo - P.v0) * sc, aw, (hi - lo) * sc,
+        xc + (P.u0 - uc) * A.g.RW * k, y + (lo - va) * kv, (P.u1 - P.u0) * A.g.RW * k, (hi - lo) * kv);
+    }
+    // the wall line from far (top) to near (bottom): slot = [piece kind, section, first row, last row] in row units
+    const WALL_SLOTS = [['wall', 'top', 0.0, 1.6], ['wall', 'top', 1.6, 3.0], ['wall', 'upper', 3.0, 4.3], ['gate', null, 4.3, 5.7],
+      ['wall', 'lower', 5.7, 7.0], ['wall', 'bottom', 7.0, 8.4], ['wall', 'bottom', 8.4, 10.0]];
+    const rowY = t => rowTop(0) + t * V.r * 1.5;   // row units (0 = top edge of row 0) to screen y
+    function drawSiegeArt(A) {
+      const S = b.siege, kv = artKv(A), xc = wallX(), ABOVE = A.g.ABOVE;
+      const state = (hp, base) => (hp >= 2 ? base : hp > 0 ? base + '_d' : base + '_x');
+      WALL_SLOTS.forEach(([kind, sec, t0, t1], i) => {
+        const y0 = rowY(t0), len = (rowY(t1) - y0) / kv;
+        const name = kind === 'gate' ? state(S.gate, 'gate') : state(S.walls[sec], 'wall');
+        const vc = kind === 'gate' ? 470 : 500, va = vc - len / 2;
+        // the far end also shows what rises above its tile (battlements, smoke) into the horizon band
+        if (i === 0) drawPart(g, A, name, va - ABOVE, va + len, xc, y0 - ABOVE * kv);
+        else drawPart(g, A, name, va, va + len, xc, y0);
+      });
+      // towers stand on the wall line at its two ends, the keep in the courtyard behind the gate; tile row 720 is a tower's foot
+      const FOOT = 720;
+      for (const tw of S.towers) {
+        const name = (tw.id === 'keep' ? 'keep' : 'tower') + (tw.hp > 0 ? '' : '_x'), P = A.m.pieces[name]; if (!P) continue;
+        let x = xc, footY;
+        if (tw.id === 'north') footY = rowY(1.9);
+        else if (tw.id === 'south') footY = rowY(10.4);
+        else { x = center(C.COLS - 1, C.GATE_ROW).x + V.r * 0.35; footY = rowBot(C.GATE_ROW) + V.r * 0.6; }
+        drawPart(g, A, name, P.v0, FOOT + 60, x, footY - (FOOT - P.v0) * kv, 0.58);
+      }
+    }
+    // Complete wall strip: one painting of moat, wall, gate and end towers in three aligned states; each of its parts
+    // along the length shows the state of the structure it stands for. Moat centre (u 0.40) on the moat column, the
+    // wall line (u 0.62) on the wall column; the strip spans the field from the top of row 0 to the bottom of the last row.
+    const STRIP_PARTS = [[0, 0.15, 'north'], [0.15, 0.3, 'top'], [0.3, 0.42, 'upper'], [0.42, 0.58, 'gate'], [0.58, 0.7, 'lower'], [0.7, 0.85, 'bottom'], [0.85, 1, 'south']];
+    function stripState(key) {
+      const S = b.siege, lvl = h => (h >= 2 ? 0 : h > 0 ? 1 : 2);
+      if (key === 'gate') return lvl(S.gate);
+      if (key === 'north' || key === 'south') { const t = S.towers.find(x => x.id === key); return !t ? 0 : t.hp <= 0 ? 2 : t.hp < 2 ? 1 : 0; }
+      return lvl(S.walls[key]);
+    }
+    let stripFade = null;
+    function drawStrip(A) {
+      const { im, m } = A, xm = (center(C.MOAT_COL, 0).x + center(C.MOAT_COL, 1).x) / 2, xw = wallX() - V.r * 0.25;
+      const k = (xw - xm) / (0.22 * m.w);                  // screen px per strip px across
+      const y0 = rowTop(0) + V.r * 0.1, y1 = rowBot(C.ROWS - 1) + V.r * 0.2, kv = (y1 - y0) / m.h;
+      const u0 = 0.2, u1 = 0.86, x0 = xm - (0.40 - u0) * m.w * k, wpx = (u1 - u0) * m.w;
+      STRIP_PARTS.forEach(([a, c, key], i) => {
+        const st = stripState(key), sx = st * m.w + u0 * m.w;
+        let sy = m.above + a * m.h, sh = (c - a) * m.h, dy = y0 + a * m.h * kv;
+        g.drawImage(im, sx, sy, wpx, sh, x0, dy, wpx * k, sh * kv + 0.5);
+        if (i === 0) {
+          // what rises above the far edge (tower top, smoke, the block's far rim) fades into the horizon: no hard edge
+          const ah = m.above * kv, c = stripFade || (stripFade = document.createElement('canvas'));
+          c.width = Math.ceil(wpx * k); c.height = Math.ceil(ah); const cx = c.getContext('2d');
+          cx.drawImage(im, sx, sy - m.above, wpx, m.above, 0, 0, c.width, c.height);
+          cx.globalCompositeOperation = 'destination-in';
+          const gr = cx.createLinearGradient(0, 0, 0, c.height); gr.addColorStop(0, 'rgba(0,0,0,0)'); gr.addColorStop(0.55, 'rgba(0,0,0,0.25)'); gr.addColorStop(1, 'rgba(0,0,0,0.85)');
+          cx.fillStyle = gr; cx.fillRect(0, 0, c.width, c.height);
+          g.drawImage(c, x0, dy - ah);
+        }
+      });
+    }
+    function keepFoot() { return { x: center(C.COLS - 4, 0).x + V.r * 0.4, y: rowTop(0) - V.r * 0.05 }; }
+    // siege gun at the attackers' edge: rests on its first frame, plays the firing frames when it shoots
+    function gunBox() { const p = center(0, C.ROWS - 3); return { x: p.x - V.r * 1.4, y: rowBot(C.ROWS - 3) + V.r * 0.2, w: V.r * 3.8 }; }
+    function drawGun(now) {
+      const A = gunArt; if (!A || !b.siege) return;
+      const fr = A.m.fire; if (!fr || !fr.length) return;
+      const t = (now - gunFireAt) / 1000, i = t >= 0 && t < 1.1 ? Math.min(fr.length - 1, Math.floor(t / 1.1 * fr.length)) : 0;
+      const [ax, ay, aw, ah] = fr[i], B = gunBox(), h = B.w * ah / aw;
+      g.drawImage(A.im, ax, ay, aw, ah, B.x - B.w / 2, B.y - h, B.w, h);
+    }
     // ---------- siege structures (drawn live, they change during battle) ----------
     function drawSiege(now) {
       const S = b.siege; if (!S) return;
+      if (strip) {
+        drawStrip(strip);
+        // the keep stands behind the field's top edge (in the horizon band), clear of every hex
+        const tw = S.towers.find(x => x.id === 'keep');
+        if (tw && wallArt) {
+          const P = wallArt.m.pieces[tw.hp > 0 ? 'keep' : 'keep_x'], f = keepFoot();
+          if (P) { const [ax, ay, aw, ah] = P.r, w = V.r * 2.6, h = w * ah / aw; g.drawImage(wallArt.im, ax, ay, aw, ah, f.x - w / 2, f.y - h * 0.9, w, h); }
+        }
+        return;
+      }
+      if (wallArt) { drawSiegeArt(wallArt); return; }
       for (let r = 0; r < C.ROWS; r++) {
         const p = center(C.WALL_COL, r);
         const isGate = r === C.GATE_ROW;
@@ -175,6 +336,7 @@ export function runCombatView(b, humanSide, opts) {
         g.shadowBlur = 0;
       }
       drawSiege(now);
+      drawGun(now);
       drawCommanders(now);
       // stacks summoned mid-battle get their display state here; rites that move obstacles redraw the field
       for (const s of b.stacks) if (!V.disp.has(s.id)) V.disp.set(s.id, { ...vis(s), count: s.count, alpha: 0, flash: 1, lx: 0, ly: 0, rot: 0, dead: false });
@@ -203,12 +365,15 @@ export function runCombatView(b, humanSide, opts) {
           const bx = x + (s.side === 0 ? 0.35 : -1.25) * V.r + (s.big ? face * V.r * 0.5 : 0), by = y + V.r * 0.42;
           const txt = String(d.count); g.font = `600 ${Math.max(10, V.r * 0.52)}px "Barlow Condensed", sans-serif`;
           const w = Math.max(V.r * 0.9, g.measureText(txt).width + 8);
-          g.fillStyle = colors[s.side]; g.strokeStyle = 'rgba(0,0,0,0.6)'; g.lineWidth = 1;
-          g.beginPath(); g.roundRect ? g.roundRect(bx, by, w, V.r * 0.62, 3) : g.rect(bx, by, w, V.r * 0.62); g.fill(); g.stroke();
-          g.fillStyle = '#fff'; g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillText(txt, bx + w / 2, by + V.r * 0.33);
-          let dotx = bx + w + 4;
-          if (s.buffs.some(x2 => x2.amount > 0)) { g.fillStyle = '#9fd0ff'; g.beginPath(); g.arc(dotx, by + 4, 3, 0, 7); g.fill(); dotx += 7; }
-          if (s.buffs.some(x2 => x2.amount < 0)) { g.fillStyle = '#e06a50'; g.beginPath(); g.arc(dotx, by + 4, 3, 0, 7); g.fill(); }
+          const bh = V.r * 0.62, [c1, c2, glow] = badgeColors(s);
+          const gr = g.createLinearGradient(0, by, 0, by + bh); gr.addColorStop(0, c1); gr.addColorStop(1, c2);
+          g.save(); g.shadowColor = glow; g.shadowBlur = glow ? 7 : 0;
+          g.fillStyle = gr; g.beginPath(); g.roundRect ? g.roundRect(bx, by, w, bh, 3) : g.rect(bx, by, w, bh); g.fill(); g.restore();
+          // a thin edge in the army's colour keeps the two sides apart; a soft highlight across the top
+          g.strokeStyle = colors[s.side]; g.lineWidth = 1.5; g.beginPath(); g.roundRect ? g.roundRect(bx, by, w, bh, 3) : g.rect(bx, by, w, bh); g.stroke();
+          g.fillStyle = 'rgba(255,255,255,0.16)'; g.fillRect(bx + 2, by + 1.5, w - 4, bh * 0.32);
+          g.fillStyle = '#fff'; g.textAlign = 'center'; g.textBaseline = 'middle';
+          g.shadowColor = 'rgba(0,0,0,0.7)'; g.shadowBlur = 2; g.fillText(txt, bx + w / 2, by + V.r * 0.33); g.shadowBlur = 0;
           if (s.defending) { g.fillStyle = '#e8dfcf'; g.fillRect(bx - 6, by + 2, 4, V.r * 0.5); }
         }
         g.globalAlpha = 1;
@@ -266,6 +431,7 @@ export function runCombatView(b, humanSide, opts) {
     function siegeTargetPos(t) {
       if (t.kind === 'gate') return gateAt();
       if (t.kind === 'wall') { const r = { top: 1, upper: 3, lower: 7, bottom: 9 }[t.sec]; const n = norm(C.WALL_COL, r); return { nx: n.nx, ny: n.ny - 0.4 }; }
+      if (t.id === 'keep' && strip) { const f = keepFoot(); return { nx: (f.x - V.ox) / V.r, ny: (f.y - V.oy) / V.r - 1.2 }; }
       const n = t.id === 'keep' ? norm(C.COLS - 1, C.GATE_ROW) : t.id === 'north' ? norm(C.WALL_COL, 0) : norm(C.WALL_COL, C.ROWS - 1);
       return { nx: n.nx + (t.id === 'keep' ? 1.1 : 0.2), ny: n.ny - 1.5 };
     }
@@ -288,9 +454,10 @@ export function runCombatView(b, humanSide, opts) {
       for (const side of [0, 1]) {
         const h = b.sides[side].hero, look = h && HERO_DEFS[h.name]?.look; if (!look) continue;
         const castT = now - V.cmdCast[side], cm = spriteMeta(`cmd_${look}_cast`), casting = V.cmdCast[side] && cm && castT < cm.n / 20 * 1000;
-        const name = `cmd_${look}_${casting ? 'cast' : 'idle'}`, m = spriteMeta(name), im = spriteImage(name); if (!m || !im) continue;
-        const figH = Math.max(V.r * 2.4, V.band * 1.05), k = figH / ((casting ? m.body0 : m.body) * m.fh), w = m.fw * k, hh = m.fh * k;
-        const fi = casting ? Math.min(m.n - 1, Math.floor(castT / 1000 * 20)) : Math.floor(now / 1000 * 10) % m.n;
+        // standing still on the first frame of the casting sheet; the sheet plays only when a rite is cast
+        const name = `cmd_${look}_cast`, m = spriteMeta(name), im = spriteImage(name); if (!m || !im) continue;
+        const figH = Math.max(V.r * 2.4, V.band * 1.05), k = figH / (m.body0 * m.fh), w = m.fw * k, hh = m.fh * k;
+        const fi = casting ? Math.min(m.n - 1, Math.floor(castT / 1000 * 20)) : 0;
         const x = side === 0 ? V.ox + V.r * 0.5 : V.w - V.ox - V.r * 0.5, y = V.oy + V.r * 0.35;
         g.save(); g.translate(x, y); if (side === 1) g.scale(-1, 1);
         g.fillStyle = 'rgba(0,0,0,0.35)'; g.beginPath(); g.ellipse(0, 0, V.r * 0.9, V.r * 0.25, 0, 0, Math.PI * 2); g.fill();
@@ -491,7 +658,13 @@ export function runCombatView(b, humanSide, opts) {
           else { addFloat(d, 'Low morale', '#9fb8d8', true, -V.r * 0.4); d.flash = 0.4; }
           await sleep(420 * fast);
         } else if (ev.type === 'catapult') {
-          const to = siegeTargetPos(ev.target), from = { nx: -0.5, ny: 4 + Math.random() * 8 };
+          const to = siegeTargetPos(ev.target);
+          let from = { nx: -0.5, ny: 4 + Math.random() * 8 };
+          if (gunArt) {
+            gunFireAt = performance.now(); await sleep(260 * fast);
+            const B = gunBox(); from = { nx: (B.x + B.w * 0.45 - V.ox) / V.r, ny: (B.y - B.w * 0.32 - V.oy) / V.r };
+            V.fx.add('muzzle', { at: from, dir: 1, color: '#ffd080' }, 160);
+          }
           V.fx.add('shell', { from, to }, 420 * fast);
           await sleep(420 * fast);
           if (ev.hit) { V.fx.explosion(to); if (ev.destroyed) V.fx.dust(to, 20, true); }

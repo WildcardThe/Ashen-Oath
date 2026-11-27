@@ -26,14 +26,14 @@ A = os.path.join(ROOT, 'assets')
 M = json.load(open(os.path.join(A, 'sprites.json')))
 need = set()
 for k, m in M.items():
-    need.add(f"{m['atlas']}.png" if m.get('atlas') else f"{k}.{m.get('ext', 'png')}")
+    need.add(f"{m['atlas']}.{m.get('aext', 'png')}" if m.get('atlas') else f"{k}.{m.get('ext', 'png')}")
 packed = {}
 for f in os.listdir(os.path.join(A, 'town')):
     mp = os.path.join(A, 'town', f, 'meta.json')
     if os.path.exists(mp) and json.load(open(mp)).get('atlas'): packed[f] = True
 def wanted(rel):
     p = rel.split('/')
-    if p[0] in ('source', 'sprites_olive'): return False
+    if p[0] in ('source', 'sprites_olive') or p[-1].startswith('_'): return False
     if p[0] == 'sprites' and len(p) == 2:
         n = p[1]
         return n in need or n.startswith(('icon_', 'commander_', 'town_'))

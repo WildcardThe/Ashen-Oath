@@ -22,16 +22,16 @@ export const MINES = {
 };
 
 export const TERRAIN = [
-  { name: 'Scrubland', cost: 100, pass: true, base: '#5a4a38' },
-  { name: 'Scorched Earth', cost: 150, pass: true, base: '#6a3e2c' },
-  { name: 'Toxic Marsh', cost: 175, pass: true, base: '#4a4a2c' },
-  { name: 'Bone Fields', cost: 125, pass: true, base: '#8a8884' },
+  { name: 'Frozen Wastes', cost: 100, pass: true, base: '#b8bec6' },
+  { name: 'Scrap Wastes', cost: 150, pass: true, base: '#7a4428' },
+  { name: 'Shale Coast', cost: 175, pass: true, base: '#3c4046' },
+  { name: 'Black Glass Desert', cost: 125, pass: true, base: '#2c302c' },
   { name: 'Impassable', cost: Infinity, pass: false, base: '#241e1c' },
-  { name: 'Acid Pools', cost: Infinity, pass: false, base: '#3a6a2a' },
+  { name: 'Pools', cost: Infinity, pass: false, base: '#2a4a5a' },
   { name: 'Ash Plains', cost: 100, pass: true, base: '#3e3934' },
-  { name: 'Dust Flats', cost: 100, pass: true, base: '#9a8e74' },
+  { name: 'Rust Flats', cost: 100, pass: true, base: '#94603e' },
 ];
-// Painted ground texture per terrain type (assets/terrain/*.webp); acid pools sit on marsh mud.
+// Painted ground texture per terrain type (assets/terrain/*.webp), one per faction homeland; pools sit on shale.
 export const TERRAIN_TEX = ['ground_scrub', 'ground_broken', 'ground_marsh', 'ground_bone', 'ground_rock', 'ground_marsh', 'ground_ash', 'ground_dust'];
 
 export const ROAD_COST = 65;
@@ -143,6 +143,20 @@ const NEW_UNITS = [
   ['shard', 'deathless', 5, 'Star-God Shards', 'Ascended Star-God Shards', [260, 22, 18, 30, 44, 9, 0], [300, 25, 20, 34, 50, 10, 0], { auramite: 4500, wraithbone: 1 }, { auramite: 5800, wraithbone: 2 }, 1, ['flyer'], ['flyer', 'doubleStrike'], true, 1.5,
     'A fragment of a star-god, chained in living metal by the Dynasty and set loose on its enemies.', 'A star-god shard that has broken its chains, crowned with floating obelisks and blazing with white-gold fire. It strikes twice.'],
 ];
+const PF_UNITS = [
+  ['thrall', 1, 'Void Thralls', 'Void Reivers', [8, 4, 3, 1, 3, 6, 0], [9, 5, 5, 2, 3, 6, 0], { auramite: 60 }, { auramite: 80 }, 14, [], [], false, 1.25,
+    'Pale void-born raiders in patched flak and toothed masks, with boarding hooks and cleavers.', 'Void-born raiders in heavier plate with hooked chain-glaives and boarding shields.'],
+  ['fangreaver', 2, 'Fang Reavers', 'Bloodfang Reavers', [24, 9, 5, 4, 7, 6, 0], [28, 10, 6, 4, 8, 7, 0], { auramite: 300 }, { auramite: 400 }, 8, [], ['doubleStrike'], false, 1.3,
+    'Silent giants in grey plate with white jaws painted across their helms, swinging roaring chain-axes.', 'Reavers with a chain-axe in each hand and shark-tooth trophies. They strike twice.'],
+  ['harpooner', 3, 'Harpoon Gunners', 'Leviathan Gunners', [40, 11, 8, 8, 14, 4, 8], [48, 12, 9, 10, 17, 4, 12], { auramite: 520 }, { auramite: 700 }, 5, [], [], false, 1.35,
+    'Armoured gunners braced behind heavy harpoon cannons that drag their prey in on chains.', 'Gunners with twin harpoon launchers crackling with void energy.'],
+  ['striker', 4, 'Abyss Strikers', 'Abyss Executioners', [110, 15, 15, 14, 22, 7, 0], [130, 17, 17, 16, 25, 8, 0], { auramite: 1600, blackstone: 1 }, { auramite: 2100, blackstone: 2 }, 2, ['flyer'], ['flyer', 'doubleStrike'], false, 1.4,
+    'Boarding elites in heavy armour with chain-fists and shields, teleporting straight into the enemy line.', 'Executioners with two-handed chain-glaives, teleporting in a flash of void light. They strike twice.'],
+  ['drowned', 5, 'Drowned Walkers', 'Leviathan Walkers', [290, 21, 19, 30, 44, 5, 0], [340, 24, 21, 34, 50, 6, 0], { auramite: 4300, psycrystal: 1 }, { auramite: 5500, psycrystal: 2 }, 1, [], ['doubleStrike'], true, 1.5,
+    'Rusting war walkers with a white shark jaw painted on their hulls, a chain-claw and a harpoon arm.', 'Colossal walkers dripping seawater, with a crushing claw and a void cannon. They strike twice.'],
+];
+for (const [id, tier, name, uname, st, ust, cost, ucost, growth, ab, uab, big, scale, desc, udesc] of PF_UNITS)
+  NEW_UNITS.push([id, 'palefang', tier, name, uname, st, ust, cost, ucost, growth, ab, uab, big, scale, desc, udesc]);
 for (const [id, faction, tier, name, uname, st, ust, cost, ucost, growth, ab, uab, big, scale, desc, udesc] of NEW_UNITS) {
   const make = (k, nm, [hp, atk, def, min, max, spd, shots], c, a, d, extra) => {
     const pose = shots ? 'shoot' : 'attack';
@@ -193,6 +207,36 @@ Object.assign(UNITS.hellforge_u, {
   desc: 'Havoc Gunners rebuilt with mechanical loader arms and bigger guns. Their cannons never stop turning.',
 });
 Object.assign(UNITS.flayer_u, { look: { sprite: 'unit_raptor_u', face: 1, scale: 1.65, jet: true, anim: { fly: 'anim_raptor_u_fly', attack: 'anim_raptor_u_attack', idle: 'attack', face: 1, scale: 1.5, fps: { fly: 24, attack: 24 } } }, desc: 'Veteran Raptors with twin-turbine packs and chain-axes, trailing fire and smoke across the battlefield. No foe can answer their strike.' });
+// Redrawn Iron Concord (snow-wolf marines) and Hollow Host (hellforge oathbreakers): every creature gets its own
+// picture, movement and attack strips (tools/faction_units.py). Ids, abilities and growth stay the same so saves keep working.
+const REDRAWN = {
+  levy: ['Frost Levy', 'Soldiers of a frozen world in furs, greatcoats and rebreathers, firing long bayonet rifles.', 1.2, false],
+  levy_u: ['Frost Veterans', 'Hardened veterans in wolf-pelt hoods with long scoped rifles, tuned for the kill at any range.', 1.2, false],
+  warden: ['Wolfblade Initiates', 'Fierce young giants in steel-blue plate who charge with chain-sword and pistol. Their mass answers every blow.', 1.3, false],
+  warden_u: ['Wolfblade Hunters', 'Wolf-helmed warriors with chain-axes and wolf-head shields, hardened by a hundred hunts.', 1.3, false],
+  knight: ['Frostwolf Riders', 'Armoured warriors riding white frost wolves the size of horses, smashing the line with storm hammers.', 1.35, true],
+  knight_u: ['Rimehowl Champions', 'Champions on armoured frost wolves with power axes; rider and beast both strike.', 1.4, true],
+  walker: ['Bastion Walkers', 'Rune-carved war walkers piloted by entombed veterans, bearing twin siege cannons.', 1.35, true],
+  walker_u: ['Bastion Dreadwalkers', 'Walkers draped in wolf pelts with an eternal-flame brazier, a rotary cannon and a twin siege cannon.', 1.4, true],
+  stormhammer: ['Stormhammer Guard', 'Colossal veterans in fortress-plate with lightning storm hammers and wolf-skull shields.', 1.45, true],
+  stormhammer_u: ['Stormhammer Jarls', 'The oldest of the Guard, their plate etched with saga-runes. Their shields answer every blow.', 1.5, true],
+  zealot: ['Bloodsworn', 'Frenzied oathbreakers in cracked crimson plate, hacking with chain-axes and firing pistols at point-blank range.', 1.3, false],
+  zealot_u: ['Runescarred', 'Bloodsworn branded with glowing runes of the Maw, swinging axes that burn with its fire.', 1.35, false],
+  turncoat: ['Blood Reavers', 'Crimson-armoured oathbreakers with spiked mauls and heavy pistols, as deadly up close as at range.', 1.3, false],
+  turncoat_u: ['Hellfire Reavers', 'Reavers whose mauls burn with the Maw\'s fire. They fight just as well up close as at range.', 1.35, false],
+  flayer: ['Ash Raptors', 'Oathbreakers strapped to roaring jump-packs. They crash down on the enemy line before it can answer.', 1.4, false],
+  flayer_u: ['Pyre Raptors', 'Veteran Raptors with twin-turbine packs and burning chain-axes, trailing fire across the battlefield.', 1.45, false],
+  hellforge: ['Havoc Gunners', 'Oathbreakers hauling rotary cannons fed from belts of hell-forged rounds.', 1.4, false],
+  hellforge_u: ['Hellstorm Gunners', 'Havoc Gunners rebuilt with mechanical loader arms and red-hot cannons that never stop turning.', 1.45, false],
+  desecrator: ['Desecrators', 'Towering oathbreakers in brass-bound plate, hauling hell-cannons fed by the furnaces on their backs.', 1.5, true],
+  desecrator_u: ['Pyre Desecrators', 'Desecrators swinging skull-censers of living hellfire. They burn the line from afar and crush what reaches them.', 1.55, true],
+};
+for (const [id, [name, desc, scale, big]] of Object.entries(REDRAWN)) {
+  const u = UNITS[id], pose = u.shots ? 'shoot' : 'attack';
+  const anim = { move: `anim_${id}_move`, [pose]: `anim_${id}_${pose}`, idle: 'move', face: 1, scale, fps: { move: 18, [pose]: 22 } };
+  if (u.shots && u.ab.includes('brawler')) { anim.attack = `anim_${id}_attack`; anim.fps.attack = 22; }   // shoots and has its own melee sheet
+  Object.assign(u, { name, desc, big: big || undefined, look: { sprite: 'unit_' + id, face: 1, scale, jet: id.startsWith('flayer') || undefined, anim } });
+}
 // Elite wandering creatures: stronger kin of each creature, guarding the richest treasure.
 const ELITES = {
   servitor: ['Overseer Servitors', 'Heavily augmented thralls with twin serrated claws and a furnace on their backs.'],
@@ -240,12 +284,12 @@ export const FACTIONS = {
     name: 'The Iron Concord', adj: 'Concord',
     units: ['levy', 'warden', 'knight', 'walker', 'stormhammer'],
     rares: ['plasteel', 'psycrystal'],
-    dwell: ['Conscript Barracks', 'Reliquary Crypt', 'Bulwark Commandery', 'Walker Bay', 'Stormhammer Keep'],
-    dwellU: ['Veterans\' Barracks', 'Ironclad Sanctum', 'Paladin Chapterhouse', 'Dreadwalker Forge', 'Hall of Jarls'],
-    heroes: ['Lord-Ascendant Valerian Kord', 'Canoness Seraphine Vale', 'Arch-Magos Teyl Orrin'],
+    dwell: ['Levy Barracks', 'Bladehall', 'Wolf Kennels', 'Walker Bay', 'Stormhammer Keep'],
+    dwellU: ['Veterans\' Lodge', 'Hunters\' Bladehall', 'Rimehowl Lodge', 'Dreadwalker Forge', 'Hall of Jarls'],
+    heroes: ['Jarl Hrodmar Ironmane', 'Rune-Priest Skaldi Frostweaver', 'Huntmistress Ylva Greyfang', 'Lord-Ascendant Valerian Kord', 'Canoness Seraphine Vale', 'Arch-Magos Teyl Orrin'],
     townNames: ['Fort Ardent', 'Bastion Primaris', 'Iron Vigil'],
-    lore: 'A thousand worlds bound by oath to a dying throne. Their gene-forged Wardens still hold the line.',
-    style: 'Disciplined and tough. Strong shooters, shield walls and hammer-bearing veterans.',
+    lore: 'Born on an ice world where winter never ends, raised among wolves and storms, and remade into giants of steel-blue plate to keep an oath older than their empire.',
+    style: 'Tough and proud. Fur-cloaked riflemen, fierce blade-warriors, giant wolf riders, rune-carved walkers and shield-wall hammer veterans.',
   },
   hollow: {
     name: 'The Hollow Host', adj: 'Hollow',
@@ -253,7 +297,7 @@ export const FACTIONS = {
     rares: ['blackstone', 'wraithbone'],
     dwell: ['Bloodsworn Pits', 'Reaver Barracks', 'Raptor Eyrie', 'Havoc Armoury', 'Desecrator Foundry'],
     dwellU: ['Runescar Pits', 'Hellfire Armory', 'Pyre Eyrie', 'Hellstorm Armoury', 'Pyre Cathedral'],
-    heroes: ['Abaddor the Ninefold', 'Ezrakh the Thousandfold', 'Khorvax the Red Wrath'],
+    heroes: ['Lord Vharkul the Brass Tyrant', 'Dark Prophet Kaedrin Ashmouth', 'Hellsmith Morvagh', 'Abaddor the Ninefold', 'Ezrakh the Thousandfold', 'Khorvax the Red Wrath'],
     townNames: ['Gutterspire', 'The Weeping Gate', 'Citadel of Ash'],
     lore: 'Wardens who broke their oath and gave their souls to the Maw, the hunger between the stars.',
     style: 'Fast and brutal. Cheap hordes, unanswerable strikes and hell-cannon Desecrators.',
@@ -291,6 +335,17 @@ export const FACTIONS = {
     lore: 'An empire older than the stars traded its flesh for living metal and slept for sixty million years. Now the tomb-worlds are opening.',
     style: 'Slow, relentless and hard to kill. Armoured warriors, green beam weapons, scarab swarms and a chained star-god.',
   },
+  palefang: {
+    name: 'The Pale Fang Exiles', adj: 'Pale Fang',
+    units: ['thrall', 'fangreaver', 'harpooner', 'striker', 'drowned'],
+    rares: ['blackstone', 'psycrystal'],
+    dwell: ['Thrall Hold', 'Reaver Pens', 'Harpoon Battery', 'Teleport Vault', 'Drowned Dock'],
+    dwellU: ['Reiver Hold', 'Blood Reaver Pens', 'Deep Harpoon Battery', 'Abyss Vault', 'Leviathan Dock'],
+    heroes: ['High Reaper Vosk the Silent', 'Tide-Seer Maela Drownsong'],
+    townNames: ['Black Drift', 'The Silent Wake', 'Hollowtide'],
+    lore: 'Exiled for a sin no record names, they wander the dark between the stars in black-hulled ships, silent before a battle and leaving nothing behind after it.',
+    style: 'Savage close-quarters killers. Raider thralls, chain-axe reavers, harpoon gunners, teleporting boarding elites and a drowned war-walker.',
+  },
 };
 
 // Commander roster: class steers stat growth; specialty and starting skill make each one distinct.
@@ -314,6 +369,22 @@ export const HERO_DEFS = {
   'Warboss Kreg': { cls: 'might', spec: { type: 'unit', unit: 'raider' }, skill: 'archery', spell: 'haste' },
   'The Hollow Prince': { cls: 'magic', spec: { type: 'skill', skill: 'intelligence' }, skill: 'wisdom', spell: 'ember' },
   // painted commanders: avatar, map vehicle and battlefield figure (assets/ui/avatars, cmd_<look>_* sprites)
+  'Jarl Hrodmar Ironmane': { cls: 'might', look: 'hrodmar', spec: { type: 'unit', unit: 'knight' }, skill: 'leadership', spell: 'fury',
+    bio: 'Hrodmar has led the Concord\'s hunts for two hundred winters and has outlived three of his own sagas. He rides to war on the great frost wolf Skellvar, laughs in the face of every charge, and has never once let his warriors eat before he has.' },
+  'Rune-Priest Skaldi Frostweaver': { cls: 'magic', look: 'skaldi', spec: { type: 'spell', spell: 'arc' }, skill: 'air', spell: 'arc',
+    bio: 'Skaldi reads the future in the cracks of the ice and calls the storm by its true name. The warriors say the blizzard follows him like a hound, and that he has never lost a duel with the sky.' },
+  'Huntmistress Ylva Greyfang': { cls: 'might', look: 'ylva', spec: { type: 'unit', unit: 'levy' }, skill: 'archery', spell: 'precision',
+    bio: 'Ylva hunts alone for months on the ice and comes back with the heads of things nobody else has seen. Her rifle has killed a war-beast at three kilometres, and two grey wolves that never leave her side make sure nothing gets closer.' },
+  'Lord Vharkul the Brass Tyrant': { cls: 'might', look: 'vharkul', spec: { type: 'unit', unit: 'hellforge' }, skill: 'offense', spell: 'fury',
+    bio: 'Vharkul was a hero of the oath once, and he still keeps the medals, nailed through the skulls of the men who gave them to him. He leads from a brass war-chariot and has never offered an enemy terms.' },
+  'Dark Prophet Kaedrin Ashmouth': { cls: 'magic', look: 'kaedrin', spec: { type: 'spell', spell: 'frenzy' }, skill: 'fire', spell: 'ember',
+    bio: 'Kaedrin preaches the Maw\'s hunger in a voice that makes the ground smoke. Every battle opens with his sermon, and every warrior who hears it fights without fear, because whatever happens to them now has already been promised.' },
+  'Hellsmith Morvagh': { cls: 'magic', look: 'morvagh', spec: { type: 'unit', unit: 'desecrator' }, skill: 'armorer', spell: 'stoneskin',
+    bio: 'Morvagh builds the Desecrators and the hell-cannons, and the daemons bound inside them obey him because he made their cages. Half of him is brass and furnace now, and he calls the other half a design flaw.' },
+  'High Reaper Vosk the Silent': { cls: 'might', look: 'vosk', spec: { type: 'unit', unit: 'fangreaver' }, skill: 'offense', spell: 'fury',
+    bio: 'Vosk has not spoken in two hundred years. He leads the Pale Fang from the front with a chain-glaive taller than a man, and his warriors read his orders in the way he turns his head.' },
+  'Tide-Seer Maela Drownsong': { cls: 'magic', look: 'maela', spec: { type: 'spell', spell: 'frost' }, skill: 'water', spell: 'frost',
+    bio: "Maela hears the void the way sailors hear the sea. She calls the storm that hides the fleet and the cold that freezes the enemy's blood before the reavers fall on them." },
   'Lord-Ascendant Valerian Kord': { cls: 'might', look: 'valerian', spec: { type: 'unit', unit: 'knight' }, skill: 'leadership', spell: 'fury',
     bio: 'The last of the gene-forged sons sent to lead the Concord\'s crusades, Valerian stands half again as tall as any warrior beside him. He has not lost a field in three hundred years, and he carries the scars of every one he nearly lost. Soldiers who march under his banner swear they do not feel fear, only the weight of his gaze.' },
   'Canoness Seraphine Vale': { cls: 'magic', look: 'seraphine', spec: { type: 'spell', spell: 'mend' }, skill: 'water', spell: 'mend',

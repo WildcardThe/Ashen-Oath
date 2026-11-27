@@ -24,7 +24,7 @@ const OPTS = {
   monsters: { label: 'Monsters', vals: [[0.6, 'Weak'], [1, 'Normal'], [1.5, 'Strong'], [2, 'Deadly']] },
   treasure: { label: 'Treasure', vals: [[0.6, 'Scarce'], [1, 'Normal'], [1.5, 'Rich']] },
   startRes: { label: 'Wealth', vals: [[0.5, 'Poor'], [1, 'Normal'], [1.75, 'Rich']] },
-  terrain: { label: 'Terrain', vals: [['mixed', 'Mixed'], ['volcanic', 'Volcanic'], ['wasteland', 'Wasteland']] },
+  terrain: { label: 'Terrain', vals: [['mixed', 'Mixed'], ['volcanic', 'Ash & Scrap'], ['wasteland', 'Ice, Shale & Rust']] },
   weekEvents: { label: 'Events', vals: [[true, 'On'], [false, 'Off']] },
   seed: { label: 'Seed' },
 };
@@ -83,7 +83,7 @@ export function buildSetup(root, { heroAvatar, onBegin, onBack, toast }) {
       const cv = root.querySelector('#su-preview'); if (!cv) return;
       const rows = st.rows.map((r, i) => ({ ...r, i })).filter(r => r.open);
       let m;
-      try { m = generateMap(st.seed, { template: st.template, size: st.size, players: rows.length, monsters: st.monsters, treasure: st.treasure, terrain: st.terrain, homeGround: rows.map(r => ({ concord: 0, hollow: 6, rustbound: 7, scrapjaw: 1, deathless: 3 }[r.faction] ?? 0)) }); } catch { return; }
+      try { m = generateMap(st.seed, { template: st.template, size: st.size, players: rows.length, monsters: st.monsters, treasure: st.treasure, terrain: st.terrain, homeGround: rows.map(r => ({ concord: 0, hollow: 6, rustbound: 7, scrapjaw: 1, deathless: 3, palefang: 2 }[r.faction] ?? 0)) }); } catch { return; }
       const g = cv.getContext('2d'), W = cv.width, H = cv.height, k = Math.min(W, H) / m.W, ox = (W - m.W * k) / 2, oy = (H - m.H * k) / 2;
       g.clearRect(0, 0, W, H);
       const ROCK = ['#4a3c32', '#3c4a2c', '#5a2414', '#26242a', '#2c3a22'];

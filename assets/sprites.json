@@ -58,107 +58,107 @@
  "tree_mushroom": {
   "kind": "block",
   "w": 54,
-  "h": 68
+  "h": 68,
+  "atlas": "atlas_misc",
+  "x": 1913,
+  "y": 4100
  },
  "ruin_bridge": {
   "kind": "block",
   "w": 114,
-  "h": 68
+  "h": 68,
+  "atlas": "atlas_misc",
+  "x": 1797,
+  "y": 4100
  },
  "ruin_gate": {
   "kind": "block",
   "w": 104,
-  "h": 88
+  "h": 88,
+  "atlas": "atlas_misc",
+  "x": 1525,
+  "y": 4100
  },
  "cave_crystal": {
   "kind": "block",
   "w": 204,
-  "h": 132
+  "h": 132,
+  "atlas": "atlas_misc",
+  "x": 813,
+  "y": 4100
  },
  "skeleton": {
   "kind": "decor",
   "w": 82,
-  "h": 40
+  "h": 40,
+  "atlas": "atlas_misc",
+  "x": 0,
+  "y": 4252
  },
  "stones_s": {
   "kind": "decor",
   "w": 28,
-  "h": 26
+  "h": 26,
+  "atlas": "atlas_misc",
+  "x": 84,
+  "y": 4252
  },
  "unit_levy": {
   "kind": "unit",
-  "w": 147,
-  "h": 240,
+  "w": 255,
+  "h": 260,
   "ext": "webp"
  },
  "unit_levy_u": {
   "kind": "unit",
-  "w": 173,
-  "h": 240,
+  "w": 237,
+  "h": 260,
   "ext": "webp"
  },
  "unit_knight": {
   "kind": "unit",
-  "w": 213,
-  "h": 240,
+  "w": 384,
+  "h": 260,
   "ext": "webp"
  },
  "unit_knight_u": {
   "kind": "unit",
-  "w": 156,
-  "h": 240,
+  "w": 424,
+  "h": 260,
   "ext": "webp"
  },
  "town_concord": {
-  "kind": "unit",
-  "w": 352,
-  "h": 320
+  "kind": "decor",
+  "w": 440,
+  "h": 287
  },
  "unit_stormhammer": {
   "kind": "unit",
-  "w": 258,
-  "h": 240,
+  "w": 353,
+  "h": 260,
   "ext": "webp"
  },
  "unit_stormhammer_u": {
   "kind": "unit",
-  "w": 278,
-  "h": 240,
-  "ext": "webp"
- },
- "unit_dread": {
-  "kind": "unit",
-  "w": 231,
-  "h": 240,
-  "ext": "webp"
- },
- "unit_dread_u": {
-  "kind": "unit",
-  "w": 231,
-  "h": 240,
-  "ext": "webp"
- },
- "unit_berserker": {
-  "kind": "unit",
-  "w": 239,
-  "h": 240,
-  "ext": "webp"
- },
- "unit_berserker_u": {
-  "kind": "unit",
-  "w": 232,
-  "h": 240,
+  "w": 328,
+  "h": 260,
   "ext": "webp"
  },
  "river_strip": {
   "kind": "river",
   "w": 98,
-  "h": 150
+  "h": 150,
+  "atlas": "atlas_misc",
+  "x": 157,
+  "y": 4100
  },
  "chest_map": {
   "kind": "decor",
   "w": 160,
-  "h": 143
+  "h": 143,
+  "atlas": "atlas_misc",
+  "x": 349,
+  "y": 4100
  },
  "commander_1": {
   "kind": "portrait",
@@ -173,451 +173,240 @@
  "goo_1": {
   "kind": "decor",
   "w": 180,
-  "h": 180
+  "h": 180,
+  "atlas": "atlas_misc",
+  "x": 370,
+  "y": 706
  },
  "goo_2": {
   "kind": "decor",
   "w": 180,
-  "h": 180
+  "h": 180,
+  "atlas": "atlas_misc",
+  "x": 552,
+  "y": 706
  },
  "goo_3": {
   "kind": "decor",
   "w": 180,
-  "h": 180
+  "h": 180,
+  "atlas": "atlas_misc",
+  "x": 734,
+  "y": 706
  },
  "goo_4": {
   "kind": "decor",
   "w": 180,
-  "h": 180
+  "h": 180,
+  "atlas": "atlas_misc",
+  "x": 916,
+  "y": 706
  },
  "crater_1": {
   "kind": "decor",
   "w": 145,
-  "h": 140
+  "h": 140,
+  "atlas": "atlas_misc",
+  "x": 666,
+  "y": 4100
  },
  "crater_2": {
   "kind": "decor",
   "w": 200,
-  "h": 198
+  "h": 198,
+  "atlas": "atlas_misc",
+  "x": 168,
+  "y": 706
  },
  "crater_3": {
   "kind": "decor",
   "w": 184,
-  "h": 200
+  "h": 200,
+  "atlas": "atlas_misc",
+  "x": 1748,
+  "y": 415
  },
  "crater_4": {
   "kind": "decor",
   "w": 121,
-  "h": 121
+  "h": 121,
+  "atlas": "atlas_misc",
+  "x": 1185,
+  "y": 4100
  },
  "crater_5": {
   "kind": "decor",
   "w": 155,
-  "h": 150
+  "h": 150,
+  "atlas": "atlas_misc",
+  "x": 0,
+  "y": 4100
  },
  "crater_6": {
   "kind": "decor",
   "w": 166,
-  "h": 200
+  "h": 200,
+  "atlas": "atlas_misc",
+  "x": 0,
+  "y": 706
  },
  "crater_7": {
   "kind": "decor",
   "w": 72,
-  "h": 70
+  "h": 70,
+  "atlas": "atlas_misc",
+  "x": 1723,
+  "y": 4100
  },
  "crater_8": {
   "kind": "decor",
   "w": 200,
-  "h": 162
+  "h": 162,
+  "atlas": "atlas_misc",
+  "x": 1098,
+  "y": 706
  },
  "crater_9": {
   "kind": "decor",
   "w": 92,
-  "h": 92
+  "h": 92,
+  "atlas": "atlas_misc",
+  "x": 1431,
+  "y": 4100
  },
  "crater_10": {
   "kind": "decor",
   "w": 90,
-  "h": 86
+  "h": 86,
+  "atlas": "atlas_misc",
+  "x": 1631,
+  "y": 4100
  },
  "pond_1": {
   "kind": "decor",
   "w": 164,
-  "h": 125
+  "h": 125,
+  "atlas": "atlas_misc",
+  "x": 1019,
+  "y": 4100
  },
  "pond_2": {
   "kind": "decor",
   "w": 121,
-  "h": 96
+  "h": 96,
+  "atlas": "atlas_misc",
+  "x": 1308,
+  "y": 4100
  },
  "pond_3": {
   "kind": "decor",
   "w": 153,
-  "h": 143
+  "h": 143,
+  "atlas": "atlas_misc",
+  "x": 511,
+  "y": 4100
  },
  "unit_desecrator": {
   "kind": "unit",
-  "w": 212,
-  "h": 240,
+  "w": 246,
+  "h": 260,
   "ext": "webp"
  },
  "unit_desecrator_u": {
   "kind": "unit",
-  "w": 241,
-  "h": 240,
-  "ext": "webp"
- },
- "anim_desecrator_walk": {
-  "kind": "anim",
-  "w": 3087,
-  "h": 200,
-  "n": 21,
-  "fw": 147,
-  "fh": 200,
-  "ax": 0.4493,
-  "ay": 1.0,
-  "body": 0.9851,
-  "src": 202,
+  "w": 373,
+  "h": 260,
   "ext": "webp"
  },
  "anim_desecrator_shoot": {
   "kind": "anim",
-  "w": 6100,
-  "h": 200,
-  "n": 25,
-  "fw": 244,
-  "fh": 200,
-  "ax": 0.3591,
+  "w": 7380,
+  "h": 240,
+  "n": 20,
+  "fw": 369,
+  "fh": 240,
+  "ax": 0.4851,
   "ay": 1.0,
-  "body": 1.0,
-  "src": 167,
-  "fire": 10,
-  "mx": 0.7941,
-  "my": 0.2066,
-  "ext": "webp"
- },
- "unit_raptor": {
-  "kind": "unit",
-  "w": 247,
-  "h": 240,
-  "ext": "webp"
- },
- "unit_raptor_u": {
-  "kind": "unit",
-  "w": 252,
-  "h": 240,
-  "ext": "webp"
- },
- "anim_raptor_fly": {
-  "kind": "anim",
-  "w": 4675,
-  "h": 200,
-  "n": 25,
-  "fw": 187,
-  "fh": 200,
-  "ax": 0.5383,
-  "ay": 0.9898,
-  "body": 0.8622,
-  "src": 196,
-  "ext": "webp"
- },
- "anim_raptor_attack": {
-  "kind": "anim",
-  "w": 8900,
-  "h": 420,
-  "n": 25,
-  "fw": 356,
-  "fh": 420,
-  "ax": 0.4733,
-  "ay": 0.9484,
-  "body": 0.394,
-  "hit": 14,
-  "src": 368,
+  "body": 0.9294,
+  "src": 184,
+  "fire": 8,
+  "mx": 0.9823,
+  "my": 0.519,
   "ext": "webp"
  },
  "unit_zealot": {
   "kind": "unit",
-  "w": 218,
-  "h": 240,
+  "w": 271,
+  "h": 260,
   "ext": "webp"
  },
  "unit_zealot_u": {
   "kind": "unit",
-  "w": 180,
-  "h": 240,
-  "ext": "webp"
- },
- "anim_zealot_run": {
-  "kind": "anim",
-  "w": 5625,
-  "h": 200,
-  "n": 25,
-  "fw": 225,
-  "fh": 200,
-  "ax": 0.393,
-  "ay": 1.0,
-  "body": 0.9853,
-  "src": 204,
+  "w": 423,
+  "h": 260,
   "ext": "webp"
  },
  "anim_zealot_attack": {
   "kind": "anim",
-  "w": 6650,
-  "h": 420,
+  "w": 9000,
+  "h": 240,
   "n": 25,
-  "fw": 266,
-  "fh": 420,
-  "ax": 0.3859,
-  "ay": 0.9547,
-  "body": 0.6461,
-  "hit": 7,
-  "src": 243,
-  "ext": "webp"
- },
- "anim_knight_walk": {
-  "kind": "anim",
-  "w": 2067,
-  "h": 200,
-  "n": 13,
-  "fw": 159,
-  "fh": 200,
-  "ax": 0.5,
+  "fw": 360,
+  "fh": 240,
+  "ax": 0.4977,
   "ay": 1.0,
-  "body": 0.9817,
-  "src": 164,
+  "body": 1.1282,
+  "src": 156,
+  "hit": 13,
   "ext": "webp"
  },
  "anim_knight_attack": {
   "kind": "anim",
-  "w": 11946,
-  "h": 420,
-  "n": 22,
-  "fw": 543,
-  "fh": 420,
-  "ax": 0.248,
-  "ay": 0.9831,
-  "body": 0.7232,
-  "hit": 7,
-  "src": 177,
+  "w": 10025,
+  "h": 240,
+  "n": 25,
+  "fw": 401,
+  "fh": 240,
+  "ax": 0.5782,
+  "ay": 1.0,
+  "body": 1.1118,
+  "src": 161,
+  "hit": 13,
   "ext": "webp"
  },
  "town_hollow": {
-  "kind": "unit",
-  "w": 420,
-  "h": 336
- },
- "anim_gunner_walk": {
-  "kind": "anim",
-  "w": 4700,
-  "h": 220,
-  "n": 25,
-  "fw": 188,
-  "fh": 220,
-  "ax": 0.401,
-  "ay": 0.9918,
-  "body": 0.9426,
-  "src": 122,
-  "ext": "webp"
- },
- "anim_gunner_shoot": {
-  "kind": "anim",
-  "w": 8275,
-  "h": 220,
-  "n": 25,
-  "fw": 331,
-  "fh": 220,
-  "ax": 0.3684,
-  "ay": 1.0,
-  "body": 0.9487,
-  "src": 117,
-  "fire": 7,
-  "mx": 0.6875,
-  "my": 0.462,
-  "ext": "webp"
- },
- "unit_gunner": {
-  "kind": "unit",
-  "w": 317,
-  "h": 240,
-  "ext": "webp"
- },
- "anim_gunner_u_walk": {
-  "kind": "anim",
-  "w": 4500,
-  "h": 220,
-  "n": 25,
-  "fw": 180,
-  "fh": 220,
-  "ax": 0.4677,
-  "ay": 0.9323,
-  "body": 0.9323,
-  "src": 133,
-  "ext": "webp"
- },
- "anim_gunner_u_shoot": {
-  "kind": "anim",
-  "w": 7375,
-  "h": 220,
-  "n": 25,
-  "fw": 295,
-  "fh": 220,
-  "ax": 0.3665,
-  "ay": 0.9773,
-  "body": 0.9621,
-  "src": 132,
-  "fire": 3,
-  "mx": 0.7288,
-  "my": 0.5,
-  "ext": "webp"
- },
- "unit_gunner_u": {
-  "kind": "unit",
-  "w": 292,
-  "h": 240,
-  "ext": "webp"
- },
- "anim_desecrator_u_walk": {
-  "kind": "anim",
-  "w": 3795,
-  "h": 260,
-  "n": 15,
-  "fw": 253,
-  "fh": 260,
-  "ax": 0.4756,
-  "ay": 1.0,
-  "body": 0.9716,
-  "src": 141,
-  "ext": "webp"
+  "kind": "decor",
+  "w": 440,
+  "h": 293
  },
  "anim_desecrator_u_shoot": {
   "kind": "anim",
-  "w": 11650,
-  "h": 260,
+  "w": 12625,
+  "h": 240,
   "n": 25,
-  "fw": 466,
-  "fh": 260,
-  "ax": 0.4482,
+  "fw": 505,
+  "fh": 240,
+  "ax": 0.4463,
   "ay": 1.0,
-  "body": 0.8897,
-  "src": 145,
-  "fire": 11,
-  "mx": 0.8615,
-  "my": 0.4138,
+  "body": 1.0548,
+  "src": 146,
+  "fire": 9,
+  "mx": 0.9967,
+  "my": 0.476,
   "ext": "webp"
  },
  "anim_desecrator_u_attack": {
   "kind": "anim",
-  "w": 10775,
-  "h": 260,
-  "n": 25,
-  "fw": 431,
-  "fh": 260,
-  "ax": 0.5044,
+  "w": 6980,
+  "h": 240,
+  "n": 20,
+  "fw": 349,
+  "fh": 240,
+  "ax": 0.6011,
   "ay": 1.0,
-  "body": 0.9675,
+  "body": 0.7662,
+  "src": 201,
   "hit": 13,
-  "src": 154,
-  "ext": "webp"
- },
- "anim_raptor_u_fly": {
-  "kind": "anim",
-  "w": 9875,
-  "h": 260,
-  "n": 25,
-  "fw": 395,
-  "fh": 260,
-  "ax": 0.4338,
-  "ay": 1.0,
-  "body": 0.9805,
-  "src": 154,
-  "ext": "webp"
- },
- "anim_raptor_u_attack": {
-  "kind": "anim",
-  "w": 11300,
-  "h": 300,
-  "n": 25,
-  "fw": 452,
-  "fh": 300,
-  "ax": 0.4197,
-  "ay": 0.974,
-  "body": 0.7338,
-  "hit": 17,
-  "src": 154,
-  "ext": "webp"
- },
- "anim_zealot_attack_b": {
-  "kind": "anim",
-  "w": 10725,
-  "h": 260,
-  "n": 25,
-  "fw": 429,
-  "fh": 260,
-  "ax": 0.583,
-  "ay": 1.0,
-  "body": 0.9221,
-  "hit": 17,
-  "src": 154,
-  "ext": "webp"
- },
- "anim_reaver_u_shoot": {
-  "kind": "anim",
-  "w": 5100,
-  "h": 220,
-  "n": 25,
-  "fw": 204,
-  "fh": 220,
-  "ax": 0.4414,
-  "ay": 0.9833,
-  "body": 0.9833,
-  "src": 120,
-  "fire": 13,
-  "mx": 0.973,
-  "my": 0.4667,
-  "ext": "webp"
- },
- "anim_reaver_u_attack": {
-  "kind": "anim",
-  "w": 5275,
-  "h": 220,
-  "n": 25,
-  "fw": 211,
-  "fh": 220,
-  "ax": 0.4824,
-  "ay": 0.9836,
-  "body": 0.9262,
-  "hit": 11,
-  "src": 122,
-  "ext": "webp"
- },
- "anim_reaver_shoot": {
-  "kind": "anim",
-  "w": 2760,
-  "h": 220,
-  "n": 15,
-  "fw": 184,
-  "fh": 220,
-  "ax": 0.4272,
-  "ay": 1.0,
-  "body": 0.9858,
-  "src": 141,
-  "fire": 6,
-  "mx": 0.8305,
-  "my": 0.2908,
-  "ext": "webp"
- },
- "anim_reaver_attack": {
-  "kind": "anim",
-  "w": 3270,
-  "h": 220,
-  "n": 15,
-  "fw": 218,
-  "fh": 220,
-  "ax": 0.6004,
-  "ay": 1.0,
-  "body": 0.9167,
-  "hit": 8,
-  "src": 144,
   "ext": "webp"
  },
  "unit_servitor": {
@@ -1784,12 +1573,18 @@
  "river_acid": {
   "kind": "decor",
   "w": 90,
-  "h": 147
+  "h": 147,
+  "atlas": "atlas_misc",
+  "x": 257,
+  "y": 4100
  },
  "river_lava": {
   "kind": "decor",
   "w": 88,
-  "h": 152
+  "h": 152,
+  "atlas": "atlas_misc",
+  "x": 1300,
+  "y": 706
  },
  "ow_0": {
   "kind": "decor",
@@ -4589,7 +4384,10 @@
  "cmd_valerian_map_mask": {
   "kind": "mask",
   "w": 5500,
-  "h": 150
+  "h": 150,
+  "atlas": "atlas_misc",
+  "x": 0,
+  "y": 3492
  },
  "cmd_valerian_idle": {
   "kind": "anim",
@@ -4632,7 +4430,10 @@
  "cmd_seraphine_map_mask": {
   "kind": "mask",
   "w": 8825,
-  "h": 150
+  "h": 150,
+  "atlas": "atlas_misc",
+  "x": 0,
+  "y": 3036
  },
  "cmd_seraphine_idle": {
   "kind": "anim",
@@ -4675,7 +4476,10 @@
  "cmd_orrin_map_mask": {
   "kind": "mask",
   "w": 9625,
-  "h": 150
+  "h": 150,
+  "atlas": "atlas_misc",
+  "x": 0,
+  "y": 2428
  },
  "cmd_orrin_idle": {
   "kind": "anim",
@@ -4704,22 +4508,25 @@
  },
  "cmd_abaddor_map": {
   "kind": "anim",
-  "w": 8575,
+  "w": 7975,
   "h": 150,
   "n": 25,
-  "fw": 343,
+  "fw": 319,
   "fh": 150,
-  "ax": 0.5493,
+  "ax": 0.5685,
   "ay": 1,
-  "body": 0.7987,
-  "body0": 0.805,
+  "body": 0.8909,
+  "body0": 0.9091,
   "banner": false,
   "ext": "webp"
  },
  "cmd_abaddor_map_mask": {
   "kind": "mask",
-  "w": 8575,
-  "h": 150
+  "w": 7975,
+  "h": 150,
+  "atlas": "atlas_misc",
+  "x": 0,
+  "y": 908
  },
  "cmd_abaddor_idle": {
   "kind": "anim",
@@ -4728,22 +4535,22 @@
   "n": 25,
   "fw": 758,
   "fh": 300,
-  "ax": 0.4445,
+  "ax": 0.4584,
   "ay": 1,
-  "body": 0.8571,
-  "body0": 0.8323
+  "body": 0.8938,
+  "body0": 0.9062
  },
  "cmd_abaddor_cast": {
   "kind": "anim",
-  "w": 17900,
+  "w": 18100,
   "h": 300,
   "n": 25,
-  "fw": 716,
+  "fw": 724,
   "fh": 300,
-  "ax": 0.5266,
+  "ax": 0.5225,
   "ay": 1,
-  "body": 0.7952,
-  "body0": 0.7952
+  "body": 0.8171,
+  "body0": 0.811
  },
  "cmd_ezrakh_map": {
   "kind": "anim",
@@ -4762,7 +4569,10 @@
  "cmd_ezrakh_map_mask": {
   "kind": "mask",
   "w": 9350,
-  "h": 150
+  "h": 150,
+  "atlas": "atlas_misc",
+  "x": 0,
+  "y": 1212
  },
  "cmd_ezrakh_idle": {
   "kind": "anim",
@@ -4806,7 +4616,10 @@
  "cmd_khorvax_map_mask": {
   "kind": "mask",
   "w": 9250,
-  "h": 150
+  "h": 150,
+  "atlas": "atlas_misc",
+  "x": 0,
+  "y": 1972
  },
  "cmd_khorvax_idle": {
   "kind": "anim",
@@ -4850,7 +4663,10 @@
  "cmd_sennkahet_map_mask": {
   "kind": "mask",
   "w": 9075,
-  "h": 150
+  "h": 150,
+  "atlas": "atlas_misc",
+  "x": 0,
+  "y": 2884
  },
  "cmd_sennkahet_idle": {
   "kind": "anim",
@@ -4893,7 +4709,10 @@
  "cmd_patriarch_map_mask": {
   "kind": "mask",
   "w": 9100,
-  "h": 150
+  "h": 150,
+  "atlas": "atlas_misc",
+  "x": 0,
+  "y": 2732
  },
  "cmd_patriarch_idle": {
   "kind": "anim",
@@ -4936,7 +4755,10 @@
  "cmd_kalgarax_map_mask": {
   "kind": "mask",
   "w": 5620,
-  "h": 150
+  "h": 150,
+  "atlas": "atlas_misc",
+  "x": 0,
+  "y": 1820
  },
  "cmd_kalgarax_idle": {
   "kind": "anim",
@@ -4965,40 +4787,40 @@
  },
  "cmd_velaun_map": {
   "kind": "anim",
-  "w": 8450,
+  "w": 8600,
   "h": 150,
   "n": 25,
-  "fw": 338,
+  "fw": 344,
   "fh": 150,
-  "ax": 0.521,
+  "ax": 0.5022,
   "ay": 1,
-  "body": 0.6098,
-  "body0": 0.6037,
+  "body": 0.8696,
+  "body0": 0.8447,
   "ext": "webp"
  },
  "cmd_velaun_idle": {
   "kind": "anim",
-  "w": 18375,
+  "w": 17900,
   "h": 300,
   "n": 25,
-  "fw": 735,
+  "fw": 716,
   "fh": 300,
-  "ax": 0.5062,
+  "ax": 0.4735,
   "ay": 1,
-  "body": 0.8187,
-  "body0": 0.825
+  "body": 0.8589,
+  "body0": 0.8589
  },
  "cmd_velaun_cast": {
   "kind": "anim",
-  "w": 18400,
+  "w": 17900,
   "h": 300,
   "n": 25,
-  "fw": 736,
+  "fw": 716,
   "fh": 300,
-  "ax": 0.5233,
+  "ax": 0.5206,
   "ay": 1,
-  "body": 0.7238,
-  "body0": 0.7238
+  "body": 0.7151,
+  "body0": 0.7204
  },
  "unit_scrapling": {
   "kind": "unit",
@@ -5713,7 +5535,10 @@
  "cmd_grotskar_map_mask": {
   "kind": "mask",
   "w": 8525,
-  "h": 150
+  "h": 150,
+  "atlas": "atlas_misc",
+  "x": 0,
+  "y": 1364
  },
  "cmd_grotskar_idle": {
   "kind": "anim",
@@ -5756,7 +5581,10 @@
  "cmd_skargul_map_mask": {
   "kind": "mask",
   "w": 5340,
-  "h": 150
+  "h": 150,
+  "atlas": "atlas_misc",
+  "x": 0,
+  "y": 3340
  },
  "cmd_skargul_idle": {
   "kind": "anim",
@@ -5801,7 +5629,10 @@
  "cmd_ahzrel_map_mask": {
   "kind": "mask",
   "w": 8525,
-  "h": 150
+  "h": 150,
+  "atlas": "atlas_misc",
+  "x": 0,
+  "y": 1060
  },
  "cmd_ahzrel_idle": {
   "kind": "anim",
@@ -5830,22 +5661,25 @@
  },
  "cmd_orumesh_map": {
   "kind": "anim",
-  "w": 3270,
+  "w": 3240,
   "h": 150,
   "n": 15,
-  "fw": 218,
+  "fw": 216,
   "fh": 150,
-  "ax": 0.5418,
+  "ax": 0.5335,
   "ay": 1,
-  "body": 0.7481,
-  "body0": 0.7744,
-  "banner": false,
+  "body": 0.8902,
+  "body0": 0.9167,
+  "banner": true,
   "ext": "webp"
  },
  "cmd_orumesh_map_mask": {
   "kind": "mask",
-  "w": 3270,
-  "h": 150
+  "w": 3240,
+  "h": 150,
+  "atlas": "atlas_misc",
+  "x": 0,
+  "y": 2580
  },
  "cmd_orumesh_idle": {
   "kind": "anim",
@@ -5854,38 +5688,44 @@
   "n": 15,
   "fw": 458,
   "fh": 300,
-  "ax": 0.4419,
+  "ax": 0.4424,
   "ay": 1,
-  "body": 0.8045,
-  "body0": 0.797,
+  "body": 0.8371,
+  "body0": 0.8371,
   "ext": "webp"
  },
  "cmd_orumesh_cast": {
   "kind": "anim",
-  "w": 19325,
+  "w": 19275,
   "h": 300,
   "n": 25,
-  "fw": 773,
+  "fw": 771,
   "fh": 300,
-  "ax": 0.445,
+  "ax": 0.4562,
   "ay": 1,
-  "body": 0.869,
-  "body0": 0.869
+  "body": 0.875,
+  "body0": 0.881
  },
  "town_scrapjaw": {
   "kind": "decor",
   "w": 440,
-  "h": 290
+  "h": 289
  },
  "town_scrapjaw_mask": {
   "kind": "mask",
   "w": 440,
-  "h": 290
+  "h": 289,
+  "atlas": "atlas_misc",
+  "x": 442,
+  "y": 415
  },
  "town_scrapjaw_glow": {
   "kind": "decor",
   "w": 440,
-  "h": 290
+  "h": 289,
+  "atlas": "atlas_misc",
+  "x": 0,
+  "y": 415
  },
  "town_deathless": {
   "kind": "decor",
@@ -5895,11 +5735,2053 @@
  "town_deathless_mask": {
   "kind": "mask",
   "w": 430,
-  "h": 267
+  "h": 267,
+  "atlas": "atlas_misc",
+  "x": 1316,
+  "y": 415
  },
  "town_deathless_glow": {
   "kind": "decor",
   "w": 430,
-  "h": 267
+  "h": 267,
+  "atlas": "atlas_misc",
+  "x": 884,
+  "y": 415
+ },
+ "anim_levy_move": {
+  "kind": "anim",
+  "w": 6450,
+  "h": 240,
+  "n": 25,
+  "fw": 258,
+  "fh": 240,
+  "ax": 0.2948,
+  "ay": 1.0,
+  "body": 0.9589,
+  "src": 146,
+  "hit": 9,
+  "ext": "webp"
+ },
+ "anim_levy_shoot": {
+  "kind": "anim",
+  "w": 8550,
+  "h": 240,
+  "n": 25,
+  "fw": 342,
+  "fh": 240,
+  "ax": 0.2623,
+  "ay": 1.0,
+  "body": 0.8187,
+  "src": 171,
+  "fire": 7,
+  "mx": 0.832,
+  "my": 0.4386,
+  "ext": "webp"
+ },
+ "anim_levy_u_move": {
+  "kind": "anim",
+  "w": 5725,
+  "h": 240,
+  "n": 25,
+  "fw": 229,
+  "fh": 240,
+  "ax": 0.3436,
+  "ay": 0.9935,
+  "body": 0.9677,
+  "src": 155,
+  "hit": 9,
+  "ext": "webp"
+ },
+ "anim_levy_u_shoot": {
+  "kind": "anim",
+  "w": 9698,
+  "h": 240,
+  "n": 26,
+  "fw": 373,
+  "fh": 240,
+  "ax": 0.257,
+  "ay": 1.0,
+  "body": 1.0274,
+  "src": 146,
+  "fire": 8,
+  "mx": 0.7313,
+  "my": 0.3904,
+  "ext": "webp"
+ },
+ "unit_warden": {
+  "kind": "unit",
+  "w": 368,
+  "h": 260,
+  "ext": "webp"
+ },
+ "anim_warden_move": {
+  "kind": "anim",
+  "w": 8525,
+  "h": 240,
+  "n": 25,
+  "fw": 341,
+  "fh": 240,
+  "ax": 0.467,
+  "ay": 1.0,
+  "body": 1.0,
+  "src": 149,
+  "hit": 13,
+  "ext": "webp"
+ },
+ "anim_warden_attack": {
+  "kind": "anim",
+  "w": 9125,
+  "h": 240,
+  "n": 25,
+  "fw": 365,
+  "fh": 240,
+  "ax": 0.51,
+  "ay": 1.0,
+  "body": 0.9141,
+  "src": 163,
+  "hit": 13,
+  "ext": "webp"
+ },
+ "unit_warden_u": {
+  "kind": "unit",
+  "w": 349,
+  "h": 260,
+  "ext": "webp"
+ },
+ "anim_warden_u_move": {
+  "kind": "anim",
+  "w": 6240,
+  "h": 240,
+  "n": 20,
+  "fw": 312,
+  "fh": 240,
+  "ax": 0.5114,
+  "ay": 1.0,
+  "body": 1.0,
+  "src": 186,
+  "hit": 13,
+  "ext": "webp"
+ },
+ "anim_warden_u_attack": {
+  "kind": "anim",
+  "w": 9074,
+  "h": 240,
+  "n": 26,
+  "fw": 349,
+  "fh": 240,
+  "ax": 0.4905,
+  "ay": 1.0,
+  "body": 1.1411,
+  "src": 163,
+  "hit": 13,
+  "ext": "webp"
+ },
+ "anim_knight_move": {
+  "kind": "anim",
+  "w": 6700,
+  "h": 240,
+  "n": 20,
+  "fw": 335,
+  "fh": 240,
+  "ax": 0.4934,
+  "ay": 1.0,
+  "body": 0.9227,
+  "src": 194,
+  "hit": 13,
+  "ext": "webp"
+ },
+ "anim_knight_u_move": {
+  "kind": "anim",
+  "w": 10700,
+  "h": 240,
+  "n": 25,
+  "fw": 428,
+  "fh": 240,
+  "ax": 0.4954,
+  "ay": 1.0,
+  "body": 0.9346,
+  "src": 153,
+  "hit": 13,
+  "ext": "webp"
+ },
+ "anim_knight_u_attack": {
+  "kind": "anim",
+  "w": 11400,
+  "h": 240,
+  "n": 25,
+  "fw": 456,
+  "fh": 240,
+  "ax": 0.5146,
+  "ay": 1.0,
+  "body": 0.9407,
+  "src": 152,
+  "hit": 13,
+  "ext": "webp"
+ },
+ "unit_walker": {
+  "kind": "unit",
+  "w": 340,
+  "h": 260,
+  "ext": "webp"
+ },
+ "anim_walker_move": {
+  "kind": "anim",
+  "w": 6060,
+  "h": 240,
+  "n": 20,
+  "fw": 303,
+  "fh": 240,
+  "ax": 0.4107,
+  "ay": 1.0,
+  "body": 0.9454,
+  "src": 183,
+  "hit": 9,
+  "ext": "webp"
+ },
+ "anim_walker_shoot": {
+  "kind": "anim",
+  "w": 14925,
+  "h": 240,
+  "n": 25,
+  "fw": 597,
+  "fh": 240,
+  "ax": 0.4859,
+  "ay": 1.0,
+  "body": 1.2537,
+  "src": 138,
+  "fire": 7,
+  "mx": 0.7872,
+  "my": 0.5319,
+  "ext": "webp"
+ },
+ "unit_walker_u": {
+  "kind": "unit",
+  "w": 314,
+  "h": 260,
+  "ext": "webp"
+ },
+ "anim_walker_u_move": {
+  "kind": "anim",
+  "w": 5700,
+  "h": 240,
+  "n": 20,
+  "fw": 285,
+  "fh": 240,
+  "ax": 0.4524,
+  "ay": 1.0,
+  "body": 0.9375,
+  "src": 192,
+  "hit": 9,
+  "ext": "webp"
+ },
+ "anim_walker_u_shoot": {
+  "kind": "anim",
+  "w": 11825,
+  "h": 240,
+  "n": 25,
+  "fw": 473,
+  "fh": 240,
+  "ax": 0.5035,
+  "ay": 1.0,
+  "body": 1.2329,
+  "src": 146,
+  "fire": 7,
+  "mx": 0.8889,
+  "my": 0.6541,
+  "ext": "webp"
+ },
+ "anim_stormhammer_move": {
+  "kind": "anim",
+  "w": 3075,
+  "h": 240,
+  "n": 15,
+  "fw": 205,
+  "fh": 240,
+  "ax": 0.5093,
+  "ay": 1.0,
+  "body": 0.952,
+  "src": 250,
+  "hit": 13,
+  "ext": "webp"
+ },
+ "anim_stormhammer_attack": {
+  "kind": "anim",
+  "w": 9000,
+  "h": 240,
+  "n": 25,
+  "fw": 360,
+  "fh": 240,
+  "ax": 0.5887,
+  "ay": 1.0,
+  "body": 1.5455,
+  "src": 154,
+  "hit": 13,
+  "ext": "webp"
+ },
+ "anim_stormhammer_u_move": {
+  "kind": "anim",
+  "w": 5080,
+  "h": 240,
+  "n": 20,
+  "fw": 254,
+  "fh": 240,
+  "ax": 0.4974,
+  "ay": 1.0,
+  "body": 0.9891,
+  "src": 183,
+  "hit": 13,
+  "ext": "webp"
+ },
+ "anim_stormhammer_u_attack": {
+  "kind": "anim",
+  "w": 8750,
+  "h": 240,
+  "n": 25,
+  "fw": 350,
+  "fh": 240,
+  "ax": 0.6021,
+  "ay": 1.0,
+  "body": 1.183,
+  "src": 153,
+  "hit": 13,
+  "ext": "webp"
+ },
+ "anim_zealot_move": {
+  "kind": "anim",
+  "w": 5540,
+  "h": 240,
+  "n": 20,
+  "fw": 277,
+  "fh": 240,
+  "ax": 0.3167,
+  "ay": 1.0,
+  "body": 0.967,
+  "src": 182,
+  "hit": 13,
+  "ext": "webp"
+ },
+ "anim_zealot_u_move": {
+  "kind": "anim",
+  "w": 10175,
+  "h": 240,
+  "n": 25,
+  "fw": 407,
+  "fh": 240,
+  "ax": 0.4323,
+  "ay": 1.0,
+  "body": 0.8917,
+  "src": 157,
+  "hit": 13,
+  "ext": "webp"
+ },
+ "anim_zealot_u_attack": {
+  "kind": "anim",
+  "w": 8550,
+  "h": 240,
+  "n": 25,
+  "fw": 342,
+  "fh": 240,
+  "ax": 0.4477,
+  "ay": 1.0,
+  "body": 0.875,
+  "src": 160,
+  "hit": 13,
+  "ext": "webp"
+ },
+ "unit_turncoat": {
+  "kind": "unit",
+  "w": 227,
+  "h": 260,
+  "ext": "webp"
+ },
+ "anim_turncoat_move": {
+  "kind": "anim",
+  "w": 6125,
+  "h": 240,
+  "n": 25,
+  "fw": 245,
+  "fh": 240,
+  "ax": 0.3781,
+  "ay": 1.0,
+  "body": 0.9463,
+  "src": 149,
+  "hit": 9,
+  "ext": "webp"
+ },
+ "anim_turncoat_shoot": {
+  "kind": "anim",
+  "w": 9175,
+  "h": 240,
+  "n": 25,
+  "fw": 367,
+  "fh": 240,
+  "ax": 0.3142,
+  "ay": 1.0,
+  "body": 0.9929,
+  "src": 142,
+  "fire": 6,
+  "mx": 0.7512,
+  "my": 0.2852,
+  "ext": "webp"
+ },
+ "anim_turncoat_attack": {
+  "kind": "anim",
+  "w": 8725,
+  "h": 240,
+  "n": 25,
+  "fw": 349,
+  "fh": 240,
+  "ax": 0.4791,
+  "ay": 1.0,
+  "body": 0.9038,
+  "src": 156,
+  "hit": 13,
+  "ext": "webp"
+ },
+ "unit_turncoat_u": {
+  "kind": "unit",
+  "w": 302,
+  "h": 260,
+  "ext": "webp"
+ },
+ "anim_turncoat_u_move": {
+  "kind": "anim",
+  "w": 11830,
+  "h": 240,
+  "n": 35,
+  "fw": 338,
+  "fh": 240,
+  "ax": 0.5012,
+  "ay": 1.0,
+  "body": 0.9861,
+  "src": 144,
+  "hit": 9,
+  "ext": "webp"
+ },
+ "anim_turncoat_u_shoot": {
+  "kind": "anim",
+  "w": 10975,
+  "h": 240,
+  "n": 25,
+  "fw": 439,
+  "fh": 240,
+  "ax": 0.4611,
+  "ay": 1.0,
+  "body": 1.0071,
+  "src": 141,
+  "fire": 6,
+  "mx": 0.8333,
+  "my": 0.3262,
+  "ext": "webp"
+ },
+ "anim_turncoat_u_attack": {
+  "kind": "anim",
+  "w": 9125,
+  "h": 240,
+  "n": 25,
+  "fw": 365,
+  "fh": 240,
+  "ax": 0.482,
+  "ay": 1.0,
+  "body": 0.9726,
+  "src": 146,
+  "hit": 13,
+  "ext": "webp"
+ },
+ "unit_flayer": {
+  "kind": "unit",
+  "w": 341,
+  "h": 260,
+  "ext": "webp"
+ },
+ "anim_flayer_move": {
+  "kind": "anim",
+  "w": 10450,
+  "h": 240,
+  "n": 25,
+  "fw": 418,
+  "fh": 240,
+  "ax": 0.4413,
+  "ay": 1.0,
+  "body": 0.9392,
+  "src": 148,
+  "hit": 13,
+  "ext": "webp"
+ },
+ "anim_flayer_attack": {
+  "kind": "anim",
+  "w": 10300,
+  "h": 240,
+  "n": 25,
+  "fw": 412,
+  "fh": 240,
+  "ax": 0.4584,
+  "ay": 1.0,
+  "body": 0.8968,
+  "src": 155,
+  "hit": 13,
+  "ext": "webp"
+ },
+ "unit_flayer_u": {
+  "kind": "unit",
+  "w": 382,
+  "h": 260,
+  "ext": "webp"
+ },
+ "anim_flayer_u_move": {
+  "kind": "anim",
+  "w": 12050,
+  "h": 240,
+  "n": 25,
+  "fw": 482,
+  "fh": 240,
+  "ax": 0.4843,
+  "ay": 1.0,
+  "body": 0.993,
+  "src": 143,
+  "hit": 13,
+  "ext": "webp"
+ },
+ "anim_flayer_u_attack": {
+  "kind": "anim",
+  "w": 11350,
+  "h": 240,
+  "n": 25,
+  "fw": 454,
+  "fh": 240,
+  "ax": 0.3812,
+  "ay": 1.0,
+  "body": 0.9103,
+  "src": 156,
+  "hit": 13,
+  "ext": "webp"
+ },
+ "unit_hellforge": {
+  "kind": "unit",
+  "w": 278,
+  "h": 260,
+  "ext": "webp"
+ },
+ "anim_hellforge_move": {
+  "kind": "anim",
+  "w": 8375,
+  "h": 240,
+  "n": 25,
+  "fw": 335,
+  "fh": 240,
+  "ax": 0.3599,
+  "ay": 1.0,
+  "body": 0.9858,
+  "src": 141,
+  "hit": 9,
+  "ext": "webp"
+ },
+ "anim_hellforge_shoot": {
+  "kind": "anim",
+  "w": 13250,
+  "h": 240,
+  "n": 25,
+  "fw": 530,
+  "fh": 240,
+  "ax": 0.409,
+  "ay": 1.0,
+  "body": 0.972,
+  "src": 143,
+  "fire": 6,
+  "mx": 0.7595,
+  "my": 0.535,
+  "ext": "webp"
+ },
+ "unit_hellforge_u": {
+  "kind": "unit",
+  "w": 279,
+  "h": 260,
+  "ext": "webp"
+ },
+ "anim_hellforge_u_move": {
+  "kind": "anim",
+  "w": 5600,
+  "h": 240,
+  "n": 20,
+  "fw": 280,
+  "fh": 240,
+  "ax": 0.3522,
+  "ay": 1.0,
+  "body": 0.9942,
+  "src": 172,
+  "hit": 9,
+  "ext": "webp"
+ },
+ "anim_hellforge_u_shoot": {
+  "kind": "anim",
+  "w": 13175,
+  "h": 240,
+  "n": 25,
+  "fw": 527,
+  "fh": 240,
+  "ax": 0.4895,
+  "ay": 1.0,
+  "body": 1.1633,
+  "src": 147,
+  "fire": 5,
+  "mx": 0.8328,
+  "my": 0.5578,
+  "ext": "webp"
+ },
+ "anim_desecrator_move": {
+  "kind": "anim",
+  "w": 5680,
+  "h": 240,
+  "n": 20,
+  "fw": 284,
+  "fh": 240,
+  "ax": 0.372,
+  "ay": 1.0,
+  "body": 0.9396,
+  "src": 182,
+  "hit": 9,
+  "ext": "webp"
+ },
+ "anim_desecrator_attack": {
+  "kind": "anim",
+  "w": 9500,
+  "h": 240,
+  "n": 25,
+  "fw": 380,
+  "fh": 240,
+  "ax": 0.4125,
+  "ay": 1.0,
+  "body": 1.0491,
+  "src": 163,
+  "hit": 13,
+  "ext": "webp"
+ },
+ "anim_desecrator_u_move": {
+  "kind": "anim",
+  "w": 6975,
+  "h": 240,
+  "n": 25,
+  "fw": 279,
+  "fh": 240,
+  "ax": 0.4801,
+  "ay": 1.0,
+  "body": 0.9506,
+  "src": 162,
+  "hit": 9,
+  "ext": "webp"
+ },
+ "cmd_hrodmar_map": {
+  "kind": "anim",
+  "w": 7325,
+  "h": 150,
+  "n": 25,
+  "fw": 293,
+  "fh": 150,
+  "ax": 0.5473,
+  "ay": 1,
+  "body": 0.9404,
+  "body0": 0.9603,
+  "banner": true,
+  "ext": "webp"
+ },
+ "cmd_hrodmar_map_mask": {
+  "kind": "mask",
+  "w": 7325,
+  "h": 150,
+  "atlas": "atlas_misc",
+  "x": 0,
+  "y": 1516
+ },
+ "cmd_hrodmar_idle": {
+  "kind": "anim",
+  "w": 11340,
+  "h": 300,
+  "n": 20,
+  "fw": 567,
+  "fh": 300,
+  "ax": 0.4029,
+  "ay": 1,
+  "body": 0.9275,
+  "body0": 0.925,
+  "ext": "webp"
+ },
+ "cmd_hrodmar_cast": {
+  "kind": "anim",
+  "w": 19950,
+  "h": 300,
+  "n": 25,
+  "fw": 798,
+  "fh": 300,
+  "ax": 0.4905,
+  "ay": 1,
+  "body": 0.8862,
+  "body0": 0.8922
+ },
+ "cmd_skaldi_map": {
+  "kind": "anim",
+  "w": 8075,
+  "h": 150,
+  "n": 25,
+  "fw": 323,
+  "fh": 150,
+  "ax": 0.538,
+  "ay": 1,
+  "body": 0.8773,
+  "body0": 0.7669,
+  "banner": true,
+  "ext": "webp"
+ },
+ "cmd_skaldi_map_mask": {
+  "kind": "mask",
+  "w": 8075,
+  "h": 150,
+  "atlas": "atlas_misc",
+  "x": 0,
+  "y": 3188
+ },
+ "cmd_skaldi_idle": {
+  "kind": "anim",
+  "w": 17950,
+  "h": 300,
+  "n": 25,
+  "fw": 718,
+  "fh": 300,
+  "ax": 0.4408,
+  "ay": 1,
+  "body": 0.897,
+  "body0": 0.8727
+ },
+ "cmd_skaldi_cast": {
+  "kind": "anim",
+  "w": 19375,
+  "h": 300,
+  "n": 25,
+  "fw": 775,
+  "fh": 300,
+  "ax": 0.4628,
+  "ay": 1,
+  "body": 0.8434,
+  "body0": 0.8313
+ },
+ "cmd_ylva_map": {
+  "kind": "anim",
+  "w": 7175,
+  "h": 150,
+  "n": 25,
+  "fw": 287,
+  "fh": 150,
+  "ax": 0.5852,
+  "ay": 1,
+  "body": 0.94,
+  "body0": 0.94,
+  "banner": true,
+  "ext": "webp"
+ },
+ "cmd_ylva_map_mask": {
+  "kind": "mask",
+  "w": 7175,
+  "h": 150,
+  "atlas": "atlas_misc",
+  "x": 0,
+  "y": 3948
+ },
+ "cmd_ylva_idle": {
+  "kind": "anim",
+  "w": 11460,
+  "h": 300,
+  "n": 20,
+  "fw": 573,
+  "fh": 300,
+  "ax": 0.4759,
+  "ay": 1,
+  "body": 0.8995,
+  "body0": 0.8945,
+  "ext": "webp"
+ },
+ "cmd_ylva_cast": {
+  "kind": "anim",
+  "w": 15400,
+  "h": 300,
+  "n": 25,
+  "fw": 616,
+  "fh": 300,
+  "ax": 0.4674,
+  "ay": 1,
+  "body": 0.7539,
+  "body0": 0.9476,
+  "ext": "webp"
+ },
+ "cmd_vharkul_map": {
+  "kind": "anim",
+  "w": 6925,
+  "h": 150,
+  "n": 25,
+  "fw": 277,
+  "fh": 150,
+  "ax": 0.4639,
+  "ay": 1,
+  "body": 0.9536,
+  "body0": 0.9536,
+  "banner": true,
+  "ext": "webp"
+ },
+ "cmd_vharkul_map_mask": {
+  "kind": "mask",
+  "w": 6925,
+  "h": 150,
+  "atlas": "atlas_misc",
+  "x": 0,
+  "y": 3644
+ },
+ "cmd_vharkul_idle": {
+  "kind": "anim",
+  "w": 17300,
+  "h": 300,
+  "n": 25,
+  "fw": 692,
+  "fh": 300,
+  "ax": 0.4877,
+  "ay": 1,
+  "body": 0.8922,
+  "body0": 0.9281
+ },
+ "cmd_vharkul_cast": {
+  "kind": "anim",
+  "w": 19200,
+  "h": 300,
+  "n": 25,
+  "fw": 768,
+  "fh": 300,
+  "ax": 0.5076,
+  "ay": 1,
+  "body": 0.8452,
+  "body0": 0.8214
+ },
+ "cmd_kaedrin_map": {
+  "kind": "anim",
+  "w": 5600,
+  "h": 150,
+  "n": 20,
+  "fw": 280,
+  "fh": 150,
+  "ax": 0.5379,
+  "ay": 1,
+  "body": 0.935,
+  "body0": 0.945,
+  "banner": true,
+  "ext": "webp"
+ },
+ "cmd_kaedrin_map_mask": {
+  "kind": "mask",
+  "w": 5600,
+  "h": 150,
+  "atlas": "atlas_misc",
+  "x": 0,
+  "y": 1668
+ },
+ "cmd_kaedrin_idle": {
+  "kind": "anim",
+  "w": 5490,
+  "h": 300,
+  "n": 15,
+  "fw": 366,
+  "fh": 300,
+  "ax": 0.4862,
+  "ay": 1,
+  "body": 0.777,
+  "body0": 0.8453,
+  "ext": "webp"
+ },
+ "cmd_kaedrin_cast": {
+  "kind": "anim",
+  "w": 12740,
+  "h": 300,
+  "n": 20,
+  "fw": 637,
+  "fh": 300,
+  "ax": 0.4876,
+  "ay": 1,
+  "body": 0.831,
+  "body0": 0.6619,
+  "ext": "webp"
+ },
+ "cmd_morvagh_map": {
+  "kind": "anim",
+  "w": 10200,
+  "h": 150,
+  "n": 25,
+  "fw": 408,
+  "fh": 150,
+  "ax": 0.52,
+  "ay": 1,
+  "body": 0.8944,
+  "body0": 0.8758,
+  "banner": true,
+  "ext": "webp"
+ },
+ "cmd_morvagh_map_mask": {
+  "kind": "mask",
+  "w": 10200,
+  "h": 150,
+  "atlas": "atlas_misc",
+  "x": 0,
+  "y": 2276
+ },
+ "cmd_morvagh_idle": {
+  "kind": "anim",
+  "w": 11060,
+  "h": 300,
+  "n": 20,
+  "fw": 553,
+  "fh": 300,
+  "ax": 0.5378,
+  "ay": 1,
+  "body": 0.8981,
+  "body0": 0.9515,
+  "ext": "webp"
+ },
+ "cmd_morvagh_cast": {
+  "kind": "anim",
+  "w": 15775,
+  "h": 300,
+  "n": 25,
+  "fw": 631,
+  "fh": 300,
+  "ax": 0.5018,
+  "ay": 1,
+  "body": 0.7554,
+  "body0": 0.6196,
+  "ext": "webp"
+ },
+ "town_hollow_mask": {
+  "kind": "mask",
+  "w": 440,
+  "h": 293,
+  "atlas": "atlas_misc",
+  "x": 1326,
+  "y": 0
+ },
+ "town_hollow_glow": {
+  "kind": "decor",
+  "w": 440,
+  "h": 293,
+  "atlas": "atlas_misc",
+  "x": 884,
+  "y": 0
+ },
+ "unit_thrall": {
+  "kind": "unit",
+  "w": 156,
+  "h": 260,
+  "ext": "webp"
+ },
+ "anim_thrall_move": {
+  "kind": "anim",
+  "w": 6725,
+  "h": 240,
+  "n": 25,
+  "fw": 269,
+  "fh": 240,
+  "ax": 0.3666,
+  "ay": 1.0,
+  "body": 0.9227,
+  "src": 181,
+  "hit": 13,
+  "ext": "webp"
+ },
+ "anim_thrall_attack": {
+  "kind": "anim",
+  "w": 5375,
+  "h": 240,
+  "n": 25,
+  "fw": 215,
+  "fh": 240,
+  "ax": 0.3635,
+  "ay": 1.0,
+  "body": 0.7991,
+  "src": 209,
+  "hit": 13,
+  "ext": "webp"
+ },
+ "unit_thrall_u": {
+  "kind": "unit",
+  "w": 179,
+  "h": 260,
+  "ext": "webp"
+ },
+ "anim_thrall_u_move": {
+  "kind": "anim",
+  "w": 8000,
+  "h": 240,
+  "n": 25,
+  "fw": 320,
+  "fh": 240,
+  "ax": 0.522,
+  "ay": 1.0,
+  "body": 0.9344,
+  "src": 183,
+  "hit": 13,
+  "ext": "webp"
+ },
+ "anim_thrall_u_attack": {
+  "kind": "anim",
+  "w": 6300,
+  "h": 240,
+  "n": 25,
+  "fw": 252,
+  "fh": 240,
+  "ax": 0.4846,
+  "ay": 1.0,
+  "body": 0.7916,
+  "src": 216,
+  "hit": 13,
+  "ext": "webp"
+ },
+ "unit_fangreaver": {
+  "kind": "unit",
+  "w": 240,
+  "h": 260,
+  "ext": "webp"
+ },
+ "anim_fangreaver_move": {
+  "kind": "anim",
+  "w": 8375,
+  "h": 240,
+  "n": 25,
+  "fw": 335,
+  "fh": 240,
+  "ax": 0.4052,
+  "ay": 1.0,
+  "body": 0.9514,
+  "src": 185,
+  "hit": 13,
+  "ext": "webp"
+ },
+ "anim_fangreaver_attack": {
+  "kind": "anim",
+  "w": 6400,
+  "h": 240,
+  "n": 25,
+  "fw": 256,
+  "fh": 240,
+  "ax": 0.4718,
+  "ay": 1.0,
+  "body": 0.8503,
+  "src": 207,
+  "hit": 13,
+  "ext": "webp"
+ },
+ "unit_fangreaver_u": {
+  "kind": "unit",
+  "w": 240,
+  "h": 260,
+  "ext": "webp"
+ },
+ "anim_fangreaver_u_move": {
+  "kind": "anim",
+  "w": 7000,
+  "h": 240,
+  "n": 25,
+  "fw": 280,
+  "fh": 240,
+  "ax": 0.3887,
+  "ay": 1.0,
+  "body": 1.0,
+  "src": 182,
+  "hit": 13,
+  "ext": "webp"
+ },
+ "anim_fangreaver_u_attack": {
+  "kind": "anim",
+  "w": 6675,
+  "h": 240,
+  "n": 25,
+  "fw": 267,
+  "fh": 240,
+  "ax": 0.4759,
+  "ay": 1.0,
+  "body": 0.8878,
+  "src": 205,
+  "hit": 13,
+  "ext": "webp"
+ },
+ "unit_harpooner": {
+  "kind": "unit",
+  "w": 293,
+  "h": 260,
+  "ext": "webp"
+ },
+ "anim_harpooner_move": {
+  "kind": "anim",
+  "w": 6750,
+  "h": 240,
+  "n": 25,
+  "fw": 270,
+  "fh": 240,
+  "ax": 0.357,
+  "ay": 1.0,
+  "body": 0.9775,
+  "src": 178,
+  "hit": 9,
+  "ext": "webp"
+ },
+ "anim_harpooner_shoot": {
+  "kind": "anim",
+  "w": 8200,
+  "h": 240,
+  "n": 25,
+  "fw": 328,
+  "fh": 240,
+  "ax": 0.4399,
+  "ay": 1.0,
+  "body": 0.9613,
+  "src": 181,
+  "fire": 7,
+  "mx": 0.9636,
+  "my": 0.5138,
+  "ext": "webp"
+ },
+ "unit_harpooner_u": {
+  "kind": "unit",
+  "w": 301,
+  "h": 260,
+  "ext": "webp"
+ },
+ "anim_harpooner_u_move": {
+  "kind": "anim",
+  "w": 6550,
+  "h": 240,
+  "n": 25,
+  "fw": 262,
+  "fh": 240,
+  "ax": 0.3701,
+  "ay": 1.0,
+  "body": 0.9341,
+  "src": 182,
+  "hit": 9,
+  "ext": "webp"
+ },
+ "anim_harpooner_u_shoot": {
+  "kind": "anim",
+  "w": 12120,
+  "h": 240,
+  "n": 24,
+  "fw": 505,
+  "fh": 240,
+  "ax": 0.2572,
+  "ay": 1.0,
+  "body": 0.9341,
+  "src": 182,
+  "fire": 7,
+  "mx": 0.5796,
+  "my": 0.5635,
+  "ext": "webp"
+ },
+ "unit_striker": {
+  "kind": "unit",
+  "w": 226,
+  "h": 260,
+  "ext": "webp"
+ },
+ "anim_striker_move": {
+  "kind": "anim",
+  "w": 6125,
+  "h": 240,
+  "n": 25,
+  "fw": 245,
+  "fh": 240,
+  "ax": 0.4396,
+  "ay": 1.0,
+  "body": 0.8871,
+  "src": 186,
+  "hit": 13,
+  "ext": "webp"
+ },
+ "anim_striker_attack": {
+  "kind": "anim",
+  "w": 6875,
+  "h": 240,
+  "n": 25,
+  "fw": 275,
+  "fh": 240,
+  "ax": 0.4764,
+  "ay": 1.0,
+  "body": 0.8209,
+  "src": 201,
+  "hit": 13,
+  "ext": "webp"
+ },
+ "unit_striker_u": {
+  "kind": "unit",
+  "w": 274,
+  "h": 260,
+  "ext": "webp"
+ },
+ "anim_striker_u_move": {
+  "kind": "anim",
+  "w": 6750,
+  "h": 240,
+  "n": 25,
+  "fw": 270,
+  "fh": 240,
+  "ax": 0.5416,
+  "ay": 1.0,
+  "body": 0.8737,
+  "src": 190,
+  "hit": 13,
+  "ext": "webp"
+ },
+ "anim_striker_u_attack": {
+  "kind": "anim",
+  "w": 7275,
+  "h": 240,
+  "n": 25,
+  "fw": 291,
+  "fh": 240,
+  "ax": 0.5334,
+  "ay": 1.0,
+  "body": 0.8384,
+  "src": 198,
+  "hit": 13,
+  "ext": "webp"
+ },
+ "unit_drowned": {
+  "kind": "unit",
+  "w": 246,
+  "h": 260,
+  "ext": "webp"
+ },
+ "anim_drowned_move": {
+  "kind": "anim",
+  "w": 6050,
+  "h": 240,
+  "n": 25,
+  "fw": 242,
+  "fh": 240,
+  "ax": 0.4749,
+  "ay": 1.0,
+  "body": 0.9797,
+  "src": 197,
+  "hit": 13,
+  "ext": "webp"
+ },
+ "anim_drowned_attack": {
+  "kind": "anim",
+  "w": 7275,
+  "h": 240,
+  "n": 25,
+  "fw": 291,
+  "fh": 240,
+  "ax": 0.5582,
+  "ay": 1.0,
+  "body": 0.9461,
+  "src": 204,
+  "hit": 13,
+  "ext": "webp"
+ },
+ "unit_drowned_u": {
+  "kind": "unit",
+  "w": 255,
+  "h": 260,
+  "ext": "webp"
+ },
+ "anim_drowned_u_move": {
+  "kind": "anim",
+  "w": 6200,
+  "h": 240,
+  "n": 25,
+  "fw": 248,
+  "fh": 240,
+  "ax": 0.4419,
+  "ay": 1.0,
+  "body": 0.9282,
+  "src": 181,
+  "hit": 13,
+  "ext": "webp"
+ },
+ "anim_drowned_u_attack": {
+  "kind": "anim",
+  "w": 7150,
+  "h": 240,
+  "n": 25,
+  "fw": 286,
+  "fh": 240,
+  "ax": 0.487,
+  "ay": 1.0,
+  "body": 0.8936,
+  "src": 188,
+  "hit": 13,
+  "ext": "webp"
+ },
+ "cmd_vosk_map": {
+  "kind": "anim",
+  "w": 4275,
+  "h": 150,
+  "n": 25,
+  "fw": 171,
+  "fh": 150,
+  "ax": 0.5649,
+  "ay": 1,
+  "body": 0.956,
+  "body0": 0.9451,
+  "banner": true,
+  "ext": "webp"
+ },
+ "cmd_vosk_map_mask": {
+  "kind": "mask",
+  "w": 4275,
+  "h": 150,
+  "atlas": "atlas_misc",
+  "x": 0,
+  "y": 3796
+ },
+ "cmd_vosk_idle": {
+  "kind": "anim",
+  "w": 10050,
+  "h": 300,
+  "n": 25,
+  "fw": 402,
+  "fh": 300,
+  "ax": 0.4557,
+  "ay": 1,
+  "body": 0.8483,
+  "body0": 0.8436,
+  "ext": "webp"
+ },
+ "cmd_vosk_cast": {
+  "kind": "anim",
+  "w": 8050,
+  "h": 300,
+  "n": 25,
+  "fw": 322,
+  "fh": 300,
+  "ax": 0.4659,
+  "ay": 1,
+  "body": 0.7772,
+  "body0": 0.7673,
+  "ext": "webp"
+ },
+ "cmd_maela_map": {
+  "kind": "anim",
+  "w": 3864,
+  "h": 150,
+  "n": 24,
+  "fw": 161,
+  "fh": 150,
+  "ax": 0.5324,
+  "ay": 1,
+  "body": 0.9356,
+  "body0": 0.9257,
+  "banner": true,
+  "ext": "webp"
+ },
+ "cmd_maela_map_mask": {
+  "kind": "mask",
+  "w": 3864,
+  "h": 150,
+  "atlas": "atlas_misc",
+  "x": 0,
+  "y": 2124
+ },
+ "cmd_maela_idle": {
+  "kind": "anim",
+  "w": 10025,
+  "h": 300,
+  "n": 25,
+  "fw": 401,
+  "fh": 300,
+  "ax": 0.4571,
+  "ay": 1,
+  "body": 0.9095,
+  "body0": 0.9095,
+  "ext": "webp"
+ },
+ "cmd_maela_cast": {
+  "kind": "anim",
+  "w": 7975,
+  "h": 300,
+  "n": 25,
+  "fw": 319,
+  "fh": 300,
+  "ax": 0.4659,
+  "ay": 1,
+  "body": 0.9059,
+  "body0": 0.7228,
+  "ext": "webp"
+ },
+ "town_palefang": {
+  "kind": "decor",
+  "w": 440,
+  "h": 413
+ },
+ "town_palefang_mask": {
+  "kind": "mask",
+  "w": 440,
+  "h": 413,
+  "atlas": "atlas_misc",
+  "x": 442,
+  "y": 0
+ },
+ "town_palefang_glow": {
+  "kind": "decor",
+  "w": 440,
+  "h": 413,
+  "atlas": "atlas_misc",
+  "x": 0,
+  "y": 0
+ },
+ "tz_snow_mountain": {
+  "kind": "decor",
+  "w": 360,
+  "h": 309,
+  "tiles": 2.4,
+  "atlas": "atlas_tz_0",
+  "aext": "webp",
+  "x": 0,
+  "y": 348
+ },
+ "tz_snow_mtn1": {
+  "kind": "decor",
+  "w": 480,
+  "h": 319,
+  "tiles": 3.2,
+  "atlas": "atlas_tz_0",
+  "aext": "webp",
+  "x": 726,
+  "y": 0
+ },
+ "tz_snow_mtn2": {
+  "kind": "decor",
+  "w": 450,
+  "h": 256,
+  "tiles": 3.0,
+  "atlas": "atlas_tz_0",
+  "aext": "webp",
+  "x": 0,
+  "y": 659
+ },
+ "tz_snow_mtn3": {
+  "kind": "decor",
+  "w": 330,
+  "h": 182,
+  "tiles": 2.2,
+  "atlas": "atlas_tz_0",
+  "aext": "webp",
+  "x": 1163,
+  "y": 917
+ },
+ "tz_snow_mtn4": {
+  "kind": "decor",
+  "w": 330,
+  "h": 227,
+  "tiles": 2.2,
+  "atlas": "atlas_tz_0",
+  "aext": "webp",
+  "x": 0,
+  "y": 917
+ },
+ "tz_snow_trees": {
+  "kind": "decor",
+  "w": 225,
+  "h": 337,
+  "tiles": 1.5,
+  "atlas": "atlas_tz_0",
+  "aext": "webp",
+  "x": 167,
+  "y": 0
+ },
+ "tz_snow_tree": {
+  "kind": "decor",
+  "w": 165,
+  "h": 346,
+  "tiles": 1.1,
+  "atlas": "atlas_tz_0",
+  "aext": "webp",
+  "x": 0,
+  "y": 0
+ },
+ "tz_snow_rocks": {
+  "kind": "decor",
+  "w": 202,
+  "h": 178,
+  "tiles": 1.35,
+  "atlas": "atlas_tz_0",
+  "aext": "webp",
+  "x": 167,
+  "y": 1146
+ },
+ "tz_snow_log": {
+  "kind": "decor",
+  "w": 210,
+  "h": 181,
+  "tiles": 1.4,
+  "atlas": "atlas_tz_0",
+  "aext": "webp",
+  "x": 1495,
+  "y": 917
+ },
+ "tz_snow_lake": {
+  "kind": "decor",
+  "w": 330,
+  "h": 310,
+  "tiles": 2.2,
+  "atlas": "atlas_tz_0",
+  "aext": "webp",
+  "x": 1690,
+  "y": 0
+ },
+ "river_snow": {
+  "kind": "decor",
+  "w": 180,
+  "h": 144,
+  "atlas": "atlas_tz_0",
+  "aext": "webp",
+  "x": 1717,
+  "y": 1146
+ },
+ "tz_scrap_mountain": {
+  "kind": "decor",
+  "w": 360,
+  "h": 305,
+  "tiles": 2.4,
+  "atlas": "atlas_tz_0",
+  "aext": "webp",
+  "x": 844,
+  "y": 348
+ },
+ "tz_scrap_mtn1": {
+  "kind": "decor",
+  "w": 480,
+  "h": 314,
+  "tiles": 3.2,
+  "atlas": "atlas_tz_0",
+  "aext": "webp",
+  "x": 1208,
+  "y": 0
+ },
+ "tz_scrap_mtn2": {
+  "kind": "decor",
+  "w": 450,
+  "h": 252,
+  "tiles": 3.0,
+  "atlas": "atlas_tz_0",
+  "aext": "webp",
+  "x": 452,
+  "y": 659
+ },
+ "tz_scrap_mtn3": {
+  "kind": "decor",
+  "w": 330,
+  "h": 180,
+  "tiles": 2.2,
+  "atlas": "atlas_tz_0",
+  "aext": "webp",
+  "x": 1707,
+  "y": 917
+ },
+ "tz_scrap_mtn4": {
+  "kind": "decor",
+  "w": 330,
+  "h": 224,
+  "tiles": 2.2,
+  "atlas": "atlas_tz_0",
+  "aext": "webp",
+  "x": 332,
+  "y": 917
+ },
+ "tz_scrap_trees": {
+  "kind": "decor",
+  "w": 225,
+  "h": 246,
+  "tiles": 1.5,
+  "atlas": "atlas_tz_0",
+  "aext": "webp",
+  "x": 1356,
+  "y": 659
+ },
+ "tz_scrap_tree": {
+  "kind": "decor",
+  "w": 165,
+  "h": 179,
+  "tiles": 1.1,
+  "atlas": "atlas_tz_0",
+  "aext": "webp",
+  "x": 0,
+  "y": 1146
+ },
+ "tz_scrap_rocks": {
+  "kind": "decor",
+  "w": 202,
+  "h": 157,
+  "tiles": 1.35,
+  "atlas": "atlas_tz_0",
+  "aext": "webp",
+  "x": 1097,
+  "y": 1146
+ },
+ "tz_scrap_log": {
+  "kind": "decor",
+  "w": 210,
+  "h": 161,
+  "tiles": 1.4,
+  "atlas": "atlas_tz_0",
+  "aext": "webp",
+  "x": 885,
+  "y": 1146
+ },
+ "tz_scrap_lake": {
+  "kind": "decor",
+  "w": 330,
+  "h": 259,
+  "tiles": 2.2,
+  "atlas": "atlas_tz_0",
+  "aext": "webp",
+  "x": 1568,
+  "y": 348
+ },
+ "river_scrap": {
+  "kind": "decor",
+  "w": 180,
+  "h": 232,
+  "atlas": "atlas_tz_0",
+  "aext": "webp",
+  "x": 1810,
+  "y": 659
+ },
+ "tz_shale_mountain": {
+  "kind": "decor",
+  "w": 360,
+  "h": 299,
+  "tiles": 2.4,
+  "atlas": "atlas_tz_0",
+  "aext": "webp",
+  "x": 1206,
+  "y": 348
+ },
+ "tz_shale_mtn1": {
+  "kind": "decor",
+  "w": 480,
+  "h": 308,
+  "tiles": 3.2,
+  "atlas": "atlas_tz_0",
+  "aext": "webp",
+  "x": 362,
+  "y": 348
+ },
+ "tz_shale_mtn2": {
+  "kind": "decor",
+  "w": 450,
+  "h": 247,
+  "tiles": 3.0,
+  "atlas": "atlas_tz_0",
+  "aext": "webp",
+  "x": 904,
+  "y": 659
+ },
+ "tz_shale_mtn3": {
+  "kind": "decor",
+  "w": 330,
+  "h": 176,
+  "tiles": 2.2,
+  "atlas": "atlas_tz_0",
+  "aext": "webp",
+  "x": 371,
+  "y": 1146
+ },
+ "tz_shale_mtn4": {
+  "kind": "decor",
+  "w": 330,
+  "h": 219,
+  "tiles": 2.2,
+  "atlas": "atlas_tz_0",
+  "aext": "webp",
+  "x": 664,
+  "y": 917
+ },
+ "tz_shale_trees": {
+  "kind": "decor",
+  "w": 225,
+  "h": 234,
+  "tiles": 1.5,
+  "atlas": "atlas_tz_0",
+  "aext": "webp",
+  "x": 1583,
+  "y": 659
+ },
+ "tz_shale_tree": {
+  "kind": "decor",
+  "w": 165,
+  "h": 189,
+  "tiles": 1.1,
+  "atlas": "atlas_tz_0",
+  "aext": "webp",
+  "x": 996,
+  "y": 917
+ },
+ "tz_shale_rocks": {
+  "kind": "decor",
+  "w": 202,
+  "h": 155,
+  "tiles": 1.35,
+  "atlas": "atlas_tz_0",
+  "aext": "webp",
+  "x": 1301,
+  "y": 1146
+ },
+ "tz_shale_log": {
+  "kind": "decor",
+  "w": 210,
+  "h": 150,
+  "tiles": 1.4,
+  "atlas": "atlas_tz_0",
+  "aext": "webp",
+  "x": 1505,
+  "y": 1146
+ },
+ "tz_shale_lake": {
+  "kind": "decor",
+  "w": 330,
+  "h": 325,
+  "tiles": 2.2,
+  "atlas": "atlas_tz_0",
+  "aext": "webp",
+  "x": 394,
+  "y": 0
+ },
+ "river_shale": {
+  "kind": "decor",
+  "w": 180,
+  "h": 163,
+  "atlas": "atlas_tz_0",
+  "aext": "webp",
+  "x": 703,
+  "y": 1146
+ },
+ "tz_glass_mountain": {
+  "kind": "decor",
+  "w": 360,
+  "h": 268,
+  "tiles": 2.4,
+  "atlas": "atlas_tz_1",
+  "aext": "webp",
+  "x": 362,
+  "y": 691
+ },
+ "tz_glass_mtn1": {
+  "kind": "decor",
+  "w": 480,
+  "h": 276,
+  "tiles": 3.2,
+  "atlas": "atlas_tz_1",
+  "aext": "webp",
+  "x": 1326,
+  "y": 398
+ },
+ "tz_glass_mtn2": {
+  "kind": "decor",
+  "w": 450,
+  "h": 221,
+  "tiles": 3.0,
+  "atlas": "atlas_tz_1",
+  "aext": "webp",
+  "x": 452,
+  "y": 961
+ },
+ "tz_glass_mtn3": {
+  "kind": "decor",
+  "w": 330,
+  "h": 158,
+  "tiles": 2.2,
+  "atlas": "atlas_tz_1",
+  "aext": "webp",
+  "x": 0,
+  "y": 1382
+ },
+ "tz_glass_mtn4": {
+  "kind": "decor",
+  "w": 330,
+  "h": 196,
+  "tiles": 2.2,
+  "atlas": "atlas_tz_1",
+  "aext": "webp",
+  "x": 332,
+  "y": 1184
+ },
+ "tz_glass_trees": {
+  "kind": "decor",
+  "w": 225,
+  "h": 326,
+  "tiles": 1.5,
+  "atlas": "atlas_tz_1",
+  "aext": "webp",
+  "x": 499,
+  "y": 0
+ },
+ "tz_glass_tree": {
+  "kind": "decor",
+  "w": 165,
+  "h": 396,
+  "tiles": 1.1,
+  "atlas": "atlas_tz_1",
+  "aext": "webp",
+  "x": 0,
+  "y": 0
+ },
+ "tz_glass_rocks": {
+  "kind": "decor",
+  "w": 202,
+  "h": 169,
+  "tiles": 1.35,
+  "atlas": "atlas_tz_1",
+  "aext": "webp",
+  "x": 664,
+  "y": 1184
+ },
+ "tz_glass_log": {
+  "kind": "decor",
+  "w": 210,
+  "h": 162,
+  "tiles": 1.4,
+  "atlas": "atlas_tz_1",
+  "aext": "webp",
+  "x": 1200,
+  "y": 1184
+ },
+ "tz_glass_lake": {
+  "kind": "decor",
+  "w": 330,
+  "h": 324,
+  "tiles": 2.2,
+  "atlas": "atlas_tz_1",
+  "aext": "webp",
+  "x": 726,
+  "y": 0
+ },
+ "river_glass": {
+  "kind": "decor",
+  "w": 180,
+  "h": 291,
+  "atlas": "atlas_tz_1",
+  "aext": "webp",
+  "x": 1390,
+  "y": 0
+ },
+ "tz_ash_mountain": {
+  "kind": "decor",
+  "w": 360,
+  "h": 268,
+  "tiles": 2.4,
+  "atlas": "atlas_tz_1",
+  "aext": "webp",
+  "x": 0,
+  "y": 691
+ },
+ "tz_ash_mtn1": {
+  "kind": "decor",
+  "w": 480,
+  "h": 276,
+  "tiles": 3.2,
+  "atlas": "atlas_tz_1",
+  "aext": "webp",
+  "x": 844,
+  "y": 398
+ },
+ "tz_ash_mtn2": {
+  "kind": "decor",
+  "w": 450,
+  "h": 221,
+  "tiles": 3.0,
+  "atlas": "atlas_tz_1",
+  "aext": "webp",
+  "x": 0,
+  "y": 961
+ },
+ "tz_ash_mtn3": {
+  "kind": "decor",
+  "w": 330,
+  "h": 158,
+  "tiles": 2.2,
+  "atlas": "atlas_tz_1",
+  "aext": "webp",
+  "x": 1412,
+  "y": 1184
+ },
+ "tz_ash_mtn4": {
+  "kind": "decor",
+  "w": 330,
+  "h": 196,
+  "tiles": 2.2,
+  "atlas": "atlas_tz_1",
+  "aext": "webp",
+  "x": 0,
+  "y": 1184
+ },
+ "tz_ash_trees": {
+  "kind": "decor",
+  "w": 225,
+  "h": 243,
+  "tiles": 1.5,
+  "atlas": "atlas_tz_1",
+  "aext": "webp",
+  "x": 724,
+  "y": 691
+ },
+ "tz_ash_tree": {
+  "kind": "decor",
+  "w": 165,
+  "h": 215,
+  "tiles": 1.1,
+  "atlas": "atlas_tz_1",
+  "aext": "webp",
+  "x": 904,
+  "y": 961
+ },
+ "tz_ash_rocks": {
+  "kind": "decor",
+  "w": 202,
+  "h": 209,
+  "tiles": 1.35,
+  "atlas": "atlas_tz_1",
+  "aext": "webp",
+  "x": 1238,
+  "y": 961
+ },
+ "tz_ash_log": {
+  "kind": "decor",
+  "w": 210,
+  "h": 149,
+  "tiles": 1.4,
+  "atlas": "atlas_tz_1",
+  "aext": "webp",
+  "x": 718,
+  "y": 1382
+ },
+ "tz_ash_lake": {
+  "kind": "decor",
+  "w": 330,
+  "h": 328,
+  "tiles": 2.2,
+  "atlas": "atlas_tz_1",
+  "aext": "webp",
+  "x": 167,
+  "y": 0
+ },
+ "river_ash": {
+  "kind": "decor",
+  "w": 180,
+  "h": 108,
+  "atlas": "atlas_tz_1",
+  "aext": "webp",
+  "x": 1142,
+  "y": 1382
+ },
+ "tz_rust_mountain": {
+  "kind": "decor",
+  "w": 360,
+  "h": 282,
+  "tiles": 2.4,
+  "atlas": "atlas_tz_1",
+  "aext": "webp",
+  "x": 482,
+  "y": 398
+ },
+ "tz_rust_mtn1": {
+  "kind": "decor",
+  "w": 480,
+  "h": 291,
+  "tiles": 3.2,
+  "atlas": "atlas_tz_1",
+  "aext": "webp",
+  "x": 0,
+  "y": 398
+ },
+ "tz_rust_mtn2": {
+  "kind": "decor",
+  "w": 450,
+  "h": 233,
+  "tiles": 3.0,
+  "atlas": "atlas_tz_1",
+  "aext": "webp",
+  "x": 1178,
+  "y": 691
+ },
+ "tz_rust_mtn3": {
+  "kind": "decor",
+  "w": 330,
+  "h": 167,
+  "tiles": 2.2,
+  "atlas": "atlas_tz_1",
+  "aext": "webp",
+  "x": 868,
+  "y": 1184
+ },
+ "tz_rust_mtn4": {
+  "kind": "decor",
+  "w": 330,
+  "h": 207,
+  "tiles": 2.2,
+  "atlas": "atlas_tz_1",
+  "aext": "webp",
+  "x": 1442,
+  "y": 961
+ },
+ "tz_rust_trees": {
+  "kind": "decor",
+  "w": 225,
+  "h": 239,
+  "tiles": 1.5,
+  "atlas": "atlas_tz_1",
+  "aext": "webp",
+  "x": 951,
+  "y": 691
+ },
+ "tz_rust_tree": {
+  "kind": "decor",
+  "w": 165,
+  "h": 215,
+  "tiles": 1.1,
+  "atlas": "atlas_tz_1",
+  "aext": "webp",
+  "x": 1071,
+  "y": 961
+ },
+ "tz_rust_rocks": {
+  "kind": "decor",
+  "w": 202,
+  "h": 157,
+  "tiles": 1.35,
+  "atlas": "atlas_tz_1",
+  "aext": "webp",
+  "x": 514,
+  "y": 1382
+ },
+ "tz_rust_log": {
+  "kind": "decor",
+  "w": 210,
+  "h": 117,
+  "tiles": 1.4,
+  "atlas": "atlas_tz_1",
+  "aext": "webp",
+  "x": 930,
+  "y": 1382
+ },
+ "tz_rust_lake": {
+  "kind": "decor",
+  "w": 330,
+  "h": 307,
+  "tiles": 2.2,
+  "atlas": "atlas_tz_1",
+  "aext": "webp",
+  "x": 1058,
+  "y": 0
+ },
+ "river_rust": {
+  "kind": "decor",
+  "w": 180,
+  "h": 157,
+  "atlas": "atlas_tz_1",
+  "aext": "webp",
+  "x": 332,
+  "y": 1382
  }
 }

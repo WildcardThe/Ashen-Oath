@@ -1,0 +1,501 @@
+ASHEN OATH — PROMPTS: TERRAIN TEXTURES, TERRAIN OBJECTS, TOWN HALL WINDOW, NEW FACTION (PALE FANG EXILES)
+====================================================================================================
+
+PART 1 — TERRAIN (one set per faction)
+========================================
+
+Textures: seamless tileable top-down squares the game repeats over the adventure map.
+Objects: single pictures on plain grey that the game places on the map (trees, mountains, rocks, logs, rivers, lakes).
+River pieces: make them straight with cut ends; the game rotates and joins them. Generate the object first as a reference
+for its variants (2-3 versions of each tree/rock/mountain make the map look natural).
+
+----------------------------------------------------------------------
+IRON CONCORD — snow
+----------------------------------------------------------------------
+
+Ground texture
+Seamless tileable ground texture for the adventure map of a grimdark sci-fi fantasy strategy game, seen straight from above (top-down, flat, no perspective, no horizon), painted digital art in the style of classic fantasy strategy game terrain, 1024 x 1024, even lighting with no strong shadows, the pattern must repeat seamlessly on all four edges, no objects bigger than a small stone, no text. Packed snow and frozen ground: white and blue-grey snow with soft drifts, patches of dark frozen earth and grey stones showing through, faint ice crust and boot-trodden tracks.
+
+Ground texture variant (same, with more detail)
+Seamless tileable ground texture for the adventure map of a grimdark sci-fi fantasy strategy game, seen straight from above (top-down, flat, no perspective, no horizon), painted digital art in the style of classic fantasy strategy game terrain, 1024 x 1024, even lighting with no strong shadows, the pattern must repeat seamlessly on all four edges, no objects bigger than a small stone, no text. Packed snow and frozen ground: white and blue-grey snow with soft drifts, patches of dark frozen earth and grey stones showing through, faint ice crust and boot-trodden tracks. Slightly more stones, cracks and small details than the plain version.
+
+Tree
+Single object for the adventure map of a grimdark sci-fi fantasy strategy game, seen from a high three-quarter angle about 45 degrees from above, painted digital art, isolated on a plain flat medium grey background, soft light from the upper left, a small soft contact shadow under it, no text. a tall snow-laden dark pine tree, branches heavy with snow.
+
+Tree cluster
+Single object for the adventure map of a grimdark sci-fi fantasy strategy game, seen from a high three-quarter angle about 45 degrees from above, painted digital art, isolated on a plain flat medium grey background, soft light from the upper left, a small soft contact shadow under it, no text. a small group of three snowy pines of different heights.
+
+Mountain
+Single object for the adventure map of a grimdark sci-fi fantasy strategy game, seen from a high three-quarter angle about 45 degrees from above, painted digital art, isolated on a plain flat medium grey background, soft light from the upper left, a small soft contact shadow under it, no text. a jagged snow-capped grey mountain peak with blue ice in its crevices.
+
+Rocks
+Single object for the adventure map of a grimdark sci-fi fantasy strategy game, seen from a high three-quarter angle about 45 degrees from above, painted digital art, isolated on a plain flat medium grey background, soft light from the upper left, a small soft contact shadow under it, no text. a cluster of snow-covered grey boulders and a carved rune-stone.
+
+Log / deadwood
+Single object for the adventure map of a grimdark sci-fi fantasy strategy game, seen from a high three-quarter angle about 45 degrees from above, painted digital art, isolated on a plain flat medium grey background, soft light from the upper left, a small soft contact shadow under it, no text. a fallen frozen log with icicles and snow on top.
+
+River piece
+Single object for the adventure map of a grimdark sci-fi fantasy strategy game, seen from a high three-quarter angle about 45 degrees from above, painted digital art, isolated on a plain flat medium grey background, soft light from the upper left, a small soft contact shadow under it, no text. a short straight piece of a frozen river with blue ice and dark open water in the middle, its two ends cut straight so pieces join.
+
+Lake
+Single object for the adventure map of a grimdark sci-fi fantasy strategy game, seen from a high three-quarter angle about 45 degrees from above, painted digital art, isolated on a plain flat medium grey background, soft light from the upper left, a small soft contact shadow under it, no text. a small frozen lake with cracked blue ice and a snowy rim.
+
+----------------------------------------------------------------------
+HOLLOW HOST — ash and lava
+----------------------------------------------------------------------
+
+Ground texture
+Seamless tileable ground texture for the adventure map of a grimdark sci-fi fantasy strategy game, seen straight from above (top-down, flat, no perspective, no horizon), painted digital art in the style of classic fantasy strategy game terrain, 1024 x 1024, even lighting with no strong shadows, the pattern must repeat seamlessly on all four edges, no objects bigger than a small stone, no text. Volcanic ash plain: dark grey ash and black basalt with thin glowing orange lava cracks, scattered cinders and small bones.
+
+Ground texture variant (same, with more detail)
+Seamless tileable ground texture for the adventure map of a grimdark sci-fi fantasy strategy game, seen straight from above (top-down, flat, no perspective, no horizon), painted digital art in the style of classic fantasy strategy game terrain, 1024 x 1024, even lighting with no strong shadows, the pattern must repeat seamlessly on all four edges, no objects bigger than a small stone, no text. Volcanic ash plain: dark grey ash and black basalt with thin glowing orange lava cracks, scattered cinders and small bones. Slightly more stones, cracks and small details than the plain version.
+
+Tree
+Single object for the adventure map of a grimdark sci-fi fantasy strategy game, seen from a high three-quarter angle about 45 degrees from above, painted digital art, isolated on a plain flat medium grey background, soft light from the upper left, a small soft contact shadow under it, no text. a dead charred black tree with twisted branches and glowing ember cracks.
+
+Tree cluster
+Single object for the adventure map of a grimdark sci-fi fantasy strategy game, seen from a high three-quarter angle about 45 degrees from above, painted digital art, isolated on a plain flat medium grey background, soft light from the upper left, a small soft contact shadow under it, no text. three burnt black dead trees, one with skulls hung on its branches.
+
+Mountain
+Single object for the adventure map of a grimdark sci-fi fantasy strategy game, seen from a high three-quarter angle about 45 degrees from above, painted digital art, isolated on a plain flat medium grey background, soft light from the upper left, a small soft contact shadow under it, no text. a jagged black volcanic peak with lava running down its side and smoke at the top.
+
+Rocks
+Single object for the adventure map of a grimdark sci-fi fantasy strategy game, seen from a high three-quarter angle about 45 degrees from above, painted digital art, isolated on a plain flat medium grey background, soft light from the upper left, a small soft contact shadow under it, no text. a cluster of black basalt spikes and a chained skull pillar.
+
+Log / deadwood
+Single object for the adventure map of a grimdark sci-fi fantasy strategy game, seen from a high three-quarter angle about 45 degrees from above, painted digital art, isolated on a plain flat medium grey background, soft light from the upper left, a small soft contact shadow under it, no text. a burnt smouldering fallen log with glowing embers.
+
+River piece
+Single object for the adventure map of a grimdark sci-fi fantasy strategy game, seen from a high three-quarter angle about 45 degrees from above, painted digital art, isolated on a plain flat medium grey background, soft light from the upper left, a small soft contact shadow under it, no text. a short straight piece of a lava river, glowing orange molten rock between black banks, its two ends cut straight so pieces join.
+
+Lake
+Single object for the adventure map of a grimdark sci-fi fantasy strategy game, seen from a high three-quarter angle about 45 degrees from above, painted digital art, isolated on a plain flat medium grey background, soft light from the upper left, a small soft contact shadow under it, no text. a small pool of bubbling lava in a black rock basin.
+
+----------------------------------------------------------------------
+RUSTBOUND — rust wasteland
+----------------------------------------------------------------------
+
+Ground texture
+Seamless tileable ground texture for the adventure map of a grimdark sci-fi fantasy strategy game, seen straight from above (top-down, flat, no perspective, no horizon), painted digital art in the style of classic fantasy strategy game terrain, 1024 x 1024, even lighting with no strong shadows, the pattern must repeat seamlessly on all four edges, no objects bigger than a small stone, no text. Rust-red dust and cracked concrete: rusty orange-brown dirt, broken concrete slabs, oil stains, small scrap and bolts, a few toxic green puddles.
+
+Ground texture variant (same, with more detail)
+Seamless tileable ground texture for the adventure map of a grimdark sci-fi fantasy strategy game, seen straight from above (top-down, flat, no perspective, no horizon), painted digital art in the style of classic fantasy strategy game terrain, 1024 x 1024, even lighting with no strong shadows, the pattern must repeat seamlessly on all four edges, no objects bigger than a small stone, no text. Rust-red dust and cracked concrete: rusty orange-brown dirt, broken concrete slabs, oil stains, small scrap and bolts, a few toxic green puddles. Slightly more stones, cracks and small details than the plain version.
+
+Tree
+Single object for the adventure map of a grimdark sci-fi fantasy strategy game, seen from a high three-quarter angle about 45 degrees from above, painted digital art, isolated on a plain flat medium grey background, soft light from the upper left, a small soft contact shadow under it, no text. a dead grey tree tangled with rusty wire and hanging scrap.
+
+Tree cluster
+Single object for the adventure map of a grimdark sci-fi fantasy strategy game, seen from a high three-quarter angle about 45 degrees from above, painted digital art, isolated on a plain flat medium grey background, soft light from the upper left, a small soft contact shadow under it, no text. three rusted metal pylons and a dead tree.
+
+Mountain
+Single object for the adventure map of a grimdark sci-fi fantasy strategy game, seen from a high three-quarter angle about 45 degrees from above, painted digital art, isolated on a plain flat medium grey background, soft light from the upper left, a small soft contact shadow under it, no text. a huge pile of rusted scrap and broken concrete shaped like a hill, with pipes sticking out.
+
+Rocks
+Single object for the adventure map of a grimdark sci-fi fantasy strategy game, seen from a high three-quarter angle about 45 degrees from above, painted digital art, isolated on a plain flat medium grey background, soft light from the upper left, a small soft contact shadow under it, no text. a cluster of broken concrete blocks and rusted barrels.
+
+Log / deadwood
+Single object for the adventure map of a grimdark sci-fi fantasy strategy game, seen from a high three-quarter angle about 45 degrees from above, painted digital art, isolated on a plain flat medium grey background, soft light from the upper left, a small soft contact shadow under it, no text. a fallen rusted pipe section half buried in dust.
+
+River piece
+Single object for the adventure map of a grimdark sci-fi fantasy strategy game, seen from a high three-quarter angle about 45 degrees from above, painted digital art, isolated on a plain flat medium grey background, soft light from the upper left, a small soft contact shadow under it, no text. a short straight piece of a toxic green sludge river between rusty banks, its two ends cut straight so pieces join.
+
+Lake
+Single object for the adventure map of a grimdark sci-fi fantasy strategy game, seen from a high three-quarter angle about 45 degrees from above, painted digital art, isolated on a plain flat medium grey background, soft light from the upper left, a small soft contact shadow under it, no text. a small toxic green acid pool with rusty debris around it.
+
+----------------------------------------------------------------------
+SCRAPJAW HORDE — junkyard
+----------------------------------------------------------------------
+
+Ground texture
+Seamless tileable ground texture for the adventure map of a grimdark sci-fi fantasy strategy game, seen straight from above (top-down, flat, no perspective, no horizon), painted digital art in the style of classic fantasy strategy game terrain, 1024 x 1024, even lighting with no strong shadows, the pattern must repeat seamlessly on all four edges, no objects bigger than a small stone, no text. Red dirt junkyard ground: packed red-brown dirt with tyre tracks, oil stains, scattered bolts, nuts and small scrap pieces.
+
+Ground texture variant (same, with more detail)
+Seamless tileable ground texture for the adventure map of a grimdark sci-fi fantasy strategy game, seen straight from above (top-down, flat, no perspective, no horizon), painted digital art in the style of classic fantasy strategy game terrain, 1024 x 1024, even lighting with no strong shadows, the pattern must repeat seamlessly on all four edges, no objects bigger than a small stone, no text. Red dirt junkyard ground: packed red-brown dirt with tyre tracks, oil stains, scattered bolts, nuts and small scrap pieces. Slightly more stones, cracks and small details than the plain version.
+
+Tree
+Single object for the adventure map of a grimdark sci-fi fantasy strategy game, seen from a high three-quarter angle about 45 degrees from above, painted digital art, isolated on a plain flat medium grey background, soft light from the upper left, a small soft contact shadow under it, no text. a crude tree made of welded scrap metal and car parts with green glowing lamps.
+
+Tree cluster
+Single object for the adventure map of a grimdark sci-fi fantasy strategy game, seen from a high three-quarter angle about 45 degrees from above, painted digital art, isolated on a plain flat medium grey background, soft light from the upper left, a small soft contact shadow under it, no text. three spiky scrap totems with jaw-glyph signs.
+
+Mountain
+Single object for the adventure map of a grimdark sci-fi fantasy strategy game, seen from a high three-quarter angle about 45 degrees from above, painted digital art, isolated on a plain flat medium grey background, soft light from the upper left, a small soft contact shadow under it, no text. a giant hill of wrecked tanks, car bodies and scrap with smoke rising.
+
+Rocks
+Single object for the adventure map of a grimdark sci-fi fantasy strategy game, seen from a high three-quarter angle about 45 degrees from above, painted digital art, isolated on a plain flat medium grey background, soft light from the upper left, a small soft contact shadow under it, no text. a pile of tyres, oil drums and scrap plates.
+
+Log / deadwood
+Single object for the adventure map of a grimdark sci-fi fantasy strategy game, seen from a high three-quarter angle about 45 degrees from above, painted digital art, isolated on a plain flat medium grey background, soft light from the upper left, a small soft contact shadow under it, no text. a crashed rusty truck chassis lying on its side.
+
+River piece
+Single object for the adventure map of a grimdark sci-fi fantasy strategy game, seen from a high three-quarter angle about 45 degrees from above, painted digital art, isolated on a plain flat medium grey background, soft light from the upper left, a small soft contact shadow under it, no text. a short straight piece of a black oil river with rainbow sheen, its two ends cut straight so pieces join.
+
+Lake
+Single object for the adventure map of a grimdark sci-fi fantasy strategy game, seen from a high three-quarter angle about 45 degrees from above, painted digital art, isolated on a plain flat medium grey background, soft light from the upper left, a small soft contact shadow under it, no text. a small pool of black oil with a half-sunk wreck.
+
+----------------------------------------------------------------------
+DEATHLESS DYNASTY — tomb desert
+----------------------------------------------------------------------
+
+Ground texture
+Seamless tileable ground texture for the adventure map of a grimdark sci-fi fantasy strategy game, seen straight from above (top-down, flat, no perspective, no horizon), painted digital art in the style of classic fantasy strategy game terrain, 1024 x 1024, even lighting with no strong shadows, the pattern must repeat seamlessly on all four edges, no objects bigger than a small stone, no text. Black glass desert: dark sand with patches of cracked black stone tiles and faint glowing emerald glyph lines, small obsidian shards.
+
+Ground texture variant (same, with more detail)
+Seamless tileable ground texture for the adventure map of a grimdark sci-fi fantasy strategy game, seen straight from above (top-down, flat, no perspective, no horizon), painted digital art in the style of classic fantasy strategy game terrain, 1024 x 1024, even lighting with no strong shadows, the pattern must repeat seamlessly on all four edges, no objects bigger than a small stone, no text. Black glass desert: dark sand with patches of cracked black stone tiles and faint glowing emerald glyph lines, small obsidian shards. Slightly more stones, cracks and small details than the plain version.
+
+Tree
+Single object for the adventure map of a grimdark sci-fi fantasy strategy game, seen from a high three-quarter angle about 45 degrees from above, painted digital art, isolated on a plain flat medium grey background, soft light from the upper left, a small soft contact shadow under it, no text. a tall thin black obelisk with a faint green glowing glyph.
+
+Tree cluster
+Single object for the adventure map of a grimdark sci-fi fantasy strategy game, seen from a high three-quarter angle about 45 degrees from above, painted digital art, isolated on a plain flat medium grey background, soft light from the upper left, a small soft contact shadow under it, no text. three broken black pillars of different heights with gold bands.
+
+Mountain
+Single object for the adventure map of a grimdark sci-fi fantasy strategy game, seen from a high three-quarter angle about 45 degrees from above, painted digital art, isolated on a plain flat medium grey background, soft light from the upper left, a small soft contact shadow under it, no text. a dark stepped pyramid ruin half-buried in black sand, with thin green light along its edges.
+
+Rocks
+Single object for the adventure map of a grimdark sci-fi fantasy strategy game, seen from a high three-quarter angle about 45 degrees from above, painted digital art, isolated on a plain flat medium grey background, soft light from the upper left, a small soft contact shadow under it, no text. a cluster of black obsidian shards and a fallen skeletal statue.
+
+Log / deadwood
+Single object for the adventure map of a grimdark sci-fi fantasy strategy game, seen from a high three-quarter angle about 45 degrees from above, painted digital art, isolated on a plain flat medium grey background, soft light from the upper left, a small soft contact shadow under it, no text. a fallen broken obelisk lying in the sand.
+
+River piece
+Single object for the adventure map of a grimdark sci-fi fantasy strategy game, seen from a high three-quarter angle about 45 degrees from above, painted digital art, isolated on a plain flat medium grey background, soft light from the upper left, a small soft contact shadow under it, no text. a short straight piece of a river of glowing green energy in a stone channel, its two ends cut straight so pieces join.
+
+Lake
+Single object for the adventure map of a grimdark sci-fi fantasy strategy game, seen from a high three-quarter angle about 45 degrees from above, painted digital art, isolated on a plain flat medium grey background, soft light from the upper left, a small soft contact shadow under it, no text. a small square pool of glowing green liquid in a stone basin.
+
+----------------------------------------------------------------------
+PALE FANG EXILES — black shale coast
+----------------------------------------------------------------------
+
+Ground texture
+Seamless tileable ground texture for the adventure map of a grimdark sci-fi fantasy strategy game, seen straight from above (top-down, flat, no perspective, no horizon), painted digital art in the style of classic fantasy strategy game terrain, 1024 x 1024, even lighting with no strong shadows, the pattern must repeat seamlessly on all four edges, no objects bigger than a small stone, no text. Black shale coast: wet dark grey shale slabs, grey salt crust, small black pebbles and tide pools reflecting a pale light.
+
+Ground texture variant (same, with more detail)
+Seamless tileable ground texture for the adventure map of a grimdark sci-fi fantasy strategy game, seen straight from above (top-down, flat, no perspective, no horizon), painted digital art in the style of classic fantasy strategy game terrain, 1024 x 1024, even lighting with no strong shadows, the pattern must repeat seamlessly on all four edges, no objects bigger than a small stone, no text. Black shale coast: wet dark grey shale slabs, grey salt crust, small black pebbles and tide pools reflecting a pale light. Slightly more stones, cracks and small details than the plain version.
+
+Tree
+Single object for the adventure map of a grimdark sci-fi fantasy strategy game, seen from a high three-quarter angle about 45 degrees from above, painted digital art, isolated on a plain flat medium grey background, soft light from the upper left, a small soft contact shadow under it, no text. a twisted dead tree bleached white by salt, with hanging chains.
+
+Tree cluster
+Single object for the adventure map of a grimdark sci-fi fantasy strategy game, seen from a high three-quarter angle about 45 degrees from above, painted digital art, isolated on a plain flat medium grey background, soft light from the upper left, a small soft contact shadow under it, no text. three giant shark jawbones standing upright like trees.
+
+Mountain
+Single object for the adventure map of a grimdark sci-fi fantasy strategy game, seen from a high three-quarter angle about 45 degrees from above, painted digital art, isolated on a plain flat medium grey background, soft light from the upper left, a small soft contact shadow under it, no text. a jagged black sea cliff with waves crashing at its foot.
+
+Rocks
+Single object for the adventure map of a grimdark sci-fi fantasy strategy game, seen from a high three-quarter angle about 45 degrees from above, painted digital art, isolated on a plain flat medium grey background, soft light from the upper left, a small soft contact shadow under it, no text. a cluster of wet black rocks with barnacles and a rusty anchor.
+
+Log / deadwood
+Single object for the adventure map of a grimdark sci-fi fantasy strategy game, seen from a high three-quarter angle about 45 degrees from above, painted digital art, isolated on a plain flat medium grey background, soft light from the upper left, a small soft contact shadow under it, no text. a broken hull plate and driftwood washed up on the shore.
+
+River piece
+Single object for the adventure map of a grimdark sci-fi fantasy strategy game, seen from a high three-quarter angle about 45 degrees from above, painted digital art, isolated on a plain flat medium grey background, soft light from the upper left, a small soft contact shadow under it, no text. a short straight piece of a dark sea channel with white foam, its two ends cut straight so pieces join.
+
+Lake
+Single object for the adventure map of a grimdark sci-fi fantasy strategy game, seen from a high three-quarter angle about 45 degrees from above, painted digital art, isolated on a plain flat medium grey background, soft light from the upper left, a small soft contact shadow under it, no text. a small dark tide pool with pale-blue glowing water.
+
+
+PART 2 — TOWN HALL WINDOW (construction screen)
+==================================================
+
+Like the classic town hall screen: a grid of building cards, each with a picture and a coloured name ribbon (green: can build,
+red: cannot, gold: built), the resources along the bottom and a confirm button. The game puts the building pictures, names,
+ribbon colours and resource numbers on top, so everything in the art must be EMPTY.
+
+Window background (16:9, 1376 x 768):
+Background panel for the town hall construction window of a grimdark gothic sci-fi strategy game, front view, flat orthographic, 16:9, 1376 x 768. The same cogitator-terminal look as our other windows: a heavy dark gunmetal bezel with riveted corners, brass screws and small gothic skull ornaments, a deep blue-black screen with soft glow, interface lines in glowing brass-gold with amber accents. Layout, all empty placeholders: a long empty title plate at the top centre; a grid of fourteen empty building cards in four rows (4, 3, 4, 3 cards, the rows of three centred), each card a landscape rectangle with a thin ornate gold frame, a large empty picture area and an empty flat ribbon strip along its bottom; along the bottom edge a long empty resource bar divided into seven equal small compartments; at the bottom right a square ornate gold-framed confirm button with nothing on it. No text, no letters, no numbers, no icons, no pictures inside the cards, no people, no logos.
+
+Ribbon strips (optional, if you want painted ribbons instead of plain colours; 600 x 60 each, on a plain flat medium grey background):
+A flat horizontal name ribbon for a game interface card, brushed metal plate with a thin gold rim, deep GREEN enamel, slightly worn, no text.
+The same ribbon in deep RED enamel, no text.
+The same ribbon in rich GOLD-YELLOW enamel, no text.
+
+Small status marks (256 x 256, plain flat medium grey background, no text):
+A small glowing red X mark, slightly worn metal, for a 'cannot build' badge.
+A small glowing gold tick mark, slightly worn metal, for a 'built' badge.
+
+PART 3 — NEW FACTION: THE PALE FANG EXILES (void-shark marines)
+==========================================================================
+
+A sixth faction: silent void-raider marines who hunt like sharks. Original names and emblems. 1 ranged creature, 4 melee. Same set of pictures as every other faction.
+
+HOW TO GENERATE (important for cutting the pictures into the game)
+--------------------------------------------------------------------------
+- Landscape: 1920 x 1080 (16:9). Keep the building plots EMPTY: the game places each building on them.
+- Buildings: one building per picture on a plain flat medium grey background, about 1024 x 1024 or a little
+  taller, the whole building in frame with some space around it. Generate the BASIC building first and attach
+  it as the reference for its upgrade, so the upgrade keeps the same angle and footprint.
+- Creatures: generate the PICTURE first and attach it as the reference for its movement and attack sheets
+  (and the basic creature as a reference for the upgraded one, so they look related).
+- Sprite sheets: 5 columns x 5 rows = 25 frames, read left to right, top to bottom, no grid lines, no text,
+  the same size and the same ground line in every cell.
+- Commanders: generate the avatar or battlefield look first and attach it as the reference for the others.
+- Map pictures (commander vehicle, town) carry a PLAIN BLANK WHITE banner: the game paints it in the player's colour.
+- If you have two good versions of something, send both — I will pick and say which one I used.
+
+
+
+==========================================================================
+THE PALE FANG EXILES
+==========================================================================
+
+Inspired by: grim, silent power-armoured void-raiders: an exiled marine fleet that lives in the dark between the stars, takes no prisoners and hunts like sharks, with gunmetal-grey armour, white jaw markings and red-stained teeth (original, not an existing chapter).
+Lore: Exiled for a sin no record names, the Pale Fang wander the dark between the stars in a fleet of black-hulled ships. They do not speak before a battle and leave nothing behind after one. Whole worlds have learned to fear the grey shapes rising out of the void.
+Play style: Fast, savage close-quarters killers. Void-born thralls, chain-axe reavers, harpoon gunners, teleporting boarding elites and a drowned war-walker.
+Home ground: black shale coast (wet black rock, grey salt flats, dark sea) · rare resources: blackstone and psycrystal · town names: Black Drift, The Silent Wake, Hollowtide
+Look of the whole faction: Every Pale Fang thing is cold, silent and predatory: dark gunmetal-grey armour and hulls, white jagged jaw markings and rows of painted teeth, red stains like old blood, chains, hooks and harpoons, shark-tooth trophies, salt crust and dripping black water, cold pale-blue lights.
+
+--------------------------------------------------------------------------
+PALE FANG 1. TOWN LANDSCAPE (empty)
+--------------------------------------------------------------------------
+
+Painted background for the town screen of a grimdark sci-fi fantasy strategy game, wide panorama, 16:9, 1920 x 1080, painted digital art with crisp gritty detail, seen from the front at a slight high angle like a classic fantasy strategy game town screen. A fortified raider harbour on a black shale coast at night: a dark storm sky with a pale moon, a black sea with towering waves on the horizon, the dark hull of a huge void-ship anchored offshore, giant shark jawbones and harpoon cranes along the shore, chains strung between iron posts, cold pale-blue lamps. The top 25-28% of the picture is sky and distant sea; everything below is the town ground, filled edge to edge with 11 EMPTY flat plots: a back row on a raised terrace (a small plot left, ONE LARGE central plot, a small plot right), a middle row of four plots, a front row of four large plots, a winding road from the bottom centre to the large back plot, narrow gaps between plots with only small details (rocks, chains, crates, bones) in the gaps and along the edges. Ground: wet black shale and grey salt crust; each plot is a flat gunmetal deck platform with a riveted rim. No buildings, no characters, no text, no grid.
+
+--------------------------------------------------------------------------
+PALE FANG 2. TOWN BUILDINGS
+--------------------------------------------------------------------------
+(Upgraded and higher levels: attach the previous level as the reference.)
+
+Town hall 1 — Wake Hall   [file: hall1]
+Single building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, in the style of a classic fantasy strategy town panorama. A low black-iron hall built from a salvaged ship section, riveted gunmetal hull plates, a great jawbone arch over the door, pale-blue lamps and chains. Every Pale Fang thing is cold, silent and predatory: dark gunmetal-grey armour and hulls, white jagged jaw markings and rows of painted teeth, red stains like old blood, chains, hooks and harpoons, shark-tooth trophies, salt crust and dripping black water, cold pale-blue lights. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Town hall 2 — Fleet Hall   [file: hall2]
+Upgraded version of the same building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail. Same building, same angle, same footprint and same overall shape as the attached reference, but bigger and grander: it grows a raised command bridge from a ship's prow, harpoon cannons on its roof, banners of white teeth on black. Every Pale Fang thing is cold, silent and predatory: dark gunmetal-grey armour and hulls, white jagged jaw markings and rows of painted teeth, red stains like old blood, chains, hooks and harpoons, shark-tooth trophies, salt crust and dripping black water, cold pale-blue lights. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Town hall 3 — Throne of the Exile   [file: hall3]
+Upgraded version of the same building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail. Same building, same angle, same footprint and same overall shape as the attached reference, but bigger and grander: it becomes a towering fortress made of a beached void-ship's bow, a colossal shark-jaw gate, spotlights sweeping the sky — the largest building in town. Every Pale Fang thing is cold, silent and predatory: dark gunmetal-grey armour and hulls, white jagged jaw markings and rows of painted teeth, red stains like old blood, chains, hooks and harpoons, shark-tooth trophies, salt crust and dripping black water, cold pale-blue lights. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Fort — Sea Wall   [file: fort]
+Single building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, in the style of a classic fantasy strategy town panorama. A short stretch of gunmetal sea wall with a squat gate tower, a shark-jaw gate, chains and hooks hanging from the battlements. Every Pale Fang thing is cold, silent and predatory: dark gunmetal-grey armour and hulls, white jagged jaw markings and rows of painted teeth, red stains like old blood, chains, hooks and harpoons, shark-tooth trophies, salt crust and dripping black water, cold pale-blue lights. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Citadel — Harpoon Bastion   [file: citadel]
+Upgraded version of the same building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail. Same building, same angle, same footprint and same overall shape as the attached reference, but bigger and grander: the wall is taller with a second tower carrying a giant harpoon gun and a ditch of black seawater in front. Every Pale Fang thing is cold, silent and predatory: dark gunmetal-grey armour and hulls, white jagged jaw markings and rows of painted teeth, red stains like old blood, chains, hooks and harpoons, shark-tooth trophies, salt crust and dripping black water, cold pale-blue lights. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Castle — Maw of the Deep   [file: castle]
+Upgraded version of the same building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail. Same building, same angle, same footprint and same overall shape as the attached reference, but bigger and grander: it becomes a massive fortress wall of ship hulls with three gun towers, a colossal open shark-jaw gate and white teeth painted along the whole wall. Every Pale Fang thing is cold, silent and predatory: dark gunmetal-grey armour and hulls, white jagged jaw markings and rows of painted teeth, red stains like old blood, chains, hooks and harpoons, shark-tooth trophies, salt crust and dripping black water, cold pale-blue lights. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Recruitment office — Silent Mess   [file: tavern]
+Single building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, in the style of a classic fantasy strategy town panorama. A dark low mess hall in an upturned hull section, lamplight from portholes, harpoons racked by the door, trophy teeth nailed above it. Every Pale Fang thing is cold, silent and predatory: dark gunmetal-grey armour and hulls, white jagged jaw markings and rows of painted teeth, red stains like old blood, chains, hooks and harpoons, shark-tooth trophies, salt crust and dripping black water, cold pale-blue lights. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Trade exchange — Salvage Dock   [file: market]
+Single building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, in the style of a classic fantasy strategy town panorama. A dock with cranes and hanging nets full of salvage, crates and engine parts stacked on a pier, a scale made from an anchor and chains. Every Pale Fang thing is cold, silent and predatory: dark gunmetal-grey armour and hulls, white jagged jaw markings and rows of painted teeth, red stains like old blood, chains, hooks and harpoons, shark-tooth trophies, salt crust and dripping black water, cold pale-blue lights. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Supply depot — Hold Stores   [file: depot]
+Single building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, in the style of a classic fantasy strategy town panorama. A fenced dock of stacked cargo containers and fuel tanks under salt crust, a heavy crane and coiled chains. Every Pale Fang thing is cold, silent and predatory: dark gunmetal-grey armour and hulls, white jagged jaw markings and rows of painted teeth, red stains like old blood, chains, hooks and harpoons, shark-tooth trophies, salt crust and dripping black water, cold pale-blue lights. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Mage guild 1 — Seer's Cell   [file: mg1]
+Single building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, in the style of a classic fantasy strategy town panorama. A small round gunmetal cell with a porthole of cold blue light, a harpoon-tipped antenna and hanging shark teeth. Every Pale Fang thing is cold, silent and predatory: dark gunmetal-grey armour and hulls, white jagged jaw markings and rows of painted teeth, red stains like old blood, chains, hooks and harpoons, shark-tooth trophies, salt crust and dripping black water, cold pale-blue lights. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Mage guild 2   [file: mg2]
+Upgraded version of the same building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail. Same building, same angle, same footprint and same overall shape as the attached reference, but bigger and grander: a second storey and a taller antenna crackling with pale-blue lightning. Every Pale Fang thing is cold, silent and predatory: dark gunmetal-grey armour and hulls, white jagged jaw markings and rows of painted teeth, red stains like old blood, chains, hooks and harpoons, shark-tooth trophies, salt crust and dripping black water, cold pale-blue lights. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Mage guild 3   [file: mg3]
+Upgraded version of the same building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail. Same building, same angle, same footprint and same overall shape as the attached reference, but bigger and grander: it grows into a narrow tower wrapped in chains with glowing blue sigils. Every Pale Fang thing is cold, silent and predatory: dark gunmetal-grey armour and hulls, white jagged jaw markings and rows of painted teeth, red stains like old blood, chains, hooks and harpoons, shark-tooth trophies, salt crust and dripping black water, cold pale-blue lights. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Mage guild 4   [file: mg4]
+Upgraded version of the same building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail. Same building, same angle, same footprint and same overall shape as the attached reference, but bigger and grander: the tower grows taller with a ring of floating hooks and a swirling storm at its top. Every Pale Fang thing is cold, silent and predatory: dark gunmetal-grey armour and hulls, white jagged jaw markings and rows of painted teeth, red stains like old blood, chains, hooks and harpoons, shark-tooth trophies, salt crust and dripping black water, cold pale-blue lights. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Mage guild 5   [file: mg5]
+Upgraded version of the same building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail. Same building, same angle, same footprint and same overall shape as the attached reference, but bigger and grander: it becomes a towering spire of black metal whose top opens into a whirling vortex of dark water and blue lightning. Every Pale Fang thing is cold, silent and predatory: dark gunmetal-grey armour and hulls, white jagged jaw markings and rows of painted teeth, red stains like old blood, chains, hooks and harpoons, shark-tooth trophies, salt crust and dripping black water, cold pale-blue lights. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Tier 1 dwelling — Thrall Hold   [file: dw1]
+Single building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, in the style of a classic fantasy strategy town panorama. A rusted hull section half-sunk in black shale used as barracks, a hatch door, hooks and chains, pale-blue lamps. Every Pale Fang thing is cold, silent and predatory: dark gunmetal-grey armour and hulls, white jagged jaw markings and rows of painted teeth, red stains like old blood, chains, hooks and harpoons, shark-tooth trophies, salt crust and dripping black water, cold pale-blue lights. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Tier 1 dwelling upgraded — Reiver Hold   [file: dw1u]
+Upgraded version of the same building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail. Same building, same angle, same footprint and same overall shape as the attached reference, but bigger and grander: it becomes a bigger hull barracks with a lookout mast, nets of trophies and a boarding ramp. Every Pale Fang thing is cold, silent and predatory: dark gunmetal-grey armour and hulls, white jagged jaw markings and rows of painted teeth, red stains like old blood, chains, hooks and harpoons, shark-tooth trophies, salt crust and dripping black water, cold pale-blue lights. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Tier 2 dwelling — Reaver Pens   [file: dw2]
+Single building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, in the style of a classic fantasy strategy town panorama. A long low gunmetal barracks with rows of chain-axes racked outside and white teeth painted on the doors. Every Pale Fang thing is cold, silent and predatory: dark gunmetal-grey armour and hulls, white jagged jaw markings and rows of painted teeth, red stains like old blood, chains, hooks and harpoons, shark-tooth trophies, salt crust and dripping black water, cold pale-blue lights. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Tier 2 dwelling upgraded — Blood Reaver Pens   [file: dw2u]
+Upgraded version of the same building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail. Same building, same angle, same footprint and same overall shape as the attached reference, but bigger and grander: it becomes a fortified armoury with a forge glowing red and trophies of enemy helmets on spikes. Every Pale Fang thing is cold, silent and predatory: dark gunmetal-grey armour and hulls, white jagged jaw markings and rows of painted teeth, red stains like old blood, chains, hooks and harpoons, shark-tooth trophies, salt crust and dripping black water, cold pale-blue lights. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Tier 3 dwelling — Harpoon Battery   [file: dw3]
+Single building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, in the style of a classic fantasy strategy town panorama. A gunmetal emplacement with racks of huge harpoons and a test target of torn hull plating full of holes. Every Pale Fang thing is cold, silent and predatory: dark gunmetal-grey armour and hulls, white jagged jaw markings and rows of painted teeth, red stains like old blood, chains, hooks and harpoons, shark-tooth trophies, salt crust and dripping black water, cold pale-blue lights. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Tier 3 dwelling upgraded — Deep Harpoon Battery   [file: dw3u]
+Upgraded version of the same building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail. Same building, same angle, same footprint and same overall shape as the attached reference, but bigger and grander: it becomes a heavy battery with a crane loading giant harpoons and blue-lit targeting lamps. Every Pale Fang thing is cold, silent and predatory: dark gunmetal-grey armour and hulls, white jagged jaw markings and rows of painted teeth, red stains like old blood, chains, hooks and harpoons, shark-tooth trophies, salt crust and dripping black water, cold pale-blue lights. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Tier 4 dwelling — Teleport Vault   [file: dw4]
+Single building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, in the style of a classic fantasy strategy town panorama. A sealed gunmetal vault with a circular teleport pad glowing pale blue on its roof and chained doors. Every Pale Fang thing is cold, silent and predatory: dark gunmetal-grey armour and hulls, white jagged jaw markings and rows of painted teeth, red stains like old blood, chains, hooks and harpoons, shark-tooth trophies, salt crust and dripping black water, cold pale-blue lights. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Tier 4 dwelling upgraded — Abyss Vault   [file: dw4u]
+Upgraded version of the same building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail. Same building, same angle, same footprint and same overall shape as the attached reference, but bigger and grander: it becomes a towering vault with a ring of crackling teleport pylons and white teeth painted around its gate. Every Pale Fang thing is cold, silent and predatory: dark gunmetal-grey armour and hulls, white jagged jaw markings and rows of painted teeth, red stains like old blood, chains, hooks and harpoons, shark-tooth trophies, salt crust and dripping black water, cold pale-blue lights. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Tier 5 dwelling — Drowned Dock   [file: dw5]
+Single building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, in the style of a classic fantasy strategy town panorama. A flooded dry-dock of black water with a war-walker frame half submerged, cranes and chains holding it. Every Pale Fang thing is cold, silent and predatory: dark gunmetal-grey armour and hulls, white jagged jaw markings and rows of painted teeth, red stains like old blood, chains, hooks and harpoons, shark-tooth trophies, salt crust and dripping black water, cold pale-blue lights. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Tier 5 dwelling upgraded — Leviathan Dock   [file: dw5u]
+Upgraded version of the same building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail. Same building, same angle, same footprint and same overall shape as the attached reference, but bigger and grander: it becomes a huge dock with a colossal walker standing in it, water pouring off its hull, spotlights on it. Every Pale Fang thing is cold, silent and predatory: dark gunmetal-grey armour and hulls, white jagged jaw markings and rows of painted teeth, red stains like old blood, chains, hooks and harpoons, shark-tooth trophies, salt crust and dripping black water, cold pale-blue lights. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+--------------------------------------------------------------------------
+PALE FANG 3. CREATURES
+--------------------------------------------------------------------------
+Ranged units: Harpoon Gunners / Leviathan Gunners.
+
+···· Tier 1: VOID THRALLS  →  upgraded: VOID REIVERS   (melee, walks, small) ····
+Suggested data: Tier 1 · melee · cheap and many · growth 14 a week · upgraded: +1 Attack, +2 Defence.
+
+Void Thralls - picture
+Single creature for a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, realistic proportions. A gaunt pale human void-born raider in patched grey flak armour and a breathing mask with teeth painted on it, carrying a long boarding hook and a cleaver. Full body, three-quarter side view facing right. Plain flat medium grey background, even light from the upper left, no ground, no shadow, no text.
+
+Void Thralls - movement sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping MOVEMENT cycle of the same creature in every frame: A gaunt pale human void-born raider in patched grey flak armour and a breathing mask with teeth painted on it, carrying a long boarding hook and a cleaver. A low fast prowling run forward, hook held ready. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+Void Thralls - attack sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous MELEE ATTACK of the same creature in every frame: A gaunt pale human void-born raider in patched grey flak armour and a breathing mask with teeth painted on it, carrying a long boarding hook and a cleaver. He lunges and slashes the cleaver and hook down twice, a spark at the hit around frame 13, then crouches back. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+Void Reivers - picture (attach the basic creature as a reference)
+Single creature for a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, realistic proportions. A pale void-born raider in heavier grey armour plates with a white jaw painted on the faceplate, a hooked chain-glaive and a round boarding shield. Full body, three-quarter side view facing right. Plain flat medium grey background, even light from the upper left, no ground, no shadow, no text.
+
+Void Reivers - movement sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping MOVEMENT cycle of the same creature in every frame: A pale void-born raider in heavier grey armour plates with a white jaw painted on the faceplate, a hooked chain-glaive and a round boarding shield. A low fast prowling run forward, hook held ready. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+Void Reivers - attack sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous MELEE ATTACK of the same creature in every frame: A pale void-born raider in heavier grey armour plates with a white jaw painted on the faceplate, a hooked chain-glaive and a round boarding shield. He lunges and slashes the cleaver and hook down twice, a spark at the hit around frame 13, then crouches back. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+···· Tier 2: FANG REAVERS  →  upgraded: BLOODFANG REAVERS   (melee, walks, small) ····
+Suggested data: Tier 2 · melee · fast, strong attack · growth 8 a week · upgraded: strikes twice.
+
+Fang Reavers - picture
+Single creature for a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, realistic proportions. A towering power-armoured warrior in dark gunmetal-grey armour with a white jagged jaw painted across the helmet and red-stained teeth, swinging a roaring chain-axe, a boarding pistol at the belt. Full body, three-quarter side view facing right. Plain flat medium grey background, even light from the upper left, no ground, no shadow, no text.
+
+Fang Reavers - movement sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping MOVEMENT cycle of the same creature in every frame: A towering power-armoured warrior in dark gunmetal-grey armour with a white jagged jaw painted across the helmet and red-stained teeth, swinging a roaring chain-axe, a boarding pistol at the belt. A fast silent charge forward, axe raised, cloak of chains swinging. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+Fang Reavers - attack sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous MELEE ATTACK of the same creature in every frame: A towering power-armoured warrior in dark gunmetal-grey armour with a white jagged jaw painted across the helmet and red-stained teeth, swinging a roaring chain-axe, a boarding pistol at the belt. He leaps in and hacks down with the chain-axe in a savage frenzy, a burst of sparks at the hit around frame 13, then straightens silently. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+Bloodfang Reavers - picture (attach the basic creature as a reference)
+Single creature for a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, realistic proportions. A towering power-armoured warrior in dark grey armour with white teeth markings and red blood streaks, two roaring chain-axes, shark-tooth trophies on chains. Full body, three-quarter side view facing right. Plain flat medium grey background, even light from the upper left, no ground, no shadow, no text.
+
+Bloodfang Reavers - movement sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping MOVEMENT cycle of the same creature in every frame: A towering power-armoured warrior in dark grey armour with white teeth markings and red blood streaks, two roaring chain-axes, shark-tooth trophies on chains. A fast silent charge forward, axe raised, cloak of chains swinging. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+Bloodfang Reavers - attack sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous MELEE ATTACK of the same creature in every frame: A towering power-armoured warrior in dark grey armour with white teeth markings and red blood streaks, two roaring chain-axes, shark-tooth trophies on chains. He leaps in and hacks down with the chain-axe in a savage frenzy, a burst of sparks at the hit around frame 13, then straightens silently. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+···· Tier 3: HARPOON GUNNERS  →  upgraded: LEVIATHAN GUNNERS   (RANGED, walks, small) ····
+Suggested data: Tier 3 · RANGED (8 shots) · high damage per shot · growth 5 a week · upgraded: 12 shots, +3 damage.
+
+Harpoon Gunners - picture
+Single creature for a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, realistic proportions. A power-armoured warrior in dark grey armour with white jaw markings braced behind a heavy harpoon cannon with a coiled chain, aiming forward. Full body, three-quarter side view facing right. Plain flat medium grey background, even light from the upper left, no ground, no shadow, no text.
+
+Harpoon Gunners - movement sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping MOVEMENT cycle of the same creature in every frame: A power-armoured warrior in dark grey armour with white jaw markings braced behind a heavy harpoon cannon with a coiled chain, aiming forward. A heavy steady walk forward, the harpoon cannon braced at the hip. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+Harpoon Gunners - shooting sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous RANGED ATTACK of the same creature in every frame: A power-armoured warrior in dark grey armour with white jaw markings braced behind a heavy harpoon cannon with a coiled chain, aiming forward. He plants his feet and fires the harpoon with a burst of steam and flame from frame 8 to 13, the chain whipping out after it, then he reloads. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+Leviathan Gunners - picture (attach the basic creature as a reference)
+Single creature for a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, realistic proportions. A power-armoured warrior in dark grey armour with red-stained teeth markings carrying a heavier twin-harpoon launcher crackling with pale-blue energy, chains spooling behind. Full body, three-quarter side view facing right. Plain flat medium grey background, even light from the upper left, no ground, no shadow, no text.
+
+Leviathan Gunners - movement sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping MOVEMENT cycle of the same creature in every frame: A power-armoured warrior in dark grey armour with red-stained teeth markings carrying a heavier twin-harpoon launcher crackling with pale-blue energy, chains spooling behind. A heavy steady walk forward, the harpoon cannon braced at the hip. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+Leviathan Gunners - shooting sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous RANGED ATTACK of the same creature in every frame: A power-armoured warrior in dark grey armour with red-stained teeth markings carrying a heavier twin-harpoon launcher crackling with pale-blue energy, chains spooling behind. He plants his feet and fires the harpoon with a burst of steam and flame from frame 8 to 13, the chain whipping out after it, then he reloads. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+···· Tier 4: ABYSS STRIKERS  →  upgraded: ABYSS EXECUTIONERS   (melee, teleports, small) ····
+Suggested data: Tier 4 · melee · teleports anywhere on the field (flies) · growth 2 a week · upgraded: +20 Health, strikes twice.
+
+Abyss Strikers - picture
+Single creature for a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, realistic proportions. A massive warrior in thick tactical dreadnought-style armour of dark grey, white jaw markings, a huge chain-fist and a heavy combat shield, pale-blue teleport light flickering around him. Full body, three-quarter side view facing right. Plain flat medium grey background, even light from the upper left, no ground, no shadow, no text.
+
+Abyss Strikers - movement sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping MOVEMENT cycle of the same creature in every frame: A massive warrior in thick tactical dreadnought-style armour of dark grey, white jaw markings, a huge chain-fist and a heavy combat shield, pale-blue teleport light flickering around him. He flickers forward in a burst of pale-blue teleport light, vanishing and reappearing a step ahead. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+Abyss Strikers - attack sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous MELEE ATTACK of the same creature in every frame: A massive warrior in thick tactical dreadnought-style armour of dark grey, white jaw markings, a huge chain-fist and a heavy combat shield, pale-blue teleport light flickering around him. He smashes the chain-fist forward in a crushing blow, a burst of sparks and blue energy at the impact around frame 13, then steps back. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+Abyss Executioners - picture (attach the basic creature as a reference)
+Single creature for a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, realistic proportions. A massive warrior in heavy dark grey assault armour covered in shark-tooth trophies, wielding a huge two-handed chain-glaive, crackling teleport energy around him. Full body, three-quarter side view facing right. Plain flat medium grey background, even light from the upper left, no ground, no shadow, no text.
+
+Abyss Executioners - movement sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping MOVEMENT cycle of the same creature in every frame: A massive warrior in heavy dark grey assault armour covered in shark-tooth trophies, wielding a huge two-handed chain-glaive, crackling teleport energy around him. He flickers forward in a burst of pale-blue teleport light, vanishing and reappearing a step ahead. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+Abyss Executioners - attack sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous MELEE ATTACK of the same creature in every frame: A massive warrior in heavy dark grey assault armour covered in shark-tooth trophies, wielding a huge two-handed chain-glaive, crackling teleport energy around him. He smashes the chain-fist forward in a crushing blow, a burst of sparks and blue energy at the impact around frame 13, then steps back. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+···· Tier 5: DROWNED WALKER  →  upgraded: LEVIATHAN WALKER   (melee, walks, big) ····
+Suggested data: Tier 5 · melee · big (two hexes) · huge Health · growth 1 a week · upgraded: +40 Health, strikes twice.
+
+Drowned Walker - picture
+Single creature for a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, realistic proportions. A huge armoured war walker shaped like a sarcophagus on two thick legs, dark gunmetal hull streaked with rust and salt, a giant white shark jaw painted across its front, a massive chain-claw arm and a harpoon arm. It is a big creature that fills two battlefield hexes, so make it look massive. Full body, three-quarter side view facing right. Plain flat medium grey background, even light from the upper left, no ground, no shadow, no text.
+
+Drowned Walker - movement sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping MOVEMENT cycle of the same creature in every frame: A huge armoured war walker shaped like a sarcophagus on two thick legs, dark gunmetal hull streaked with rust and salt, a giant white shark jaw painted across its front, a massive chain-claw arm and a harpoon arm. It is a big creature that fills two battlefield hexes, so make it look massive. A slow heavy stomping walk forward, water dripping from its hull, the claws swinging. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+Drowned Walker - attack sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous MELEE ATTACK of the same creature in every frame: A huge armoured war walker shaped like a sarcophagus on two thick legs, dark gunmetal hull streaked with rust and salt, a giant white shark jaw painted across its front, a massive chain-claw arm and a harpoon arm. It is a big creature that fills two battlefield hexes, so make it look massive. It raises a chain-claw and crushes down in front of it with a burst of sparks and spray around frame 13, then lifts it again. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+Leviathan Walker - picture (attach the basic creature as a reference)
+Single creature for a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, realistic proportions. A colossal armoured war walker of dark gunmetal and white jaw markings, seawater dripping from its hull, two massive chain-claws, shark-tooth trophies hanging from its armour. It is a big creature that fills two battlefield hexes, so make it look massive. Full body, three-quarter side view facing right. Plain flat medium grey background, even light from the upper left, no ground, no shadow, no text.
+
+Leviathan Walker - movement sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping MOVEMENT cycle of the same creature in every frame: A colossal armoured war walker of dark gunmetal and white jaw markings, seawater dripping from its hull, two massive chain-claws, shark-tooth trophies hanging from its armour. It is a big creature that fills two battlefield hexes, so make it look massive. A slow heavy stomping walk forward, water dripping from its hull, the claws swinging. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+Leviathan Walker - attack sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous MELEE ATTACK of the same creature in every frame: A colossal armoured war walker of dark gunmetal and white jaw markings, seawater dripping from its hull, two massive chain-claws, shark-tooth trophies hanging from its armour. It is a big creature that fills two battlefield hexes, so make it look massive. It raises a chain-claw and crushes down in front of it with a burst of sparks and spray around frame 13, then lifts it again. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+--------------------------------------------------------------------------
+PALE FANG 4. COMMANDERS
+--------------------------------------------------------------------------
+
+···· HIGH REAPER VOSK THE SILENT   (Pale Fang · warlord) ····
+Bio: Vosk has not spoken in two hundred years. He leads the Pale Fang from the front with a chain-glaive taller than a man, and his warriors read his orders in the way he turns his head.
+Suggested data: class warlord · specialty: Fang Reavers +1 Attack, +1 Defence per 4 levels · start skill Offense · start rite Battle Fury.
+
+A. Avatar
+Portrait of a towering silent warlord in ornate dark gunmetal-grey power armour with a white jagged shark jaw painted across his skull-faced helmet, red-stained teeth, a cloak of chains and shark teeth, cold pale-blue eye lenses, head and shoulders, painted grimdark digital art, realistic. Square image, dark smoky background, dramatic rim light, no text.
+
+B. Map look
+A black armoured hover-skimmer shaped like a shark with a painted white jaw, a warlord standing on its deck, a tall pole with a PLAIN BLANK WHITE banner for a grimdark sci-fi strategy game map. Seen from a high three-quarter angle about 45 degrees from above, facing right, small readable silhouette, painted grimdark digital art, plain flat medium grey background, no text.
+
+C. Map movement
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping MOVEMENT cycle of the same vehicle or mount in every frame: A black armoured hover-skimmer shaped like a shark with a painted white jaw, a warlord standing on its deck, a tall pole with a PLAIN BLANK WHITE banner. The skimmer glides forward low over the ground like a shark, bobbing gently, the banner streaming. Seen from a high three-quarter angle about 45 degrees from above, facing right, same size and same position in every cell, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+D. Battlefield look
+Single figure for a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, realistic proportions: a towering silent warlord in ornate dark gunmetal-grey power armour with a white jagged jaw painted across the helmet and red-stained teeth, a cloak of chains, holding a huge chain-glaive point-down. Full body, three-quarter side view facing right. Plain flat medium grey background, even light from the upper left, no ground, no shadow, no text.
+
+E. Battlefield idle
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping IDLE cycle of the same figure in every frame: a towering silent warlord in ornate dark gunmetal-grey power armour with a white jagged jaw painted across the helmet and red-stained teeth, a cloak of chains, holding a huge chain-glaive point-down. He stands perfectly still, only the chain cloak swaying and his head turning slowly. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+F. Battlefield rite (casting)
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous CASTING animation of the same figure in every frame: a towering silent warlord in ornate dark gunmetal-grey power armour with a white jagged jaw painted across the helmet and red-stained teeth, a cloak of chains, holding a huge chain-glaive point-down. He raises the chain-glaive and a storm of pale-blue void light swirls around him, bursting outward around frame 13, then he lowers it in silence. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+···· TIDE-SEER MAELA DROWNSONG   (Pale Fang · battle-mystic) ····
+Bio: Maela hears the void the way sailors hear the sea. She calls the storm that hides the fleet and the cold that freezes the enemy's blood before the reavers fall on them.
+Suggested data: class battle-mystic · specialty: Water rites +power per level · start skill Water magic · start rite Frost.
+
+A. Avatar
+Portrait of a pale woman seer in dark grey power armour hung with chains and shark teeth, a hood of black mesh, glowing pale-blue eyes, white jaw markings tattooed on her chin, frost on her armour, head and shoulders, painted grimdark digital art, realistic. Square image, dark smoky background, dramatic rim light, no text.
+
+B. Map look
+A small dark armoured boat-like grav-sled with a shark prow and a seer standing at the bow among glowing blue lanterns, a tall pole with a PLAIN BLANK WHITE banner for a grimdark sci-fi strategy game map. Seen from a high three-quarter angle about 45 degrees from above, facing right, small readable silhouette, painted grimdark digital art, plain flat medium grey background, no text.
+
+C. Map movement
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping MOVEMENT cycle of the same vehicle or mount in every frame: A small dark armoured boat-like grav-sled with a shark prow and a seer standing at the bow among glowing blue lanterns, a tall pole with a PLAIN BLANK WHITE banner. The grav-sled glides forward, lanterns swinging, mist trailing behind it, the banner waving. Seen from a high three-quarter angle about 45 degrees from above, facing right, same size and same position in every cell, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+D. Battlefield look
+Single figure for a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, realistic proportions: a pale woman seer in dark grey power armour hung with chains and shark teeth, a hood of black mesh, glowing pale-blue eyes, holding a tall staff topped with a shark jawbone crackling with blue energy. Full body, three-quarter side view facing right. Plain flat medium grey background, even light from the upper left, no ground, no shadow, no text.
+
+E. Battlefield idle
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping IDLE cycle of the same figure in every frame: a pale woman seer in dark grey power armour hung with chains and shark teeth, a hood of black mesh, glowing pale-blue eyes, holding a tall staff topped with a shark jawbone crackling with blue energy. She stands with the staff, mist curling around her feet, blue sparks running along the jawbone. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+F. Battlefield rite (casting)
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous CASTING animation of the same figure in every frame: a pale woman seer in dark grey power armour hung with chains and shark teeth, a hood of black mesh, glowing pale-blue eyes, holding a tall staff topped with a shark jawbone crackling with blue energy. She lifts the staff and a whirl of dark water and pale-blue lightning spirals up around her, crashing outward around frame 13, then calms. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+--------------------------------------------------------------------------
+PALE FANG 5. EXTRAS
+--------------------------------------------------------------------------
+
+Town on the adventure map
+A fortified raider harbour on a black shale rise: a great hall built from a ship's bow with a shark-jaw gate, gunmetal sea walls with harpoon towers, pale-blue lamps, a tall pole with a PLAIN BLANK WHITE banner over the gate for a grimdark sci-fi strategy game map. Seen from a high three-quarter angle about 45 degrees from above, facing right, compact readable silhouette that fits a 3 x 3 tile footprint, painted grimdark digital art, plain flat medium grey background, no text.
+
+Faction crest (setup screen, square)
+A heraldic crest emblem for a grimdark strategy game: a stylised white shark's open jaw with red-stained teeth on a dark gunmetal round shield, a chain around the rim and two crossed harpoons behind it, painted grimdark digital art, centred, plain flat black background, no text. Square image, 512 x 512.
+
+
+—— end of file ——

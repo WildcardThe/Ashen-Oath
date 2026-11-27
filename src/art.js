@@ -294,6 +294,7 @@ export const HERO_LOOK = {
   rustbound: { kind: 'heavy', main: '#6a5238', trim: '#b0b0a0', opt: { eye: '#9ad0ff' } },
   scrapjaw: { kind: 'heavy', main: '#7a4a2a', trim: '#d8a830', opt: { eye: '#ff5a3a' } },
   deathless: { kind: 'heavy', main: '#3a4440', trim: '#c9a24a', opt: { eye: '#5aff9a' } },
+  palefang: { kind: 'heavy', main: '#3a3e44', trim: '#d8d8d0', opt: { eye: '#8ad0ff' } },
 };
 
 // Frame-animated looks (look.anim: { walk, shoot, face }): returns the frame layout for a pose, or null.
@@ -522,7 +523,36 @@ const BACKDROPS = {
   2: { sky: ['#101612', '#2a3a1c', '#6a7a2a', '#b8c060'], hills: ['#26201a', '#18140f'], kind: 'refinery' }, // toxic marsh: refinery stacks in green haze
   3: { sky: ['#0c0a18', '#2a1a3a', '#6a3a6a', '#c07a8a'], hills: ['#1e1a2a', '#120f1c'], kind: 'bones' },    // bone fields: titan ribs and a ruined cathedral
 };
+// Painted horizons (assets/ui/horizon): one per homeland for open battles, one per faction for sieges. The picture's
+// horizon (HORIZON_AT of its height) is laid on the battlefield's top edge and it is scaled to the full width,
+// so only the skyline and a little sky show; until it has loaded the painted-by-code backdrop below stands in.
+const HORIZON_AT = 0.65, horizonCache = {};
+const TERRAIN_BIOME = { 0: 'snow', 1: 'scrap', 2: 'shale', 3: 'glass', 4: 'rust', 5: 'shale', 6: 'ash', 7: 'rust' };
+export function horizonName(terrain, siegeFaction) { return siegeFaction ? 'siege_' + siegeFaction : (TERRAIN_BIOME[terrain] || 'rust'); }
+export function loadHorizon(name) {
+  if (!horizonCache[name]) horizonCache[name] = new Promise(res => { const im = new Image(); im.onload = () => { horizonCache[name].img = im; res(im); }; im.onerror = () => res(null); im.src = `assets/ui/horizon/${name}.webp`; });
+  return horizonCache[name];
+}
+// The whole landscape fills the battle screen: its horizon on the battlefield's top edge, its own painted ground running
+// down under the hexes (cover-scaled, so it always reaches the bottom), so ground and skyline meet without a seam.
+export function drawHorizonFull(g, w, h, band, name) {
+  const im = horizonCache[name] && horizonCache[name].img; if (!im) return false;
+  // sky and skyline at the width's scale, horizon on the battlefield's top edge; the picture's own ground (below its
+  // horizon) stretched down to the bottom of the screen: one continuous picture, so no seam where the field begins
+  const k = w / im.width, hy = HORIZON_AT * im.height, skyH = hy * k;
+  g.drawImage(im, 0, 0, im.width, hy, 0, band - skyH, w, skyH);
+  g.drawImage(im, 0, hy, im.width, im.height - hy, 0, band, w, h - band);
+  if (band - skyH > 0) { g.fillStyle = 'rgb(14,12,12)'; g.fillRect(0, 0, w, band - skyH + 1); }
+  return true;
+}
+function drawHorizon(g, w, band, name) {
+  const im = horizonCache[name] && horizonCache[name].img; if (!im) return false;
+  const k = w / im.width, h = im.height * k, y = band - HORIZON_AT * h;
+  g.drawImage(im, 0, y, w, h);
+  return true;
+}
 export function drawBattleBackdrop(g, w, band, terrain, seed = 1, siege = false) {
+  if (drawHorizon(g, w, band, horizonName(terrain, typeof siege === 'string' ? siege : null))) return;
   const B = BACKDROPS[{ 4: 0, 6: 1, 7: 0, 5: 2 }[terrain] ?? (terrain == null ? 0 : terrain)] || BACKDROPS[0];
   const rnd = mulberry32(seed * 31 + 7);
   const H = band;
@@ -697,29 +727,29 @@ function blit(g, name, cx, bottom, scale) {
   return { w, h };
 }
 
-// Obstacle sets per biome (tile.b), in a volcanic and a wasteland version: hot grounds (scorched earth,
-// ash plains) get volcanic pieces, everything else wasteland pieces. Sheets: o* 5x5 (0-4 rocks or scrap,
-// 5-9 formations or wrecks, 10-14 trees, 15-19 pools, 20-24 ruins), m* 4x4 (0-7 ridges, 8-11 peaks, 12-15 foothills).
-const rng = (p, a, b) => Array.from({ length: b - a + 1 }, (_, i) => p + (a + i));
-const OBST = {
-  wasteland: [
-    [...rng('mw_', 0, 11), ...rng('mwb_', 0, 11), ...rng('mw_', 0, 7)],                               // 0 ranges
-    [...rng('ow_', 0, 14), ...rng('owb_', 0, 14), ...rng('ow_', 20, 24), ...rng('owb_', 20, 24)],      // 1 scrap, wrecks, trees, ruins
-    [...rng('ow_', 15, 19), ...rng('owb_', 15, 19)],                                                   // 2 acid pools
-    [...rng('mw_', 8, 15), ...rng('mwb_', 8, 15), 'ow_3', 'owb_4', 'ow_24'],                            // 3 crags and rubble
-    [...rng('ow_', 10, 14), ...rng('owb_', 10, 14), 'ow_10', 'owb_10', 'ow_11', 'owb_11'],              // 4 forest: dead, fungal, chained trees
-  ],
-  volcanic: [
-    [...rng('mv_', 0, 11), ...rng('mvb_', 0, 11), ...rng('mvb_', 0, 7)],
-    [...rng('ov_', 0, 14), ...rng('ov_', 20, 24), 'ov_0', 'ov_2', 'ov_4'],
-    [...rng('ov_', 15, 19), 'ov_7'],
-    [...rng('mv_', 8, 15), ...rng('mvb_', 8, 15), 'ov_5', 'ov_9'],
-    [...rng('ov_', 10, 14), 'ov_10', 'ov_11', 'ow_10', 'owb_10'],                                      // 4 charred forest
-  ],
-};
-const FLAT = /^(ow|owb)_1[5-9]$|^ov_1[5-9]$/;
+// Obstacle sets per homeland biome, chosen from the zone's ground (tile.g): frozen wastes, scrap wastes,
+// shale coast, black glass desert, ash plains, rust flats. Each biome has one mountain (plus composed
+// ridges mtn1-4), trees, rocks, a log and a lake; per tile.b: 0 ranges, 1 scattered obstacles, 2 pools,
+// 3 crags and rubble, 4 forest.
+const BIOME = { 0: 'snow', 1: 'scrap', 2: 'shale', 3: 'glass', 5: 'shale', 6: 'ash', 7: 'rust' };
+export const biomeOf = T => BIOME[T.g] || BIOME[T.t] || 'rust';
+const biomeSets = {};
+function OBSTfor(b) {
+  if (biomeSets[b]) return biomeSets[b];
+  const z = p => `tz_${b}_${p}`;
+  return (biomeSets[b] = [
+    [z('mountain'), z('mtn1'), z('mtn2'), z('mtn3'), z('mtn4'), z('mtn1'), z('mtn2'), z('mountain')],
+    [z('rocks'), z('log'), z('tree'), z('trees'), z('rocks'), z('mtn4')],
+    [z('lake')],
+    [z('rocks'), z('log'), z('mtn3'), z('mtn4'), z('rocks')],
+    [z('tree'), z('trees'), z('tree')],
+  ]);
+}
+const FLAT = /_lake$/;
 const HOT = new Set([1, 6]);
 const isHot = T => HOT.has(T.g);
+// ground under mountain ranges and woods, per biome (light on snow, dark elsewhere)
+const BED = { snow: '70,80,92', shale: '18,20,24', glass: '14,16,14', ash: '16,12,10', scrap: '30,18,12', rust: '32,20,14' };
 // Thick woods: three trees packed into each forest tile (two behind, shaded, one in front), so a forest
 // reads as a solid mass like a mountain range. Beside a road or a pickup only one small tree is drawn.
 function drawForestTile(g, T, x, y, TS, list, near) {
@@ -732,7 +762,9 @@ function drawForestTile(g, T, x, y, TS, list, near) {
   spots.forEach(([fx, fy, size, back], k) => {
     const v = (T.v >> (k * 5)) + k * 7, name = list[v % list.length], im = sprite(name);
     if (!im) return;
-    const j = ((v >> 3) % 100) / 100, tiles = size * (0.95 + j * 0.3) * (tight ? 1 : 1.05);
+    const j = ((v >> 3) % 100) / 100;
+    let tiles = size * (0.95 + j * 0.3) * (tight ? 1 : 1.05);
+    tiles = Math.min(tiles, (tight ? 1.5 : 2.0) * im.width / im.height);   // tall obelisks and pillars: cap the height
     const sc = tiles * TS / im.width, w = im.width * sc, h = im.height * sc;
     const cx = (x + fx + (j - 0.5) * 0.18) * TS, by = (y + fy + 0.02) * TS;
     const mirror = (v >> 2) & 1;
@@ -752,7 +784,7 @@ function shadedPiece(name) {
 }
 export function drawObstacleTile(g, T, x, y, TS, time = 0, near = null) {
   if (!AS) return;
-  const sets = OBST[isHot(T) ? 'volcanic' : 'wasteland'];
+  const sets = OBSTfor(biomeOf(T));
   if (T.b === 4) { drawForestTile(g, T, x, y, TS, sets[4].filter(n => sprite(n)), near); return; }
   let list = sets[near && near.crowd ? 3 : T.b || 0].filter(n => sprite(n));
   if (!list.length) return;
@@ -785,11 +817,11 @@ export function drawObstacleTile(g, T, x, y, TS, time = 0, near = null) {
   }
   const sc = tiles * TS / im.width, cx = (x + 0.5 + shift) * TS;
   // mirror pieces beside a lane on their right so the heavier side of the art leans away from it
-  const mirror = near && near.r && !near.l && (T.v & 1);
+  const mirror = near && near.r && !near.l ? (T.v & 1) : !laneSide && ((T.v >> 21) & 1);
   if (FLAT.test(name)) {
     const w = im.width * sc, h = im.height * sc, cy = (y + 0.55) * TS;
     g.drawImage(im, cx - w / 2, cy - h / 2, w, h);
-    if (name.startsWith('ov')) lavaGlow(g, cx, cy, w * 0.4, time, T.v);
+    if (name === 'tz_ash_lake') lavaGlow(g, cx, cy, w * 0.4, time, T.v);
     return;
   }
   // stacked peaks behind the main one (different pieces, offset and smaller), so no ground shows through
@@ -811,8 +843,8 @@ export function drawObstacleTile(g, T, x, y, TS, time = 0, near = null) {
   let r;
   if (mirror) { g.save(); g.translate(cx * 2, 0); g.scale(-1, 1); r = blit(g, name, cx, (y + 1.05) * TS, sc); g.restore(); }
   else r = blit(g, name, cx, (y + 1.05) * TS, sc);
-  // smoking volcano peaks: the pieces painted with a crater
-  if (r && /^mvb?_(0|8|1)$/.test(name)) volcanoSmoke(g, cx, (y + 1.05) * TS - r.h * 0.9, TS, time, T.v);
+  // ash-plain volcanoes: animated smoke rising from the crater of the main peak
+  if (r && /^tz_ash_(mountain|mtn1|mtn4)$/.test(name)) volcanoSmoke(g, cx, (y + 1.05) * TS - r.h * 0.97, TS, time, T.v);
 }
 // molten surface breathing: additive orange glow with slow drifting hot spots
 function lavaGlow(g, cx, cy, r, time, v) {
@@ -1163,14 +1195,14 @@ const BIG_CRATERS = ['crater_2', 'crater_3', 'crater_6', 'crater_8'];
 const GOO = ['goo_1', 'goo_2', 'goo_3', 'goo_4'];
 // [sprite or list, chance, size in tiles (0 = default sprite scale)]
 // Ground scatter per terrain: craters, stones, bones, and small acid or lava cracks from the new obstacle sheets.
-const ACID_BITS = ['ow_18', 'owb_18', 'owb_19'], LAVA_BITS = ['ov_17'];
+const ROCKS = b => [`tz_${b}_rocks`];
 const DECOR = {
-  0: [[SMALL_CRATERS, 0.06, 0.75], ['stones_s', 0.06, 0], [ACID_BITS, 0.02, 0.9], [BIG_CRATERS, 0.012, 1.5], ['skeleton', 0.01, 0]],
-  1: [['stones_s', 0.1, 0], [SMALL_CRATERS, 0.1, 0.8], [BIG_CRATERS, 0.03, 1.6], [LAVA_BITS, 0.025, 1.0], ['skeleton', 0.02, 0]],
-  2: [[ACID_BITS, 0.07, 1.0], ['tree_mushroom', 0.015, 0], [SMALL_CRATERS, 0.03, 0.7], ['stones_s', 0.04, 0]],
-  3: [['skeleton', 0.05, 0], ['stones_s', 0.1, 0], [SMALL_CRATERS, 0.08, 0.8], [BIG_CRATERS, 0.025, 1.5]],
-  6: [[SMALL_CRATERS, 0.08, 0.75], ['stones_s', 0.08, 0], [LAVA_BITS, 0.02, 1.0], [BIG_CRATERS, 0.02, 1.5], ['skeleton', 0.015, 0]],
-  7: [['stones_s', 0.1, 0], [SMALL_CRATERS, 0.06, 0.75], [ACID_BITS, 0.015, 0.9], ['skeleton', 0.02, 0], [BIG_CRATERS, 0.015, 1.4]],
+  0: [[SMALL_CRATERS, 0.05, 0.75], ['stones_s', 0.05, 0], [ROCKS('snow'), 0.025, 0.7], [BIG_CRATERS, 0.01, 1.5], ['skeleton', 0.008, 0]],
+  1: [['stones_s', 0.08, 0], [SMALL_CRATERS, 0.08, 0.8], [BIG_CRATERS, 0.025, 1.6], [ROCKS('scrap'), 0.03, 0.75], ['skeleton', 0.02, 0]],
+  2: [[ROCKS('shale'), 0.035, 0.7], [SMALL_CRATERS, 0.03, 0.7], ['stones_s', 0.05, 0], ['skeleton', 0.01, 0]],
+  3: [['skeleton', 0.04, 0], ['stones_s', 0.08, 0], [SMALL_CRATERS, 0.06, 0.8], [ROCKS('glass'), 0.025, 0.7], [BIG_CRATERS, 0.02, 1.5]],
+  6: [[SMALL_CRATERS, 0.08, 0.75], ['stones_s', 0.08, 0], [ROCKS('ash'), 0.025, 0.7], [BIG_CRATERS, 0.02, 1.5], ['skeleton', 0.015, 0]],
+  7: [['stones_s', 0.1, 0], [SMALL_CRATERS, 0.06, 0.75], [ROCKS('rust'), 0.025, 0.75], ['skeleton', 0.02, 0], [BIG_CRATERS, 0.015, 1.4]],
 };
 // ---------------- rivers: a seamless strip swept along a smoothed path ----------------
 function riverPoints(pts, TS) {
@@ -1188,11 +1220,12 @@ function riverPoints(pts, TS) {
 function drawRivers(g, s, TS) {
   if (!AS || !s.rivers) return;
   for (const rv of s.rivers) {
-    // magma through hot grounds, acid everywhere else
-    const hot = rv.pts.filter(([x, y]) => isHot(s.tiles[y * s.W + x])).length > rv.pts.length / 2;
-    const strip = (AS.riverStrips && AS.riverStrips[hot ? 'lava' : 'acid']) || AS.riverStrip; if (!strip) continue;
+    // the river of the biome most of its course runs through (frozen, oil, sea channel, energy, magma, acid)
+    const cnt = {}; for (const [x, y] of rv.pts) { const b = biomeOf(s.tiles[y * s.W + x]); cnt[b] = (cnt[b] || 0) + 1; }
+    const bio = Object.keys(cnt).sort((a, b) => cnt[b] - cnt[a])[0];
+    const strip = (AS.riverStrips && AS.riverStrips[bio]) || AS.riverStrip; if (!strip) continue;
     const SW = strip.width, SH = strip.height / 2;          // doubled strip: any start row has a full slice below it
-    const width = TS * 1.05, k = width / SW, step = 2, sliceH = step * 1.6;
+    const width = TS * 1.2, k = width / SW, step = 2, sliceH = step * 1.6;
     const p = riverPoints(rv.pts, TS); let dist = 0;
     for (let i = 0; i < p.length - 1; i++) {
       const [x0, y0] = p[i], [x1, y1] = p[i + 1];
@@ -1207,7 +1240,7 @@ function drawRivers(g, s, TS) {
       }
       dist += seg;
     }
-    const pond = sprite(hot ? ['pool_20', 'pool_21', 'poolb_20'][rv.pts.length % 3] : ['pool_22', 'pool_23', 'poolb_23'][rv.pts.length % 3]) || sprite('pond_' + (1 + (rv.pts.length % 3)));
+    const pond = sprite(`tz_${bio}_lake`) || sprite('pond_' + (1 + (rv.pts.length % 3)));
     if (pond && rv.pond) { const w = TS * 1.9, h = pond.height * w / pond.width; g.drawImage(pond, (rv.pond[0] + 0.5) * TS - w / 2, (rv.pond[1] + 0.5) * TS - h / 2, w, h); }
   }
 }
@@ -1279,7 +1312,7 @@ function paintGrounds(g, s, TS) {
     const wx = gx + noise(gx, gy, 1, nxA) * 0.45 + noise(gx, gy, 2, nxB) * 0.2;
     const wy = gy + noise(gx, gy, 1, nyA) * 0.45 + noise(gx, gy, 2, nyB) * 0.2;
     const tx = Math.min(W - 1, Math.max(0, Math.floor(wx))), ty = Math.min(H - 1, Math.max(0, Math.floor(wy)));
-    id[y * mw + x] = s.tiles[ty * W + tx].t;
+    const TT = s.tiles[ty * W + tx]; id[y * mw + x] = TT.t === 4 || TT.t === 5 ? (TT.g ?? 0) : TT.t;   // mountains and pools stand on their zone's ground
   }
   const k = TS / 48 * 0.33;
   // rock first (it underlies everything), then each ground type painted through its own soft mask
@@ -1329,7 +1362,8 @@ export function paintTerrain(s, TS, occupied) {
       if (m < 7) continue;
       const cx = (x + 0.5) * TS, cy = (y + 0.5) * TS, r = TS * (0.42 + (m - 7) * 0.12);
       const gr = g.createRadialGradient(cx, cy, 0, cx, cy, r);
-      gr.addColorStop(0, `rgba(22,18,16,${0.3 + (m - 5) * 0.08})`); gr.addColorStop(0.7, `rgba(22,18,16,${0.15 + (m - 5) * 0.04})`); gr.addColorStop(1, 'rgba(22,18,16,0)');
+      const bc = BED[biomeOf(s.tiles[y * s.W + x])] || '22,18,16';
+      gr.addColorStop(0, `rgba(${bc},${0.3 + (m - 5) * 0.08})`); gr.addColorStop(0.7, `rgba(${bc},${0.15 + (m - 5) * 0.04})`); gr.addColorStop(1, `rgba(${bc},0)`);
       g.fillStyle = gr; g.fillRect(cx - r, cy - r, r * 2, r * 2);
     }
     g.restore();
@@ -1341,13 +1375,13 @@ export function paintTerrain(s, TS, occupied) {
       const T = s.tiles[y * s.W + x]; if (T.t !== 4 || T.b !== 4) continue;
       const cx = (x + 0.5) * TS, cy = (y + 0.6) * TS, r = TS * 0.95;
       const gr = g.createRadialGradient(cx, cy, 0, cx, cy, r);
-      gr.addColorStop(0, 'rgba(24,20,12,0.7)'); gr.addColorStop(0.6, 'rgba(24,20,12,0.4)'); gr.addColorStop(1, 'rgba(24,20,12,0)');
+      const bc = BED[biomeOf(T)] || '24,20,12';
+      gr.addColorStop(0, `rgba(${bc},0.7)`); gr.addColorStop(0.6, `rgba(${bc},0.4)`); gr.addColorStop(1, `rgba(${bc},0)`);
       g.fillStyle = gr; g.fillRect(cx - r, cy - r, r * 2, r * 2);
     }
     g.restore();
   }
   // acid pools: one pond sprite per connected cluster (split along its length when elongated)
-  const PONDS = ['pool_22', 'pool_23', 'poolb_22', 'poolb_23'];   // acid pools in cracked concrete
   const seenP = new Uint8Array(s.W * s.H);
   for (let i0 = 0; i0 < s.W * s.H; i0++) {
     if (seenP[i0] || s.tiles[i0].t !== 5) continue;
@@ -1361,7 +1395,7 @@ export function paintTerrain(s, TS, occupied) {
       }
     }
     const w = x1 - x0 + 1, h = y1 - y0 + 1, n = Math.max(1, Math.round(Math.max(w, h) / Math.min(w, h) / 1.6));
-    const hot = isHot(s.tiles[i0]), list = hot ? ['pool_20', 'pool_21', 'poolb_20', 'poolb_21'] : PONDS;
+    const list = [`tz_${biomeOf(s.tiles[i0])}_lake`];
     for (let k = 0; k < n; k++) {
       const im = sprite(list[(i0 + k) % list.length]) || sprite('pond_' + (1 + (i0 + k) % 3));
       if (!im) continue;

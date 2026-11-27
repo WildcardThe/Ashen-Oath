@@ -169,17 +169,42 @@ const TRACK_GAIN = { menu: 1.6, concord: 1.5, hollow: 2.0, rustbound: 2.2, battl
 let nextT = 0, stepI = 0;
 function tick() {
   if (!ctx || !current) return;
-  const tr = TRACKS[current.name];
+  if (current.file) return;
+  const tr = TRACKS[current.name] || TRACKS.concord;
   while (nextT < ctx.currentTime + 0.25) { tr.play(current.out, stepI++, nextT); nextT += tr.step; }
 }
 // Switch music with a crossfade. Names: menu, concord, hollow, battle, siege.
+// Recorded loops (assets/audio/<name>.mp3) replace the synthesised theme of the same name when present.
+const FILE_TRACKS = new Set(['adventure', 'menu', 'concord', 'hollow', 'rustbound', 'scrapjaw', 'deathless', 'palefang']);
+const FILE_GAIN = 0.55, buffers = {};
+function loadTrack(name) {
+  if (!buffers[name]) buffers[name] = fetch(`assets/audio/${name}.mp3`).then(r => { if (!r.ok) throw new Error(r.status); return r.arrayBuffer(); })
+    .then(b => ctx.decodeAudioData(b)).then(trimSilence).catch(() => null);
+  return buffers[name];
+}
+// mp3 encoders pad the start and end with silence: cut it so the loop point stays seamless
+function trimSilence(buf) {
+  const d = buf.getChannelData(0); let a = 0, b = d.length - 1;
+  while (a < d.length && Math.abs(d[a]) < 1e-4) a++;
+  while (b > a && Math.abs(d[b]) < 1e-4) b--;
+  if (a === 0 && b === d.length - 1) return buf;
+  const out = ctx.createBuffer(buf.numberOfChannels, b - a + 1, buf.sampleRate);
+  for (let c = 0; c < buf.numberOfChannels; c++) out.getChannelData(c).set(buf.getChannelData(c).subarray(a, b + 1));
+  return out;
+}
 A.music = (name, force = false) => {
   wanted = name;
   if (!ctx || (!force && current && current.name === name)) return;
   const t = ctx.currentTime;
-  if (current) { const old = current.out; old.gain.setTargetAtTime(0.0001, t, 0.6); setTimeout(() => old.disconnect(), 4000); }
-  const out = ctx.createGain(); out.gain.setValueAtTime(0.0001, t); out.gain.setTargetAtTime(TRACK_GAIN[name] || 1, t + 0.1, 0.8); out.connect(musicBus);
-  current = { name, out }; stepI = 0; nextT = t + 0.15;
+  if (current) { const old = current; old.out.gain.setTargetAtTime(0.0001, t, 0.6); setTimeout(() => { try { old.src?.stop(); } catch { /* not started */ } old.out.disconnect(); }, 4000); }
+  const file = FILE_TRACKS.has(name);
+  const out = ctx.createGain(); out.gain.setValueAtTime(0.0001, t); out.gain.setTargetAtTime(file ? FILE_GAIN : TRACK_GAIN[name] || 1, t + 0.1, 0.8); out.connect(musicBus);
+  const cur = { name, out, file }; current = cur; stepI = 0; nextT = t + 0.15;
+  if (file) loadTrack(name).then(buf => {
+    if (current !== cur) return;
+    if (!buf) { cur.file = false; out.gain.setTargetAtTime(TRACK_GAIN[name] || 1, ctx.currentTime, 0.5); nextT = ctx.currentTime + 0.1; return; }   // fall back to the synth theme
+    const src = ctx.createBufferSource(); src.buffer = buf; src.loop = true; src.connect(out); src.start(); cur.src = src;
+  });
 };
 
 // ---------------------------------------------------------------- effects

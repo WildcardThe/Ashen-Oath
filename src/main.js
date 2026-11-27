@@ -66,9 +66,10 @@ async function loadAssets() {
   // sprites packed into an atlas (structures, mines, their glow) are cut back out into canvases
   const names = [...Object.keys(manifest).filter(n => !manifest[n].atlas), ...D.RES.map(r => 'icon_' + r)];
   const atlases = [...new Set(Object.values(manifest).map(m => m.atlas).filter(Boolean))];
+  const atlasExt = {}; for (const m of Object.values(manifest)) if (m.atlas && m.aext) atlasExt[m.atlas] = m.aext;
   const spr = {}, atl = {};
   await Promise.all([...names.map(async n => { spr[n] = await loadImage(`assets/sprites/${n}.${manifest[n]?.ext || 'png'}`); }),
-    ...atlases.map(async a => { atl[a] = await loadImage(`assets/sprites/${a}.png`); })]);
+    ...atlases.map(async a => { atl[a] = await loadImage(`assets/sprites/${a}.${atlasExt[a] || 'png'}`); })]);
   for (const [n, m] of Object.entries(manifest)) if (m.atlas && atl[m.atlas]) {
     const c = document.createElement('canvas'); c.width = m.w; c.height = m.h;
     c.getContext('2d').drawImage(atl[m.atlas], m.x, m.y, m.w, m.h, 0, 0, m.w, m.h); spr[n] = c;
@@ -82,9 +83,9 @@ async function loadAssets() {
     const im = spr.river_strip; riverStrip = document.createElement('canvas'); riverStrip.width = im.width; riverStrip.height = im.height * 2;
     const rg = riverStrip.getContext('2d'); rg.drawImage(im, 0, 0); rg.drawImage(im, 0, im.height);
   }
-  // acid and magma river strips, doubled so any start row has a full slice below it
+  // one river strip per biome, doubled so any start row has a full slice below it
   const riverStrips = {};
-  for (const [k, n] of [['acid', 'river_acid'], ['lava', 'river_lava']]) {
+  for (const [k, n] of ['snow', 'scrap', 'shale', 'glass', 'ash', 'rust'].map(b => [b, 'river_' + b])) {
     const im = spr[n]; if (!im) continue;
     const c = document.createElement('canvas'); c.width = im.width; c.height = im.height * 2;
     const cg = c.getContext('2d'); cg.drawImage(im, 0, 0); cg.drawImage(im, 0, im.height); riverStrips[k] = c;
@@ -243,7 +244,11 @@ function showSlots(mode) {
 
 // ---------------- screens ----------------
 // music follows the screen: menu theme, the player's faction on the map, war drums in battle
-const mapMusic = () => (G.s ? ({ hollow: 'hollow', rustbound: 'rustbound', scrapjaw: 'rustbound', deathless: 'hollow' }[G.s.players[0].faction] || 'concord') : 'menu');
+// the adventure map plays a calm ambient loop (assets/audio/adventure.mp3) once it exists; until then the faction theme
+let adventureTrack = false;
+fetch('assets/audio/adventure.mp3', { method: 'HEAD' }).then(r => { adventureTrack = r.ok; }).catch(() => {});
+const mapMusic = () => (G.s ? (adventureTrack ? 'adventure' : G.s.players[0].faction || 'concord') : 'menu');
+const townMusic = t => t.faction;
 function applyVolumes() { const v = k => ({ off: 0, low: 0.3, mid: 0.6, high: 1 })[opt(k)]; Audio.setVolumes(v('music') * 0.8, v('sfx')); }
 function showScreen(name) {
   for (const id of ['intro', 'menu', 'title', 'game', 'farewell']) $('#' + id).hidden = id !== name;
@@ -750,7 +755,7 @@ const statIcon = k => canvasURL('st:' + k, 40, 40, g => {
   if (k === 'grow') { g.fillStyle = gold; g.font = 'bold 30px sans-serif'; g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillText('#', 20, 21); g.strokeText('#', 20, 21); }
   if (k === 'know') { poly([[4, 10], [20, 6], [20, 34], [4, 37]], '#7a3a2a'); poly([[36, 10], [20, 6], [20, 34], [36, 37]], '#8a4a32'); poly([[7, 12], [18, 9], [18, 31], [7, 34]], '#efe4c8'); poly([[33, 12], [22, 9], [22, 31], [33, 34]], '#efe4c8'); }
 });
-const TOWN_SPRITE = { concord: true, hollow: true, rustbound: true, scrapjaw: true, deathless: true };
+const TOWN_SPRITE = { concord: true, hollow: true, rustbound: true, scrapjaw: true, deathless: true, palefang: true };
 const townThumb = t => (TOWN_SPRITE[t.faction] ? `assets/sprites/town_${t.faction}.png`
   : canvasURL('tt:' + t.faction, 120, 100, g => A.drawTown(g, 60, 58, 42, t.faction, '#8d8478', 0)));
 const selTown = () => (G.s && ui.selTownId != null ? G.s.objects[ui.selTownId] : null);
@@ -762,7 +767,7 @@ function heroInfoHtml(h) {
         <div class="ib-stats">${['atk', 'def', 'pow', 'know'].map(k => `<div title="${D.STAT_NAMES[k]}"><img src="${statIcon(k)}" alt="${D.STAT_NAMES[k]}"><b>${D.hstat(h, k)}</b></div>`).join('')}</div></div></div>
     <div class="ib-line"><span title="Morale: extra turns when high, lost turns when low">Morale <b>${fmtSign(D.heroMorale(h))}</b></span><span title="Luck: chance of double damage">Luck <b>${fmtSign(D.heroLuck(h))}</b></span><span>Mana <b>${h.mana}/${D.maxMana(h)}</b></span><span>Move <b>${h.mp}</b></span></div>
     <div class="ib-army">${armySlots(h.army, 'data-act="unit"')}</div>
-    <div class="hc-btns"><button class="btn sm" data-act="hero" title="Commander screen (I)">Commander</button><button class="btn sm" data-act="book" title="Spellbook (B)">Spellbook</button></div>
+    <div class="hc-btns"><button class="btn sm" data-act="hero" title="Commander screen (I)">Commander</button><button class="btn sm" data-act="book" title="Rites (B)">Rites</button></div>
     <div class="hc-btns">${(() => { const tt = Gm.objAt(h.x, h.y); return tt && tt.type === 'town' && tt.owner === 0 ? `<button class="btn sm primary" data-act="enter" data-id="${tt.id}">Enter ${esc(tt.name)}</button>` : ''; })()}<button class="btn sm" data-act="sleep" title="Rest: skipped by Next (Z)">${h.sleep ? 'Wake' : 'Rest'}</button></div>
     ${ui.path ? `<p class="route">Route: ${Math.ceil(ui.path[ui.path.length - 1].total / D.DAY_MP * 10) / 10} days of travel. Click the target again or press Space to march.</p>` : ''}`;
 }
@@ -881,7 +886,19 @@ async function openExchange(a, b) {
 
 // ---------------- town screen (HoMM-style panorama) ----------------
 const townArt = {};
-const TOWN_ART_FACTIONS = ['concord', 'hollow', 'rustbound', 'scrapjaw', 'deathless'];
+const TOWN_ART_FACTIONS = ['concord', 'hollow', 'rustbound', 'scrapjaw', 'deathless', 'palefang'];
+// Picture of one building for cards and windows: cut from the loaded town art (buildings live in an atlas).
+const townArtLoaded = {}, bpicCache = {};
+function buildingPic(faction, id) {
+  const key = faction + '/' + id;
+  if (bpicCache[key]) return bpicCache[key];
+  const im = townArtLoaded[faction]?.imgs[id];
+  if (!im) return `assets/town/${faction}/${id}.webp`;
+  const c = document.createElement('canvas'), k = Math.min(1, 320 / Math.max(im.width, im.height));
+  c.width = Math.round(im.width * k); c.height = Math.round(im.height * k);
+  c.getContext('2d').drawImage(im, 0, 0, c.width, c.height);
+  return (bpicCache[key] = c.toDataURL('image/webp', 0.85));
+}
 function loadTownArt(faction) {
   if (!TOWN_ART_FACTIONS.includes(faction)) return Promise.resolve(null);
   if (!townArt[faction]) {
@@ -904,7 +921,7 @@ function loadTownArt(faction) {
         if (meta[k].anim) anim[k] = await loadImage(dir + k + '_anim.webp').catch(() => null);
       }));
       return { base: await loadImage(dir + 'base.webp'), imgs, meta, glow, anim };
-    })().catch(() => null);
+    })().then(a => (townArtLoaded[faction] = a)).catch(() => null);
   }
   return townArt[faction];
 }
@@ -920,10 +937,11 @@ function openTown(t) {
     $('#modal-root').append(wrap);
     const root = wrap.firstChild, cv = root.querySelector('#tv-canvas'), label = root.querySelector('.tv-label');
     const panel = root.querySelector('.tv-panel'), bottom = root.querySelector('.tv-bottom');
-    let scene = null, hover = null, current = 'none', popup = null, fortPick = null, armies = {}, raf = 0;
+    let scene = null, hover = null, current = 'none', popup = null, fortPick = null, hallPick = null, armies = {}, raf = 0;
     const pop = root.querySelector('.tv-pop');
-    const close = () => { cancelAnimationFrame(raf); wrap.remove(); document.removeEventListener('keydown', onKey); updateUI(); resolve(); };
-    const onKey = e => { if (e.key !== 'Escape' || e.target.matches('input') || $('#modal-root').lastChild !== wrap) return; if (popup) { popup = null; render(); } else close(); };
+    Audio.music(townMusic(t));   // each town plays its faction's theme
+    const close = () => { cancelAnimationFrame(raf); wrap.remove(); document.removeEventListener('keydown', onKey); Audio.music(mapMusic()); updateUI(); resolve(); };
+    const onKey = e => { if (e.key !== 'Escape' || e.target.matches('input') || $('#modal-root').lastChild !== wrap) return; if (popup === 'hall' && hallPick) { hallPick = null; render(); } else if (popup) { popup = null; render(); } else close(); };
     document.addEventListener('keydown', onKey);
 
     async function rebuildScene() {
@@ -970,12 +988,12 @@ function openTown(t) {
       else label.hidden = true;
     });
     cv.addEventListener('pointerleave', () => { hover = null; label.hidden = true; });
-    cv.addEventListener('click', e => { const r = regionAt(e); if (!r) return; if (r.key === 'tavern') { openRecruitment(t).then(render); return; } if (/^dw\d$/.test(r.key) && t.built[r.key]) { openDwelling(t, D.FACTIONS[t.faction].units[+r.key[2] - 1]).then(() => { render(); updateTop(); }); return; } if (r.key === 'hall' || r.key === 'fort') { popup = r.key; fortPick = null; } else current = r.key; render(); });
+    cv.addEventListener('click', e => { const r = regionAt(e); if (!r) return; if (r.key === 'tavern') { openRecruitment(t).then(render); return; } if (r.key === 'guild') { openGuildRoom(t).then(render); return; } if (/^dw\d$/.test(r.key) && t.built[r.key]) { openDwelling(t, D.FACTIONS[t.faction].units[+r.key[2] - 1]).then(() => { render(); updateTop(); }); return; } if (r.key === 'hall' || r.key === 'fort') { popup = r.key; fortPick = null; hallPick = null; } else current = r.key; render(); });
 
     // ---- panels ----
     function hallPanel(p) {
       const art = TOWN_ART_FACTIONS.includes(t.faction);
-      const pic = id => (art ? `<img src="assets/town/${t.faction}/${id}.webp" alt="">` : `<span class="ph">${esc(D.buildingName(t.faction, id)[0])}</span>`);
+      const pic = id => (art ? `<img src="${buildingPic(t.faction, id)}" alt="">` : `<span class="ph">${esc(D.buildingName(t.faction, id)[0])}</span>`);
       // Each chain shows one card: its next unbuilt step, or its top level once complete.
       const chain = ids => ids.find(id => !t.built[id]) || ids[ids.length - 1];
       const groups = [
@@ -997,6 +1015,38 @@ function openTown(t) {
       };
       return `<h3>${t.built.hall3 ? 'Capitol' : t.built.hall2 ? 'City Hall' : 'Town Hall'} · construction <small class="muted">${t.builtToday ? 'One structure was raised today. Come back tomorrow.' : 'One structure may be raised each day.'}</small></h3>
         ${groups.map(([name, ids]) => `<div class="hall-group"><h4>${name}</h4><div class="hall-grid">${ids.map(card).join('')}</div></div>`).join('')}`;
+    }
+    // Construction window (painted): eleven cards in rows of 4, 3 and 4, each with a status ribbon
+    // (gold built, green can build, red cannot) and a tick or cross; a card opens its build panel.
+    function hallWindow(p) {
+      const art = TOWN_ART_FACTIONS.includes(t.faction);
+      const chain = ids => ids.find(id => !t.built[id]) || ids[ids.length - 1];
+      const ids = [chain(['hall2', 'hall3']), chain(['fort', 'citadel', 'castle']), chain(['mg1', 'mg2', 'mg3', 'mg4', 'mg5']), 'tavern',
+        'market', 'depot', chain(['dw1', 'dw1u']), ...[2, 3, 4, 5].map(n => chain(['dw' + n, 'dw' + n + 'u']))];
+      const rows = [ids.slice(0, 4), ids.slice(4, 7), ids.slice(7)];
+      const name = id => D.buildingName(t.faction, id);
+      const card = id => {
+        const st = Gm.buildStatus(t, id, p.res), rib = st === 'built' ? 'gold' : st === 'ok' ? 'green' : 'red';
+        const mark = st === 'built' ? 'tick' : st === 'ok' ? '' : 'x';
+        return `<button class="th-card ${st} ${hallPick === id ? 'sel' : ''}" data-act="hpick" data-id="${id}" title="${esc(name(id))}">
+          <span class="th-pic">${art ? `<img src="${buildingPic(t.faction, id)}" alt="">` : `<span class="ph">${esc(name(id)[0])}</span>`}</span>
+          ${mark ? `<img class="th-mark" src="assets/ui/townhall/mark_${mark}.webp" alt="">` : ''}
+          <span class="th-rib" style="background-image:url(assets/ui/townhall/ribbon_${rib}.webp)"><span>${esc(name(id))}</span></span></button>`;
+      };
+      let detail = '';
+      if (hallPick) {
+        const id = hallPick, st = Gm.buildStatus(t, id, p.res), cost = D.buildingCost(t.faction, id);
+        const reqNames = D.BUILDINGS[id].req.filter(r => !t.built[r]).map(r => name(r)).join(', ');
+        const why = st === 'built' ? 'Already built.' : st === 'ok' ? '' : st === 'cost' ? 'Not enough resources.' : st === 'today' ? 'A structure was already raised today.' : `Requires ${reqNames}.`;
+        detail = `<div class="th-detail"><div class="th-dpic">${art ? `<img src="${buildingPic(t.faction, id)}" alt="">` : ''}</div>
+          <div class="th-dtxt"><h4>${esc(name(id))}</h4><p>${esc(D.buildingDesc(t.faction, id))}</p>
+          ${st !== 'built' ? `<div class="costs">${costHtml(cost)}</div>` : ''}${why ? `<p class="th-why ${st}">${esc(why)}</p>` : ''}
+          <div class="th-dbtn">${st === 'ok' ? `<button class="btn primary" data-act="build" data-id="${id}">Build</button>` : ''}<button class="btn" data-act="hpclose">${st === 'ok' ? 'Cancel' : 'Close'}</button></div></div></div>`;
+      }
+      return `<div class="th-win"><div class="th-title">${esc(t.built.hall3 ? 'Capitol' : t.built.hall2 ? 'City Hall' : 'Town Hall')}</div>
+        <div class="th-area">${rows.map(r => `<div class="th-row">${r.map(card).join('')}</div>`).join('')}</div>
+        <div class="th-bar">${t.builtToday ? 'One structure was raised today. Come back tomorrow.' : 'One structure may be raised each day.'}</div>
+        <button class="th-close" data-act="popclose" title="Close (Esc)" aria-label="Close"></button>${detail}</div>`;
     }
     function recruitRow(u, i, p) {
       const ty = Gm.recruitType(t, u), U = D.UNITS[ty], avail = t.avail[u] || 0, max = Gm.maxRecruit(t, u, p.res);
@@ -1023,7 +1073,7 @@ function openTown(t) {
         const tier = i + 1, built = t.built['dw' + tier], bk = t.built['dw' + tier + 'u'] ? 'dw' + tier + 'u' : 'dw' + tier;
         const ty = Gm.recruitType(t, u), U = D.UNITS[ty];
         return `<button class="fcard2 ${built ? '' : 'locked'} ${fortPick === u ? 'sel' : ''}" data-act="fpick" data-u="${u}" ${built ? '' : 'disabled'} title="${built ? 'Click to recruit' : 'Not built yet'}">
-          <div class="fc-build"><b>${esc(U.name)}</b><div class="fc-pic">${art ? `<img src="assets/town/${t.faction}/${bk}.webp" alt="">` : ''}</div>
+          <div class="fc-build"><b>${esc(U.name)}</b><div class="fc-pic">${art ? `<img src="${buildingPic(t.faction, bk)}" alt="">` : ''}</div>
             <small>${esc(D.buildingName(t.faction, bk))}</small><small class="avail">${built ? `Available: ${t.avail[u] || 0}` : 'Not built'}</small></div>
           <div class="fc-unit"><img src="${portrait(ty)}" alt="${esc(U.name)}"></div>
           <div class="fc-stats">${stat('atk', 'Attack', U.atk)}${stat('def', 'Defence', U.def)}${stat('dmg', 'Damage', `${U.min}–${U.max}`)}${stat('hp', 'Health', U.hp)}${stat('spd', 'Speed', U.spd)}${stat('grow', 'Growth', Math.floor(D.UNITS[u].growth * Gm.growthMult(t)))}</div></button>`;
@@ -1058,20 +1108,23 @@ function openTown(t) {
       armies = { gar: { arr: t.garrison, hero: false } };
       if (h) armies.hero = { arr: h.army, hero: true };
       let html = '';
-      if (current === 'none' || current === 'hall' || current === 'fort') html = '<p class="muted tv-hint">Click a building in the town to use it. The town hall opens construction, the fort shows all your creatures.</p>';
+      if (current === 'none' || current === 'hall' || current === 'fort') html = '';
       else if (current.startsWith('dw')) { const tier = +current[2]; html = `<h3>${esc(regionName(current))}</h3><div class="rlist">${recruitRow(us[tier - 1], tier - 1, p)}</div>${t.built['dw' + tier + 'u'] ? '' : `<p class="muted">Build ${esc(D.FACTIONS[t.faction].dwellU[tier - 1])} in the town hall to recruit ${esc(D.UNITS[D.UNITS[us[tier - 1]].upgrade].name)}.</p>`}`; }
       else if (current === 'guild') html = guildPanel(h);
       else if (current === 'market') html = marketPanel(p);
       else if (current === 'tavern') html = tavernPanel(h);
       else if (current === 'depot') html = '<h3>Supply Depot</h3><p class="muted">Stores and convoys raise the weekly growth of every unit by 50%.</p>';
       const quote = Gm.upgradeQuote(t, [t.garrison, ...(h ? [h.army] : [])]);
-      panel.innerHTML = html;
+      panel.innerHTML = html; panel.hidden = !html;
       showRate();
       pop.hidden = !popup;
       if (popup) {
-        pop.className = 'tv-pop ' + popup;
+        pop.className = 'tv-pop ' + popup + (popup === 'hall' ? ' th' : '');
+        if (popup === 'hall') pop.querySelector('.tv-pop-body').innerHTML = hallWindow(p);
+        else {
         pop.querySelector('h3').textContent = popup === 'hall' ? `${t.built.hall3 ? 'Capitol' : t.built.hall2 ? 'City Hall' : 'Town Hall'} · construction` : `${regionName('fort')} · ${t.name}`;
         pop.querySelector('.tv-pop-body').innerHTML = popup === 'hall' ? hallPanel(p).replace(/^<h3>[\s\S]*?<\/h3>/, `<p class="muted">${t.builtToday ? 'One structure was raised today. Come back tomorrow.' : 'One structure may be raised each day.'}</p>`) : fortWindow(p);
+        }
       }
       bottom.innerHTML = `
         <div class="tvb-head"><div><small class="eyebrow">${esc(D.FACTIONS[t.faction].name)}</small><h2>${esc(t.name)}</h2>
@@ -1095,13 +1148,16 @@ function openTown(t) {
       const act = b.dataset.act, p = G.s.players[0];
       if (act === 'close') return close();
       if (act === 'nav' && b.dataset.k === 'tavern') { openRecruitment(t).then(render); return; }
+      if (act === 'nav' && b.dataset.k === 'guild') { openGuildRoom(t).then(render); return; }
       if (act === 'recruit-open') { openRecruitment(t).then(render); return; }
       if (act === 'nav') { current = b.dataset.k; popup = null; return render(); }
-      if (act === 'pop') { popup = b.dataset.k; fortPick = null; return render(); }
+      if (act === 'pop') { popup = b.dataset.k; fortPick = null; hallPick = null; return render(); }
+      if (act === 'hpick') { hallPick = b.dataset.id; return render(); }
+      if (act === 'hpclose') { hallPick = null; return render(); }
       if (act === 'popclose') { popup = null; return render(); }
       if (act === 'fpick') { openDwelling(t, b.dataset.u).then(() => { render(); updateTop(); }); return; }
       if (act === 'hero') { const h = Gm.heroAt(t.x, t.y); if (h) openHero(h).then(() => render()); return; }
-      if (act === 'build') { const id = b.dataset.id; if (Gm.build(t, id)) { Audio.sfx('build'); toast(`${D.buildingName(t.faction, id)} completed.`); rebuildScene(); const h = Gm.heroAt(t.x, t.y); if (h && /^mg/.test(id)) Gm.visitTown(h, t); } }
+      if (act === 'build') { const id = b.dataset.id; hallPick = null; if (Gm.build(t, id)) { Audio.sfx('build'); toast(`${D.buildingName(t.faction, id)} completed.`); rebuildScene(); const h = Gm.heroAt(t.x, t.y); if (h && /^mg/.test(id)) Gm.visitTown(h, t); } }
       if (act === 'info') return unitInfo(b.dataset.u);
       if (act === 'max') { const inp = root.querySelector(`#rq-${b.dataset.u}`); inp.value = inp.max; return; }
       if (act === 'recruit') {
@@ -1150,7 +1206,7 @@ function openDwelling(t, u) {
         if (n == null || n > max) n = max;
         el.innerHTML = `
           <div class="dw-top">
-            ${art ? `<div class="dw-build"><img src="assets/town/${t.faction}/${bk}.webp" alt=""></div>` : ''}
+            ${art ? `<div class="dw-build"><img src="${buildingPic(t.faction, bk)}" alt=""></div>` : ''}
             <button class="dw-unit" data-dw="info" title="Details"><img src="${portrait(ty)}" alt="${esc(U.name)}"></button>
             <div class="dw-stats"><b class="dw-name">${esc(U.name)}</b><small class="muted">Tier ${U.tier}${U.upgraded ? ' · upgraded' : ''}${U.big ? ' · large' : ''}</small>
               ${stat('atk', 'Attack', U.atk)}${stat('def', 'Defence', U.def)}${stat('dmg', 'Damage', `${U.min}–${U.max}`)}${stat('hp', 'Health', U.hp)}${stat('spd', 'Speed', U.spd)}${U.shots ? stat('atk', 'Shots', U.shots) : ''}</div>
@@ -1190,6 +1246,29 @@ function openDwelling(t, u) {
       render();
     },
   });
+}
+
+// ---------------- Mage guild window: the faction's painted room, rites in the niches, vaults for unbuilt levels ----------------
+let GUILD_NICHES = null;
+async function openGuildRoom(t) {
+  if (!GUILD_NICHES) GUILD_NICHES = await (await fetch('assets/ui/guild/niches.json')).json().catch(() => ({}));
+  const fac = GUILD_NICHES[t.faction] ? t.faction : 'concord', N = GUILD_NICHES[fac], lvl = Gm.guildLevel(t), h = Gm.heroAt(t.x, t.y);
+  const { riteIcon, riteIconsReady } = await import('./terminal.js'); await riteIconsReady;
+  const pct = ([x0, y0, x1, y1]) => `left:${x0 / 13.76}%;top:${y0 / 7.68}%;width:${(x1 - x0) / 13.76}%;height:${(y1 - y0) / 7.68}%`;
+  let html = `<div class="gr-room" style="background-image:url(assets/ui/guild/room_${fac}.webp)">`;
+  for (let l = 1; l <= 5; l++) (N[l] || []).forEach((box, i) => {
+    const sp = (t.guild?.[l] || [])[i];
+    if (!sp) return;
+    if (l > lvl) html += `<div class="gr-niche locked" style="${pct(box)}" title="Level ${l}: build the next level of the guild to reveal this rite"><img src="assets/ui/guild/vault_${fac}.webp" alt=""></div>`;
+    else { const S = D.SPELLS[sp]; html += `<button class="gr-niche" data-sp="${sp}" style="${pct(box)}" title="${esc(S.name)} · level ${l} · ${S.cost} mana">${riteIcon(sp, S.school)}</button>`; }
+  });
+  html += `<div class="gr-info" id="gr-info">${h ? `${esc(h.name)} can learn rites up to level ${D.maxSpellLevel(h)}.` : 'Commanders who visit learn every rite here up to the level their Wisdom allows.'} Click a rite to read it.</div></div>`;
+  return modal({ title: `Mage Guild · level ${lvl}`, cls: 'guildroom', html, buttons: [{ label: 'Close', value: null, primary: true }],
+    onMount: wrap => wrap.querySelector('.gr-room').addEventListener('click', e => {
+      const b = e.target.closest('[data-sp]'); if (!b) return; const S = D.SPELLS[b.dataset.sp];
+      wrap.querySelectorAll('.gr-niche.sel').forEach(x => x.classList.remove('sel')); b.classList.add('sel');
+      wrap.querySelector('#gr-info').innerHTML = `<b>${esc(S.name)}</b> · ${D.SCHOOLS[S.school]} · level ${S.level} · ${S.cost} mana${S.kind === 'adventure' ? ' · map rite' : ''}<br>${esc(D.spellDesc(h, b.dataset.sp))}`;
+    }) });
 }
 
 // ---------------- Recruitment Office (two commanders for hire, as in a tavern) ----------------
@@ -1262,7 +1341,7 @@ function openHero(h) {
       const html = [];
       html.push(`<img class="t-el t-por" src="${heroAvatar(h.name)}" alt="" style="${T.at(124, 88, 90, 90)}">`);
       html.push(`<div class="t-el t-name-big" style="${T.at(234, 81, 629, 41)}">${esc(h.name.toUpperCase())}</div>`);
-      html.push(`<div class="t-el t-line" style="${T.at(234, 131, 341, 21)}">LVL ${h.level} ${h.cls === 'magic' ? 'BATTLE-MYSTIC' : 'WARLORD'} · ${h.xp.toLocaleString()}/${D.xpForLevel(h.level + 1).toLocaleString()} XP</div>`);
+      html.push(`<div class="t-el t-line" style="${T.at(234, 131, 341, 21)};font-size:.88em">LVL ${h.level} ${h.cls === 'magic' ? 'BATTLE-MYSTIC' : 'WARLORD'} · ${h.xp.toLocaleString()}/${D.xpForLevel(h.level + 1).toLocaleString()} XP</div>`);
       html.push(`<div class="t-el t-line" style="${T.at(234, 160, 629, 21)}" title="${esc(D.specText(h.name))}">SPECIALTY // ${esc(D.specText(h.name))}</div>`);
       const stats = [['ATK', D.hstat(h, 'atk')], ['DEF', D.hstat(h, 'def')], ['POW', D.hstat(h, 'pow')], ['KNW', D.hstat(h, 'know')],
         ['MOR', fmtSign(D.heroMorale(h))], ['LCK', fmtSign(D.heroLuck(h))], ['MANA', `${h.mana}/${D.maxMana(h)}`], ['MOVE', `${Math.floor(h.mp / 100)}/${Math.floor(D.maxMp(h) / 100)}`]];
@@ -1378,10 +1457,21 @@ io.quickResult = (b, side) => {
     html: `<p>${won ? 'The battle was decided quickly in your favour.' : 'Your forces were overwhelmed.'}</p><div class="cas"><div><h4>Your losses</h4><ul class="losses">${list(side)}</ul></div><div><h4>Enemy losses</h4><ul class="losses">${list(1 - side)}</ul></div></div>${won ? `<p class="xp">${b.kills[1 - side]} experience gained.</p>` : ''}` });
 };
 io.chest = h => modal({
-  title: 'Supply cache',
-  html: '<p>Your scouts break open a sealed supply cache from the last war.</p>',
-  buttons: [{ label: 'Take 1,000 auramite', value: 'auramite', primary: true, cancel: true }, { label: 'Study the battle logs (+750 XP)', value: 'xp' }],
-});
+  title: '', cls: 'choicebox', buttons: [],
+  html: `<div class="cb-frame"><h3 class="cb-t">Supply cache</h3>
+    <p class="cb-txt">Your scouts break open a sealed supply cache from the last war. Take the auramite, or have ${esc(h.name)} study the battle logs inside?</p>
+    <button class="cb-pic l" data-v="auramite"><img src="assets/ui/guild/choice_gold.webp" alt=""></button>
+    <button class="cb-pic r" data-v="xp"><img src="assets/ui/guild/choice_xp.webp" alt=""></button>
+    <span class="cb-val l">1,000 auramite</span><span class="cb-val r">750 experience</span>
+    <button class="cb-ok" data-v="pick">Take</button></div>`,
+  onMount: (wrap, close) => {
+    let pick = 'auramite';
+    const sel = v => { pick = v; wrap.querySelectorAll('.cb-pic').forEach(b => b.classList.toggle('on', b.dataset.v === v)); };
+    sel('auramite');
+    wrap.querySelectorAll('.cb-pic').forEach(b => { b.onclick = () => sel(b.dataset.v); b.ondblclick = () => close(b.dataset.v); });
+    wrap.querySelector('.cb-ok').onclick = () => close(pick);
+  },
+}).then(v => v || 'auramite');
 io.choose = (title, text, buttons) => modal({ title: esc(title), html: `<p>${esc(text)}</p>`, buttons: buttons.map((b, i) => ({ ...b, cancel: i === 0 })) });
 io.notice = (title, text) => modal({ title: esc(title), html: `<p>${esc(text)}</p>` });
 io.levelUp = (h, stat, opts) => (Audio.sfx('levelup'), modal({
@@ -1464,17 +1554,28 @@ function showHelp() {
       <p><b>Weeks.</b> Every week has a theme: a creature musters in greater numbers, convoys bring materials, or famine and swarms strike.</p></div>`,
   });
 }
+// Desktop app only: the launcher exposes ashenDisplay(mode) and ashenDisplayMode(); the choice is remembered there.
+async function showDisplay() {
+  const cur = window.ashenDisplayMode ? await window.ashenDisplayMode() : 'fullscreen';
+  const name = { fullscreen: 'Fullscreen', maximized: 'Window with borders', windowed: 'Windowed' };
+  const v = await modal({ title: 'Display', html: `<p class="muted">Current: <b>${name[cur] || cur}</b>. F11 also switches between fullscreen and a window.</p>`,
+    buttons: [{ label: 'Fullscreen', value: 'fullscreen', primary: cur === 'fullscreen' }, { label: 'Window with borders', value: 'maximized', primary: cur === 'maximized' },
+      { label: 'Windowed', value: 'windowed', primary: cur === 'windowed' }, { label: 'Close', value: null, cancel: true }] });
+  if (v) window.ashenDisplay(v);
+}
 async function showMenu() {
   const v = await modal({
     title: 'Command menu',
     buttons: [
       { label: 'Save game', value: 'save', primary: true }, { label: 'Load game', value: 'load' }, { label: 'Options', value: 'options' },
+      ...(window.ashenDisplay ? [{ label: 'Display', value: 'display' }] : []),
       { label: 'How to play', value: 'help' }, { label: 'Main menu', value: 'menu' }, { label: 'Close', value: null, cancel: true },
     ],
   });
   if (v === 'save') showSlots('save');
   if (v === 'load') showSlots('load');
   if (v === 'options') showOptions();
+  if (v === 'display') showDisplay();
   if (v === 'help') showHelp();
   if (v === 'menu') { writeSlot('auto', true); showScreen('menu'); }
 }

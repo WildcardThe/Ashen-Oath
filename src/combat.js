@@ -42,6 +42,7 @@ export function createBattle(att, def, opts = {}) {
       level: lv, walls: { top: 2, upper: 2, lower: 2, bottom: 2 }, gate: 2, moat: lv >= 2,
       towers: [...(lv >= 2 ? [{ id: 'keep', hp: 3 }] : []), ...(lv >= 3 ? [{ id: 'north', hp: 2 }, { id: 'south', hp: 2 }] : [])],
       towerDmg: opts.siege.towerDmg || 12,
+      faction: opts.siege.faction || 'concord', cannon: opts.siege.cannon || 'concord',   // whose walls, whose siege gun (art)
     };
   }
   [att, def].forEach((side, si) => {

@@ -3,12 +3,13 @@
 
 // How each unit attacks. Upgraded units (id_u) share their base unit's style.
 const STYLE = {
-  levy: { ranged: 'las', melee: 'blunt' }, warden: { melee: 'smash' }, knight: { melee: 'smash' },
+  levy: { ranged: 'bullet', melee: 'blunt' }, warden: { melee: 'smash' }, knight: { melee: 'smash' },
   walker: { ranged: 'cannon', melee: 'smash' }, stormhammer: { melee: 'smash' },
   zealot: { melee: 'smash' }, turncoat: { ranged: 'bullet', melee: 'smash' }, flayer: { melee: 'smash' },
-  hellforge: { ranged: 'storm', melee: 'blunt' }, mawprince: { melee: 'slash' }, desecrator: { ranged: 'hellfire', melee: 'smash' },
+  hellforge: { ranged: 'bullet', melee: 'blunt' }, mawprince: { melee: 'slash' }, desecrator: { ranged: 'hellfire', melee: 'smash' },
   scuttler: { melee: 'bite' }, raider: { ranged: 'bullet', melee: 'blunt' }, stalker: { melee: 'claw' }, hulk: { melee: 'smash' }, servitor: { melee: 'smash' }, brute: { melee: 'smash' }, wraith: { melee: 'claw' }, drake: { melee: 'fire' }, mawspawn: { melee: 'claw' }, kite: { melee: 'claw' }, basilisk: { melee: 'bite' },
   scrapling: { melee: 'slash' }, blastgob: { ranged: 'bullet', melee: 'blunt' }, choppa: { melee: 'slash' }, rokkit: { ranged: 'cannon', melee: 'smash' }, junkgod: { melee: 'smash' },
+  thrall: { melee: 'slash' }, fangreaver: { melee: 'slash' }, harpooner: { ranged: 'cannon', melee: 'blunt' }, striker: { melee: 'smash' }, drowned: { melee: 'smash' },
   husk: { melee: 'claw' }, dwarrior: { ranged: 'las', melee: 'blunt' }, scarab: { melee: 'bite' }, ark: { ranged: 'las', melee: 'smash' }, shard: { melee: 'smash' },
 };
 export function styleOf(type, ranged) {

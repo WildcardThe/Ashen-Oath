@@ -1,0 +1,345 @@
+ASHEN OATH — THE HOLLOW HOST REDONE: HELLFORGE OATHBREAKERS
+==========================================================================
+
+Our second faction, rebuilt around the look of its tier 4 and 5 units (the Havoc Gunners and the Desecrators):
+towering crimson-and-brass power-armoured oathbreakers of a hellforge world, hung with skulls and chains and
+wreathed in hellfire. Names and emblems are original (no trademarked names).
+
+You get the full set of pictures, the same as for the Scrapjaw Horde and the Deathless Dynasty:
+  1. Town landscape        — the empty town-screen background (buildings are added on top by the game)
+  2. Town buildings         — 3 town hall levels, fort/citadel/castle, recruitment office, trade exchange,
+                              supply depot, 5 mage guild levels, and 5 creature dwellings + their upgrades
+  3. Creatures              — 5 tiers, basic and upgraded, each with picture + movement sheet + attack sheet
+                              (as now, 3 of the 5 shoot: Reavers and Desecrators also fight up close, so they
+                              get an extra MELEE sheet)
+  4. Three commanders       — avatar, map look, map movement, battlefield look, idle, casting
+                              (Abaddor, Ezrakh and Khorvax stay in the Hollow too, unless you want them out)
+  5. Extras                 — the town on the adventure map, a new faction crest for the setup screen
+
+The roster, names and abilities stay as they are now; every creature is redrawn to one consistent look,
+with its own movement and attack sheets.
+
+Every prompt below is complete on its own: copy and paste it as it is.
+
+HOW TO GENERATE (important for cutting the pictures into the game)
+--------------------------------------------------------------------------
+- Landscape: 1920 x 1080 (16:9). Keep the building plots EMPTY: the game places each building on them.
+- Buildings: one building per picture on a plain flat medium grey background, about 1024 x 1024 or a little
+  taller, the whole building in frame with some space around it. Generate the BASIC building first and attach
+  it as the reference for its upgrade, so the upgrade keeps the same angle and footprint.
+- Creatures: generate the PICTURE first and attach it as the reference for its movement and attack sheets
+  (and the basic creature as a reference for the upgraded one, so they look related).
+- Sprite sheets: 5 columns x 5 rows = 25 frames, read left to right, top to bottom, no grid lines, no text,
+  the same size and the same ground line in every cell.
+- Commanders: generate the avatar or battlefield look first and attach it as the reference for the others.
+- Map pictures (commander vehicle, town) carry a PLAIN BLANK WHITE banner: the game paints it in the player's colour.
+- If you have two good versions of something, send both — I will pick and say which one I used.
+
+
+
+==========================================================================
+THE HOLLOW HOST — REDONE AS A HELLFORGE WARHOST
+==========================================================================
+
+Inspired by: towering crimson-and-brass power-armoured oathbreakers who sold their souls to the Maw, with the skull-hung, hellfire-wreathed look of our current Havoc Gunners and Desecrators.
+Lore: Once wardens of the oath, they broke it and gave their souls to the Maw, the hunger between the stars. Now they march from a hellforge world of brass and fire, armour fused to their flesh, and every skull they take is hung on their plate as an offering.
+Play style: Fast and brutal. Frenzied axe-warriors, brawling gunmen, jump-pack killers, rotary-cannon havocs and hellfire-spewing Desecrators.
+Home ground: ash plains and volcanic rock (black basalt, grey ash, glowing lava cracks) · rare resources: blackstone and wraithbone · town names: Gutterspire, The Weeping Gate, Citadel of Ash
+Look of the whole faction: Every Hollow thing is cruel, ornate and burning: deep crimson and blood-red armour and walls trimmed with tarnished brass, spikes, horns and chains, skulls hung everywhere, black iron, glowing hellfire in grilles, furnaces and runes, smoke and embers drifting from every chimney.
+
+--------------------------------------------------------------------------
+HOLLOW 1. TOWN LANDSCAPE (empty)
+--------------------------------------------------------------------------
+
+Painted background for the town screen of a grimdark sci-fi fantasy strategy game, wide panorama, 16:9, 1920 x 1080, painted digital art with crisp gritty detail. A hellforge warhost encampment on a volcanic plain under a blood-red sky with black smoke and drifting embers: giant brass forge-spires shaped like horned skulls belching fire on the horizon, rivers of glowing lava in deep cracks, a ruined gothic cathedral wall hung with chains and skulls curving around the camp, colossal chained statues of horned warriors, braziers of red fire. The middle and foreground are a wide open ground of black basalt, grey ash and cracked rock with thin glowing lava seams, with several flat EMPTY building plots of brass-edged black stone platforms spread across the picture (left, centre, right, middle distance and foreground), a scorched road winding between them, a few spiked chains, bones and skull piles only at the edges. No buildings standing on the plots, no characters, no text. Seen from the front at a slight high angle, like a classic fantasy strategy game town screen.
+
+--------------------------------------------------------------------------
+HOLLOW 2. TOWN BUILDINGS
+--------------------------------------------------------------------------
+(Upgraded and higher levels: attach the previous level as the reference.)
+
+Town hall 1 — Shrine of Broken Oaths   [file: hall1]
+Single building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, in the style of a classic fantasy strategy town panorama. A brooding crimson and black stone shrine with a spiked brass roof, a great door shaped like a screaming skull glowing with red fire inside, chains and skulls hanging from its eaves, braziers at the steps. Every Hollow thing is cruel, ornate and burning: deep crimson and blood-red armour and walls trimmed with tarnished brass, spikes, horns and chains, skulls hung everywhere, black iron, glowing hellfire in grilles, furnaces and runes, smoke and embers drifting from every chimney. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Town hall 2 — Brass Throne Hall   [file: hall2]
+Upgraded version of the same building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail. Same building, same angle, same footprint and same overall shape as the attached reference, but bigger and grander: it becomes a tall throne hall with brass spires and horns, a balcony of skulls, two furnace chimneys venting fire and great chained banners. Every Hollow thing is cruel, ornate and burning: deep crimson and blood-red armour and walls trimmed with tarnished brass, spikes, horns and chains, skulls hung everywhere, black iron, glowing hellfire in grilles, furnaces and runes, smoke and embers drifting from every chimney. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Town hall 3 — Citadel of the Ninefold   [file: hall3]
+Upgraded version of the same building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail. Same building, same angle, same footprint and same overall shape as the attached reference, but bigger and grander: it becomes a towering black and crimson citadel crowned by nine brass horned spires, a colossal skull gate breathing fire, rivers of molten brass running down its walls — the largest building in town. Every Hollow thing is cruel, ornate and burning: deep crimson and blood-red armour and walls trimmed with tarnished brass, spikes, horns and chains, skulls hung everywhere, black iron, glowing hellfire in grilles, furnaces and runes, smoke and embers drifting from every chimney. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Fort — Spiked Wall   [file: fort]
+Single building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, in the style of a classic fantasy strategy town panorama. A short stretch of black stone and crimson iron wall bristling with spikes, a squat gate tower with a brass skull over the gate, chains and impaled helmets along the top, fire in the arrow slits. Every Hollow thing is cruel, ornate and burning: deep crimson and blood-red armour and walls trimmed with tarnished brass, spikes, horns and chains, skulls hung everywhere, black iron, glowing hellfire in grilles, furnaces and runes, smoke and embers drifting from every chimney. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Citadel — Hellgate Wall   [file: citadel]
+Upgraded version of the same building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail. Same building, same angle, same footprint and same overall shape as the attached reference, but bigger and grander: the wall is taller and plated with brass, a second tower with a heavy hell-cannon, a ditch of glowing lava in front. Every Hollow thing is cruel, ornate and burning: deep crimson and blood-red armour and walls trimmed with tarnished brass, spikes, horns and chains, skulls hung everywhere, black iron, glowing hellfire in grilles, furnaces and runes, smoke and embers drifting from every chimney. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Castle — Gates of the Maw   [file: castle]
+Upgraded version of the same building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail. Same building, same angle, same footprint and same overall shape as the attached reference, but bigger and grander: it becomes a colossal fortress wall with three horned towers carrying hell-cannons, a giant gate shaped like a fanged maw full of fire, skull battlements and chained daemon statues. Every Hollow thing is cruel, ornate and burning: deep crimson and blood-red armour and walls trimmed with tarnished brass, spikes, horns and chains, skulls hung everywhere, black iron, glowing hellfire in grilles, furnaces and runes, smoke and embers drifting from every chimney. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Recruitment office — Hall of the Forsworn   [file: tavern]
+Single building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, in the style of a classic fantasy strategy town panorama. A dark crimson stone hall with a brass-studded door, a board of bounty skulls by the entrance, braziers, iron cages and red firelight leaking from barred windows. Every Hollow thing is cruel, ornate and burning: deep crimson and blood-red armour and walls trimmed with tarnished brass, spikes, horns and chains, skulls hung everywhere, black iron, glowing hellfire in grilles, furnaces and runes, smoke and embers drifting from every chimney. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Trade exchange — Bone Bazaar   [file: market]
+Single building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, in the style of a classic fantasy strategy town panorama. A grim open market under spiked brass awnings: stalls of weapons, skulls, chains and glowing relics, slaves' cages, a brass scale held by a chained statue, red lanterns. Every Hollow thing is cruel, ornate and burning: deep crimson and blood-red armour and walls trimmed with tarnished brass, spikes, horns and chains, skulls hung everywhere, black iron, glowing hellfire in grilles, furnaces and runes, smoke and embers drifting from every chimney. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Supply depot — Plunder Vaults   [file: depot]
+Single building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, in the style of a classic fantasy strategy town panorama. A fortified compound of black stone vaults with brass doors, piles of looted crates, armour and weapons, fuel tanks glowing red and a spiked crane. Every Hollow thing is cruel, ornate and burning: deep crimson and blood-red armour and walls trimmed with tarnished brass, spikes, horns and chains, skulls hung everywhere, black iron, glowing hellfire in grilles, furnaces and runes, smoke and embers drifting from every chimney. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Mage guild 1 — Altar of Whispers   [file: mg1]
+Single building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, in the style of a classic fantasy strategy town panorama. A small black stone altar ringed by brass candelabras and skull piles, a glowing red rune circle on the ground, purple-red smoke rising. Every Hollow thing is cruel, ornate and burning: deep crimson and blood-red armour and walls trimmed with tarnished brass, spikes, horns and chains, skulls hung everywhere, black iron, glowing hellfire in grilles, furnaces and runes, smoke and embers drifting from every chimney. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Mage guild 2   [file: mg2]
+Upgraded version of the same building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail. Same building, same angle, same footprint and same overall shape as the attached reference, but bigger and grander: a crooked black tower rises behind the altar, glowing runes carved into it, chains hanging from a brass crown. Every Hollow thing is cruel, ornate and burning: deep crimson and blood-red armour and walls trimmed with tarnished brass, spikes, horns and chains, skulls hung everywhere, black iron, glowing hellfire in grilles, furnaces and runes, smoke and embers drifting from every chimney. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Mage guild 3   [file: mg3]
+Upgraded version of the same building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail. Same building, same angle, same footprint and same overall shape as the attached reference, but bigger and grander: the tower grows taller and twisted, floating burning books and skulls circling it, a red-violet glow at the top. Every Hollow thing is cruel, ornate and burning: deep crimson and blood-red armour and walls trimmed with tarnished brass, spikes, horns and chains, skulls hung everywhere, black iron, glowing hellfire in grilles, furnaces and runes, smoke and embers drifting from every chimney. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Mage guild 4   [file: mg4]
+Upgraded version of the same building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail. Same building, same angle, same footprint and same overall shape as the attached reference, but bigger and grander: it becomes a jagged spire with a giant eye-shaped window of fire, warp lightning crackling between brass horns. Every Hollow thing is cruel, ornate and burning: deep crimson and blood-red armour and walls trimmed with tarnished brass, spikes, horns and chains, skulls hung everywhere, black iron, glowing hellfire in grilles, furnaces and runes, smoke and embers drifting from every chimney. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Mage guild 5   [file: mg5]
+Upgraded version of the same building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail. Same building, same angle, same footprint and same overall shape as the attached reference, but bigger and grander: it becomes a towering spire whose top opens into a swirling rift of red and violet fire, chains holding the rift open, burning runes orbiting it. Every Hollow thing is cruel, ornate and burning: deep crimson and blood-red armour and walls trimmed with tarnished brass, spikes, horns and chains, skulls hung everywhere, black iron, glowing hellfire in grilles, furnaces and runes, smoke and embers drifting from every chimney. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Tier 1 dwelling — Bloodsworn Pits   [file: dw1]
+Single building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, in the style of a classic fantasy strategy town panorama. A sunken fighting pit of black stone ringed by spiked brass railings, chains and skull totems, blood-red banners and a brazier at each corner. Every Hollow thing is cruel, ornate and burning: deep crimson and blood-red armour and walls trimmed with tarnished brass, spikes, horns and chains, skulls hung everywhere, black iron, glowing hellfire in grilles, furnaces and runes, smoke and embers drifting from every chimney. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Tier 1 dwelling upgraded — Runescarred Pits   [file: dw1u]
+Upgraded version of the same building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail. Same building, same angle, same footprint and same overall shape as the attached reference, but bigger and grander: it becomes a deeper arena with branding forges glowing along its walls, glowing red runes carved into the stone and a brass gate shaped like a horned skull. Every Hollow thing is cruel, ornate and burning: deep crimson and blood-red armour and walls trimmed with tarnished brass, spikes, horns and chains, skulls hung everywhere, black iron, glowing hellfire in grilles, furnaces and runes, smoke and embers drifting from every chimney. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Tier 2 dwelling — Reaver Barracks   [file: dw2]
+Single building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, in the style of a classic fantasy strategy town panorama. A grim crimson stone barracks with a brass-plated gate, weapon racks of pistols and spiked mauls outside, chained skulls and a red banner. Every Hollow thing is cruel, ornate and burning: deep crimson and blood-red armour and walls trimmed with tarnished brass, spikes, horns and chains, skulls hung everywhere, black iron, glowing hellfire in grilles, furnaces and runes, smoke and embers drifting from every chimney. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Tier 2 dwelling upgraded — Hellfire Armory   [file: dw2u]
+Upgraded version of the same building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail. Same building, same angle, same footprint and same overall shape as the attached reference, but bigger and grander: it becomes an armoury with a glowing forge, brass furnace chimneys venting fire and racks of burning mauls. Every Hollow thing is cruel, ornate and burning: deep crimson and blood-red armour and walls trimmed with tarnished brass, spikes, horns and chains, skulls hung everywhere, black iron, glowing hellfire in grilles, furnaces and runes, smoke and embers drifting from every chimney. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Tier 3 dwelling — Raptor Eyrie   [file: dw3]
+Single building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, in the style of a classic fantasy strategy town panorama. A tall black stone perch-tower with spiked landing platforms, jump-packs hanging on chains, scorch marks and a brass skull at the top. Every Hollow thing is cruel, ornate and burning: deep crimson and blood-red armour and walls trimmed with tarnished brass, spikes, horns and chains, skulls hung everywhere, black iron, glowing hellfire in grilles, furnaces and runes, smoke and embers drifting from every chimney. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Tier 3 dwelling upgraded — Pyre Eyrie   [file: dw3u]
+Upgraded version of the same building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail. Same building, same angle, same footprint and same overall shape as the attached reference, but bigger and grander: it becomes a taller tower with fire pouring from vents, twin-turbine jump-packs racked on its balconies and burning braziers on every ledge. Every Hollow thing is cruel, ornate and burning: deep crimson and blood-red armour and walls trimmed with tarnished brass, spikes, horns and chains, skulls hung everywhere, black iron, glowing hellfire in grilles, furnaces and runes, smoke and embers drifting from every chimney. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Tier 4 dwelling — Havoc Armoury   [file: dw4]
+Single building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, in the style of a classic fantasy strategy town panorama. A heavy black stone armoury with brass doors, racks of rotary cannons and belts of shells outside, a smoking forge chimney and skulls over the gate. Every Hollow thing is cruel, ornate and burning: deep crimson and blood-red armour and walls trimmed with tarnished brass, spikes, horns and chains, skulls hung everywhere, black iron, glowing hellfire in grilles, furnaces and runes, smoke and embers drifting from every chimney. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Tier 4 dwelling upgraded — Hellstorm Armoury   [file: dw4u]
+Upgraded version of the same building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail. Same building, same angle, same footprint and same overall shape as the attached reference, but bigger and grander: it becomes a huge hell-forge armoury with glowing furnaces, mechanical loader cranes, bigger cannons on display and fire pouring from brass vents. Every Hollow thing is cruel, ornate and burning: deep crimson and blood-red armour and walls trimmed with tarnished brass, spikes, horns and chains, skulls hung everywhere, black iron, glowing hellfire in grilles, furnaces and runes, smoke and embers drifting from every chimney. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Tier 5 dwelling — Desecrator Foundry   [file: dw5]
+Single building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, in the style of a classic fantasy strategy town panorama. A massive black and brass foundry with a giant skull-shaped furnace mouth glowing with fire, chains, cranes, and a hell-cannon being forged in its open bay. Every Hollow thing is cruel, ornate and burning: deep crimson and blood-red armour and walls trimmed with tarnished brass, spikes, horns and chains, skulls hung everywhere, black iron, glowing hellfire in grilles, furnaces and runes, smoke and embers drifting from every chimney. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Tier 5 dwelling upgraded — Pyre Cathedral   [file: dw5u]
+Upgraded version of the same building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail. Same building, same angle, same footprint and same overall shape as the attached reference, but bigger and grander: it becomes a towering cathedral of brass and black stone with burning spires, a rose window of fire and giant skull censers hanging from chains. Every Hollow thing is cruel, ornate and burning: deep crimson and blood-red armour and walls trimmed with tarnished brass, spikes, horns and chains, skulls hung everywhere, black iron, glowing hellfire in grilles, furnaces and runes, smoke and embers drifting from every chimney. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+--------------------------------------------------------------------------
+HOLLOW 3. CREATURES
+--------------------------------------------------------------------------
+Ranged units (shooting sheet): Blood Reavers / Hellfire Reavers, Havoc Gunners / Hellstorm Gunners, Desecrators / Pyre Desecrators.
+
+···· Tier 1: BLOODSWORN  →  upgraded: RUNESCARRED   (melee, runs, small) ····
+Suggested data: Tier 1 · melee · fast, cheap, many · growth 14 a week · upgraded: burning axes, +2 Attack.
+
+Bloodsworn - picture
+Single creature for a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, realistic proportions. A frenzied power-armoured warrior in cracked crimson armour with brass trim and a grilled rebreather helmet with small horns, skulls hanging from his belt, a jagged chain-axe in one hand and a heavy pistol in the other. Full body, three-quarter side view facing right. Plain flat medium grey background, even light from the upper left, no ground, no shadow, no text.
+
+Bloodsworn - movement sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping MOVEMENT cycle of the same creature in every frame: A frenzied power-armoured warrior in cracked crimson armour with brass trim and a grilled rebreather helmet with small horns, skulls hanging from his belt, a jagged chain-axe in one hand and a heavy pistol in the other. A wild frenzied charge forward, the axe raised, roaring, chains and skulls bouncing. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+Bloodsworn - attack sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous MELEE ATTACK of the same creature in every frame: A frenzied power-armoured warrior in cracked crimson armour with brass trim and a grilled rebreather helmet with small horns, skulls hanging from his belt, a jagged chain-axe in one hand and a heavy pistol in the other. He leaps forward and hacks down with the axe twice in a frenzy, a spray of sparks and red embers at the hit around frame 13, then he stands roaring. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+Runescarred - picture (attach the basic creature as a reference)
+Single creature for a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, realistic proportions. A frenzied power-armoured warrior in crimson armour branded with glowing red runes, a horned helmet with burning eye-slits, skulls chained to his shoulders, swinging an axe whose blade burns with red hellfire. Full body, three-quarter side view facing right. Plain flat medium grey background, even light from the upper left, no ground, no shadow, no text.
+
+Runescarred - movement sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping MOVEMENT cycle of the same creature in every frame: A frenzied power-armoured warrior in crimson armour branded with glowing red runes, a horned helmet with burning eye-slits, skulls chained to his shoulders, swinging an axe whose blade burns with red hellfire. A wild frenzied charge forward, the axe raised, roaring, chains and skulls bouncing. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+Runescarred - attack sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous MELEE ATTACK of the same creature in every frame: A frenzied power-armoured warrior in crimson armour branded with glowing red runes, a horned helmet with burning eye-slits, skulls chained to his shoulders, swinging an axe whose blade burns with red hellfire. He leaps forward and hacks down with the axe twice in a frenzy, a spray of sparks and red embers at the hit around frame 13, then he stands roaring. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+···· Tier 2: BLOOD REAVERS  →  upgraded: HELLFIRE REAVERS   (RANGED, walks, small) ····
+Suggested data: Tier 2 · RANGED (10 shots) and just as strong in melee · growth 9 a week · upgraded: burning mauls, +2 Attack.
+
+Blood Reavers - picture
+Single creature for a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, realistic proportions. A power-armoured warrior in crimson armour with brass trim and a spiked helmet, skulls on the pauldrons, a heavy pistol in one hand and a spiked maul in the other. Full body, three-quarter side view facing right. Plain flat medium grey background, even light from the upper left, no ground, no shadow, no text.
+
+Blood Reavers - movement sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping MOVEMENT cycle of the same creature in every frame: A power-armoured warrior in crimson armour with brass trim and a spiked helmet, skulls on the pauldrons, a heavy pistol in one hand and a spiked maul in the other. A heavy confident stride forward, the pistol raised and the maul swinging. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+Blood Reavers - shooting sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous RANGED ATTACK of the same creature in every frame: A power-armoured warrior in crimson armour with brass trim and a spiked helmet, skulls on the pauldrons, a heavy pistol in one hand and a spiked maul in the other. He raises the pistol and fires three quick shots with bright muzzle flashes from frame 7 to 15, the recoil kicking his arm up, then he lowers it. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+Blood Reavers - melee attack sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous MELEE ATTACK of the same creature in every frame: A power-armoured warrior in crimson armour with brass trim and a spiked helmet, skulls on the pauldrons, a heavy pistol in one hand and a spiked maul in the other. He swings the spiked maul in a crushing overhead blow, a burst of sparks and embers at the impact around frame 13, then he brings it back up. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+Hellfire Reavers - picture (attach the basic creature as a reference)
+Single creature for a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, realistic proportions. A power-armoured warrior in crimson and brass armour with a horned helmet, a heavy bolt-pistol in one hand and a maul whose spiked head burns with red hellfire. Full body, three-quarter side view facing right. Plain flat medium grey background, even light from the upper left, no ground, no shadow, no text.
+
+Hellfire Reavers - movement sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping MOVEMENT cycle of the same creature in every frame: A power-armoured warrior in crimson and brass armour with a horned helmet, a heavy bolt-pistol in one hand and a maul whose spiked head burns with red hellfire. A heavy confident stride forward, the pistol raised and the maul swinging. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+Hellfire Reavers - shooting sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous RANGED ATTACK of the same creature in every frame: A power-armoured warrior in crimson and brass armour with a horned helmet, a heavy bolt-pistol in one hand and a maul whose spiked head burns with red hellfire. He raises the pistol and fires three quick shots with bright muzzle flashes from frame 7 to 15, the recoil kicking his arm up, then he lowers it. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+Hellfire Reavers - melee attack sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous MELEE ATTACK of the same creature in every frame: A power-armoured warrior in crimson and brass armour with a horned helmet, a heavy bolt-pistol in one hand and a maul whose spiked head burns with red hellfire. He swings the spiked maul in a crushing overhead blow, a burst of sparks and embers at the impact around frame 13, then he brings it back up. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+···· Tier 3: ASH RAPTORS  →  upgraded: PYRE RAPTORS   (melee, flies, small) ····
+Suggested data: Tier 3 · melee · FLIES · enemies cannot retaliate · growth 6 a week · upgraded: +1 Speed, +2 Attack.
+
+Ash Raptors - picture
+Single creature for a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, realistic proportions. A power-armoured warrior in crimson armour with a beaked helmet and glowing red eyes, a roaring jump-pack on his back with flame jets, a chain-axe and a flail, chains and skulls trailing behind him in the air. Full body, three-quarter side view facing right. Plain flat medium grey background, even light from the upper left, no ground, no shadow, no text.
+
+Ash Raptors - movement sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping MOVEMENT cycle of the same creature in every frame: A power-armoured warrior in crimson armour with a beaked helmet and glowing red eyes, a roaring jump-pack on his back with flame jets, a chain-axe and a flail, chains and skulls trailing behind him in the air. Flying forward fast with the jump-pack roaring, flame jets streaming back, body leaning forward, chains whipping. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+Ash Raptors - attack sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous MELEE ATTACK of the same creature in every frame: A power-armoured warrior in crimson armour with a beaked helmet and glowing red eyes, a roaring jump-pack on his back with flame jets, a chain-axe and a flail, chains and skulls trailing behind him in the air. He swoops down and slashes with the axe in a diving strike, a burst of sparks and fire at the hit around frame 13, then the jump-pack fires and he rises back up. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+Pyre Raptors - picture (attach the basic creature as a reference)
+Single creature for a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, realistic proportions. A veteran power-armoured warrior in crimson and brass armour with a twin-turbine jump-pack trailing fire and smoke, a horned beaked helmet, a burning chain-axe in each hand. Full body, three-quarter side view facing right. Plain flat medium grey background, even light from the upper left, no ground, no shadow, no text.
+
+Pyre Raptors - movement sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping MOVEMENT cycle of the same creature in every frame: A veteran power-armoured warrior in crimson and brass armour with a twin-turbine jump-pack trailing fire and smoke, a horned beaked helmet, a burning chain-axe in each hand. Flying forward fast with the jump-pack roaring, flame jets streaming back, body leaning forward, chains whipping. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+Pyre Raptors - attack sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous MELEE ATTACK of the same creature in every frame: A veteran power-armoured warrior in crimson and brass armour with a twin-turbine jump-pack trailing fire and smoke, a horned beaked helmet, a burning chain-axe in each hand. He swoops down and slashes with the axe in a diving strike, a burst of sparks and fire at the hit around frame 13, then the jump-pack fires and he rises back up. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+···· Tier 4: HAVOC GUNNERS  →  upgraded: HELLSTORM GUNNERS   (RANGED, walks, small) ····
+Suggested data: Tier 4 · RANGED (16 shots) · growth 3 a week · upgraded: +2 damage, 20 shots.
+
+Havoc Gunners - picture
+Single creature for a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, realistic proportions. A hulking power-armoured warrior in crimson armour with brass trim, skulls and chains hung on his plate, hauling a huge rotary cannon fed by a belt of glowing shells. Full body, three-quarter side view facing right. Plain flat medium grey background, even light from the upper left, no ground, no shadow, no text.
+
+Havoc Gunners - movement sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping MOVEMENT cycle of the same creature in every frame: A hulking power-armoured warrior in crimson armour with brass trim, skulls and chains hung on his plate, hauling a huge rotary cannon fed by a belt of glowing shells. A heavy stomping walk forward, the rotary cannon braced at the hip, the ammo belt rattling. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+Havoc Gunners - shooting sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous RANGED ATTACK of the same creature in every frame: A hulking power-armoured warrior in crimson armour with brass trim, skulls and chains hung on his plate, hauling a huge rotary cannon fed by a belt of glowing shells. He braces and the rotary cannon spins up and fires a long roaring burst with a blazing muzzle flash and spent shells flying from frame 7 to 18, then it winds down smoking. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+Hellstorm Gunners - picture (attach the basic creature as a reference)
+Single creature for a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, realistic proportions. A hulking power-armoured warrior in crimson and brass armour with mechanical loader arms on his back, firing a bigger rotary cannon whose barrels glow red-hot. Full body, three-quarter side view facing right. Plain flat medium grey background, even light from the upper left, no ground, no shadow, no text.
+
+Hellstorm Gunners - movement sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping MOVEMENT cycle of the same creature in every frame: A hulking power-armoured warrior in crimson and brass armour with mechanical loader arms on his back, firing a bigger rotary cannon whose barrels glow red-hot. A heavy stomping walk forward, the rotary cannon braced at the hip, the ammo belt rattling. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+Hellstorm Gunners - shooting sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous RANGED ATTACK of the same creature in every frame: A hulking power-armoured warrior in crimson and brass armour with mechanical loader arms on his back, firing a bigger rotary cannon whose barrels glow red-hot. He braces and the rotary cannon spins up and fires a long roaring burst with a blazing muzzle flash and spent shells flying from frame 7 to 18, then it winds down smoking. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+···· Tier 5: DESECRATORS  →  upgraded: PYRE DESECRATORS   (RANGED, walks, big) ····
+Suggested data: Tier 5 · RANGED (16 shots) and strong in melee · big (two hexes) · growth 1 a week · upgraded: hellfire censers, +30 Health.
+
+Desecrators - picture
+Single creature for a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, realistic proportions. A towering warrior sealed in massive brass-bound crimson fortress-plate, a glowing furnace on his back, skulls everywhere, hauling a huge hell-cannon fed by the furnace. It is a big creature that fills two battlefield hexes, so make it look massive. Full body, three-quarter side view facing right. Plain flat medium grey background, even light from the upper left, no ground, no shadow, no text.
+
+Desecrators - movement sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping MOVEMENT cycle of the same creature in every frame: A towering warrior sealed in massive brass-bound crimson fortress-plate, a glowing furnace on his back, skulls everywhere, hauling a huge hell-cannon fed by the furnace. It is a big creature that fills two battlefield hexes, so make it look massive. A slow ground-shaking stride forward, the furnace venting fire, chains swinging. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+Desecrators - shooting sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous RANGED ATTACK of the same creature in every frame: A towering warrior sealed in massive brass-bound crimson fortress-plate, a glowing furnace on his back, skulls everywhere, hauling a huge hell-cannon fed by the furnace. It is a big creature that fills two battlefield hexes, so make it look massive. He braces and fires a great blast of hellfire from the cannon or hurls fire from the censers, a roaring stream of red flame from frame 9 to 16, then the furnace vents steam. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+Desecrators - melee attack sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous MELEE ATTACK of the same creature in every frame: A towering warrior sealed in massive brass-bound crimson fortress-plate, a glowing furnace on his back, skulls everywhere, hauling a huge hell-cannon fed by the furnace. It is a big creature that fills two battlefield hexes, so make it look massive. He smashes forward with the cannon or the burning censers in a crushing blow, a burst of fire and sparks at the impact around frame 13, then he steps back. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+Pyre Desecrators - picture (attach the basic creature as a reference)
+Single creature for a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, realistic proportions. A towering warrior in massive crimson and brass fortress-plate covered in skulls, a furnace on his back, swinging two huge skull-censers on chains that burn with living red hellfire. It is a big creature that fills two battlefield hexes, so make it look massive. Full body, three-quarter side view facing right. Plain flat medium grey background, even light from the upper left, no ground, no shadow, no text.
+
+Pyre Desecrators - movement sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping MOVEMENT cycle of the same creature in every frame: A towering warrior in massive crimson and brass fortress-plate covered in skulls, a furnace on his back, swinging two huge skull-censers on chains that burn with living red hellfire. It is a big creature that fills two battlefield hexes, so make it look massive. A slow ground-shaking stride forward, the furnace venting fire, chains swinging. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+Pyre Desecrators - shooting sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous RANGED ATTACK of the same creature in every frame: A towering warrior in massive crimson and brass fortress-plate covered in skulls, a furnace on his back, swinging two huge skull-censers on chains that burn with living red hellfire. It is a big creature that fills two battlefield hexes, so make it look massive. He braces and fires a great blast of hellfire from the cannon or hurls fire from the censers, a roaring stream of red flame from frame 9 to 16, then the furnace vents steam. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+Pyre Desecrators - melee attack sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous MELEE ATTACK of the same creature in every frame: A towering warrior in massive crimson and brass fortress-plate covered in skulls, a furnace on his back, swinging two huge skull-censers on chains that burn with living red hellfire. It is a big creature that fills two battlefield hexes, so make it look massive. He smashes forward with the cannon or the burning censers in a crushing blow, a burst of fire and sparks at the impact around frame 13, then he steps back. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+--------------------------------------------------------------------------
+HOLLOW 4. COMMANDERS
+--------------------------------------------------------------------------
+
+···· LORD VHARKUL THE BRASS TYRANT   (Hollow · warlord) ····
+Bio: Vharkul was a hero of the oath once, and he still keeps the medals, nailed through the skulls of the men who gave them to him. He leads from a brass war-chariot pulled by daemon-forged engines, and he has never offered an enemy terms.
+Suggested data: class warlord · specialty: Havoc Gunners +1 Attack, +1 Defence per 4 levels · start skill Offense · start rite Battle Fury.
+
+A. Avatar
+Portrait of a towering traitor warlord in ornate crimson and brass power armour covered in skulls and spikes, a horned helmet under his arm, a scarred bald head with brass studs in the skull, cold burning red eyes, head and shoulders, painted grimdark digital art, realistic. Square image, dark smoky background, dramatic rim light, no text.
+
+B. Map look
+A brass and crimson war-chariot tank with spiked tracks, skull-faced armour plates and a furnace venting fire, a traitor warlord standing on top beside a tall pole with a PLAIN BLANK WHITE banner for a grimdark sci-fi strategy game map. Seen from a high three-quarter angle about 45 degrees from above, facing right, small readable silhouette, painted grimdark digital art, plain flat medium grey background, no text.
+
+C. Map movement
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping MOVEMENT cycle of the same vehicle or mount in every frame: A brass and crimson war-chariot tank with spiked tracks, skull-faced armour plates and a furnace venting fire, a traitor warlord standing on top beside a tall pole with a PLAIN BLANK WHITE banner. The chariot grinds forward on its spiked tracks, the furnace belching fire and smoke, the banner waving, the warlord swaying. Seen from a high three-quarter angle about 45 degrees from above, facing right, same size and same position in every cell, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+D. Battlefield look
+Single figure for a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, realistic proportions: a towering traitor warlord in ornate crimson and brass power armour covered in skulls and spikes, a horned helmet with glowing red eyes, a long tattered cloak, holding a huge burning greatsword point-down. Full body, three-quarter side view facing right. Plain flat medium grey background, even light from the upper left, no ground, no shadow, no text.
+
+E. Battlefield idle
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping IDLE cycle of the same figure in every frame: a towering traitor warlord in ornate crimson and brass power armour covered in skulls and spikes, a horned helmet with glowing red eyes, a long tattered cloak, holding a huge burning greatsword point-down. He stands with both hands on the sword hilt, the cloak stirring in the hot wind, embers drifting around him, turning his head slowly. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+F. Battlefield rite (casting)
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous CASTING animation of the same figure in every frame: a towering traitor warlord in ornate crimson and brass power armour covered in skulls and spikes, a horned helmet with glowing red eyes, a long tattered cloak, holding a huge burning greatsword point-down. He raises the burning sword high, red hellfire spiralling up the blade and around him, a burst of fire and embers around frame 13, then he plants the sword again. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+···· DARK PROPHET KAEDRIN ASHMOUTH   (Hollow · battle-mystic) ····
+Bio: Kaedrin preaches the Maw's hunger in a voice that makes the ground smoke. Every battle opens with his sermon, and every warrior who hears it fights without fear, because whatever happens to them now has already been promised.
+Suggested data: class battle-mystic · specialty: Frenzy and fire rites +power per level · start skill Fire magic · start rite Ember.
+
+A. Avatar
+Portrait of a gaunt traitor preacher in black and crimson power armour with a tall brass skull-mask helmet removed to show a scarred grey face with burning eyes, a mouth sewn with brass wire, holy scrolls nailed to his armour, head and shoulders, painted grimdark digital art, realistic. Square image, dark smoky background, dramatic rim light, no text.
+
+B. Map look
+A tall brass pulpit-tank with a spiked hull, skull bells and burning braziers, a dark preacher standing in the pulpit with a raised staff, a tall pole with a PLAIN BLANK WHITE banner for a grimdark sci-fi strategy game map. Seen from a high three-quarter angle about 45 degrees from above, facing right, small readable silhouette, painted grimdark digital art, plain flat medium grey background, no text.
+
+C. Map movement
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping MOVEMENT cycle of the same vehicle or mount in every frame: A tall brass pulpit-tank with a spiked hull, skull bells and burning braziers, a dark preacher standing in the pulpit with a raised staff, a tall pole with a PLAIN BLANK WHITE banner. The pulpit-tank rolls forward, bells swinging, braziers flickering, the banner waving, the preacher gesturing as he preaches. Seen from a high three-quarter angle about 45 degrees from above, facing right, same size and same position in every cell, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+D. Battlefield look
+Single figure for a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, realistic proportions: a gaunt traitor preacher in black and crimson power armour hung with burning scrolls and chains, a brass skull-mask, holding a tall spiked crozius-staff topped with a burning skull and a heavy book chained to his belt. Full body, three-quarter side view facing right. Plain flat medium grey background, even light from the upper left, no ground, no shadow, no text.
+
+E. Battlefield idle
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping IDLE cycle of the same figure in every frame: a gaunt traitor preacher in black and crimson power armour hung with burning scrolls and chains, a brass skull-mask, holding a tall spiked crozius-staff topped with a burning skull and a heavy book chained to his belt. He stands reading from the chained book, lips moving, the burning skull on his staff flickering, ash drifting around him. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+F. Battlefield rite (casting)
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous CASTING animation of the same figure in every frame: a gaunt traitor preacher in black and crimson power armour hung with burning scrolls and chains, a brass skull-mask, holding a tall spiked crozius-staff topped with a burning skull and a heavy book chained to his belt. He thrusts the staff to the sky and shouts, a column of red fire and swirling ash erupting around him around frame 13, the book's pages flying, then the fire dies down. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+···· HELLSMITH MORVAGH   (Hollow · battle-mystic) ····
+Bio: Morvagh builds the Desecrators and the hell-cannons, and the daemons bound inside them obey him because he made their cages. Half of him is brass and furnace now, and he calls the other half a design flaw.
+Suggested data: class battle-mystic · specialty: Desecrators +1 Attack, +1 Defence per 4 levels · start skill Armourer · start rite Stoneskin.
+
+A. Avatar
+Portrait of a hulking traitor engineer in crimson and brass power armour with mechanical spider arms rising from his back, a half-metal face with a glowing red bionic eye, a furnace glow under his breastplate, head and shoulders, painted grimdark digital art, realistic. Square image, dark smoky background, dramatic rim light, no text.
+
+B. Map look
+A brass walking hell-forge on four mechanical legs with a glowing furnace and smoking chimneys, a hulking engineer riding on top among cranes and chains, a tall pole with a PLAIN BLANK WHITE banner for a grimdark sci-fi strategy game map. Seen from a high three-quarter angle about 45 degrees from above, facing right, small readable silhouette, painted grimdark digital art, plain flat medium grey background, no text.
+
+C. Map movement
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping MOVEMENT cycle of the same vehicle or mount in every frame: A brass walking hell-forge on four mechanical legs with a glowing furnace and smoking chimneys, a hulking engineer riding on top among cranes and chains, a tall pole with a PLAIN BLANK WHITE banner. The walking forge strides forward on its four legs, the furnace glowing, smoke pouring from the chimneys, the banner waving. Seen from a high three-quarter angle about 45 degrees from above, facing right, same size and same position in every cell, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+D. Battlefield look
+Single figure for a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, realistic proportions: a hulking traitor engineer in crimson and brass power armour with four mechanical spider arms rising from his back holding tools and weapons, a half-metal face with a red bionic eye, holding a huge glowing forge hammer. Full body, three-quarter side view facing right. Plain flat medium grey background, even light from the upper left, no ground, no shadow, no text.
+
+E. Battlefield idle
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping IDLE cycle of the same figure in every frame: a hulking traitor engineer in crimson and brass power armour with four mechanical spider arms rising from his back holding tools and weapons, a half-metal face with a red bionic eye, holding a huge glowing forge hammer. He stands with the hammer resting on the ground, the mechanical arms twitching and adjusting tools, sparks dropping, his bionic eye scanning. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+F. Battlefield rite (casting)
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous CASTING animation of the same figure in every frame: a hulking traitor engineer in crimson and brass power armour with four mechanical spider arms rising from his back holding tools and weapons, a half-metal face with a red bionic eye, holding a huge glowing forge hammer. He slams the forge hammer down and the mechanical arms spread wide, a ring of molten brass and fire bursting out around him around frame 13, then the arms fold back. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+--------------------------------------------------------------------------
+HOLLOW 5. EXTRAS
+--------------------------------------------------------------------------
+
+Town on the adventure map
+A crimson and black hellforge fortress on a rocky volcanic rise: brass horned spires, a skull-shaped gate glowing with fire, spiked walls hung with chains, furnace chimneys venting flame, a tall pole with a PLAIN BLANK WHITE banner over the gate for a grimdark sci-fi strategy game map. Seen from a high three-quarter angle about 45 degrees from above, facing right, compact readable silhouette that fits a 3 x 3 tile footprint, painted grimdark digital art, plain flat medium grey background, no text.
+
+Faction crest (setup screen, square)
+A heraldic crest emblem for a grimdark strategy game: a horned brass skull over an eight-pointed star of black iron on a crimson shield, chains around it and red hellfire in the eye sockets, painted grimdark digital art, centred, plain flat black background, no text. Square image, 512 x 512.
+
+
+==========================================================================
+WHAT ELSE WILL BE NEEDED (no prompts required)
+--------------------------------------------------------------------------
+- No new resources: the Hollow keeps Blackstone and Wraithbone.
+- When the new art arrives, the old Hollow town, units and crest are replaced; saved games keep working.
+- Creature portraits, town thumbnails and map icons are cut by me from the pictures above.
+- Siege battles reuse the existing walls; battlefields reuse the existing terrain backdrops.
+- Faction music and sounds can come later if you want them — tell me and I will write prompts for those too.
+
+—— end of file ——

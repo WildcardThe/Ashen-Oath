@@ -13,7 +13,7 @@ FILES = {
     'logo': 'Broken_crown_pierced_by_sword',
     'm_new': 'Crossed_swords_over_cracked_planet', 'm_load': 'Holographic_star_map', 'm_options': 'Cogwheel_with_skull', 'm_credits': 'Parchment_scrolls', 'm_quit': 'Skull_resting_on_broken_helmet',
     'rank0': 'Eagle_badge_on_dark_shield', 'rank1': 'Armoured_super-soldier_winged', 'rank2': 'Armoured_helmet_military_badge', 'rank3': 'Skull_badge_with_crossed_swords', 'rank4': 'Golden_demigod_badge',
-    'f_concord': 'Golden_eagle_over_crimson_shield', 'f_hollow': 'Horned_skull_over_star', 'f_rustbound': 'Heraldic_crest_with_mechanical', 'f_scrapjaw': '-', 'f_deathless': '-',
+    'f_concord': '-', 'f_hollow': '-', 'f_rustbound': 'Heraldic_crest_with_mechanical', 'f_scrapjaw': '-', 'f_deathless': '-', 'f_palefang': '-',
     'human': 'Armoured_hand_clenching_fist', 'ai': 'Brass_servo-skull', 'ally': 'Armoured_gauntlets_shaking_hands', 'enemy': 'Two_crossed_swords_with_skull',
     'random': 'Two_bone_dice', 'b_gold': 'Crystals_and_coins', 'b_art': 'Open_reliquary_chest', 'b_res': 'Crate_of_mixed_materials', 'reroll': 'Brass_dial_with_glowing',
 }

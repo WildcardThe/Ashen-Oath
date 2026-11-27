@@ -1,0 +1,99 @@
+ASHEN OATH — PROMPTS: TOWN LANDSCAPES (Rustbound, Scrapjaw, Deathless), INTERFACE PANELS, MUSIC
+==================================================================================================
+
+1. TOWN LANDSCAPES (same plan as the snow and hellforge towns)
+==============================================================
+Attach town_layout_guide.png as the composition reference, paste the prompt, generate at 16:9 (1920 x 1080).
+Which building stands where (for reference, not for the prompt):
+  back row:   mage guild (left, small) · FORT / CITADEL / CASTLE (centre, large) · tier-5 dwelling (right)
+  middle row: town hall · recruitment office · tier-3 dwelling · tier-4 dwelling
+  front row:  tier-2 dwelling · trade exchange · supply depot · tier-1 dwelling
+
+RUSTBOUND — SCAVENGER WASTELAND TOWN
+------------------------------------
+Painted background for the town screen of a grimdark sci-fi fantasy strategy game, wide panorama, 16:9, 1920 x 1080, painted digital art with crisp gritty detail, seen from the front at a slight high angle like a classic fantasy strategy game town screen. The top 25-28% of the picture is sky and distant scenery; everything below is the town ground, filled edge to edge with the plots listed below, with only small decorative details in the gaps and along the left, right and bottom edges. No buildings, no characters, no text, no labels, no numbers, no grid. A scavenger settlement in a rust-coloured wasteland valley under a sickly yellow-grey smog sky: the broken skyline of a dead hive-city and toppled cooling towers on the horizon, rusted pipelines and gantries along the back, toxic green puddles and rusty barrels between the plots, scrap fences and hanging chains along the edges. Ground: cracked concrete, rust-red dust and oil stains; each plot is a flat platform of riveted steel plates with a rusty rim; the roads are cracked tarmac with tyre tracks.
+
+Plot plan (attach town_layout_guide.png as the composition reference; the dark ovals are the plots):
+- Back row, on a raised terrace just below the horizon (about 35-40% down the picture): a small plot on the left
+  (about 1/7 of the picture wide), ONE LARGE central plot (about 1/3 of the picture wide, for the fortress),
+  a small plot on the right (about 1/6 wide).
+- Middle row (about 55-62% down): four plots, the outer two wider (about 1/4 wide), the inner two medium (about 1/5 wide).
+- Front row (about 85-90% down): four large plots (about 1/4 wide each), with only a narrow gap between them.
+- A main road winds from the bottom centre up to the large back plot, with side paths to each row.
+- Leave a little ground (about 3-5% of the width) between plots: buildings should feel close together like a busy
+  town, never touching, never with big empty fields between them.
+- The plots are EMPTY flat platforms, each slightly raised, its edge visible. No buildings, no ruins standing on them.
+
+SCRAPJAW HORDE — ORC JUNKYARD TOWN
+----------------------------------
+Painted background for the town screen of a grimdark sci-fi fantasy strategy game, wide panorama, 16:9, 1920 x 1080, painted digital art with crisp gritty detail, seen from the front at a slight high angle like a classic fantasy strategy game town screen. The top 25-28% of the picture is sky and distant scenery; everything below is the town ground, filled edge to edge with the plots listed below, with only small decorative details in the gaps and along the left, right and bottom edges. No buildings, no characters, no text, no labels, no numbers, no grid. A sprawling junkyard war-camp of green-skinned orc brutes on a rust-red wasteland at sunset: an orange and dusty purple sky with black smoke columns from far-off furnaces, huge scrap mountains and the wrecks of crashed spaceships and toppled tanks on the horizon, a crude wall of welded scrap plates and sharpened girders along the back, painted jaw-glyph banners, oil drums, tyre stacks and junk piles between the plots. Ground: packed red dirt with oil stains and scattered bolts; each plot is a flat slab of rough concrete edged with welded scrap plates; the roads are muddy tyre-tracked dirt.
+
+Plot plan (attach town_layout_guide.png as the composition reference; the dark ovals are the plots):
+- Back row, on a raised terrace just below the horizon (about 35-40% down the picture): a small plot on the left
+  (about 1/7 of the picture wide), ONE LARGE central plot (about 1/3 of the picture wide, for the fortress),
+  a small plot on the right (about 1/6 wide).
+- Middle row (about 55-62% down): four plots, the outer two wider (about 1/4 wide), the inner two medium (about 1/5 wide).
+- Front row (about 85-90% down): four large plots (about 1/4 wide each), with only a narrow gap between them.
+- A main road winds from the bottom centre up to the large back plot, with side paths to each row.
+- Leave a little ground (about 3-5% of the width) between plots: buildings should feel close together like a busy
+  town, never touching, never with big empty fields between them.
+- The plots are EMPTY flat platforms, each slightly raised, its edge visible. No buildings, no ruins standing on them.
+
+DEATHLESS DYNASTY — TOMB-CITY TOWN
+----------------------------------
+Painted background for the town screen of a grimdark sci-fi fantasy strategy game, wide panorama, 16:9, 1920 x 1080, painted digital art with crisp gritty detail, seen from the front at a slight high angle like a classic fantasy strategy game town screen. The top 25-28% of the picture is sky and distant scenery; everything below is the town ground, filled edge to edge with the plots listed below, with only small decorative details in the gaps and along the left, right and bottom edges. No buildings, no characters, no text, no labels, no numbers, no grid. An ancient alien tomb-city waking in a black glass desert at night: a deep teal and black sky with a huge pale ringed planet and a sickly green aurora, colossal dark pyramids and broken obelisks on the horizon with thin emerald lines of light up their edges, a ring of tall monolith pillars along the back, broken statues of skeletal kings and small green glowing glyph stones between the plots. Ground: dark sand and cracked black stone tiles with faintly glowing green inlaid lines; each plot is a square-cornered (but roughly oval) flat platform of dark stone with gold-edged steps; the roads are straight processional paths of dark paving.
+
+Plot plan (attach town_layout_guide.png as the composition reference; the dark ovals are the plots):
+- Back row, on a raised terrace just below the horizon (about 35-40% down the picture): a small plot on the left
+  (about 1/7 of the picture wide), ONE LARGE central plot (about 1/3 of the picture wide, for the fortress),
+  a small plot on the right (about 1/6 wide).
+- Middle row (about 55-62% down): four plots, the outer two wider (about 1/4 wide), the inner two medium (about 1/5 wide).
+- Front row (about 85-90% down): four large plots (about 1/4 wide each), with only a narrow gap between them.
+- A main road winds from the bottom centre up to the large back plot, with side paths to each row.
+- Leave a little ground (about 3-5% of the width) between plots: buildings should feel close together like a busy
+  town, never touching, never with big empty fields between them.
+- The plots are EMPTY flat platforms, each slightly raised, its edge visible. No buildings, no ruins standing on them.
+
+
+2. INTERFACE PANELS
+===================
+Style for both: the same cogitator-terminal look as the Rites window and the Commander screen (heavy riveted
+gunmetal bezel with brass screws and small gothic skull ornaments, deep blue-black screen with fine scanlines, soft
+glow and faint static, interface lines in glowing brass-gold with amber accents). Every box is EMPTY: the game puts
+the names, numbers, portraits, creatures and buttons on top. Generate at the exact size given; keep edges crisp.
+
+2A. Town screen — bottom control panel (replaces the empty text area under the town picture)
+Town screen control panel for a grimdark gothic sci-fi strategy game, a wide horizontal strip, front view, flat orthographic, 1920 x 480 pixels (4:1), designed as a retro-futuristic cogitator terminal: a heavy dark gunmetal bezel with riveted corners, brass screws and small skull ornaments, a deep blue-black screen with fine horizontal scanlines and soft bloom, interface drawn in glowing brass-gold lines with amber accents. Layout, all empty placeholders: on the far left a tall panel with a small square crest slot at the top, an empty name plate, a short income plate and a row of seven small resource slots along its bottom; in the centre two horizontal rows of seven square unit slots each, the upper row with a large square portrait frame on its left (visiting commander), the lower row with a matching square frame on its left (garrison), a thin ornate divider with a small swap button between the two rows; on the right a block of eight empty rectangular buttons in two columns of four, the bottom-right one larger with a gold frame. Thin gold ruled lines, corner brackets and dotted dividers as decoration. No text, no letters, no numbers, no icons inside the slots, no hands, no people, no logos, no watermark.
+
+2B. Adventure map — right side panel
+Adventure-map side panel for a grimdark gothic sci-fi strategy game, a tall vertical strip, front view, flat orthographic, 480 x 1080 pixels, designed as a retro-futuristic cogitator terminal: a heavy dark gunmetal bezel with riveted corners, brass screws and small skull ornaments, a deep blue-black screen with fine horizontal scanlines and soft bloom, interface drawn in glowing brass-gold lines with amber accents. Layout from top to bottom, all empty placeholders: a large square minimap window with a fine grid and corner brackets and four small compass studs on its sides; below it two narrow columns of five small square slots each (commanders on the left, towns on the right) with a small header plate above each column; below them a wide info panel with a square portrait frame on the left, four small stat boxes beside it and a row of seven small square unit slots underneath; at the bottom a row with one rectangular button and one larger ornate gold-framed button. Thin gold ruled lines, corner brackets and dotted dividers as decoration. No text, no letters, no numbers, no icons, no hands, no people, no logos, no watermark.
+
+2B (alternative look, pick whichever you like more)
+Alternative (no screen, more like a war-table): the same tall 480 x 1080 side panel made of dark riveted iron and worn tooled leather, brass corner plates with small skulls, the same empty layout (square minimap window at the top, two columns of five small slots, a wide info panel with portrait frame, stat boxes and seven unit slots, two buttons at the bottom), each slot a recessed dark well with a thin brass rim. No text, no numbers, no icons, no logos.
+
+
+3. MUSIC (loopable)
+===================
+For music generators (Suno, Udio, Stable Audio, ElevenLabs Music...): instrumental only, no vocals unless
+stated, 2-3 minutes, and made to LOOP: no fade-in, no fade-out, ending on the same chord, tempo and energy it starts
+with. If the tool has an 'instrumental' switch, turn it on. Send me the files (mp3 or ogg) and I cut a seamless loop.
+
+MAIN MENU
+Dark epic orchestral main-menu theme for a grimdark sci-fi strategy game, instrumental, loopable, 70 BPM, slow and majestic: deep low brass and a distant choir humming without words, a lonely solo cello melody, soft taiko and timpani pulses, a bell tolling far away, a hint of cold synth pads like the hum of a starship, grand and sorrowful, no vocals, seamless loop, same chord at start and end.
+
+IRON CONCORD — snow town
+Nordic war-saga town ambience music, instrumental, loopable, 80 BPM: low frame drum and hand drums, a deep throat-singing drone without words, hurdy-gurdy and nyckelharpa melody, a lur horn in the distance, howling wind and faint wolf howls, crackling fire, cold and proud, calm town mood rather than battle, no vocals, seamless loop.
+
+HOLLOW HOST — hellforge town
+Dark infernal cathedral town ambience music, instrumental, loopable, 66 BPM: a heavy church organ drone in a minor key, slow ritual drums and anvil hits, a low male choir chanting wordless syllables, distorted low cellos, roaring forge fire and distant chains, sinister and grand but calm, no vocals, seamless loop.
+
+RUSTBOUND — scavenger wasteland town
+Post-apocalyptic industrial wasteland town ambience music, instrumental, loopable, 85 BPM: rusty metallic percussion made of pipes and scrap, a slow dusty slide guitar, deep droning synth bass, distant machinery clanks, wind over a dead city and occasional radio static, gritty and lonely, no vocals, seamless loop.
+
+SCRAPJAW HORDE — orc junkyard town
+Rowdy orc war-camp town music, instrumental, loopable, 110 BPM: big pounding tribal war drums and oil-drum percussion, crude distorted guitar riffs, honking brass, grunting rhythmic shouts as percussion without words, clanging scrap metal and engine revving in the background, loud, primitive and fun but steady, seamless loop.
+
+DEATHLESS DYNASTY — tomb-city town
+Ancient alien tomb-city ambience music, instrumental, loopable, 60 BPM: cold glassy synth pads, a slow Middle-Eastern scale melody on a metallic duduk-like lead, deep sub-bass pulses like a sleeping machine, ticking clockwork, soft electric crackles and a distant hollow wind through stone halls, eerie, timeless and calm, no vocals, seamless loop.
+
+—— end of file ——

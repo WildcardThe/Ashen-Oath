@@ -220,8 +220,8 @@ export const ART_LAYOUT = {
   },
 };
 // Towns whose buildings were cut from the backdrop painting itself: drawn exactly as painted, without grading or shadows.
-ART_LAYOUT.scrapjaw = ART_LAYOUT.deathless = ART_LAYOUT.rustbound;   // pre-placed too (tools/faction_town.py)
-const NATIVE_ART = { hollow: true, rustbound: true, scrapjaw: true, deathless: true };
+ART_LAYOUT.palefang = ART_LAYOUT.scrapjaw = ART_LAYOUT.deathless = ART_LAYOUT.concord = ART_LAYOUT.hollow = ART_LAYOUT.rustbound;   // pre-placed too (tools/faction_town.py)
+const NATIVE_ART = { concord: true, hollow: true, rustbound: true, scrapjaw: true, deathless: true, palefang: true };
 // Version of each spot that appears in the layout mockup; its fitted scale is the reference.
 const REF_ART = { dw1: 'dw1u', dw2: 'dw2u', dw3: 'dw3u', dw4: 'dw4', dw5: 'dw5', fort: 'castle', hall: 'hall2', guild: 'mg5', market: 'market', tavern: 'tavern', depot: 'depot' };
 // Earlier levels are a touch smaller so a building visibly grows when upgraded.
@@ -247,6 +247,19 @@ export function artFor(town, spot) {
 }
 
 // art: { base: Image, imgs: { key: Image }, meta: { key: { oh } } }
+// Glow layers keep the buildings' own fire colours, except where a town's light is cold: Pale Fang lamps pulse
+// in the moonlight blue of its night sky. The recoloured copy keeps the glow's brightness pattern.
+const GLOW_TINT = { palefang: 'rgb(150,205,255)' };
+const tintCache = new WeakMap();
+function glowTinted(gl, fac) {
+  if (!gl || !GLOW_TINT[fac]) return gl;
+  if (tintCache.has(gl)) return tintCache.get(gl);
+  const c = document.createElement('canvas'); c.width = gl.width; c.height = gl.height; const x = c.getContext('2d');
+  x.filter = 'grayscale(1) brightness(1.15)'; x.drawImage(gl, 0, 0); x.filter = 'none';
+  x.globalCompositeOperation = 'multiply'; x.fillStyle = GLOW_TINT[fac]; x.fillRect(0, 0, c.width, c.height);
+  x.globalCompositeOperation = 'destination-in'; x.drawImage(gl, 0, 0);
+  tintCache.set(gl, c); return c;
+}
 export function renderTownArt(town, art) {
   const W = art.base.width, H = art.base.height;
   const c = document.createElement('canvas'); c.width = W; c.height = H;
@@ -264,7 +277,7 @@ export function renderTownArt(town, art) {
   // animated buildings are drawn every frame instead of into the static picture; fire and magic glow on top
   const live = [];
   placed.forEach((p, i) => {
-    const an = art.anim && art.anim[p.art], gl = art.glow && art.glow[p.art];
+    const an = art.anim && art.anim[p.art], gl = glowTinted(art.glow && art.glow[p.art], town.faction);
     if (an || gl) live.push({ p, an, meta: art.meta[p.art], gl, phase: i * 1.7 });
   });
   placed.sort((a, b) => a.gy - b.gy);

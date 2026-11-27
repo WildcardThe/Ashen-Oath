@@ -1,0 +1,53 @@
+ASHEN OATH — TOWN LANDSCAPES BUILT FOR OUR BUILDINGS (Iron Concord snow town and Hollow hellforge town)
+==========================================================================================================
+
+Why: the current landscapes have plots in places that do not match our 11 building spots, so buildings end up
+crowded in one place and leave empty ground elsewhere. These prompts ask for exactly 11 plots, sized for the
+buildings that stand on them, in three rows with a winding road.
+
+HOW TO USE
+----------
+1. Attach town_layout_guide.png (in this folder) as the composition / layout reference image.
+   It is only a sketch: grey sky, dark ovals = plots, darker lines = roads. Ask for the same arrangement.
+2. Paste the prompt for the town. Generate at 16:9, 1920 x 1080 if you can.
+3. If the plots come out a little different, that is fine: send me the picture and I fit the buildings to it.
+   The important things are: 11 empty plots, one large plot at the back centre, the rest spread evenly.
+
+Which building goes on which plot (for reference; you do not need to put this in the prompt):
+  back row:   mage guild (left, small) · FORT / CITADEL / CASTLE (centre, large) · tier-5 dwelling (right)
+  middle row: town hall · recruitment office · tier-3 dwelling · tier-4 dwelling
+  front row:  tier-2 dwelling · trade exchange · supply depot · tier-1 dwelling
+
+
+IRON CONCORD — SNOW TOWN LANDSCAPE
+----------------------------------
+Painted background for the town screen of a grimdark sci-fi fantasy strategy game, wide panorama, 16:9, 1920 x 1080, painted digital art with crisp gritty detail, seen from the front at a slight high angle like a classic fantasy strategy game town screen. The top 25-28% of the picture is sky and distant scenery; everything below is the town ground, filled edge to edge with the plots listed below, with only small decorative details (rocks, braziers, crates, rubble) in the gaps and along the left, right and bottom edges. No buildings, no characters, no text, no labels, no numbers, no grid. A fortified longhall settlement in a snowbound fjord at dusk: jagged snow-capped mountains and a glacier on the horizon under a pale cold sky with drifting snow, a frozen fjord far behind the back row, tall carved rune-stones and iron braziers with amber fire between the plots, low wooden palisades and carved wolf-head posts along the edges. Ground: trampled snow, frozen earth and paving stones; each plot is a flat platform of cleared stone with packed snow around its rim; the roads are slushy cart tracks.
+
+Plot plan (attach town_layout_guide.png as the composition reference; the dark ovals are the plots):
+- Back row, on a raised terrace just below the horizon (about 35-40% down the picture): a small plot on the left
+  (about 1/7 of the picture wide), ONE LARGE central plot (about 1/3 of the picture wide, for the fortress),
+  a small plot on the right (about 1/6 wide).
+- Middle row (about 55-62% down): four plots, the outer two wider (about 1/4 wide), the inner two medium (about 1/5 wide).
+- Front row (about 85-90% down): four large plots (about 1/4 wide each), with only a narrow gap between them.
+- A main road winds from the bottom centre up to the large back plot, with side paths to each row.
+- Leave a little ground (about 3-5% of the width) between plots: buildings should feel close together like a busy
+  town, never touching, never with big empty fields between them.
+- The plots are EMPTY flat platforms, each slightly raised, its edge visible. No buildings, no ruins standing on them.
+
+
+HOLLOW HOST — HELLFORGE TOWN LANDSCAPE
+--------------------------------------
+Painted background for the town screen of a grimdark sci-fi fantasy strategy game, wide panorama, 16:9, 1920 x 1080, painted digital art with crisp gritty detail, seen from the front at a slight high angle like a classic fantasy strategy game town screen. The top 25-28% of the picture is sky and distant scenery; everything below is the town ground, filled edge to edge with the plots listed below, with only small decorative details (rocks, braziers, crates, rubble) in the gaps and along the left, right and bottom edges. No buildings, no characters, no text, no labels, no numbers, no grid. A hellforge warhost encampment on a volcanic plain under a blood-red sky with black smoke and drifting embers: brass forge-spires shaped like horned skulls on the far horizon, a ruined gothic wall with chained colossal statues behind the back row, braziers of red fire between the plots, skull piles and spiked chains along the edges. Ground: black basalt and grey ash with thin glowing lava seams; each plot is a flat black-stone platform with a brass-trimmed rim; the roads are scorched dark earth with lava cracks along their sides.
+
+Plot plan (attach town_layout_guide.png as the composition reference; the dark ovals are the plots):
+- Back row, on a raised terrace just below the horizon (about 35-40% down the picture): a small plot on the left
+  (about 1/7 of the picture wide), ONE LARGE central plot (about 1/3 of the picture wide, for the fortress),
+  a small plot on the right (about 1/6 wide).
+- Middle row (about 55-62% down): four plots, the outer two wider (about 1/4 wide), the inner two medium (about 1/5 wide).
+- Front row (about 85-90% down): four large plots (about 1/4 wide each), with only a narrow gap between them.
+- A main road winds from the bottom centre up to the large back plot, with side paths to each row.
+- Leave a little ground (about 3-5% of the width) between plots: buildings should feel close together like a busy
+  town, never touching, never with big empty fields between them.
+- The plots are EMPTY flat platforms, each slightly raised, its edge visible. No buildings, no ruins standing on them.
+
+—— end of file ——

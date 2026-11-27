@@ -29,6 +29,33 @@ UNITS = {
     'ark': ('deathless', 'u4', 'shoot', 10), 'ark_u': ('deathless', 'u4u', 'shoot', 10),
     'shard': ('deathless', 'u5', 'attack', 13), 'shard_u': ('deathless', 'u5u', 'attack', 13),
 }
+# Redrawn Iron Concord (snow-wolf marines) and Hollow Host (hellforge oathbreakers); grids detected per sheet
+for _fac, _ids in (('concord_snow', ['levy', 'warden', 'knight', 'walker', 'stormhammer']),
+                   ('hollow_forge', ['zealot', 'turncoat', 'flayer', 'hellforge', 'desecrator'])):
+    for _t, _id in enumerate(_ids, 1):
+        _ranged = os.path.exists(os.path.join(SRC, _fac, f'u{_t}_shoot.jpg'))
+        for _sfx, _pre in (('', f'u{_t}'), ('_u', f'u{_t}u')):
+            UNITS[_id + _sfx] = (_fac, _pre, 'shoot' if _ranged else 'attack', 9 if _ranged else 13)
+for _t, _id in enumerate(['thrall', 'fangreaver', 'harpooner', 'striker', 'drowned'], 1):
+    _r = _id == 'harpooner'
+    for _sfx, _pre in (('', f'u{_t}'), ('_u', f'u{_t}u')):
+        UNITS[_id + _sfx] = ('palefang', _pre, 'shoot' if _r else 'attack', 9 if _r else 13)
+AUTO = {'concord_snow', 'hollow_forge', 'palefang'}
+# sheet layouts read by eye (rows; figures per row; 'fixed' = equal cells, keeps flames that cross cells)
+GRIDS = {
+    ('levy_u', 'shoot'): {'nrows': 5, 'cols': [6, 5, 5, 5, 5]}, ('warden_u', 'move'): {'nrows': 4},
+    ('warden_u', 'attack'): {'nrows': 5, 'cols': [6, 5, 5, 5, 5]}, ('knight', 'move'): {'nrows': 4},
+    ('walker', 'move'): {'nrows': 4}, ('walker_u', 'move'): {'nrows': 4}, ('walker_u', 'shoot'): {'fixed': True},
+    ('stormhammer', 'move'): {'nrows': 3}, ('stormhammer_u', 'move'): {'nrows': 4},
+    ('zealot', 'move'): {'nrows': 4}, ('turncoat_u', 'move'): {'nrows': 5, 'cols': 7},
+    ('hellforge_u', 'move'): {'nrows': 4}, ('desecrator', 'move'): {'nrows': 4},
+    ('desecrator', 'shoot'): {'fixed': True, 'rows': 4}, ('desecrator_u', 'shoot'): {'fixed': True},
+    ('desecrator_u', 'attack'): {'nrows': 4},
+    ('harpooner_u', 'shoot'): {'boxes': [(4, 15, 202, 205), (208, 15, 406, 205), (412, 15, 610, 205), (616, 15, 814, 205), (820, 15, 1018, 205), (30, 220, 225, 410), (225, 220, 425, 410), (425, 220, 650, 410), (650, 220, 1010, 410), (4, 420, 202, 610), (208, 420, 406, 610), (412, 420, 610, 610), (616, 420, 814, 610), (820, 420, 1018, 610), (4, 620, 202, 810), (208, 620, 406, 810), (412, 620, 610, 810), (616, 620, 814, 810), (820, 620, 1018, 810), (4, 820, 202, 1010), (208, 820, 406, 1010), (412, 820, 610, 1010), (616, 820, 814, 1010), (820, 820, 1018, 1010)]}, ('drowned_u', 'move'): {'fixed': True}, ('drowned_u', 'attack'): {'fixed': True},
+    ('striker', 'move'): {'fixed': True}, ('striker_u', 'move'): {'fixed': True},
+}
+# units that shoot and also have their own melee sheet (u<t>_attack.jpg)
+DUAL = {'turncoat', 'turncoat_u', 'desecrator', 'desecrator_u'}
 # sheets that need help: rows found by even split, or a sheet with only 4 rows
 SHEET_OPTS = {('blastgob_u', 'move'): {'nrows': 4}, ('blastgob_u', 'shoot'): {'nrows': 4},
               ('junkgod_u', 'move'): {'nrows': 4}, ('scarab_u', 'move'): {'nrows': 4},
@@ -61,7 +88,7 @@ FIRE = {'ark': 9, 'ark_u': 9}   # the arks glow while charging: the beam itself 
 GROUND_STRIP = {('rokkit', 'move')}    # painted ground line under each frame
 
 
-def fixed_grid_frames(path, cols=5, rows=5, inset=2, noshadow=False):
+def fixed_grid_frames(path, cols=5, rows=5, inset=2, noshadow=False, boxes=None):
     """cut a sheet into exactly cols x rows equal cells; inside each cell keep the figure and every
     sizeable piece near it (muzzle flashes, beams and sparks painted apart from the body)"""
     from scipy import ndimage
@@ -70,10 +97,10 @@ def fixed_grid_frames(path, cols=5, rows=5, inset=2, noshadow=False):
     H, W = a.shape[:2]
     bg, d, sat, fg, shadow = sheet_matte(a)
     out = []
-    for r in range(rows):
-        for c in range(cols):
-            Y0, Y1 = round(r * H / rows) + inset, round((r + 1) * H / rows) - inset
-            X0, X1 = round(c * W / cols) + inset, round((c + 1) * W / cols) - inset
+    cells = boxes or [(round(c * W / cols) + inset, round(r * H / rows) + inset, round((c + 1) * W / cols) - inset, round((r + 1) * H / rows) - inset)
+                      for r in range(rows) for c in range(cols)]
+    for X0, Y0, X1, Y1 in cells:
+        if True:
             if noshadow:   # dark poles look like flat shadows to the matte: flat background from the cell's border
                 cell = a[Y0:Y1, X0:X1]
                 ring = np.concatenate([cell[:3].reshape(-1, 3), cell[-3:].reshape(-1, 3), cell[:, :3].reshape(-1, 3), cell[:, -3:].reshape(-1, 3)])
@@ -90,7 +117,8 @@ def fixed_grid_frames(path, cols=5, rows=5, inset=2, noshadow=False):
             if not m: continue
             sz = ndimage.sum(f, lab, range(1, m + 1))
             dd = d[Y0:Y1, X0:X1]; ss = sat[Y0:Y1, X0:X1]
-            md = ndimage.mean(dd, lab, range(1, m + 1)); ms = ndimage.mean(ss, lab, range(1, m + 1))
+            lf = np.where(f, lab, 0)   # measure each piece on its own pixels, not its dilated surroundings
+            md = ndimage.mean(dd, lf, range(1, m + 1)); ms = ndimage.mean(ss, lf, range(1, m + 1))
             # pale flat patches (uneven background, vignette corners) are only faintly different: drop them
             f &= np.isin(lab, [i + 1 for i, v in enumerate(sz) if v > sz.max() * 0.04 and not (md[i] < 38 and ms[i] < 16)])
             al = ndimage.gaussian_filter(f.astype(np.float32), 0.7); al = np.where(al < 0.08, 0, al)
@@ -112,6 +140,33 @@ def drop_ground(f):
         f = f.copy(); f[top + 1:, :, 3] = 0
         # the rows just above the strip fade out a little, where dust was painted against the wheels
     return f
+
+
+def detect_grid(path):
+    """rows from gaps in the foreground's vertical profile, figures per row from gaps in each band's horizontal
+    profile; None when the sheet does not split cleanly"""
+    from scipy import ndimage
+    from sheet_cut import sheet_matte
+    a = np.asarray(Image.open(path).convert('RGB')).astype(np.float32)
+    fg = sheet_matte(a)[3]
+    def runs(prof, minlen, gap):
+        on = prof > max(2, prof.max() * 0.02); out = []; i = 0; n = len(on)
+        while i < n:
+            if on[i]:
+                j = i
+                while j < n and (on[j] or (j + gap < n and on[j:j + gap].any())): j += 1
+                if j - i >= minlen: out.append((i, j))
+                i = j
+            else: i += 1
+        return out
+    rows = runs(ndimage.uniform_filter1d(fg.sum(1).astype(np.float32), 5), 40, 4)
+    if not 3 <= len(rows) <= 6: return None
+    cols = []
+    for y0, y1 in rows:
+        c = runs(ndimage.uniform_filter1d(fg[y0:y1].sum(0).astype(np.float32), 3), 25, 3)
+        cols.append(len(c))
+    if any(not 3 <= c <= 8 for c in cols): return None
+    return len(rows), cols
 
 
 def first_flash(frames, default):
@@ -171,21 +226,24 @@ def main():
         im.save(os.path.join(OUT, f'unit_{uid}.png'))
         manifest[f'unit_{uid}'] = {'kind': 'unit', 'w': im.width, 'h': im.height}
         counts = {}
-        for kind in ('move', pose):
+        for kind in ('move', pose) + (('attack',) if uid in DUAL else ()):
             o = SHEET_OPTS.get((uid, kind), {})
             src = os.path.join(d, f'{pre}_{kind}.jpg')
             if o.get('lines'): src = erase_grid_lines(src)
-            if o.get('fixed'): fr = fixed_grid_frames(src, inset=o.get('inset', 2))
-            else: fr = grid_frames(src, 5, o.get('nrows', 5), even=o.get('even', False))
+            if fac in AUTO and not o: o = GRIDS.get((uid, kind), {})
+            grey = fac in ('concord_snow', 'palefang')   # grey armour, snow camouflage and white wolves on a grey sheet: no shadow guessing
+            if o.get('fixed') or o.get('boxes'): fr = fixed_grid_frames(src, 5, o.get('rows', 5), inset=o.get('inset', 2), noshadow=grey, boxes=o.get('boxes'))
+            else: fr = grid_frames(src, o.get('cols', 5), o.get('nrows', 5), even=o.get('even', False), grey_figure=grey)
             if (uid, kind) in GROUND_STRIP: fr = [drop_ground(f) for f in fr]
             counts[kind] = len(fr)
             g = os.path.join(TMP, f'{uid}_{kind}.png')
             write_grid(fr, g, max(max(f.shape[:2]) for f in fr) + 8, align=True)
             if kind == 'shoot': hit = FIRE.get(uid) or first_flash(fr, hit)
-            extra = {'fire': hit} if kind == 'shoot' else {'hit': hit}
+            extra = {'fire': hit} if kind == 'shoot' else {'hit': 13 if kind == 'attack' and pose == 'shoot' else hit}
             anim_sheet(g, f'anim_{uid}_{kind}', len(fr), **extra)
-        mv_, at_ = manifest[f'anim_{uid}_move'], manifest[f'anim_{uid}_{pose}']
-        at_['body'] = round(mv_['body'] * mv_['src'] / at_['src'], 4)
+        mv_ = manifest[f'anim_{uid}_move']
+        for k_ in {pose} | ({'attack'} if uid in DUAL else set()):
+            at_ = manifest[f'anim_{uid}_{k_}']; at_['body'] = round(mv_['body'] * mv_['src'] / at_['src'], 4)
         print(uid, im.size, counts, flush=True)
     json.dump(manifest, open(MAN, 'w'), indent=1)
 

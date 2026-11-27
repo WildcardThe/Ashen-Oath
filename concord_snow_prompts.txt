@@ -1,0 +1,332 @@
+ASHEN OATH — THE IRON CONCORD REDONE: SNOW-WOLF MARINES
+==========================================================================
+
+Our first faction, rebuilt around the look of its tier 4 and 5 units (the Stormhammer Guard and the Bastion
+Walkers): towering steel-blue and gold power-armoured warriors of a frozen world, with wolf pelts, runes,
+longhalls and giant frost wolves. Names and emblems are original (no trademarked names).
+
+You get the full set of pictures, the same as for the Scrapjaw Horde and the Deathless Dynasty:
+  1. Town landscape        — the empty town-screen background (buildings are added on top by the game)
+  2. Town buildings         — 3 town hall levels, fort/citadel/castle, recruitment office, trade exchange,
+                              supply depot, 5 mage guild levels, and 5 creature dwellings + their upgrades
+  3. Creatures              — 5 tiers, basic and upgraded, each with picture + movement sheet + attack sheet
+                              (2 of the 5 are ranged: their attack sheet is a SHOOTING animation)
+  4. Three commanders       — avatar, map look, map movement, battlefield look, idle, casting
+                              (Valerian, Seraphine and Orrin stay in the Concord too, unless you want them out)
+  5. Extras                 — the town on the adventure map, a new faction crest for the setup screen
+
+The roster keeps the current tiers 4 and 5 (Bastion Walkers, Stormhammer Guard) and redraws them to match,
+so they get new movement and attack sheets like every other creature.
+
+Every prompt below is complete on its own: copy and paste it as it is.
+
+HOW TO GENERATE (important for cutting the pictures into the game)
+--------------------------------------------------------------------------
+- Landscape: 1920 x 1080 (16:9). Keep the building plots EMPTY: the game places each building on them.
+- Buildings: one building per picture on a plain flat medium grey background, about 1024 x 1024 or a little
+  taller, the whole building in frame with some space around it. Generate the BASIC building first and attach
+  it as the reference for its upgrade, so the upgrade keeps the same angle and footprint.
+- Creatures: generate the PICTURE first and attach it as the reference for its movement and attack sheets
+  (and the basic creature as a reference for the upgraded one, so they look related).
+- Sprite sheets: 5 columns x 5 rows = 25 frames, read left to right, top to bottom, no grid lines, no text,
+  the same size and the same ground line in every cell.
+- Commanders: generate the avatar or battlefield look first and attach it as the reference for the others.
+- Map pictures (commander vehicle, town) carry a PLAIN BLANK WHITE banner: the game paints it in the player's colour.
+- If you have two good versions of something, send both — I will pick and say which one I used.
+
+
+
+==========================================================================
+THE IRON CONCORD — REBORN AS THE SNOW-WOLF OATHHOLD
+==========================================================================
+
+Inspired by: towering power-armoured super-soldiers of a frozen death-world: wolf pelts, runes, sagas and longhalls, with the steel-blue and gold armour of our current Stormhammer Guard and Bastion Walkers.
+Lore: Born on an ice world where the winter never ends, the Concord's warriors are raised among wolves and storms, remade into giants of steel-blue plate and sent to the stars to keep an oath older than their empire. They feast in longhalls, carve their victories into rune-stones, and go to war howling.
+Play style: Tough and proud. Fur-cloaked riflemen, fierce young blade-warriors, giant wolf riders, rune-carved war walkers and shield-wall hammer veterans.
+Home ground: snowfields and frozen tundra (white snow, blue ice, grey rock) · rare resources: plasteel and psycrystal · town names: Fort Ardent, Bastion Primaris, Iron Vigil (current names; new ones like Frosthold or Wolfhaven if you prefer)
+Look of the whole faction: Every Concord thing is weathered, proud and northern: steel-blue and gunmetal power armour with gold trim, thick grey and white wolf pelts, carved wolf heads and runes, iron-banded timber, pale blue stone, snow and frost on every surface, warm amber firelight from braziers and windows.
+
+--------------------------------------------------------------------------
+CONCORD 1. TOWN LANDSCAPE (empty)
+--------------------------------------------------------------------------
+
+Painted background for the town screen of a grimdark sci-fi fantasy strategy game, wide panorama, 16:9, 1920 x 1080, painted digital art with crisp gritty detail. A fortified longhall settlement in a snowbound fjord at dusk: jagged snow-capped mountains and glaciers on the horizon under a pale cold sky with drifting snow, a frozen fjord with the hull of a landed armoured dropship shaped like a longship, tall carved rune-stones and iron braziers with amber fires, a palisade of iron-banded timber and steel plates with carved wolf heads curving around the settlement, banners with a wolf-head sigil on tall poles. The middle and foreground are a wide open ground of trampled snow, paving stones and frozen mud with a few footpaths, with several flat EMPTY building plots of cleared stone and packed snow spread across the picture (left, centre, right, middle distance and foreground), a few snow drifts, crates and pine trees only at the edges. No buildings standing on the plots, no characters, no text. Seen from the front at a slight high angle, like a classic fantasy strategy game town screen.
+
+--------------------------------------------------------------------------
+CONCORD 2. TOWN BUILDINGS
+--------------------------------------------------------------------------
+(Upgraded and higher levels: attach the previous level as the reference.)
+
+Town hall 1 — Longhall   [file: hall1]
+Single building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, in the style of a classic fantasy strategy town panorama. A long timber and stone longhall with a steep snow-covered roof, carved wolf heads at the gable ends, iron-banded doors, smoke from a central chimney and amber light in small windows. Every Concord thing is weathered, proud and northern: steel-blue and gunmetal power armour with gold trim, thick grey and white wolf pelts, carved wolf heads and runes, iron-banded timber, pale blue stone, snow and frost on every surface, warm amber firelight from braziers and windows. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Town hall 2 — Great Longhall   [file: hall2]
+Upgraded version of the same building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail. Same building, same angle, same footprint and same overall shape as the attached reference, but bigger and grander: it becomes a great longhall with a second wing, armoured steel plates on the roof, a tall watchtower, huge rune-carved doors and banners with a wolf-head sigil. Every Concord thing is weathered, proud and northern: steel-blue and gunmetal power armour with gold trim, thick grey and white wolf pelts, carved wolf heads and runes, iron-banded timber, pale blue stone, snow and frost on every surface, warm amber firelight from braziers and windows. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Town hall 3 — Jarl's Throne Hall   [file: hall3]
+Upgraded version of the same building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail. Same building, same angle, same footprint and same overall shape as the attached reference, but bigger and grander: it becomes a towering fortress-hall of steel-blue stone and gold-trimmed armour plates, three steep roofs crowned with giant carved wolf heads, a great gate flanked by statues of armoured warriors, braziers and banners everywhere — the largest building in town. Every Concord thing is weathered, proud and northern: steel-blue and gunmetal power armour with gold trim, thick grey and white wolf pelts, carved wolf heads and runes, iron-banded timber, pale blue stone, snow and frost on every surface, warm amber firelight from braziers and windows. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Fort — Ice Palisade   [file: fort]
+Single building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, in the style of a classic fantasy strategy town panorama. A short stretch of defensive wall of iron-banded timber and steel plates set on a stone base, a squat gate tower with a carved wolf head above the gate, frost and icicles on everything. Every Concord thing is weathered, proud and northern: steel-blue and gunmetal power armour with gold trim, thick grey and white wolf pelts, carved wolf heads and runes, iron-banded timber, pale blue stone, snow and frost on every surface, warm amber firelight from braziers and windows. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Citadel — Frostwall   [file: citadel]
+Upgraded version of the same building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail. Same building, same angle, same footprint and same overall shape as the attached reference, but bigger and grander: the wall is rebuilt in pale blue stone and steel, taller, with a second tower carrying a heavy gun, a deep ditch of ice spikes in front. Every Concord thing is weathered, proud and northern: steel-blue and gunmetal power armour with gold trim, thick grey and white wolf pelts, carved wolf heads and runes, iron-banded timber, pale blue stone, snow and frost on every surface, warm amber firelight from braziers and windows. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Castle — Wolfgate Bastion   [file: castle]
+Upgraded version of the same building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail. Same building, same angle, same footprint and same overall shape as the attached reference, but bigger and grander: it becomes a massive fortress wall of steel-blue stone with three towers carrying heavy cannons, a giant gate shaped like a snarling wolf's jaws, rune-carved battlements and banners. Every Concord thing is weathered, proud and northern: steel-blue and gunmetal power armour with gold trim, thick grey and white wolf pelts, carved wolf heads and runes, iron-banded timber, pale blue stone, snow and frost on every surface, warm amber firelight from braziers and windows. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Recruitment office — Mead Hall   [file: tavern]
+Single building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, in the style of a classic fantasy strategy town panorama. A rowdy timber mead hall with a snow-covered roof, shields hung along its walls, a big carved drinking horn sign above the door, barrels outside and warm firelight pouring from the doorway. Every Concord thing is weathered, proud and northern: steel-blue and gunmetal power armour with gold trim, thick grey and white wolf pelts, carved wolf heads and runes, iron-banded timber, pale blue stone, snow and frost on every surface, warm amber firelight from braziers and windows. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Trade exchange — Frost Market   [file: market]
+Single building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, in the style of a classic fantasy strategy town panorama. An open market square under timber shelters with snow on their roofs: stalls of furs, ammunition crates, carved tusks and engine parts, a hanging set of brass scales and a crane unloading a cargo pod. Every Concord thing is weathered, proud and northern: steel-blue and gunmetal power armour with gold trim, thick grey and white wolf pelts, carved wolf heads and runes, iron-banded timber, pale blue stone, snow and frost on every surface, warm amber firelight from braziers and windows. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Supply depot — Stores of the Pack   [file: depot]
+Single building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, in the style of a classic fantasy strategy town panorama. A fenced compound of snow-dusted storehouses and stacked armoured supply crates, fuel barrels, a heavy tracked supply crawler and a lifting crane. Every Concord thing is weathered, proud and northern: steel-blue and gunmetal power armour with gold trim, thick grey and white wolf pelts, carved wolf heads and runes, iron-banded timber, pale blue stone, snow and frost on every surface, warm amber firelight from braziers and windows. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Mage guild 1 — Rune-Priest's Hut   [file: mg1]
+Single building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, in the style of a classic fantasy strategy town panorama. A small round stone hut with a turf and snow roof, carved rune-stones standing around it, a pale blue glow from its doorway and a wolf skull above the entrance. Every Concord thing is weathered, proud and northern: steel-blue and gunmetal power armour with gold trim, thick grey and white wolf pelts, carved wolf heads and runes, iron-banded timber, pale blue stone, snow and frost on every surface, warm amber firelight from braziers and windows. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Mage guild 2   [file: mg2]
+Upgraded version of the same building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail. Same building, same angle, same footprint and same overall shape as the attached reference, but bigger and grander: a second storey of carved timber is added, more rune-stones glowing pale blue, a small lightning rod of iron on the roof. Every Concord thing is weathered, proud and northern: steel-blue and gunmetal power armour with gold trim, thick grey and white wolf pelts, carved wolf heads and runes, iron-banded timber, pale blue stone, snow and frost on every surface, warm amber firelight from braziers and windows. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Mage guild 3   [file: mg3]
+Upgraded version of the same building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail. Same building, same angle, same footprint and same overall shape as the attached reference, but bigger and grander: it grows into a tall stone tower wrapped in carved runes, a ring of glowing rune-stones around its base, storm clouds gathering at the top. Every Concord thing is weathered, proud and northern: steel-blue and gunmetal power armour with gold trim, thick grey and white wolf pelts, carved wolf heads and runes, iron-banded timber, pale blue stone, snow and frost on every surface, warm amber firelight from braziers and windows. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Mage guild 4   [file: mg4]
+Upgraded version of the same building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail. Same building, same angle, same footprint and same overall shape as the attached reference, but bigger and grander: the tower grows taller with a crown of iron antlers and crackling blue-white lightning, swirling snow around it. Every Concord thing is weathered, proud and northern: steel-blue and gunmetal power armour with gold trim, thick grey and white wolf pelts, carved wolf heads and runes, iron-banded timber, pale blue stone, snow and frost on every surface, warm amber firelight from braziers and windows. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Mage guild 5   [file: mg5]
+Upgraded version of the same building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail. Same building, same angle, same footprint and same overall shape as the attached reference, but bigger and grander: it becomes a towering spire of ice and stone, its top split open around a floating rune-stone in a constant column of blue-white lightning and a whirling blizzard. Every Concord thing is weathered, proud and northern: steel-blue and gunmetal power armour with gold trim, thick grey and white wolf pelts, carved wolf heads and runes, iron-banded timber, pale blue stone, snow and frost on every surface, warm amber firelight from braziers and windows. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Tier 1 dwelling — Levy Barracks   [file: dw1]
+Single building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, in the style of a classic fantasy strategy town panorama. A low timber barracks half-buried in snow, a weapons rack of long rifles outside, a brazier, drying furs on lines and a carved wolf head above the door. Every Concord thing is weathered, proud and northern: steel-blue and gunmetal power armour with gold trim, thick grey and white wolf pelts, carved wolf heads and runes, iron-banded timber, pale blue stone, snow and frost on every surface, warm amber firelight from braziers and windows. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Tier 1 dwelling upgraded — Veterans' Lodge   [file: dw1u]
+Upgraded version of the same building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail. Same building, same angle, same footprint and same overall shape as the attached reference, but bigger and grander: it becomes a sturdier stone and timber lodge with a lookout tower, shooting targets in the snow and trophy pelts hung along the walls. Every Concord thing is weathered, proud and northern: steel-blue and gunmetal power armour with gold trim, thick grey and white wolf pelts, carved wolf heads and runes, iron-banded timber, pale blue stone, snow and frost on every surface, warm amber firelight from braziers and windows. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Tier 2 dwelling — Bladehall   [file: dw2]
+Single building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, in the style of a classic fantasy strategy town panorama. A long timber training hall with a sparring ring of trampled snow outside, wooden practice dummies, crossed blades over the door and a wolf banner. Every Concord thing is weathered, proud and northern: steel-blue and gunmetal power armour with gold trim, thick grey and white wolf pelts, carved wolf heads and runes, iron-banded timber, pale blue stone, snow and frost on every surface, warm amber firelight from braziers and windows. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Tier 2 dwelling upgraded — Hunters' Bladehall   [file: dw2u]
+Upgraded version of the same building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail. Same building, same angle, same footprint and same overall shape as the attached reference, but bigger and grander: it becomes a bigger stone hall with a forge glowing at one side, racks of chain-blades and steel-blue armour plates hung on the walls. Every Concord thing is weathered, proud and northern: steel-blue and gunmetal power armour with gold trim, thick grey and white wolf pelts, carved wolf heads and runes, iron-banded timber, pale blue stone, snow and frost on every surface, warm amber firelight from braziers and windows. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Tier 3 dwelling — Wolf Kennels   [file: dw3]
+Single building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, in the style of a classic fantasy strategy town panorama. A walled kennel of timber and stone with heavy iron gates, giant wolf paw prints in the snow, gnawed bones, straw beds and a tall wolf-head totem. Every Concord thing is weathered, proud and northern: steel-blue and gunmetal power armour with gold trim, thick grey and white wolf pelts, carved wolf heads and runes, iron-banded timber, pale blue stone, snow and frost on every surface, warm amber firelight from braziers and windows. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Tier 3 dwelling upgraded — Rimehowl Lodge   [file: dw3u]
+Upgraded version of the same building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail. Same building, same angle, same footprint and same overall shape as the attached reference, but bigger and grander: it becomes a great stone lodge with armoured doors, a saddle and armour forge, glowing blue runes over the gate and banners of wolf champions. Every Concord thing is weathered, proud and northern: steel-blue and gunmetal power armour with gold trim, thick grey and white wolf pelts, carved wolf heads and runes, iron-banded timber, pale blue stone, snow and frost on every surface, warm amber firelight from braziers and windows. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Tier 4 dwelling — Walker Bay   [file: dw4]
+Single building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, in the style of a classic fantasy strategy town panorama. A heavy stone and steel hangar with huge sliding doors, a crane holding a walker leg, cables and fuel lines, sparks from a welder and frost on the roof. Every Concord thing is weathered, proud and northern: steel-blue and gunmetal power armour with gold trim, thick grey and white wolf pelts, carved wolf heads and runes, iron-banded timber, pale blue stone, snow and frost on every surface, warm amber firelight from braziers and windows. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Tier 4 dwelling upgraded — Dreadwalker Forge   [file: dw4u]
+Upgraded version of the same building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail. Same building, same angle, same footprint and same overall shape as the attached reference, but bigger and grander: it becomes a towering rune-carved forge-hangar with a glowing furnace, giant gold-trimmed doors and a war walker standing in its open bay. Every Concord thing is weathered, proud and northern: steel-blue and gunmetal power armour with gold trim, thick grey and white wolf pelts, carved wolf heads and runes, iron-banded timber, pale blue stone, snow and frost on every surface, warm amber firelight from braziers and windows. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Tier 5 dwelling — Stormhammer Keep   [file: dw5]
+Single building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, in the style of a classic fantasy strategy town panorama. A stern stone keep with a steel gate, statues of hammer-bearing warriors in massive armour flanking the entrance, braziers, frost and wolf banners. Every Concord thing is weathered, proud and northern: steel-blue and gunmetal power armour with gold trim, thick grey and white wolf pelts, carved wolf heads and runes, iron-banded timber, pale blue stone, snow and frost on every surface, warm amber firelight from braziers and windows. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+Tier 5 dwelling upgraded — Hall of Jarls   [file: dw5u]
+Upgraded version of the same building for the town screen of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail. Same building, same angle, same footprint and same overall shape as the attached reference, but bigger and grander: it becomes a towering hall of honour with gilded doors, a giant carved wolf on the roof, rune-stones with saga carvings and a column of storm clouds above it. Every Concord thing is weathered, proud and northern: steel-blue and gunmetal power armour with gold trim, thick grey and white wolf pelts, carved wolf heads and runes, iron-banded timber, pale blue stone, snow and frost on every surface, warm amber firelight from braziers and windows. Seen from the front at a slight high angle (about 20 degrees from above), the whole building in frame standing on a small patch of its own ground, isolated on a plain flat medium grey background, warm light from the upper left, no other buildings, no people, no text.
+
+--------------------------------------------------------------------------
+CONCORD 3. CREATURES
+--------------------------------------------------------------------------
+Ranged units: Frost Levy / Frost Veterans, Bastion Walkers / Bastion Dreadwalkers.
+
+···· Tier 1: FROST LEVY  →  upgraded: FROST VETERANS   (RANGED, walks, small) ····
+Suggested data: Tier 1 · RANGED (12 shots) · growth 12 a week · upgraded: +1 Attack, +1 Defence, 16 shots.
+
+Frost Levy - picture
+Single creature for a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, realistic proportions. A human soldier of a frozen world in thick furs and a padded grey greatcoat, a fur hood and a breathing mask with round goggles, frost on the shoulders, holding a long-barrelled rifle with a bayonet. Full body, three-quarter side view facing right. Plain flat medium grey background, even light from the upper left, no ground, no shadow, no text.
+
+Frost Levy - movement sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping MOVEMENT cycle of the same creature in every frame: A human soldier of a frozen world in thick furs and a padded grey greatcoat, a fur hood and a breathing mask with round goggles, frost on the shoulders, holding a long-barrelled rifle with a bayonet. A steady trudging march forward through snow, rifle held across the chest, breath steaming. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+Frost Levy - shooting sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous RANGED ATTACK of the same creature in every frame: A human soldier of a frozen world in thick furs and a padded grey greatcoat, a fur hood and a breathing mask with round goggles, frost on the shoulders, holding a long-barrelled rifle with a bayonet. He drops to one knee, aims, and fires a bright shot with a muzzle flash and a puff of smoke around frame 8, works the bolt and fires again around frame 16, then stands back up. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+Frost Veterans - picture (attach the basic creature as a reference)
+Single creature for a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, realistic proportions. A hardened human veteran in a grey wolf-pelt hood with the wolf's head over his own, a scarred bearded face, a dark armoured greatcoat with steel-blue plates, holding a long scoped rifle. Full body, three-quarter side view facing right. Plain flat medium grey background, even light from the upper left, no ground, no shadow, no text.
+
+Frost Veterans - movement sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping MOVEMENT cycle of the same creature in every frame: A hardened human veteran in a grey wolf-pelt hood with the wolf's head over his own, a scarred bearded face, a dark armoured greatcoat with steel-blue plates, holding a long scoped rifle. A steady trudging march forward through snow, rifle held across the chest, breath steaming. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+Frost Veterans - shooting sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous RANGED ATTACK of the same creature in every frame: A hardened human veteran in a grey wolf-pelt hood with the wolf's head over his own, a scarred bearded face, a dark armoured greatcoat with steel-blue plates, holding a long scoped rifle. He drops to one knee, aims, and fires a bright shot with a muzzle flash and a puff of smoke around frame 8, works the bolt and fires again around frame 16, then stands back up. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+···· Tier 2: WOLFBLADE INITIATES  →  upgraded: WOLFBLADE HUNTERS   (melee, walks, small) ····
+Suggested data: Tier 2 · melee · fast and fierce, weak defence · growth 9 a week · upgraded: +2 Defence and the shield.
+
+Wolfblade Initiates - picture
+Single creature for a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, realistic proportions. A young towering power-armoured warrior in steel-blue armour with gold trim, no helmet, wild red-blond hair and a fierce grin, a wolf tail and a pelt hanging from his belt, a roaring chain-sword in one hand and a heavy pistol in the other. Full body, three-quarter side view facing right. Plain flat medium grey background, even light from the upper left, no ground, no shadow, no text.
+
+Wolfblade Initiates - movement sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping MOVEMENT cycle of the same creature in every frame: A young towering power-armoured warrior in steel-blue armour with gold trim, no helmet, wild red-blond hair and a fierce grin, a wolf tail and a pelt hanging from his belt, a roaring chain-sword in one hand and a heavy pistol in the other. A fast charging run forward, the blade held high, the pelt flying behind, snow kicked up from his boots. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+Wolfblade Initiates - attack sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous MELEE ATTACK of the same creature in every frame: A young towering power-armoured warrior in steel-blue armour with gold trim, no helmet, wild red-blond hair and a fierce grin, a wolf tail and a pelt hanging from his belt, a roaring chain-sword in one hand and a heavy pistol in the other. He leaps forward and slashes the chain-blade down in a savage arc, a spray of sparks at the hit around frame 13, then he spins and recovers his stance. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+Wolfblade Hunters - picture (attach the basic creature as a reference)
+Single creature for a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, realistic proportions. A towering power-armoured warrior in steel-blue armour with gold trim and a snarling wolf-faced helmet, a grey wolf pelt over the shoulders, runes etched on his pauldrons, a roaring chain-axe and a round steel shield with a wolf head. Full body, three-quarter side view facing right. Plain flat medium grey background, even light from the upper left, no ground, no shadow, no text.
+
+Wolfblade Hunters - movement sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping MOVEMENT cycle of the same creature in every frame: A towering power-armoured warrior in steel-blue armour with gold trim and a snarling wolf-faced helmet, a grey wolf pelt over the shoulders, runes etched on his pauldrons, a roaring chain-axe and a round steel shield with a wolf head. A fast charging run forward, the blade held high, the pelt flying behind, snow kicked up from his boots. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+Wolfblade Hunters - attack sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous MELEE ATTACK of the same creature in every frame: A towering power-armoured warrior in steel-blue armour with gold trim and a snarling wolf-faced helmet, a grey wolf pelt over the shoulders, runes etched on his pauldrons, a roaring chain-axe and a round steel shield with a wolf head. He leaps forward and slashes the chain-blade down in a savage arc, a spray of sparks at the hit around frame 13, then he spins and recovers his stance. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+···· Tier 3: FROSTWOLF RIDERS  →  upgraded: RIMEHOWL CHAMPIONS   (melee, runs, big) ····
+Suggested data: Tier 3 · melee · big (two hexes) · very fast · growth 4 a week · upgraded: +3 Defence, strikes twice (rider and wolf).
+
+Frostwolf Riders - picture
+Single creature for a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, realistic proportions. A power-armoured warrior in steel-blue armour with gold trim riding an enormous white-grey frost wolf the size of a horse, the wolf snarling with bared fangs and pale blue eyes, a fur saddle and simple armour plates on the wolf, the rider swinging a heavy power hammer. It is a big creature that fills two battlefield hexes, so make it look massive. Full body, three-quarter side view facing right. Plain flat medium grey background, even light from the upper left, no ground, no shadow, no text.
+
+Frostwolf Riders - movement sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping MOVEMENT cycle of the same creature in every frame: A power-armoured warrior in steel-blue armour with gold trim riding an enormous white-grey frost wolf the size of a horse, the wolf snarling with bared fangs and pale blue eyes, a fur saddle and simple armour plates on the wolf, the rider swinging a heavy power hammer. It is a big creature that fills two battlefield hexes, so make it look massive. The giant wolf bounds forward in a powerful gallop, the rider leaning forward, snow flying from the paws. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+Frostwolf Riders - attack sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous MELEE ATTACK of the same creature in every frame: A power-armoured warrior in steel-blue armour with gold trim riding an enormous white-grey frost wolf the size of a horse, the wolf snarling with bared fangs and pale blue eyes, a fur saddle and simple armour plates on the wolf, the rider swinging a heavy power hammer. It is a big creature that fills two battlefield hexes, so make it look massive. The wolf rears up and bites while the rider smashes the hammer down, a burst of sparks and snow at the impact around frame 13, then the wolf lands and growls. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+Rimehowl Champions - picture (attach the basic creature as a reference)
+Single creature for a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, realistic proportions. A power-armoured champion in steel-blue armour with gold trim and a wolf pelt cloak riding a huge armoured frost wolf with steel plates, a spiked collar and runes, the wolf even bigger and fiercer, the rider holding a crackling power axe and a storm shield. It is a big creature that fills two battlefield hexes, so make it look massive. Full body, three-quarter side view facing right. Plain flat medium grey background, even light from the upper left, no ground, no shadow, no text.
+
+Rimehowl Champions - movement sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping MOVEMENT cycle of the same creature in every frame: A power-armoured champion in steel-blue armour with gold trim and a wolf pelt cloak riding a huge armoured frost wolf with steel plates, a spiked collar and runes, the wolf even bigger and fiercer, the rider holding a crackling power axe and a storm shield. It is a big creature that fills two battlefield hexes, so make it look massive. The giant wolf bounds forward in a powerful gallop, the rider leaning forward, snow flying from the paws. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+Rimehowl Champions - attack sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous MELEE ATTACK of the same creature in every frame: A power-armoured champion in steel-blue armour with gold trim and a wolf pelt cloak riding a huge armoured frost wolf with steel plates, a spiked collar and runes, the wolf even bigger and fiercer, the rider holding a crackling power axe and a storm shield. It is a big creature that fills two battlefield hexes, so make it look massive. The wolf rears up and bites while the rider smashes the hammer down, a burst of sparks and snow at the impact around frame 13, then the wolf lands and growls. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+···· Tier 4: BASTION WALKERS  →  upgraded: BASTION DREADWALKERS   (RANGED, walks, big) ····
+Suggested data: Tier 4 · RANGED (8 shots) · big (two hexes) · growth 2 a week · upgraded: +20 Health, 12 shots.
+
+Bastion Walkers - picture
+Single creature for a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, realistic proportions. A huge armoured war walker shaped like a hunched sarcophagus on two thick legs, steel-blue armour with gold trim, a carved wolf head and runes on its front plate, frost and snow on its shoulders, twin heavy siege cannons for arms. It is a big creature that fills two battlefield hexes, so make it look massive. Full body, three-quarter side view facing right. Plain flat medium grey background, even light from the upper left, no ground, no shadow, no text.
+
+Bastion Walkers - movement sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping MOVEMENT cycle of the same creature in every frame: A huge armoured war walker shaped like a hunched sarcophagus on two thick legs, steel-blue armour with gold trim, a carved wolf head and runes on its front plate, frost and snow on its shoulders, twin heavy siege cannons for arms. It is a big creature that fills two battlefield hexes, so make it look massive. A heavy stomping walk forward, the whole frame swaying, the cannons swinging, snow puffing from each footfall. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+Bastion Walkers - shooting sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous RANGED ATTACK of the same creature in every frame: A huge armoured war walker shaped like a hunched sarcophagus on two thick legs, steel-blue armour with gold trim, a carved wolf head and runes on its front plate, frost and snow on its shoulders, twin heavy siege cannons for arms. It is a big creature that fills two battlefield hexes, so make it look massive. It braces and fires both cannons one after the other with big muzzle flashes and smoke from frame 8 to 14, rocking back from the recoil, then it settles. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+Bastion Dreadwalkers - picture (attach the basic creature as a reference)
+Single creature for a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, realistic proportions. A bigger armoured war walker of steel-blue and gold plate, a wolf pelt draped over its sarcophagus, an eternal-flame brazier and banners on its back, a heavy rotary cannon on one arm and a twin siege cannon on the other, runes glowing pale blue. It is a big creature that fills two battlefield hexes, so make it look massive. Full body, three-quarter side view facing right. Plain flat medium grey background, even light from the upper left, no ground, no shadow, no text.
+
+Bastion Dreadwalkers - movement sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping MOVEMENT cycle of the same creature in every frame: A bigger armoured war walker of steel-blue and gold plate, a wolf pelt draped over its sarcophagus, an eternal-flame brazier and banners on its back, a heavy rotary cannon on one arm and a twin siege cannon on the other, runes glowing pale blue. It is a big creature that fills two battlefield hexes, so make it look massive. A heavy stomping walk forward, the whole frame swaying, the cannons swinging, snow puffing from each footfall. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+Bastion Dreadwalkers - shooting sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous RANGED ATTACK of the same creature in every frame: A bigger armoured war walker of steel-blue and gold plate, a wolf pelt draped over its sarcophagus, an eternal-flame brazier and banners on its back, a heavy rotary cannon on one arm and a twin siege cannon on the other, runes glowing pale blue. It is a big creature that fills two battlefield hexes, so make it look massive. It braces and fires both cannons one after the other with big muzzle flashes and smoke from frame 8 to 14, rocking back from the recoil, then it settles. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+···· Tier 5: STORMHAMMER GUARD  →  upgraded: STORMHAMMER JARLS   (melee, walks, big) ····
+Suggested data: Tier 5 · melee · big (two hexes) · retaliates against every attack (shield wall) · growth 1 a week · upgraded: +30 Health.
+
+Stormhammer Guard - picture
+Single creature for a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, realistic proportions. A colossal warrior in massive steel-blue fortress-plate armour with gold trim and a wolf pelt over the shoulders, skulls on the armour, a huge storm hammer crackling with lightning in one hand and a tall shield with a wolf skull in the other. It is a big creature that fills two battlefield hexes, so make it look massive. Full body, three-quarter side view facing right. Plain flat medium grey background, even light from the upper left, no ground, no shadow, no text.
+
+Stormhammer Guard - movement sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping MOVEMENT cycle of the same creature in every frame: A colossal warrior in massive steel-blue fortress-plate armour with gold trim and a wolf pelt over the shoulders, skulls on the armour, a huge storm hammer crackling with lightning in one hand and a tall shield with a wolf skull in the other. It is a big creature that fills two battlefield hexes, so make it look massive. A slow unstoppable stride forward, shield raised, hammer resting on the shoulder, the ground cracking under each step. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+Stormhammer Guard - attack sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous MELEE ATTACK of the same creature in every frame: A colossal warrior in massive steel-blue fortress-plate armour with gold trim and a wolf pelt over the shoulders, skulls on the armour, a huge storm hammer crackling with lightning in one hand and a tall shield with a wolf skull in the other. It is a big creature that fills two battlefield hexes, so make it look massive. He raises the hammer high, lightning crawling over it, then smashes it down in front of him with a burst of lightning and shattered ice around frame 13, then lifts the shield again. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+Stormhammer Jarls - picture (attach the basic creature as a reference)
+Single creature for a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, realistic proportions. A colossal veteran in ancient steel-blue fortress-plate etched with gold saga-runes, a white wolf pelt cloak and a horned wolf helmet, a huge storm hammer crackling with blue-white lightning and a tall rune shield. It is a big creature that fills two battlefield hexes, so make it look massive. Full body, three-quarter side view facing right. Plain flat medium grey background, even light from the upper left, no ground, no shadow, no text.
+
+Stormhammer Jarls - movement sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping MOVEMENT cycle of the same creature in every frame: A colossal veteran in ancient steel-blue fortress-plate etched with gold saga-runes, a white wolf pelt cloak and a horned wolf helmet, a huge storm hammer crackling with blue-white lightning and a tall rune shield. It is a big creature that fills two battlefield hexes, so make it look massive. A slow unstoppable stride forward, shield raised, hammer resting on the shoulder, the ground cracking under each step. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+Stormhammer Jarls - attack sheet
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous MELEE ATTACK of the same creature in every frame: A colossal veteran in ancient steel-blue fortress-plate etched with gold saga-runes, a white wolf pelt cloak and a horned wolf helmet, a huge storm hammer crackling with blue-white lightning and a tall rune shield. It is a big creature that fills two battlefield hexes, so make it look massive. He raises the hammer high, lightning crawling over it, then smashes it down in front of him with a burst of lightning and shattered ice around frame 13, then lifts the shield again. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+--------------------------------------------------------------------------
+CONCORD 4. COMMANDERS
+--------------------------------------------------------------------------
+
+···· JARL HRODMAR IRONMANE   (Concord · warlord) ····
+Bio: Hrodmar has led the Concord's hunts for two hundred winters and has outlived three of his own sagas. He rides to war on the great frost wolf Skellvar, laughs in the face of every charge, and has never once let his warriors eat before he has.
+Suggested data: class warlord · specialty: Frostwolf Riders +1 Attack, +1 Defence per 4 levels · start skill Leadership · start rite Battle Fury.
+
+A. Avatar
+Portrait of a grizzled giant warrior lord with a braided grey beard and a scarred face, fierce pale eyes, a huge grey wolf pelt with the wolf's head over his shoulders, ornate steel-blue power armour with gold trim and runes, head and shoulders, painted grimdark digital art, realistic. Square image, dark smoky background, dramatic rim light, no text.
+
+B. Map look
+A giant armoured frost wolf the size of a tank carrying a power-armoured warrior lord in a fur cloak, with a tall pole on the saddle bearing a PLAIN BLANK WHITE banner for a grimdark sci-fi strategy game map. Seen from a high three-quarter angle about 45 degrees from above, facing right, small readable silhouette, painted grimdark digital art, plain flat medium grey background, no text.
+
+C. Map movement
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping MOVEMENT cycle of the same vehicle or mount in every frame: A giant armoured frost wolf the size of a tank carrying a power-armoured warrior lord in a fur cloak, with a tall pole on the saddle bearing a PLAIN BLANK WHITE banner. The great wolf lopes forward with long powerful strides, the rider swaying, the cloak and the banner streaming, snow flying from the paws. Seen from a high three-quarter angle about 45 degrees from above, facing right, same size and same position in every cell, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+D. Battlefield look
+Single figure for a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, realistic proportions: a grizzled giant warrior lord in ornate steel-blue power armour with gold trim and runes, a huge grey wolf pelt with the wolf's head over his shoulders, a braided grey beard, holding a great frost axe crackling with cold blue energy. Full body, three-quarter side view facing right. Plain flat medium grey background, even light from the upper left, no ground, no shadow, no text.
+
+E. Battlefield idle
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping IDLE cycle of the same figure in every frame: a grizzled giant warrior lord in ornate steel-blue power armour with gold trim and runes, a huge grey wolf pelt with the wolf's head over his shoulders, a braided grey beard, holding a great frost axe crackling with cold blue energy. He stands with the axe resting on his shoulder, breathing steam into the cold air, the pelt stirring, surveying the field and grinning. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+F. Battlefield rite (casting)
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous CASTING animation of the same figure in every frame: a grizzled giant warrior lord in ornate steel-blue power armour with gold trim and runes, a huge grey wolf pelt with the wolf's head over his shoulders, a braided grey beard, holding a great frost axe crackling with cold blue energy. He throws his head back and howls, raising the axe high, a ring of cold blue energy and swirling snow bursting out around him around frame 13, then he lowers the axe and bares his teeth. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+···· RUNE-PRIEST SKALDI FROSTWEAVER   (Concord · battle-mystic) ····
+Bio: Skaldi reads the future in the cracks of the ice and calls the storm by its true name. The warriors say the blizzard follows him like a hound, and that he has never lost a duel with the sky.
+Suggested data: class battle-mystic · specialty: Lightning rites +power per level · start skill Air magic · start rite Lightning Bolt.
+
+A. Avatar
+Portrait of a weathered rune-priest warrior with a long white beard braided with iron rings, glowing pale blue eyes, a hood of white wolf fur, steel-blue power armour covered in carved runes, frost forming on his armour, head and shoulders, painted grimdark digital art, realistic. Square image, dark smoky background, dramatic rim light, no text.
+
+B. Map look
+A heavy armoured snow-crawler with tracks and a steel-blue hull carved with runes, a rune-priest standing on top beside glowing rune-stones, a tall pole with a PLAIN BLANK WHITE banner for a grimdark sci-fi strategy game map. Seen from a high three-quarter angle about 45 degrees from above, facing right, small readable silhouette, painted grimdark digital art, plain flat medium grey background, no text.
+
+C. Map movement
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping MOVEMENT cycle of the same vehicle or mount in every frame: A heavy armoured snow-crawler with tracks and a steel-blue hull carved with runes, a rune-priest standing on top beside glowing rune-stones, a tall pole with a PLAIN BLANK WHITE banner. The crawler grinds forward through the snow, tracks turning, exhaust steaming, the banner waving, pale blue sparks dancing over the rune-stones. Seen from a high three-quarter angle about 45 degrees from above, facing right, same size and same position in every cell, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+D. Battlefield look
+Single figure for a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, realistic proportions: a weathered rune-priest warrior in steel-blue power armour covered in carved runes, a hood and cloak of white wolf fur, a long white beard braided with iron rings, glowing pale blue eyes, holding a tall rune staff topped with a wolf skull crackling with lightning. Full body, three-quarter side view facing right. Plain flat medium grey background, even light from the upper left, no ground, no shadow, no text.
+
+E. Battlefield idle
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping IDLE cycle of the same figure in every frame: a weathered rune-priest warrior in steel-blue power armour covered in carved runes, a hood and cloak of white wolf fur, a long white beard braided with iron rings, glowing pale blue eyes, holding a tall rune staff topped with a wolf skull crackling with lightning. He stands leaning on the staff, snowflakes swirling around him, small blue sparks running over the runes on his armour, his lips moving in a silent chant. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+F. Battlefield rite (casting)
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous CASTING animation of the same figure in every frame: a weathered rune-priest warrior in steel-blue power armour covered in carved runes, a hood and cloak of white wolf fur, a long white beard braided with iron rings, glowing pale blue eyes, holding a tall rune staff topped with a wolf skull crackling with lightning. He raises the staff to the sky, a storm of snow and blue-white lightning spiralling around him, a great bolt of lightning cracks down onto the staff around frame 13, then the storm calms. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+···· HUNTMISTRESS YLVA GREYFANG   (Concord · warlord) ····
+Bio: Ylva hunts alone for months on the ice and comes back with the heads of things nobody else has seen. Her rifle has killed a war-beast at three kilometres, and two grey wolves that never leave her side make sure nothing gets closer.
+Suggested data: class warlord · specialty: Frost Levy +1 Attack, +1 Defence per 4 levels · start skill Archery · start rite Precision.
+
+A. Avatar
+Portrait of a fierce woman warrior with braided ash-blonde hair, blue war-paint across her eyes, a grey wolf-pelt hood, sleek steel-blue power armour with gold trim, a long scoped rifle over her shoulder, head and shoulders, painted grimdark digital art, realistic. Square image, dark smoky background, dramatic rim light, no text.
+
+B. Map look
+A fast armoured skimmer sled of steel-blue plate gliding over the snow, a huntress standing on it with a long rifle, two grey wolves running beside it, a tall pole with a PLAIN BLANK WHITE banner for a grimdark sci-fi strategy game map. Seen from a high three-quarter angle about 45 degrees from above, facing right, small readable silhouette, painted grimdark digital art, plain flat medium grey background, no text.
+
+C. Map movement
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping MOVEMENT cycle of the same vehicle or mount in every frame: A fast armoured skimmer sled of steel-blue plate gliding over the snow, a huntress standing on it with a long rifle, two grey wolves running beside it, a tall pole with a PLAIN BLANK WHITE banner. The sled glides forward fast over the snow, the two wolves running alongside, snow spraying, the banner streaming. Seen from a high three-quarter angle about 45 degrees from above, facing right, same size and same position in every cell, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+D. Battlefield look
+Single figure for a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, realistic proportions: a fierce woman warrior in sleek steel-blue power armour with gold trim, a grey wolf-pelt hood and cloak, braided ash-blonde hair and blue war-paint, holding a long ornate scoped rifle, a grey wolf sitting at her feet. Full body, three-quarter side view facing right. Plain flat medium grey background, even light from the upper left, no ground, no shadow, no text.
+
+E. Battlefield idle
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous looping IDLE cycle of the same figure in every frame: a fierce woman warrior in sleek steel-blue power armour with gold trim, a grey wolf-pelt hood and cloak, braided ash-blonde hair and blue war-paint, holding a long ornate scoped rifle, a grey wolf sitting at her feet. She stands scanning the field through the rifle scope, then lowers it, her cloak stirring, the wolf at her feet turning its head and sniffing the air. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+F. Battlefield rite (casting)
+Sprite sheet for a game, 5 columns by 5 rows, 25 frames, one continuous CASTING animation of the same figure in every frame: a fierce woman warrior in sleek steel-blue power armour with gold trim, a grey wolf-pelt hood and cloak, braided ash-blonde hair and blue war-paint, holding a long ornate scoped rifle, a grey wolf sitting at her feet. She kneels, takes aim and her rifle glows with cold blue runes, she fires a blazing blue shot around frame 13 while the wolf howls, then she stands and reloads. Same size and same ground line in every cell, three-quarter side view facing right, painted grimdark digital art, plain flat medium grey background, no grid lines, no text.
+
+--------------------------------------------------------------------------
+CONCORD 5. EXTRAS
+--------------------------------------------------------------------------
+
+Town on the adventure map
+A fortified snowbound longhall settlement on a rocky rise: a great timber and stone hall with steep snow-covered roofs and carved wolf heads, a steel-plated palisade wall with a gate tower, braziers with amber fire, rune-stones, a tall pole with a PLAIN BLANK WHITE banner over the gate for a grimdark sci-fi strategy game map. Seen from a high three-quarter angle about 45 degrees from above, facing right, compact readable silhouette that fits a 3 x 3 tile footprint, painted grimdark digital art, plain flat medium grey background, no text.
+
+Faction crest (setup screen, square)
+A heraldic crest emblem for a grimdark strategy game: a snarling wolf head in silver and gold on a round steel-blue shield ringed with carved runes, crossed axe and hammer behind it, frost on the metal, painted grimdark digital art, centred, plain flat black background, no text. Square image, 512 x 512.
+
+
+==========================================================================
+WHAT ELSE WILL BE NEEDED (no prompts required)
+--------------------------------------------------------------------------
+- No new resources: the Concord keeps Plasteel and Psycrystal.
+- When the new art arrives, the old Concord town, units and crest are replaced; saved games keep working.
+- Creature portraits, town thumbnails and map icons are cut by me from the pictures above.
+- Siege battles reuse the existing walls; battlefields reuse the existing terrain backdrops.
+- Faction music and sounds can come later if you want them — tell me and I will write prompts for those too.
+
+—— end of file ——

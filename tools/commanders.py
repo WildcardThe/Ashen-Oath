@@ -38,8 +38,19 @@ PICKS = {
     'skargul': {'avatar': ('-', 0), 'map': ('-', 4), 'mapstill': ('-', 0), 'battle': ('-', 0), 'idle': ('-', 4), 'cast': ('-', (7, 4))},
     'ahzrel': {'avatar': ('-', 0), 'map': ('-', 5), 'mapstill': ('-', 0), 'battle': ('-', 0), 'idle': ('-', 4), 'cast': ('-', 5)},
     'orumesh': {'avatar': ('-', 0), 'map': ('-', 3), 'mapstill': ('-', 0), 'battle': ('-', 0), 'idle': ('-', 3), 'cast': ('-', 5)},
+    # redrawn Iron Concord (snow-wolf marines) and Hollow Host (hellforge oathbreakers)
+    'hrodmar': {'avatar': ('-', 0), 'map': ('-', 5), 'mapstill': ('-', 0), 'battle': ('-', 0), 'idle': ('-', 4), 'cast': ('-', 5)},
+    'skaldi': {'avatar': ('-', 0), 'map': ('-', 5), 'mapstill': ('-', 0), 'battle': ('-', 0), 'idle': ('-', 5), 'cast': ('-', 5)},
+    'ylva': {'avatar': ('-', 0), 'map': ('-', 5), 'mapstill': ('-', 0), 'battle': ('-', 0), 'idle': ('-', 4), 'cast': ('-', 5)},
+    'vharkul': {'avatar': ('-', 0), 'map': ('-', 5), 'mapstill': ('-', 0), 'battle': ('-', 0), 'idle': ('-', 5), 'cast': ('-', 5)},
+    'kaedrin': {'avatar': ('-', 0), 'map': ('-', 4), 'mapstill': ('-', 0), 'battle': ('-', 0), 'idle': ('-', 3), 'cast': ('-', 4)},
+    'vosk': {'avatar': ('-', 0), 'map': ('-', 5), 'mapstill': ('-', 0), 'battle': ('-', 0), 'idle': ('-', 5), 'cast': ('-', 5)},
+    'maela': {'avatar': ('-', 0), 'map': ('-', 5), 'mapstill': ('-', 0), 'battle': ('-', 0), 'idle': ('-', 5), 'cast': ('-', 5)},
+    'morvagh': {'avatar': ('-', 0), 'map': ('-', 5), 'mapstill': ('-', 0), 'battle': ('-', 0), 'idle': ('-', 4), 'cast': ('-', 5)},
 }
-FIXED_CELLS = {('ahzrel', 'idle')}
+DROP = {('maela', 'map'): {0}}   # frames drawn without the banner
+GREY = {'hrodmar', 'skaldi', 'ylva', 'vosk', 'maela', 'velaun', 'abaddor', 'orumesh'}   # grey armour, white fur and pale skin on grey sheets: no shadow guessing
+FIXED_CELLS = {('vosk', 'map'), ('maela', 'map'), ('vosk', 'cast'), ('maela', 'cast'), ('ahzrel', 'idle'), ('vharkul', 'map'), ('ylva', 'map'), ('hrodmar', 'map')}
 NO_MASK = {'velaun'}   # white hull: the painted pennant is too small to separate, the game adds its own
 ROWS = {cid: {p: r for p, (_, r) in parts.items()} for cid, parts in PICKS.items()}
 
@@ -105,7 +116,8 @@ if __name__ == '__main__':
             if (cid, part) in FIXED_CELLS:   # thin staffs survive only the equal-cell cutter
                 from faction_units import fixed_grid_frames
                 fr = fixed_grid_frames(os.path.join(SRC, f'{cid}_{part}.jpg'), cols, rows, noshadow=True)
-            else: fr = grid_frames(os.path.join(SRC, f'{cid}_{part}.jpg'), cols, rows, even=True)
+            else: fr = grid_frames(os.path.join(SRC, f'{cid}_{part}.jpg'), cols, rows, even=True, grey_figure=cid in GREY)
+            if (cid, part) in DROP: fr = [f for i, f in enumerate(fr) if i not in DROP[(cid, part)]]
             strip(fr, f'cmd_{cid}_{part}', h, man, mask and cid not in NO_MASK)
         print(cid, {p: man[f'cmd_{cid}_{p}']['n'] for p in ('map', 'idle', 'cast')})
     json.dump(man, open(MAN, 'w'), indent=1)

@@ -4,13 +4,13 @@ A grimdark, turn-based fantasy strategy game in the spirit of the classic hero-a
 generated map with your commanders, capture mines and towns, build up your town, recruit creatures and fight
 tactical battles on a hex grid.
 
-Five factions: the Iron Concord, the Hollow Host, the Rustbound, the Scrapjaw Horde and the Deathless Dynasty.
+Six factions: the Iron Concord, the Hollow Host, the Rustbound, the Scrapjaw Horde, the Deathless Dynasty and the Pale Fang Exiles.
 
 ## Play on Windows
 
 Download **AshenOath-Setup.exe** from the [Releases](../../releases) page and run it.
 If Windows shows "Windows protected your PC", click **More info**, then **Run anyway** (the installer is not
-code-signed). The game installs for your user only, opens in its own window (F11 for full screen) and plays offline.
+code-signed). The game installs for your user only, starts in full screen (Menu > Display switches to a window with borders or a smaller window; F11 toggles) and plays offline.
 
 ## Project layout
 

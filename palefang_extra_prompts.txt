@@ -1,0 +1,30 @@
+ASHEN OATH — PALE FANG EXILES: TOWN MUSIC, MAGE GUILD ROOM, CLOSED VAULT
+=======================================================================
+Same formats as the other factions, so they drop straight into the game.
+
+
+1. TOWN MUSIC (loopable)
+------------------------
+For music generators (Suno, Udio, Stable Audio, ElevenLabs Music...): instrumental only, 2-3 minutes (or 60 s like
+the others), made to LOOP: no fade-in, no fade-out, ending on the same chord, tempo and energy it starts with.
+
+Dark nautical void-raider harbour ambience music, instrumental, loopable, 62 BPM: deep slow war drums like a heartbeat under the sea, a low droning brass horn like a distant ship's foghorn, cold eerie synth pads, a slow minor melody on a bowed cello and a metallic waterphone, the creak of chains and hull plates, waves crashing on rocks and wind howling far away, silent, menacing and calm, no vocals, seamless loop, same chord at start and end.
+
+
+2. MAGE GUILD ROOM (16:9, 1376 x 768)
+-------------------------------------
+Same layout as the other guild rooms, so the rites fit their niches: a column of three niches on the far left wall,
+a second column of three next to it, a row of four niches (two pairs) in the front of the counter at the bottom,
+and one large special niche on the right. All niches EMPTY with a flat plain back.
+
+Interior of a void-seer's chamber inside a raider ship for the mage guild window of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, front view, 16:9. A dark gunmetal hull chamber with riveted plates, pipes and chains, salt crust and dripping black water, cold pale-blue lamps, white jagged shark-jaw markings painted on the walls, shark-tooth trophies hanging on chains, a large round porthole in the centre showing a stormy black sea under a pale moon, a heavy metal chart table with a navigation brass astrolabe, harpoon tips, candles in jars and an old sea chart. Built into the walls: a vertical column of three empty square riveted niches on the far left wall, a second column of three empty niches next to it, a row of four empty square niches in the front of the chart table at the bottom (two pairs), and one large empty niche on the right framed by a giant open shark jawbone with pale-blue light inside. All niches completely empty with a flat plain back wall. No people, no text, no letters, no scrolls in the niches.
+
+
+3. CLOSED MINI-VAULT (locked rite, 512 x 512)
+---------------------------------------------
+Square icon, front view, the object filling most of the picture, on a plain flat medium grey background (plain grey
+makes it easy to cut out cleanly), painted grimdark digital art, no text.
+
+A small closed dark gunmetal sea chest seen from the front, riveted iron bands, a lock plate shaped like an open shark jaw with white teeth, barnacles and salt crust on the corners, a chain wrapped around it, a faint pale-blue glow leaking from the seam.
+
+—— end of file ——

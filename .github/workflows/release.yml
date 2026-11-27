@@ -36,4 +36,4 @@ jobs:
 
           1. Download **AshenOath-Setup.exe** below and run it.
           2. If Windows shows \"Windows protected your PC\", click **More info**, then **Run anyway** (the installer is not code-signed).
-          3. It installs for your user only, opens in its own window (F11 for full screen) and plays offline."
+          3. It installs for your user only, starts in full screen (Menu > Display or F11 to change) and plays offline."

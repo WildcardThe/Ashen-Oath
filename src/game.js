@@ -73,7 +73,7 @@ function message(text, pid) {
 
 // ---------- new game ----------
 const rnd0 = Math.random;
-export const HOME_GROUND = { concord: 0, hollow: 6, rustbound: 7, scrapjaw: 1, deathless: 3 };
+export const HOME_GROUND = { concord: 0, hollow: 6, rustbound: 7, scrapjaw: 1, deathless: 3, palefang: 2 };
 // cfg.players: [{ faction, human, team, commander, bonus }] (row order = colour order); older calls pass a faction
 export function newGame(cfg) {
   let { faction, seed = (Math.random() * 1e9) | 0, template = 'duel', size = 'M', aiLevel = 1, monsters = 1, treasure = 1, terrain = 'mixed', startRes = 1, weekEvents = true } = cfg;
@@ -1048,7 +1048,7 @@ async function fightTown(h, t) {
     if (st) defUnits.push({ type: st.type, count: st.count, src: { arr: t.garrison, idx: i } });
   }
   if (defUnits.length === 0) { captureTown(h, t); return; }
-  const siege = t.built.fort ? { level: t.built.castle ? 3 : t.built.citadel ? 2 : 1, towerDmg: 10 + 4 * Object.keys(t.built).filter(k => /^dw\d$/.test(k)).length } : null;
+  const siege = t.built.fort ? { level: t.built.castle ? 3 : t.built.citadel ? 2 : 1, towerDmg: 10 + 4 * Object.keys(t.built).filter(k => /^dw\d$/.test(k)).length, faction: t.faction, cannon: (G.s.players[h.owner] || {}).faction } : null;
   const r = await runBattle({ hero: h, owner: h.owner, units: armyUnits(h.army) }, { hero: vh, owner: t.owner, units: defUnits }, { siege, at: t });
   if (vh && r.winner === 0 && r.retreated !== 1) lootArtifacts(h, vh);
   if (vh) await afterBattle(vh, r, 1);

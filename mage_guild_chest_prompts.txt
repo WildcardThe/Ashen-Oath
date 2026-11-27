@@ -1,0 +1,61 @@
+ASHEN OATH — PROMPTS: MAGE GUILD WINDOWS (one per faction) AND THE TREASURE CHOICE WINDOW
+=========================================================================================
+
+HOW THE GAME WILL USE THEM
+--------------------------
+Mage guild window: opens as a pop-up when you click the mage guild in a town. The picture is the room;
+the game puts the rite icons into its niches. A town's guild has 11 rites in five levels:
+  level 1: 3 niches · level 2: 3 · level 3: 2 · level 4: 2 · level 5: 1 (the most important spot)
+Niches of levels not built yet show a closed mini-vault (one vault picture per faction, see part B)
+instead of the rite. All niches must be EMPTY in the picture (no scrolls, no icons in them).
+
+Generate the room at 16:9, 1376 x 768 or 1920 x 1080. Keep every niche clearly visible, roughly square,
+with a flat back wall (the rite icon will be placed in the middle of each), and the niches of one level
+close together so the levels read as groups:
+  - level 1 niches: three in a vertical column on the LEFT wall
+  - level 2 niches: three in a second vertical column next to them
+  - level 3 and level 4: two each, in a horizontal row along the front of a counter / altar at the bottom
+  - level 5: ONE large, special niche on the right (a reliquary, a shrine, a focus of the room)
+The middle can hold a window or a view outside, furniture and props, as in classic fantasy strategy games.
+
+
+A. MAGE GUILD ROOMS (one per faction)
+=====================================
+
+Iron Concord (snow-wolf marines) — Rune-Priest's Hall
+Interior of a rune-priest's hall for the mage guild window of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, front view, 16:9. A stone and timber hall with carved wolf heads on the beams, a cold blue glow, a tall arched window in the centre showing a snowy fjord and mountains, a brazier with amber fire, rune-stones, wolf pelts, a heavy wooden counter with tools, candles and an open book of runes. Built into the walls: a vertical column of three empty square stone niches on the far left wall, a second column of three empty square niches next to it, a row of four empty square niches in the front of the counter at the bottom (two pairs), and one large empty arched reliquary niche on the right framed by carved wolves and glowing runes. All niches completely empty with a flat plain back wall. No people, no text, no letters, no scrolls in the niches.
+
+Hollow Host (hellforge oathbreakers) — Altar of Whispers
+Interior of a dark sorcerer's sanctum for the mage guild window of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, front view, 16:9. A chamber of black stone and crimson walls with tarnished brass trim, skulls and chains, candelabras, a glowing red rune circle on the floor, a tall gothic window in the centre showing a burning red sky and forge-spires, an altar table with a heavy chained book, ritual knives and smoking censers. Built into the walls: a vertical column of three empty square niches with brass skull frames on the far left wall, a second column of three empty niches next to it, a row of four empty square niches in the front of the altar at the bottom (two pairs), and one large empty niche on the right shaped like an open horned skull with red light inside. All niches completely empty with a flat plain back wall. No people, no text, no letters, no scrolls in the niches.
+
+Rustbound (scavenger wasteland) — Scrap Archive
+Interior of a scavenger archive for the mage guild window of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, front view, 16:9. A rusty corrugated-metal and concrete workshop with pipes, cables, flickering cathode screens, jars of glowing toxic green liquid, a broken window in the centre showing the smoggy ruins of a dead hive-city, a cluttered workbench with tools, salvaged books and a radio. Built into the walls: a vertical column of three empty square lockers / cubbies on the far left wall, a second column of three empty cubbies next to it, a row of four empty square compartments in the front of the workbench at the bottom (two pairs), and one large empty cage-like reliquary on the right humming with pale blue void light. All compartments completely empty with a flat plain back. No people, no text, no letters, no scrolls in the compartments.
+
+Scrapjaw Horde (orc junkyard) — Shaman Hut
+Interior of an orc shaman's hut for the mage guild window of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, front view, 16:9. A crude hut of scrap plates, bones and hide, copper coils crackling with green lightning, skull totems, red and yellow paint daubs, a jagged window in the centre showing a rust-red junkyard at sunset with smoke columns, a crooked table of scrap with mushrooms, bones and bubbling pots. Built into the walls: a vertical column of three empty square holes framed by bolted scrap on the far left wall, a second column of three empty holes next to it, a row of four empty square holes in the front of the table at the bottom (two pairs), and one large empty niche on the right inside a giant iron jaw with green glow. All holes completely empty with a flat plain back. No people, no text, no letters, no scrolls in the holes.
+
+Deathless Dynasty (living-metal tomb-city) — Chronomancer Vault
+Interior of an ancient alien tomb vault for the mage guild window of a grimdark sci-fi fantasy strategy game, painted digital art with crisp gritty detail, front view, 16:9. A chamber of dark stone and gunmetal with gold trim and thin glowing emerald circuit lines, hieroglyph-like glyph panels, floating golden rings, a tall doorway in the centre showing a night desert with pyramids and a green aurora, a stone console with glowing green crystals and an hourglass of green light. Built into the walls: a vertical column of three empty square alcoves with gold frames on the far left wall, a second column of three empty alcoves next to it, a row of four empty square alcoves in the front of the console at the bottom (two pairs), and one large empty sarcophagus-shaped alcove on the right glowing with green light. All alcoves completely empty with a flat plain back wall. No people, no text, no letters, no scrolls in the alcoves.
+
+
+B. CLOSED MINI-VAULTS (one per faction — shown in niches of levels not yet built)
+================================================================================
+Square icon, 512 x 512, front view, the object filling most of the picture, on a plain flat medium grey background, painted grimdark digital art, no text.
+
+Iron Concord: A small closed rune-carved iron and timber strongbox seen from the front, steel-blue metal bands, a wolf-head lock plate, frost on the edges, a faint pale blue rune glowing on the lid.
+Hollow Host: A small closed crimson and black reliquary seen from the front, brass bands, a horned skull lock, chains wrapped around it, a faint red glow leaking from the seam.
+Rustbound: A small closed rusty steel lockbox seen from the front, welded plates and rivets, a heavy padlock, a hazard stripe, a faint toxic green light from a crack.
+Scrapjaw Horde: A small closed crude scrap-metal box seen from the front, bolted plates painted red and yellow, a jaw-shaped lock, spikes on the corners, a crackle of green lightning on the lid.
+Deathless Dynasty: A small closed gunmetal tomb casket seen from the front, gold trim, a circle glyph seal glowing emerald green, geometric engravings.
+
+
+C. TREASURE CHOICE WINDOW (chest: take the gold or give it away for experience)
+==============================================================================
+Window background (portrait, about 640 x 800):
+Background panel for a pop-up dialog window in a grimdark gothic sci-fi strategy game, front view, flat, portrait 4:5. The same cogitator-terminal look as our other windows: a heavy dark gunmetal bezel with riveted corners, brass screws and small gothic skull ornaments, a deep blue-black screen with soft glow, interface drawn in glowing brass-gold lines. Layout, all empty: an empty title plate at the top, a wide empty text area below it, two empty square ornate gold frames side by side in the lower half with a small empty plate under each and a small round ornament between them, and one ornate empty button plate at the bottom centre. No text, no letters, no numbers, no icons, no people, no logos.
+
+Choice icons (square, 512 x 512, on a plain flat medium grey background, painted grimdark digital art, no text):
+Gold: A heap of glowing golden auramite crystals and old imperial coins spilling out of a small open iron chest, warm golden light.
+Experience: A military honour medal of gold and steel shaped like a star inside a laurel wreath with a skull at its centre, hanging from a crimson ribbon, glinting light, slightly worn.
+
+—— end of file ——

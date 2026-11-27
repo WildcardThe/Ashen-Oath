@@ -19,12 +19,15 @@ def smooth_fill(vals, mask, sigma):
     return num / np.maximum(den, 1e-4)
 
 
-def cut(rgb, keep_island=0.0, island=True):
+def cut(rgb, keep_island=0.0, island=True, solid_dark=False):
     a = rgb.astype(np.float32)
     H, W = a.shape[:2]
     lum = a.mean(2); sat = a.max(2) - a.min(2)
     # first guess of the background: bright, unsaturated, connected to the border
-    guess = (lum > 120) & (sat < 30)
+    border = np.concatenate([a[:6].reshape(-1, 3), a[-6:].reshape(-1, 3), a[:, :6].reshape(-1, 3), a[:, -6:].reshape(-1, 3)])
+    bgc = np.median(border, 0)
+    # close to the sheet's own grey (medium or dark), or the old bright-paper rule
+    guess = ((np.sqrt(((a - bgc) ** 2).sum(2)) < 26) | (lum > 120)) & (sat < 30)
     lab, _ = ndimage.label(guess)
     edge = np.unique(np.concatenate([lab[0], lab[-1], lab[:, 0], lab[:, -1]]))
     bgm = np.isin(lab, edge[edge > 0])
@@ -65,6 +68,8 @@ def cut(rgb, keep_island=0.0, island=True):
     # smoke plumes: grey, unsaturated and smooth (stone and metal are textured) -> see-through
     loc = ndimage.uniform_filter(lum, 7); std = np.sqrt(np.maximum(ndimage.uniform_filter(lum ** 2, 7) - loc ** 2, 0))
     smoke = solid & (sat < 26) & (std < 7) & (lum > 38)
+    if solid_dark:   # smooth black stone is not smoke: smoke is only what is close to the background's brightness
+        smoke &= lum > bl - 38
     smoke = ndimage.binary_opening(smoke, iterations=2)
     sl, sn = ndimage.label(smoke)
     if sn:

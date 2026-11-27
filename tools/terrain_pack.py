@@ -16,7 +16,8 @@ OUT = os.path.join(ROOT, 'assets', 'sprites')
 TEX = os.path.join(ROOT, 'assets', 'terrain')
 MAN = os.path.join(ROOT, 'assets', 'sprites.json')
 manifest = json.load(open(MAN))
-for k in [k for k in manifest if k.startswith(('mw_', 'mv_', 'ow_', 'ov_', 'pool_'))]: del manifest[k]
+if __name__ == '__main__':
+  for k in [k for k in manifest if k.startswith(('mw_', 'mv_', 'ow_', 'ov_', 'pool_'))]: del manifest[k]
 
 
 TONE = {'ground_bone': 0.72}   # the bone ground is very bright next to the others
@@ -39,7 +40,7 @@ TEXTURES = {
 }
 
 
-def cut_piece(c):
+def cut_piece(c, keep_gaps=None):
     """matte one cell of a flat-grey sheet; returns the RGBA crop of its main object, or None"""
     c = c.astype(np.float32); lum = c.mean(2); sat = c.max(2) - c.min(2)
     border = np.concatenate([c[:3].reshape(-1, 3), c[-3:].reshape(-1, 3), c[:, :3].reshape(-1, 3), c[:, -3:].reshape(-1, 3)])
@@ -68,6 +69,7 @@ def cut_piece(c):
     al = np.maximum(ndimage.gaussian_filter(fg.astype(np.float32), 0.8) * fg, soft)
     al = np.where(al < 0.06, 0, al)
     rgb = np.where((al > 0.95)[..., None], c, np.clip(bg + (c - bg) / np.maximum(al, 0.3)[..., None], 0, 255))
+    if keep_gaps is not None: al = np.where(keep_gaps, 0, al)   # flat background trapped inside the object
     rgba = np.dstack([rgb, al * 255]).astype(np.uint8)
     ys, xs = np.nonzero(al > 0.08)
     return rgba[ys.min():ys.max() + 1, xs.min():xs.max() + 1]
@@ -111,20 +113,21 @@ def river_strip(name, cell_index, cols, rows, out):
     manifest[out] = {'kind': 'decor', 'w': strip.shape[1], 'h': strip.shape[0]}
 
 
-os.makedirs(TEX, exist_ok=True)
-for out, src in TEXTURES.items(): seamless(os.path.join(SRC, src + '.jpg'), out)
-sets = {
-    # wasteland obstacles (5x5): scrap, wrecks, trees, acid pools, ruins
-    'ow': cut_sheet('obst_waste_a.jpg', 5, 5, 'ow', 150) + cut_sheet('obst_waste_b.jpg', 5, 5, 'owb', 150),
-    # volcanic obstacles (5x5): boulders, formations, trees, magma pools, ruins
-    'ov': cut_sheet('obst_volc.jpg', 5, 5, 'ov', 150),
-    # mountain ranges (4x4): ridges, peaks, foothills
-    'mw': cut_sheet('mtn_waste_a.jpg', 4, 4, 'mw', 125) + cut_sheet('mtn_waste_b.jpg', 4, 4, 'mwb', 125),
-    'mv': cut_sheet('mtn_volc_a.jpg', 4, 4, 'mv', 125) + cut_sheet('mtn_volc_b.jpg', 4, 4, 'mvb', 125),
-    # pools (bottom row of the river sheets)
-    'pool': cut_sheet('rivers_a.jpg', 5, 5, 'pool', 150, only=range(20, 25)) + cut_sheet('rivers_b.jpg', 5, 5, 'poolb', 150, only=range(20, 25)),
-}
-river_strip('rivers_a.jpg', 10, 5, 5, 'river_acid')
-river_strip('rivers_a.jpg', 0, 5, 5, 'river_lava')
-json.dump(manifest, open(MAN, 'w'), indent=1)
-print({k: len(v) for k, v in sets.items()})
+if __name__ == '__main__':
+    os.makedirs(TEX, exist_ok=True)
+    for out, src in TEXTURES.items(): seamless(os.path.join(SRC, src + '.jpg'), out)
+    sets = {
+        # wasteland obstacles (5x5): scrap, wrecks, trees, acid pools, ruins
+        'ow': cut_sheet('obst_waste_a.jpg', 5, 5, 'ow', 150) + cut_sheet('obst_waste_b.jpg', 5, 5, 'owb', 150),
+        # volcanic obstacles (5x5): boulders, formations, trees, magma pools, ruins
+        'ov': cut_sheet('obst_volc.jpg', 5, 5, 'ov', 150),
+        # mountain ranges (4x4): ridges, peaks, foothills
+        'mw': cut_sheet('mtn_waste_a.jpg', 4, 4, 'mw', 125) + cut_sheet('mtn_waste_b.jpg', 4, 4, 'mwb', 125),
+        'mv': cut_sheet('mtn_volc_a.jpg', 4, 4, 'mv', 125) + cut_sheet('mtn_volc_b.jpg', 4, 4, 'mvb', 125),
+        # pools (bottom row of the river sheets)
+        'pool': cut_sheet('rivers_a.jpg', 5, 5, 'pool', 150, only=range(20, 25)) + cut_sheet('rivers_b.jpg', 5, 5, 'poolb', 150, only=range(20, 25)),
+    }
+    river_strip('rivers_a.jpg', 10, 5, 5, 'river_acid')
+    river_strip('rivers_a.jpg', 0, 5, 5, 'river_lava')
+    json.dump(manifest, open(MAN, 'w'), indent=1)
+    print({k: len(v) for k, v in sets.items()})

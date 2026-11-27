@@ -347,14 +347,14 @@ export function generateMap(seed, opts = {}) {
   // ---- rivers: decorative and continuous, from the map edge to a pool inside a zone ----
   const rivers = [];
   {
-    const nR = W <= 36 ? 2 : W <= 48 ? 4 : 6;
+    const nR = W <= 36 ? 3 : W <= 48 ? 5 : 8;
     const avoid = new Uint8Array(W * H);
     for (const t of towns) for (let dy = -4; dy <= 2; dy++) for (let dx = -4; dx <= 4; dx++) { const x = t.x + dx, y = t.y + dy; if (inb(x, y)) avoid[idx(x, y)] = 1; }
     const Nr = noise(4);
     for (let k = 0; k < nR; k++) {
       let end = -1;
       for (let tries = 0; tries < 200 && end < 0; tries++) {
-        const z = pick(zones.filter(z => z.type !== 'start'));
+        const z = pick(tries < 100 && k % 2 ? zones : zones.filter(z => z.type !== 'start'));   // every other river may end in a homeland
         const i = z.tiles[Math.floor(rnd() * z.tiles.length)];
         if (pass(i) && !tiles[i].road && !avoid[i] && !tiles[i].river && !nearGate(i % W, (i / W) | 0, 2)) end = i;
       }

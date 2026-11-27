@@ -42,7 +42,7 @@ export function schoolGlyph(sc) {
 // Painted rite icons, packed in assets/ui/rite_icons.webp (order in rite_icons.json). They are green on
 // black, so they are shown with 'screen' blending and the black falls away against the terminal.
 let ICONS = null;
-const iconsReady = fetch('assets/ui/rite_icons.json').then(r => r.json()).then(j => { ICONS = j; }).catch(() => {});
+export const riteIconsReady = fetch('assets/ui/rite_icons.json').then(r => r.json()).then(j => { ICONS = j; }).catch(() => {});
 export function riteIcon(id, fallback) {
   const k = ICONS ? ICONS.ids.indexOf(id) : -1;
   if (k < 0) return `<img src="${schoolGlyph(fallback)}" alt="">`;
@@ -60,7 +60,7 @@ let riteMemory = { tab: 'all', sort: 'level' };
 
 // opts: hero, title, spells (ids), cost(sp), usable(sp) -> true or a reason string, onCast(sp) -> bool (close)
 export async function openRites(opts) {
-  await iconsReady;
+  await riteIconsReady;
   const h = opts.hero;
   return termWindow('rites', (root, close) => {
     let tab = riteMemory.tab, sort = riteMemory.sort, page = 0, sel = null, lastClick = 0;
